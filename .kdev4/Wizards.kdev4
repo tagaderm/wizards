@@ -1653,24 +1653,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig66]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=ShaderCompileWorker-Linux-Debug
+Title=ParallelExecutor-Linux-Debug
 
 [CustomBuildSystem][BuildConfig66][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ShaderCompileWorker Linux Debug
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ParallelExecutor Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig66][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  ShaderCompileWorker Linux Debug
+Arguments=./GenerateProjectFiles.sh  ParallelExecutor Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig66][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ShaderCompileWorker Linux Debug -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ParallelExecutor Linux Debug -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -1678,24 +1678,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig67]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=ShaderCompileWorker-Linux-DebugGame
+Title=ParallelExecutor-Linux-DebugGame
 
 [CustomBuildSystem][BuildConfig67][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ShaderCompileWorker Linux DebugGame
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ParallelExecutor Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig67][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  ShaderCompileWorker Linux DebugGame
+Arguments=./GenerateProjectFiles.sh  ParallelExecutor Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig67][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ShaderCompileWorker Linux DebugGame -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ParallelExecutor Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -1703,24 +1703,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig68]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=ShaderCompileWorker-Linux-Shipping
+Title=ParallelExecutor-Linux-Shipping
 
 [CustomBuildSystem][BuildConfig68][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ShaderCompileWorker Linux Shipping
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ParallelExecutor Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig68][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  ShaderCompileWorker Linux Shipping
+Arguments=./GenerateProjectFiles.sh  ParallelExecutor Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig68][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ShaderCompileWorker Linux Shipping -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ParallelExecutor Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -1728,24 +1728,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig69]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=ShaderCompileWorker-Linux-Test
+Title=ParallelExecutor-Linux-Test
 
 [CustomBuildSystem][BuildConfig69][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ShaderCompileWorker Linux Test
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ParallelExecutor Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig69][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  ShaderCompileWorker Linux Test
+Arguments=./GenerateProjectFiles.sh  ParallelExecutor Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig69][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ShaderCompileWorker Linux Test -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ParallelExecutor Linux Test -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -1753,24 +1753,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig70]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=ShaderCompileWorker
+Title=ParallelExecutor
 
 [CustomBuildSystem][BuildConfig70][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ShaderCompileWorker Linux Development
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ParallelExecutor Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig70][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  ShaderCompileWorker Linux Development
+Arguments=./GenerateProjectFiles.sh  ParallelExecutor Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig70][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ShaderCompileWorker Linux Development -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ParallelExecutor Linux Development -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -1778,24 +1778,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig71]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=SlateViewer-Linux-Debug
+Title=ShaderCompileWorker-Linux-Debug
 
 [CustomBuildSystem][BuildConfig71][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SlateViewer Linux Debug
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ShaderCompileWorker Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig71][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  SlateViewer Linux Debug
+Arguments=./GenerateProjectFiles.sh  ShaderCompileWorker Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig71][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SlateViewer Linux Debug -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ShaderCompileWorker Linux Debug -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -1803,24 +1803,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig72]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=SlateViewer-Linux-DebugGame
+Title=ShaderCompileWorker-Linux-DebugGame
 
 [CustomBuildSystem][BuildConfig72][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SlateViewer Linux DebugGame
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ShaderCompileWorker Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig72][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  SlateViewer Linux DebugGame
+Arguments=./GenerateProjectFiles.sh  ShaderCompileWorker Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig72][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SlateViewer Linux DebugGame -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ShaderCompileWorker Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -1828,24 +1828,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig73]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=SlateViewer-Linux-Shipping
+Title=ShaderCompileWorker-Linux-Shipping
 
 [CustomBuildSystem][BuildConfig73][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SlateViewer Linux Shipping
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ShaderCompileWorker Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig73][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  SlateViewer Linux Shipping
+Arguments=./GenerateProjectFiles.sh  ShaderCompileWorker Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig73][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SlateViewer Linux Shipping -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ShaderCompileWorker Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -1853,24 +1853,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig74]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=SlateViewer-Linux-Test
+Title=ShaderCompileWorker-Linux-Test
 
 [CustomBuildSystem][BuildConfig74][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SlateViewer Linux Test
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ShaderCompileWorker Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig74][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  SlateViewer Linux Test
+Arguments=./GenerateProjectFiles.sh  ShaderCompileWorker Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig74][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SlateViewer Linux Test -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ShaderCompileWorker Linux Test -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -1878,24 +1878,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig75]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=SlateViewer
+Title=ShaderCompileWorker
 
 [CustomBuildSystem][BuildConfig75][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SlateViewer Linux Development
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ShaderCompileWorker Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig75][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  SlateViewer Linux Development
+Arguments=./GenerateProjectFiles.sh  ShaderCompileWorker Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig75][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SlateViewer Linux Development -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  ShaderCompileWorker Linux Development -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -1903,24 +1903,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig76]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=SymbolDebugger-Linux-Debug
+Title=SlateViewer-Linux-Debug
 
 [CustomBuildSystem][BuildConfig76][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SymbolDebugger Linux Debug
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SlateViewer Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig76][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  SymbolDebugger Linux Debug
+Arguments=./GenerateProjectFiles.sh  SlateViewer Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig76][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SymbolDebugger Linux Debug -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SlateViewer Linux Debug -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -1928,24 +1928,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig77]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=SymbolDebugger-Linux-DebugGame
+Title=SlateViewer-Linux-DebugGame
 
 [CustomBuildSystem][BuildConfig77][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SymbolDebugger Linux DebugGame
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SlateViewer Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig77][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  SymbolDebugger Linux DebugGame
+Arguments=./GenerateProjectFiles.sh  SlateViewer Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig77][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SymbolDebugger Linux DebugGame -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SlateViewer Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -1953,24 +1953,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig78]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=SymbolDebugger-Linux-Shipping
+Title=SlateViewer-Linux-Shipping
 
 [CustomBuildSystem][BuildConfig78][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SymbolDebugger Linux Shipping
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SlateViewer Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig78][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  SymbolDebugger Linux Shipping
+Arguments=./GenerateProjectFiles.sh  SlateViewer Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig78][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SymbolDebugger Linux Shipping -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SlateViewer Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -1978,24 +1978,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig79]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=SymbolDebugger-Linux-Test
+Title=SlateViewer-Linux-Test
 
 [CustomBuildSystem][BuildConfig79][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SymbolDebugger Linux Test
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SlateViewer Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig79][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  SymbolDebugger Linux Test
+Arguments=./GenerateProjectFiles.sh  SlateViewer Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig79][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SymbolDebugger Linux Test -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SlateViewer Linux Test -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2003,24 +2003,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig80]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=SymbolDebugger
+Title=SlateViewer
 
 [CustomBuildSystem][BuildConfig80][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SymbolDebugger Linux Development
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SlateViewer Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig80][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  SymbolDebugger Linux Development
+Arguments=./GenerateProjectFiles.sh  SlateViewer Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig80][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SymbolDebugger Linux Development -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SlateViewer Linux Development -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2028,24 +2028,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig81]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=TestPAL-Linux-Debug
+Title=SymbolDebugger-Linux-Debug
 
 [CustomBuildSystem][BuildConfig81][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  TestPAL Linux Debug
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SymbolDebugger Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig81][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  TestPAL Linux Debug
+Arguments=./GenerateProjectFiles.sh  SymbolDebugger Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig81][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  TestPAL Linux Debug -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SymbolDebugger Linux Debug -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2053,24 +2053,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig82]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=TestPAL-Linux-DebugGame
+Title=SymbolDebugger-Linux-DebugGame
 
 [CustomBuildSystem][BuildConfig82][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  TestPAL Linux DebugGame
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SymbolDebugger Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig82][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  TestPAL Linux DebugGame
+Arguments=./GenerateProjectFiles.sh  SymbolDebugger Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig82][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  TestPAL Linux DebugGame -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SymbolDebugger Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2078,24 +2078,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig83]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=TestPAL-Linux-Shipping
+Title=SymbolDebugger-Linux-Shipping
 
 [CustomBuildSystem][BuildConfig83][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  TestPAL Linux Shipping
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SymbolDebugger Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig83][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  TestPAL Linux Shipping
+Arguments=./GenerateProjectFiles.sh  SymbolDebugger Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig83][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  TestPAL Linux Shipping -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SymbolDebugger Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2103,24 +2103,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig84]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=TestPAL-Linux-Test
+Title=SymbolDebugger-Linux-Test
 
 [CustomBuildSystem][BuildConfig84][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  TestPAL Linux Test
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SymbolDebugger Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig84][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  TestPAL Linux Test
+Arguments=./GenerateProjectFiles.sh  SymbolDebugger Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig84][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  TestPAL Linux Test -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SymbolDebugger Linux Test -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2128,24 +2128,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig85]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=TestPAL
+Title=SymbolDebugger
 
 [CustomBuildSystem][BuildConfig85][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  TestPAL Linux Development
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SymbolDebugger Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig85][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  TestPAL Linux Development
+Arguments=./GenerateProjectFiles.sh  SymbolDebugger Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig85][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  TestPAL Linux Development -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  SymbolDebugger Linux Development -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2153,24 +2153,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig86]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealCEFSubProcess-Linux-Debug
+Title=TestPAL-Linux-Debug
 
 [CustomBuildSystem][BuildConfig86][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCEFSubProcess Linux Debug
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  TestPAL Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig86][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealCEFSubProcess Linux Debug
+Arguments=./GenerateProjectFiles.sh  TestPAL Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig86][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCEFSubProcess Linux Debug -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  TestPAL Linux Debug -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2178,24 +2178,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig87]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealCEFSubProcess-Linux-DebugGame
+Title=TestPAL-Linux-DebugGame
 
 [CustomBuildSystem][BuildConfig87][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCEFSubProcess Linux DebugGame
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  TestPAL Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig87][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealCEFSubProcess Linux DebugGame
+Arguments=./GenerateProjectFiles.sh  TestPAL Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig87][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCEFSubProcess Linux DebugGame -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  TestPAL Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2203,24 +2203,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig88]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealCEFSubProcess-Linux-Shipping
+Title=TestPAL-Linux-Shipping
 
 [CustomBuildSystem][BuildConfig88][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCEFSubProcess Linux Shipping
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  TestPAL Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig88][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealCEFSubProcess Linux Shipping
+Arguments=./GenerateProjectFiles.sh  TestPAL Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig88][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCEFSubProcess Linux Shipping -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  TestPAL Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2228,24 +2228,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig89]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealCEFSubProcess-Linux-Test
+Title=TestPAL-Linux-Test
 
 [CustomBuildSystem][BuildConfig89][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCEFSubProcess Linux Test
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  TestPAL Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig89][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealCEFSubProcess Linux Test
+Arguments=./GenerateProjectFiles.sh  TestPAL Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig89][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCEFSubProcess Linux Test -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  TestPAL Linux Test -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2253,24 +2253,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig90]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealCEFSubProcess
+Title=TestPAL
 
 [CustomBuildSystem][BuildConfig90][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCEFSubProcess Linux Development
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  TestPAL Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig90][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealCEFSubProcess Linux Development
+Arguments=./GenerateProjectFiles.sh  TestPAL Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig90][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCEFSubProcess Linux Development -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  TestPAL Linux Development -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2278,24 +2278,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig91]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealFileServer-Linux-Debug
+Title=UnrealCEFSubProcess-Linux-Debug
 
 [CustomBuildSystem][BuildConfig91][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFileServer Linux Debug
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCEFSubProcess Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig91][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealFileServer Linux Debug
+Arguments=./GenerateProjectFiles.sh  UnrealCEFSubProcess Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig91][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFileServer Linux Debug -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCEFSubProcess Linux Debug -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2303,24 +2303,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig92]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealFileServer-Linux-DebugGame
+Title=UnrealCEFSubProcess-Linux-DebugGame
 
 [CustomBuildSystem][BuildConfig92][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFileServer Linux DebugGame
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCEFSubProcess Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig92][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealFileServer Linux DebugGame
+Arguments=./GenerateProjectFiles.sh  UnrealCEFSubProcess Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig92][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFileServer Linux DebugGame -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCEFSubProcess Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2328,24 +2328,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig93]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealFileServer-Linux-Shipping
+Title=UnrealCEFSubProcess-Linux-Shipping
 
 [CustomBuildSystem][BuildConfig93][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFileServer Linux Shipping
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCEFSubProcess Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig93][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealFileServer Linux Shipping
+Arguments=./GenerateProjectFiles.sh  UnrealCEFSubProcess Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig93][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFileServer Linux Shipping -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCEFSubProcess Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2353,24 +2353,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig94]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealFileServer-Linux-Test
+Title=UnrealCEFSubProcess-Linux-Test
 
 [CustomBuildSystem][BuildConfig94][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFileServer Linux Test
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCEFSubProcess Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig94][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealFileServer Linux Test
+Arguments=./GenerateProjectFiles.sh  UnrealCEFSubProcess Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig94][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFileServer Linux Test -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCEFSubProcess Linux Test -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2378,24 +2378,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig95]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealFileServer
+Title=UnrealCEFSubProcess
 
 [CustomBuildSystem][BuildConfig95][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFileServer Linux Development
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCEFSubProcess Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig95][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealFileServer Linux Development
+Arguments=./GenerateProjectFiles.sh  UnrealCEFSubProcess Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig95][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFileServer Linux Development -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCEFSubProcess Linux Development -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2403,24 +2403,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig96]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealFrontend-Linux-Debug
+Title=UnrealCodeAnalyzer-Linux-Debug
 
 [CustomBuildSystem][BuildConfig96][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFrontend Linux Debug
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCodeAnalyzer Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig96][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealFrontend Linux Debug
+Arguments=./GenerateProjectFiles.sh  UnrealCodeAnalyzer Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig96][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFrontend Linux Debug -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCodeAnalyzer Linux Debug -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2428,24 +2428,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig97]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealFrontend-Linux-DebugGame
+Title=UnrealCodeAnalyzer-Linux-DebugGame
 
 [CustomBuildSystem][BuildConfig97][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFrontend Linux DebugGame
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCodeAnalyzer Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig97][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealFrontend Linux DebugGame
+Arguments=./GenerateProjectFiles.sh  UnrealCodeAnalyzer Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig97][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFrontend Linux DebugGame -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCodeAnalyzer Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2453,24 +2453,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig98]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealFrontend-Linux-Shipping
+Title=UnrealCodeAnalyzer-Linux-Shipping
 
 [CustomBuildSystem][BuildConfig98][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFrontend Linux Shipping
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCodeAnalyzer Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig98][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealFrontend Linux Shipping
+Arguments=./GenerateProjectFiles.sh  UnrealCodeAnalyzer Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig98][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFrontend Linux Shipping -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCodeAnalyzer Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2478,24 +2478,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig99]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealFrontend-Linux-Test
+Title=UnrealCodeAnalyzer-Linux-Test
 
 [CustomBuildSystem][BuildConfig99][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFrontend Linux Test
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCodeAnalyzer Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig99][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealFrontend Linux Test
+Arguments=./GenerateProjectFiles.sh  UnrealCodeAnalyzer Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig99][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFrontend Linux Test -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCodeAnalyzer Linux Test -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2503,24 +2503,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig100]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealFrontend
+Title=UnrealCodeAnalyzer
 
 [CustomBuildSystem][BuildConfig100][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFrontend Linux Development
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCodeAnalyzer Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig100][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealFrontend Linux Development
+Arguments=./GenerateProjectFiles.sh  UnrealCodeAnalyzer Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig100][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFrontend Linux Development -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealCodeAnalyzer Linux Development -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2528,24 +2528,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig101]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealHeaderTool-Linux-Debug
+Title=UnrealFileServer-Linux-Debug
 
 [CustomBuildSystem][BuildConfig101][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealHeaderTool Linux Debug
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFileServer Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig101][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealHeaderTool Linux Debug
+Arguments=./GenerateProjectFiles.sh  UnrealFileServer Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig101][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealHeaderTool Linux Debug -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFileServer Linux Debug -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2553,24 +2553,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig102]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealHeaderTool-Linux-DebugGame
+Title=UnrealFileServer-Linux-DebugGame
 
 [CustomBuildSystem][BuildConfig102][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealHeaderTool Linux DebugGame
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFileServer Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig102][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealHeaderTool Linux DebugGame
+Arguments=./GenerateProjectFiles.sh  UnrealFileServer Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig102][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealHeaderTool Linux DebugGame -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFileServer Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2578,24 +2578,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig103]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealHeaderTool-Linux-Shipping
+Title=UnrealFileServer-Linux-Shipping
 
 [CustomBuildSystem][BuildConfig103][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealHeaderTool Linux Shipping
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFileServer Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig103][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealHeaderTool Linux Shipping
+Arguments=./GenerateProjectFiles.sh  UnrealFileServer Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig103][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealHeaderTool Linux Shipping -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFileServer Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2603,24 +2603,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig104]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealHeaderTool-Linux-Test
+Title=UnrealFileServer-Linux-Test
 
 [CustomBuildSystem][BuildConfig104][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealHeaderTool Linux Test
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFileServer Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig104][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealHeaderTool Linux Test
+Arguments=./GenerateProjectFiles.sh  UnrealFileServer Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig104][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealHeaderTool Linux Test -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFileServer Linux Test -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2628,24 +2628,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig105]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealHeaderTool
+Title=UnrealFileServer
 
 [CustomBuildSystem][BuildConfig105][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealHeaderTool Linux Development
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFileServer Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig105][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealHeaderTool Linux Development
+Arguments=./GenerateProjectFiles.sh  UnrealFileServer Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig105][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealHeaderTool Linux Development -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFileServer Linux Development -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2653,24 +2653,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig106]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealLightmass-Linux-Debug
+Title=UnrealFrontend-Linux-Debug
 
 [CustomBuildSystem][BuildConfig106][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealLightmass Linux Debug
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFrontend Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig106][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealLightmass Linux Debug
+Arguments=./GenerateProjectFiles.sh  UnrealFrontend Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig106][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealLightmass Linux Debug -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFrontend Linux Debug -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2678,24 +2678,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig107]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealLightmass-Linux-DebugGame
+Title=UnrealFrontend-Linux-DebugGame
 
 [CustomBuildSystem][BuildConfig107][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealLightmass Linux DebugGame
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFrontend Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig107][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealLightmass Linux DebugGame
+Arguments=./GenerateProjectFiles.sh  UnrealFrontend Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig107][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealLightmass Linux DebugGame -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFrontend Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2703,24 +2703,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig108]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealLightmass-Linux-Shipping
+Title=UnrealFrontend-Linux-Shipping
 
 [CustomBuildSystem][BuildConfig108][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealLightmass Linux Shipping
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFrontend Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig108][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealLightmass Linux Shipping
+Arguments=./GenerateProjectFiles.sh  UnrealFrontend Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig108][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealLightmass Linux Shipping -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFrontend Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2728,24 +2728,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig109]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealLightmass-Linux-Test
+Title=UnrealFrontend-Linux-Test
 
 [CustomBuildSystem][BuildConfig109][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealLightmass Linux Test
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFrontend Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig109][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealLightmass Linux Test
+Arguments=./GenerateProjectFiles.sh  UnrealFrontend Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig109][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealLightmass Linux Test -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFrontend Linux Test -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2753,24 +2753,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig110]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealLightmass
+Title=UnrealFrontend
 
 [CustomBuildSystem][BuildConfig110][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealLightmass Linux Development
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFrontend Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig110][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealLightmass Linux Development
+Arguments=./GenerateProjectFiles.sh  UnrealFrontend Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig110][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealLightmass Linux Development -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealFrontend Linux Development -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2778,24 +2778,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig111]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealPak-Linux-Debug
+Title=UnrealHeaderTool-Linux-Debug
 
 [CustomBuildSystem][BuildConfig111][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealPak Linux Debug
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealHeaderTool Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig111][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealPak Linux Debug
+Arguments=./GenerateProjectFiles.sh  UnrealHeaderTool Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig111][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealPak Linux Debug -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealHeaderTool Linux Debug -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2803,24 +2803,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig112]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealPak-Linux-DebugGame
+Title=UnrealHeaderTool-Linux-DebugGame
 
 [CustomBuildSystem][BuildConfig112][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealPak Linux DebugGame
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealHeaderTool Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig112][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealPak Linux DebugGame
+Arguments=./GenerateProjectFiles.sh  UnrealHeaderTool Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig112][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealPak Linux DebugGame -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealHeaderTool Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2828,24 +2828,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig113]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealPak-Linux-Shipping
+Title=UnrealHeaderTool-Linux-Shipping
 
 [CustomBuildSystem][BuildConfig113][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealPak Linux Shipping
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealHeaderTool Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig113][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealPak Linux Shipping
+Arguments=./GenerateProjectFiles.sh  UnrealHeaderTool Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig113][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealPak Linux Shipping -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealHeaderTool Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2853,24 +2853,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig114]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealPak-Linux-Test
+Title=UnrealHeaderTool-Linux-Test
 
 [CustomBuildSystem][BuildConfig114][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealPak Linux Test
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealHeaderTool Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig114][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealPak Linux Test
+Arguments=./GenerateProjectFiles.sh  UnrealHeaderTool Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig114][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealPak Linux Test -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealHeaderTool Linux Test -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2878,24 +2878,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig115]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealPak
+Title=UnrealHeaderTool
 
 [CustomBuildSystem][BuildConfig115][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealPak Linux Development
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealHeaderTool Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig115][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealPak Linux Development
+Arguments=./GenerateProjectFiles.sh  UnrealHeaderTool Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig115][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealPak Linux Development -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealHeaderTool Linux Development -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2903,24 +2903,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig116]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealSync-Linux-Debug
+Title=UnrealLightmass-Linux-Debug
 
 [CustomBuildSystem][BuildConfig116][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealSync Linux Debug
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealLightmass Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig116][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealSync Linux Debug
+Arguments=./GenerateProjectFiles.sh  UnrealLightmass Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig116][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealSync Linux Debug -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealLightmass Linux Debug -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2928,24 +2928,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig117]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealSync-Linux-DebugGame
+Title=UnrealLightmass-Linux-DebugGame
 
 [CustomBuildSystem][BuildConfig117][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealSync Linux DebugGame
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealLightmass Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig117][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealSync Linux DebugGame
+Arguments=./GenerateProjectFiles.sh  UnrealLightmass Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig117][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealSync Linux DebugGame -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealLightmass Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2953,24 +2953,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig118]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealSync-Linux-Shipping
+Title=UnrealLightmass-Linux-Shipping
 
 [CustomBuildSystem][BuildConfig118][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealSync Linux Shipping
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealLightmass Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig118][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealSync Linux Shipping
+Arguments=./GenerateProjectFiles.sh  UnrealLightmass Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig118][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealSync Linux Shipping -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealLightmass Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -2978,24 +2978,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig119]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealSync-Linux-Test
+Title=UnrealLightmass-Linux-Test
 
 [CustomBuildSystem][BuildConfig119][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealSync Linux Test
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealLightmass Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig119][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealSync Linux Test
+Arguments=./GenerateProjectFiles.sh  UnrealLightmass Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig119][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealSync Linux Test -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealLightmass Linux Test -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -3003,24 +3003,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig120]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealSync
+Title=UnrealLightmass
 
 [CustomBuildSystem][BuildConfig120][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealSync Linux Development
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealLightmass Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig120][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealSync Linux Development
+Arguments=./GenerateProjectFiles.sh  UnrealLightmass Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig120][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealSync Linux Development -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealLightmass Linux Development -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -3028,24 +3028,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig121]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealVersionSelector-Linux-Debug
+Title=UnrealPak-Linux-Debug
 
 [CustomBuildSystem][BuildConfig121][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealVersionSelector Linux Debug
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealPak Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig121][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealVersionSelector Linux Debug
+Arguments=./GenerateProjectFiles.sh  UnrealPak Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig121][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealVersionSelector Linux Debug -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealPak Linux Debug -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -3053,24 +3053,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig122]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealVersionSelector-Linux-DebugGame
+Title=UnrealPak-Linux-DebugGame
 
 [CustomBuildSystem][BuildConfig122][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealVersionSelector Linux DebugGame
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealPak Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig122][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealVersionSelector Linux DebugGame
+Arguments=./GenerateProjectFiles.sh  UnrealPak Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig122][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealVersionSelector Linux DebugGame -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealPak Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -3078,24 +3078,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig123]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealVersionSelector-Linux-Shipping
+Title=UnrealPak-Linux-Shipping
 
 [CustomBuildSystem][BuildConfig123][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealVersionSelector Linux Shipping
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealPak Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig123][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealVersionSelector Linux Shipping
+Arguments=./GenerateProjectFiles.sh  UnrealPak Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig123][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealVersionSelector Linux Shipping -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealPak Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -3103,24 +3103,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig124]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealVersionSelector-Linux-Test
+Title=UnrealPak-Linux-Test
 
 [CustomBuildSystem][BuildConfig124][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealVersionSelector Linux Test
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealPak Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig124][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealVersionSelector Linux Test
+Arguments=./GenerateProjectFiles.sh  UnrealPak Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig124][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealVersionSelector Linux Test -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealPak Linux Test -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -3128,24 +3128,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig125]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=UnrealVersionSelector
+Title=UnrealPak
 
 [CustomBuildSystem][BuildConfig125][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealVersionSelector Linux Development
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealPak Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig125][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  UnrealVersionSelector Linux Development
+Arguments=./GenerateProjectFiles.sh  UnrealPak Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig125][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealVersionSelector Linux Development -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealPak Linux Development -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -3153,24 +3153,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig126]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=BootstrapPackagedGame-Linux-Debug
+Title=UnrealSync-Linux-Debug
 
 [CustomBuildSystem][BuildConfig126][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  BootstrapPackagedGame Linux Debug
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealSync Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig126][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  BootstrapPackagedGame Linux Debug
+Arguments=./GenerateProjectFiles.sh  UnrealSync Linux Debug
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig126][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  BootstrapPackagedGame Linux Debug -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealSync Linux Debug -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -3178,24 +3178,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig127]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=BootstrapPackagedGame-Linux-DebugGame
+Title=UnrealSync-Linux-DebugGame
 
 [CustomBuildSystem][BuildConfig127][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  BootstrapPackagedGame Linux DebugGame
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealSync Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig127][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  BootstrapPackagedGame Linux DebugGame
+Arguments=./GenerateProjectFiles.sh  UnrealSync Linux DebugGame
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig127][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  BootstrapPackagedGame Linux DebugGame -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealSync Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -3203,24 +3203,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig128]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=BootstrapPackagedGame-Linux-Shipping
+Title=UnrealSync-Linux-Shipping
 
 [CustomBuildSystem][BuildConfig128][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  BootstrapPackagedGame Linux Shipping
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealSync Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig128][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  BootstrapPackagedGame Linux Shipping
+Arguments=./GenerateProjectFiles.sh  UnrealSync Linux Shipping
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig128][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  BootstrapPackagedGame Linux Shipping -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealSync Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -3228,24 +3228,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig129]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=BootstrapPackagedGame-Linux-Test
+Title=UnrealSync-Linux-Test
 
 [CustomBuildSystem][BuildConfig129][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  BootstrapPackagedGame Linux Test
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealSync Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig129][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  BootstrapPackagedGame Linux Test
+Arguments=./GenerateProjectFiles.sh  UnrealSync Linux Test
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig129][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  BootstrapPackagedGame Linux Test -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealSync Linux Test -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -3253,24 +3253,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig130]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=BootstrapPackagedGame
+Title=UnrealSync
 
 [CustomBuildSystem][BuildConfig130][ToolBuild]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  BootstrapPackagedGame Linux Development
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealSync Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=0
 
 [CustomBuildSystem][BuildConfig130][ToolConfigure]
-Arguments=./GenerateProjectFiles.sh  BootstrapPackagedGame Linux Development
+Arguments=./GenerateProjectFiles.sh  UnrealSync Linux Development
 Enabled=true
 Environment=
 Executable=bash
 Type=1
 
 [CustomBuildSystem][BuildConfig130][ToolClean]
-Arguments=Engine/Build/BatchFiles/Linux/Build.sh  BootstrapPackagedGame Linux Development -clean
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealSync Linux Development -clean
 Enabled=true
 Environment=
 Executable=bash
@@ -3278,248 +3278,498 @@ Type=3
 
 [CustomBuildSystem][BuildConfig131]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
-Title=Wizards-Linux-Debug
+Title=UnrealVersionSelector-Linux-Debug
 
 [CustomBuildSystem][BuildConfig131][ToolBuild]
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealVersionSelector Linux Debug
+Enabled=true
+Environment=
+Executable=bash
+Type=0
+
+[CustomBuildSystem][BuildConfig131][ToolConfigure]
+Arguments=./GenerateProjectFiles.sh  UnrealVersionSelector Linux Debug
+Enabled=true
+Environment=
+Executable=bash
+Type=1
+
+[CustomBuildSystem][BuildConfig131][ToolClean]
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealVersionSelector Linux Debug -clean
+Enabled=true
+Environment=
+Executable=bash
+Type=3
+
+[CustomBuildSystem][BuildConfig132]
+BuildDir=file:///home/robertb/Downloads/UnrealEngine
+Title=UnrealVersionSelector-Linux-DebugGame
+
+[CustomBuildSystem][BuildConfig132][ToolBuild]
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealVersionSelector Linux DebugGame
+Enabled=true
+Environment=
+Executable=bash
+Type=0
+
+[CustomBuildSystem][BuildConfig132][ToolConfigure]
+Arguments=./GenerateProjectFiles.sh  UnrealVersionSelector Linux DebugGame
+Enabled=true
+Environment=
+Executable=bash
+Type=1
+
+[CustomBuildSystem][BuildConfig132][ToolClean]
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealVersionSelector Linux DebugGame -clean
+Enabled=true
+Environment=
+Executable=bash
+Type=3
+
+[CustomBuildSystem][BuildConfig133]
+BuildDir=file:///home/robertb/Downloads/UnrealEngine
+Title=UnrealVersionSelector-Linux-Shipping
+
+[CustomBuildSystem][BuildConfig133][ToolBuild]
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealVersionSelector Linux Shipping
+Enabled=true
+Environment=
+Executable=bash
+Type=0
+
+[CustomBuildSystem][BuildConfig133][ToolConfigure]
+Arguments=./GenerateProjectFiles.sh  UnrealVersionSelector Linux Shipping
+Enabled=true
+Environment=
+Executable=bash
+Type=1
+
+[CustomBuildSystem][BuildConfig133][ToolClean]
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealVersionSelector Linux Shipping -clean
+Enabled=true
+Environment=
+Executable=bash
+Type=3
+
+[CustomBuildSystem][BuildConfig134]
+BuildDir=file:///home/robertb/Downloads/UnrealEngine
+Title=UnrealVersionSelector-Linux-Test
+
+[CustomBuildSystem][BuildConfig134][ToolBuild]
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealVersionSelector Linux Test
+Enabled=true
+Environment=
+Executable=bash
+Type=0
+
+[CustomBuildSystem][BuildConfig134][ToolConfigure]
+Arguments=./GenerateProjectFiles.sh  UnrealVersionSelector Linux Test
+Enabled=true
+Environment=
+Executable=bash
+Type=1
+
+[CustomBuildSystem][BuildConfig134][ToolClean]
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealVersionSelector Linux Test -clean
+Enabled=true
+Environment=
+Executable=bash
+Type=3
+
+[CustomBuildSystem][BuildConfig135]
+BuildDir=file:///home/robertb/Downloads/UnrealEngine
+Title=UnrealVersionSelector
+
+[CustomBuildSystem][BuildConfig135][ToolBuild]
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealVersionSelector Linux Development
+Enabled=true
+Environment=
+Executable=bash
+Type=0
+
+[CustomBuildSystem][BuildConfig135][ToolConfigure]
+Arguments=./GenerateProjectFiles.sh  UnrealVersionSelector Linux Development
+Enabled=true
+Environment=
+Executable=bash
+Type=1
+
+[CustomBuildSystem][BuildConfig135][ToolClean]
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  UnrealVersionSelector Linux Development -clean
+Enabled=true
+Environment=
+Executable=bash
+Type=3
+
+[CustomBuildSystem][BuildConfig136]
+BuildDir=file:///home/robertb/Downloads/UnrealEngine
+Title=BootstrapPackagedGame-Linux-Debug
+
+[CustomBuildSystem][BuildConfig136][ToolBuild]
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  BootstrapPackagedGame Linux Debug
+Enabled=true
+Environment=
+Executable=bash
+Type=0
+
+[CustomBuildSystem][BuildConfig136][ToolConfigure]
+Arguments=./GenerateProjectFiles.sh  BootstrapPackagedGame Linux Debug
+Enabled=true
+Environment=
+Executable=bash
+Type=1
+
+[CustomBuildSystem][BuildConfig136][ToolClean]
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  BootstrapPackagedGame Linux Debug -clean
+Enabled=true
+Environment=
+Executable=bash
+Type=3
+
+[CustomBuildSystem][BuildConfig137]
+BuildDir=file:///home/robertb/Downloads/UnrealEngine
+Title=BootstrapPackagedGame-Linux-DebugGame
+
+[CustomBuildSystem][BuildConfig137][ToolBuild]
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  BootstrapPackagedGame Linux DebugGame
+Enabled=true
+Environment=
+Executable=bash
+Type=0
+
+[CustomBuildSystem][BuildConfig137][ToolConfigure]
+Arguments=./GenerateProjectFiles.sh  BootstrapPackagedGame Linux DebugGame
+Enabled=true
+Environment=
+Executable=bash
+Type=1
+
+[CustomBuildSystem][BuildConfig137][ToolClean]
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  BootstrapPackagedGame Linux DebugGame -clean
+Enabled=true
+Environment=
+Executable=bash
+Type=3
+
+[CustomBuildSystem][BuildConfig138]
+BuildDir=file:///home/robertb/Downloads/UnrealEngine
+Title=BootstrapPackagedGame-Linux-Shipping
+
+[CustomBuildSystem][BuildConfig138][ToolBuild]
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  BootstrapPackagedGame Linux Shipping
+Enabled=true
+Environment=
+Executable=bash
+Type=0
+
+[CustomBuildSystem][BuildConfig138][ToolConfigure]
+Arguments=./GenerateProjectFiles.sh  BootstrapPackagedGame Linux Shipping
+Enabled=true
+Environment=
+Executable=bash
+Type=1
+
+[CustomBuildSystem][BuildConfig138][ToolClean]
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  BootstrapPackagedGame Linux Shipping -clean
+Enabled=true
+Environment=
+Executable=bash
+Type=3
+
+[CustomBuildSystem][BuildConfig139]
+BuildDir=file:///home/robertb/Downloads/UnrealEngine
+Title=BootstrapPackagedGame-Linux-Test
+
+[CustomBuildSystem][BuildConfig139][ToolBuild]
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  BootstrapPackagedGame Linux Test
+Enabled=true
+Environment=
+Executable=bash
+Type=0
+
+[CustomBuildSystem][BuildConfig139][ToolConfigure]
+Arguments=./GenerateProjectFiles.sh  BootstrapPackagedGame Linux Test
+Enabled=true
+Environment=
+Executable=bash
+Type=1
+
+[CustomBuildSystem][BuildConfig139][ToolClean]
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  BootstrapPackagedGame Linux Test -clean
+Enabled=true
+Environment=
+Executable=bash
+Type=3
+
+[CustomBuildSystem][BuildConfig140]
+BuildDir=file:///home/robertb/Downloads/UnrealEngine
+Title=BootstrapPackagedGame
+
+[CustomBuildSystem][BuildConfig140][ToolBuild]
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  BootstrapPackagedGame Linux Development
+Enabled=true
+Environment=
+Executable=bash
+Type=0
+
+[CustomBuildSystem][BuildConfig140][ToolConfigure]
+Arguments=./GenerateProjectFiles.sh  BootstrapPackagedGame Linux Development
+Enabled=true
+Environment=
+Executable=bash
+Type=1
+
+[CustomBuildSystem][BuildConfig140][ToolClean]
+Arguments=Engine/Build/BatchFiles/Linux/Build.sh  BootstrapPackagedGame Linux Development -clean
+Enabled=true
+Environment=
+Executable=bash
+Type=3
+
+[CustomBuildSystem][BuildConfig141]
+BuildDir=file:///home/robertb/Downloads/UnrealEngine
+Title=Wizards-Linux-Debug
+
+[CustomBuildSystem][BuildConfig141][ToolBuild]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" Wizards Linux Debug
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
-[CustomBuildSystem][BuildConfig131][ToolConfigure]
+[CustomBuildSystem][BuildConfig141][ToolConfigure]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" -game -engine  Wizards Linux Debug
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
-[CustomBuildSystem][BuildConfig131][ToolClean]
+[CustomBuildSystem][BuildConfig141][ToolClean]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" Wizards Linux Debug -clean
 Enabled=true
 Environment=
 Executable=mono
 Type=3
 
-[CustomBuildSystem][BuildConfig132]
+[CustomBuildSystem][BuildConfig142]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
 Title=Wizards-Linux-DebugGame
 
-[CustomBuildSystem][BuildConfig132][ToolBuild]
+[CustomBuildSystem][BuildConfig142][ToolBuild]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" Wizards Linux DebugGame
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
-[CustomBuildSystem][BuildConfig132][ToolConfigure]
+[CustomBuildSystem][BuildConfig142][ToolConfigure]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" -game -engine  Wizards Linux DebugGame
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
-[CustomBuildSystem][BuildConfig132][ToolClean]
+[CustomBuildSystem][BuildConfig142][ToolClean]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" Wizards Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=mono
 Type=3
 
-[CustomBuildSystem][BuildConfig133]
+[CustomBuildSystem][BuildConfig143]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
 Title=Wizards-Linux-Shipping
 
-[CustomBuildSystem][BuildConfig133][ToolBuild]
+[CustomBuildSystem][BuildConfig143][ToolBuild]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" Wizards Linux Shipping
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
-[CustomBuildSystem][BuildConfig133][ToolConfigure]
+[CustomBuildSystem][BuildConfig143][ToolConfigure]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" -game -engine  Wizards Linux Shipping
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
-[CustomBuildSystem][BuildConfig133][ToolClean]
+[CustomBuildSystem][BuildConfig143][ToolClean]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" Wizards Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=mono
 Type=3
 
-[CustomBuildSystem][BuildConfig134]
+[CustomBuildSystem][BuildConfig144]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
 Title=Wizards-Linux-Test
 
-[CustomBuildSystem][BuildConfig134][ToolBuild]
+[CustomBuildSystem][BuildConfig144][ToolBuild]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" Wizards Linux Test
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
-[CustomBuildSystem][BuildConfig134][ToolConfigure]
+[CustomBuildSystem][BuildConfig144][ToolConfigure]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" -game -engine  Wizards Linux Test
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
-[CustomBuildSystem][BuildConfig134][ToolClean]
+[CustomBuildSystem][BuildConfig144][ToolClean]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" Wizards Linux Test -clean
 Enabled=true
 Environment=
 Executable=mono
 Type=3
 
-[CustomBuildSystem][BuildConfig135]
+[CustomBuildSystem][BuildConfig145]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
 Title=Wizards
 
-[CustomBuildSystem][BuildConfig135][ToolBuild]
+[CustomBuildSystem][BuildConfig145][ToolBuild]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" Wizards Linux Development
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
-[CustomBuildSystem][BuildConfig135][ToolConfigure]
+[CustomBuildSystem][BuildConfig145][ToolConfigure]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" -game -engine  Wizards Linux Development
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
-[CustomBuildSystem][BuildConfig135][ToolClean]
+[CustomBuildSystem][BuildConfig145][ToolClean]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" Wizards Linux Development -clean
 Enabled=true
 Environment=
 Executable=mono
 Type=3
 
-[CustomBuildSystem][BuildConfig136]
+[CustomBuildSystem][BuildConfig146]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
 Title=WizardsEditor-Linux-Debug
 
-[CustomBuildSystem][BuildConfig136][ToolBuild]
+[CustomBuildSystem][BuildConfig146][ToolBuild]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" WizardsEditor Linux Debug
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
-[CustomBuildSystem][BuildConfig136][ToolConfigure]
+[CustomBuildSystem][BuildConfig146][ToolConfigure]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" -game -engine  WizardsEditor Linux Debug
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
-[CustomBuildSystem][BuildConfig136][ToolClean]
+[CustomBuildSystem][BuildConfig146][ToolClean]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" WizardsEditor Linux Debug -clean
 Enabled=true
 Environment=
 Executable=mono
 Type=3
 
-[CustomBuildSystem][BuildConfig137]
+[CustomBuildSystem][BuildConfig147]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
 Title=WizardsEditor-Linux-DebugGame
 
-[CustomBuildSystem][BuildConfig137][ToolBuild]
+[CustomBuildSystem][BuildConfig147][ToolBuild]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" WizardsEditor Linux DebugGame
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
-[CustomBuildSystem][BuildConfig137][ToolConfigure]
+[CustomBuildSystem][BuildConfig147][ToolConfigure]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" -game -engine  WizardsEditor Linux DebugGame
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
-[CustomBuildSystem][BuildConfig137][ToolClean]
+[CustomBuildSystem][BuildConfig147][ToolClean]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" WizardsEditor Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=mono
 Type=3
 
-[CustomBuildSystem][BuildConfig138]
+[CustomBuildSystem][BuildConfig148]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
 Title=WizardsEditor-Linux-Shipping
 
-[CustomBuildSystem][BuildConfig138][ToolBuild]
+[CustomBuildSystem][BuildConfig148][ToolBuild]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" WizardsEditor Linux Shipping
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
-[CustomBuildSystem][BuildConfig138][ToolConfigure]
+[CustomBuildSystem][BuildConfig148][ToolConfigure]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" -game -engine  WizardsEditor Linux Shipping
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
-[CustomBuildSystem][BuildConfig138][ToolClean]
+[CustomBuildSystem][BuildConfig148][ToolClean]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" WizardsEditor Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=mono
 Type=3
 
-[CustomBuildSystem][BuildConfig139]
+[CustomBuildSystem][BuildConfig149]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
 Title=WizardsEditor-Linux-Test
 
-[CustomBuildSystem][BuildConfig139][ToolBuild]
+[CustomBuildSystem][BuildConfig149][ToolBuild]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" WizardsEditor Linux Test
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
-[CustomBuildSystem][BuildConfig139][ToolConfigure]
+[CustomBuildSystem][BuildConfig149][ToolConfigure]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" -game -engine  WizardsEditor Linux Test
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
-[CustomBuildSystem][BuildConfig139][ToolClean]
+[CustomBuildSystem][BuildConfig149][ToolClean]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" WizardsEditor Linux Test -clean
 Enabled=true
 Environment=
 Executable=mono
 Type=3
 
-[CustomBuildSystem][BuildConfig140]
+[CustomBuildSystem][BuildConfig150]
 BuildDir=file:///home/robertb/Downloads/UnrealEngine
 Title=WizardsEditor
 
-[CustomBuildSystem][BuildConfig140][ToolBuild]
+[CustomBuildSystem][BuildConfig150][ToolBuild]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" WizardsEditor Linux Development
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
-[CustomBuildSystem][BuildConfig140][ToolConfigure]
+[CustomBuildSystem][BuildConfig150][ToolConfigure]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" -game -engine  WizardsEditor Linux Development
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
-[CustomBuildSystem][BuildConfig140][ToolClean]
+[CustomBuildSystem][BuildConfig150][ToolClean]
 Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/robertb/Documents/Unreal Projects/Wizards/Wizards.uproject" WizardsEditor Linux Development -clean
 Enabled=true
 Environment=

@@ -3,13 +3,11 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Launch/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DerivedDataCache/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Launch/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Launch \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Launch/Public/Android \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SessionServices/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SessionServices \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Core/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Core/Public/Internationalization \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Core/Public/Async \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Core/Public/Concurrency \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Core/Public/Containers \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Core/Public/Delegates \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Core/Public/GenericPlatform \
@@ -30,11 +28,9 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SessionServices \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ProfilerService/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ProfilerService/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ProfilerService \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ProfilerService \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ProfilerClient/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ProfilerClient/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ProfilerClient \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ProfilerClient \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Launch \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/CoreUObject/Classes \
@@ -49,6 +45,7 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Engine/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Engine/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Engine/Public/AI \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Engine/Public/Animation \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Engine/Public/EdGraph \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Engine/Public/Features \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Engine/Public/Net \
@@ -61,7 +58,6 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Json/Public/Dom \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Json/Public/Policies \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Json/Public/Serialization \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Json \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Json \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Public/Animation \
@@ -113,20 +109,17 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Messaging/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Messaging/Public/Deprecated \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Messaging/Public/Helpers \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Messaging \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Messaging \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/RenderCore/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/RenderCore \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/RenderCore \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/RHI/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/RHI \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/RHI \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/ShaderCore/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ShaderCore \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/ShaderCore \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AssetRegistry/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/AssetRegistry \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AssetRegistry \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/CookingStats/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/CookingStats \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/EngineMessages/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/EngineMessages/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/EngineMessages \
@@ -136,9 +129,7 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/EngineSettings \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/EngineSettings \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SynthBenchmark/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SynthBenchmark \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Renderer/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Renderer \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Renderer \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SynthBenchmark \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AIModule/Public \
@@ -148,9 +139,12 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/GameplayTags/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/GameplayTags \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/GameplayTags \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/GameplayTasks/Classes \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/GameplayTasks/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/GameplayTasks \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/GameplayTasks \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AIModule \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/DatabaseSupport/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/DatabaseSupport \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/DatabaseSupport \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealLightmass/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UnrealEd/Classes \
@@ -159,29 +153,24 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/Commandlets \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/Dialogs \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/DragAndDrop \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/FeaturePack \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/Features \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/Kismet2 \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/Layers \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/Localization \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/Settings \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/Tests \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/Toolkits \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/UnrealEd \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/BspMode/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/BspMode \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/BspMode \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DirectoryWatcher/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/DirectoryWatcher \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DirectoryWatcher \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Documentation/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Documentation \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Documentation \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Projects/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Projects/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Projects \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Projects \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SandboxFile/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SandboxFile \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SandboxFile \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/EditorStyle/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/EditorStyle/Public/Classes \
@@ -190,7 +179,6 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/EditorStyle \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SourceControl/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SourceControl/Public/Tests \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SourceControl \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SourceControl \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UnrealEdMessages/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UnrealEdMessages/Public \
@@ -202,39 +190,40 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/BlueprintGraph \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/HTTP/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/HTTP/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/HTTP \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/HTTP \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/UnrealAudio/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/UnrealAudio \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/UnrealAudio \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Niagara/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Niagara/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Niagara \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieScene/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/MovieScene \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieScene \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Niagara \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/VectorVM/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/VectorVM \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/VectorVM \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UserFeedback/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/UserFeedback \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UserFeedback \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/CollectionManager/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/CollectionManager \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/CollectionManager \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/NiagaraEditor/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/NiagaraEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GraphEditor/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GraphEditor/Public/KismetNodes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/GraphEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/IntroTutorials/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/IntroTutorials \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/IntroTutorials \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GraphEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/LevelEditor/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/LevelEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Settings/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Settings \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Settings \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/LevelEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/NiagaraEditor \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/AddContentDialog/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/AddContentDialog \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/AddContentDialog \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UnrealEd \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Kismet/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Kismet/Public \
@@ -242,6 +231,8 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Kismet/Public/WorkflowOrientedApp \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Kismet \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Kismet \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/PacketHandlers/PacketHandler/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/PacketHandlers/PacketHandler \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Engine \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MediaAssets/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/MediaAssets \
@@ -254,13 +245,10 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Networking/Public/Interfaces \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Networking/Public/Interfaces/IPv4 \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Networking/Public/Interfaces/Steam \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Networking \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Sockets/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Sockets \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Sockets \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Networking \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/PakFile/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/PakFile \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/PakFile \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Serialization/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Serialization/Public/Backends \
@@ -269,34 +257,26 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/HeadMountedDisplay/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/HeadMountedDisplay \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/HeadMountedDisplay \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/CoreUObject/Public/Interfaces \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/NetworkFile/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/NetworkFile \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/NetworkFile \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/StreamingFile/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/StreamingFile \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/StreamingFile \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AutomationWorker/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AutomationWorker/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/AutomationWorker \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AutomationWorker \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DesktopPlatform/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/DesktopPlatform \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DesktopPlatform \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AutomationController/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AutomationController/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/AutomationController \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AutomationController \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/OnlineSubsystem/Public/Interfaces \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/OnlineSubsystem/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/OnlineSubsystem \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/OnlineSubsystem \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TaskGraph/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/TaskGraph \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TaskGraph \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateRHIRenderer/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateRHIRenderer/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SlateRHIRenderer \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateRHIRenderer \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/2D/Paper2D/Source/Paper2D/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/2D/Paper2D/Source/Paper2D/Classes \
@@ -309,112 +289,137 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/2D/Paper2D/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Paper2DEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/2D/Paper2D/Source/Paper2DEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/KismetWidgets/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/KismetWidgets \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/KismetWidgets \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/PropertyEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ActorPickerMode/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ActorPickerMode \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ActorPickerMode \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ContentBrowser/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ContentBrowser \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ContentBrowser \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/WorkspaceMenuStructure/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/WorkspaceMenuStructure \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/WorkspaceMenuStructure \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MeshPaint/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/MeshPaint \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MeshPaint \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/EditorWidgets/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/EditorWidgets \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/EditorWidgets \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AssetTools/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/AssetTools \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AssetTools \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/2D/Paper2D/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/PaperSpriteSheetImporter \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/2D/Paper2D/Source/PaperSpriteSheetImporter \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/2D/Paper2D/Source/PaperTiledImporter/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/2D/Paper2D/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/PaperTiledImporter \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/2D/Paper2D/Source/PaperTiledImporter \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/2D/Paper2D/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SmartSnapping \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/2D/Paper2D/Source/SmartSnapping \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ViewportSnapping/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ViewportSnapping \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ViewportSnapping \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/BlankPlugin/Source/Developer/BlankPlugin/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Blendables/LightPropagationVolume/Source/LightPropagationVolumeRuntime/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Blendables/LightPropagationVolume/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/LightPropagationVolumeRuntime \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Blendables/LightPropagationVolume/Source/LightPropagationVolumeRuntime \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Blendables/LightPropagationVolume/Source/LightPropagationVolumeEditor/Classes \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Blendables/LightPropagationVolume/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/LightPropagationVolumeEditor \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Blendables/LightPropagationVolume/Source/LightPropagationVolumeEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/BlankPlugin/Source/BlankPlugin/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/BlankPlugin/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/BlankPlugin \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/BlankPlugin/Source/BlankPlugin \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/GitSourceControl/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/GitSourceControl \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/GitSourceControl/Source/GitSourceControl \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/KDevelopSourceCodeAccess/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/KDevelopSourceCodeAccess \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/KDevelopSourceCodeAccess/Source/KDevelopSourceCodeAccess \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/CodeLiteSourceCodeAccess/Source/CodeLiteSourceCodeAccess \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SourceCodeAccess/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SourceCodeAccess \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SourceCodeAccess \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/HotReload/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/HotReload \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/HotReload \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/NullSourceCodeAccess/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/NullSourceCodeAccess \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/GitSourceControl/Source/GitSourceControl \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/KDevelopSourceCodeAccess/Source/KDevelopSourceCodeAccess \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/NullSourceCodeAccess/Source/NullSourceCodeAccess \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/PerforceSourceControl/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/PerforceSourceControl \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/OneSkyLocalizationService/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/OneSkyLocalizationService \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/OneSkyLocalizationService/Source/OneSkyLocalizationService \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/LocalizationService/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/LocalizationService \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Internationalization/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Internationalization/Public/Serialization \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Internationalization \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Localization/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Localization \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Localization \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MainFrame/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MainFrame/Public/Interfaces \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MainFrame \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/PerforceSourceControl/Source/PerforceSourceControl \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/Perforce \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/SubversionSourceControl/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SubversionSourceControl \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/SubversionSourceControl/Source/SubversionSourceControl \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/XmlParser/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/XmlParser/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/XmlParser \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/XmlParser \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/UObjectPlugin/Source/Developer/UObjectPlugin/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/UObjectPlugin/Source/UObjectPlugin/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/UObjectPlugin/Source/UObjectPlugin/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/UObjectPlugin/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/UObjectPlugin \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/UObjectPlugin/Source/UObjectPlugin \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Editor/EpicSurvey/Source/EpicSurvey/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Editor/EpicSurvey/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/EpicSurvey \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Analytics/Analytics/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Analytics/Analytics/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Analytics \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Analytics/Analytics \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ImageWrapper/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ImageWrapper/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ImageWrapper \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ImageWrapper \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Editor/EpicSurvey/Source/EpicSurvey \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MainFrame/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MainFrame/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/MainFrame \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MainFrame \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Editor/PluginBrowser/Source/PluginBrowser/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Editor/PluginBrowser/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/PluginBrowser \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Editor/PluginBrowser/Source/PluginBrowser \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SharedSettingsWidgets/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SharedSettingsWidgets \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ExternalImagePicker/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ExternalImagePicker \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ExternalImagePicker \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SharedSettingsWidgets \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GameProjectGeneration/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GameProjectGeneration/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/GameProjectGeneration \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/HardwareTargeting/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/HardwareTargeting \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/HardwareTargeting \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GameProjectGeneration \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Editor/SpeedTreeImporter/Source/MainFrame \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Editor/SpeedTreeImporter/Source/Editor/SpeedTreeImporter/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Editor/SpeedTreeImporter/Source/SpeedTreeImporter/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Editor/SpeedTreeImporter/Source/SpeedTreeImporter/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Editor/SpeedTreeImporter/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SpeedTreeImporter \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Editor/SpeedTreeImporter/Source/SpeedTreeImporter \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/RawMesh/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/RawMesh \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/RawMesh \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/SpeedTree/SpeedTreeSDK-v7.0/Include \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/SpeedTree \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/BlueprintStats/Source/BlueprintStats/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/MessageLog/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/MessageLog \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/BlueprintStats/Source/BlueprintStats \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/CharacterAI/Source/CharacterAI/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/CharacterAI/Source/CharacterAI/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/CharacterAI/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/CharacterAI \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/CharacterAI/Source/CharacterAI \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/CodeEditor/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/CodeEditor \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/CodeEditor/Source/CodeEditor \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/CodeView/Source/CodeView \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DetailCustomizations/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DetailCustomizations/Public/Customizations \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DetailCustomizations \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/LiveEditor/Source/LiveEditor/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/LiveEditor/Source/LiveEditor/Classes \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/LiveEditor/Source/LiveEditor/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/LiveEditor/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/LiveEditor \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/KismetCompiler/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/KismetCompiler \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/LiveEditorListenServer/Source/LiveEditorListenServer/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/LiveEditorListenServer/Source/LiveEditorListenServer \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/LiveEditor/Source/LiveEditor \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/portmidi/include \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/portmidi \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/Phya/Source/Phya/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/Phya/Source/Phya/Private/PhyaLib/include \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/Phya/Source/Phya/Classes \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/Phya/Source/Phya/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/Phya/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Phya \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/Phya/Source/Phya \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/SimpleHMD/Source/SimpleHMD/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Renderer/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/SimpleHMD/Source/SimpleHMD/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/SimpleHMD/Source/SimpleHMD \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/StructBox/Source/StructBox/Classes \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/StructBox/Source/StructBox/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/StructBox/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/StructBox \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Experimental/StructBox/Source/StructBox \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/AssetTools \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Factories \
@@ -430,7 +435,6 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/TextureEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Media/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Media/Public/Helpers \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Media \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Media \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Models \
@@ -446,7 +450,6 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/MessageDetails \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Types \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Toolbar \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Messaging/MessagingDebugger/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/MessagingDebugger \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private/Shared \
@@ -456,37 +459,91 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Messaging/UdpMessaging/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/UdpMessaging \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private/AssetTools \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private/Customizations \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private/Factories \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private/Styles \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/MovieScene/LevelSequenceEditor/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/LevelSequenceEditor \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/LevelSequence/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/LevelSequence \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/LevelSequence \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneTracks/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneTracks/Public/Sections \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneTracks/Public/TrackInstances \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneTracks/Public/Tracks \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/MovieSceneTracks \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneTracks \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Sequencer/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Sequencer \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Sequencer \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/SceneOutliner/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SceneOutliner \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/SceneOutliner \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/Source/AnalyticsBlueprintLibrary/Classes \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/Source/AnalyticsBlueprintLibrary/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/AnalyticsBlueprintLibrary \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/Source/AnalyticsBlueprintLibrary \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/Source/AnalyticsMulticast/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/Source/AnalyticsMulticast \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/Analytics/FileLogging/Source/FileLogging/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/Analytics/FileLogging/Source/FileLogging \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/ArchVisCharacter/Source/ArchVisCharacter/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/ArchVisCharacter/Source/ArchVisCharacter/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/ArchVisCharacter/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ArchVisCharacter \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/ArchVisCharacter/Source/ArchVisCharacter \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/CableComponent/Source/CableComponent/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/CableComponent/Source/CableComponent/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/CableComponent/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/CableComponent \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/CableComponent/Source/CableComponent \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/CustomMeshComponent/Source/CustommeshComponent/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/CustomMeshComponent/Source/CustomMeshComponent/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/CustomMeshComponent/Source/CustomMeshComponent/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/CustomMeshComponent/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/CustomMeshComponent \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/CustomMeshComponent/Source/CustomMeshComponent \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/ExampleDeviceProfileSelector/Source/Runtime/ExampleDeviceProfileSelector/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/ExampleDeviceProfileSelector/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/ExampleDeviceProfileSelector/Source/ExampleDeviceProfileSelector/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/ExampleDeviceProfileSelector/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ExampleDeviceProfileSelector \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/ExampleDeviceProfileSelector/Source/ExampleDeviceProfileSelector \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/LinuxDeviceProfileSelector/Source/LinuxDeviceProfileSelector/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/LinuxDeviceProfileSelector/Source/LinuxDeviceProfileSelector \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/ProceduralMeshComponent/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ProceduralMeshComponent \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/SoundMod/Source/SoundModImporter/Classes \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/SoundMod/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SoundModImporter \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/SoundMod/Source/SoundModImporter \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/SoundMod/Source/SoundMod/Classes \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/SoundMod/Source/SoundMod/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/SoundMod/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SoundMod \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/SoundMod/Source/SoundMod \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/coremod/coremod-4.2.6/include/coremod \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/coremod \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/SoundVisualizations/Source/SoundVisualizations/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/SoundVisualizations/Source/SoundVisualizations/Classes \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/SoundVisualizations/Source/SoundVisualizations/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/SoundVisualizations/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SoundVisualizations \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/SoundVisualizations/Source/SoundVisualizations \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/Kiss_FFT/kiss_fft129 \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/Kiss_FFT \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/Steam/SteamController/Source/SteamController/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/Steam/SteamController/Source/SteamController \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/InputDevice/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/InputDevice \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/Steamworks/Steamv132/sdk/public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/Steamworks \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TargetPlatform/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TargetPlatform/Public/Common \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TargetPlatform/Public/Interfaces \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TargetPlatform \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Slate/SlateRemote/Source/SlateRemote/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Slate/SlateRemote/Source/SlateRemote/Private/Server \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Slate/SlateRemote/Source/SlateRemote/Private/Shared \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Slate/SlateRemote/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SlateRemote \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Slate/SlateRemote/Source/SlateRemote \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/UE4Game \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/UE4Game \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Core/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Core/Private/Misc \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Core/Private/Serialization/Json \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Core/Private/Internationalization \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Core/Private/Internationalization/Cultures \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Analytics/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/zlib/zlib-1.2.5/Inc \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/zlib \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/jemalloc/include/Linux/x86_64-unknown-linux-gnu \
@@ -497,74 +554,33 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/SDL2 \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/FreeType2 \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/OpenGL \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/ICU \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TargetPlatform/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TargetPlatform/Public/Common \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TargetPlatform/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/TargetPlatform \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TargetPlatform \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/DerivedDataCache \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DerivedDataCache \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/InputDevice/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/InputDevice \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/InputDevice \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SourceCodeAccess/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/CoreUObject/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Projects/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Json/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/Application \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/Commands \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/Docking \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/Layout \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/MultiBox \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/Notifications \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/Styling \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/Testing \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/Text \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/Text/IOS \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/Text/Tests \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/Widgets \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Widgets/Colors \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Widgets/Docking \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Widgets/Images \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Widgets/Input \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Widgets/Layout \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Widgets/Navigation \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Widgets/Notifications \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Widgets/Testing \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Widgets/Text \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Widgets/Tutorials \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Widgets/Views \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Toolbox/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Animation \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Application \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Brushes \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Commands \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Fonts \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Input \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Layout \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Logging \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Rendering \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Sound \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Styling \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Textures \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Types \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Widgets \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Settings/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Engine/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Linux/LinuxTargetPlatform/Classes \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/LinuxTargetPlatform \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Linux/LinuxTargetPlatform \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TextureCompressor/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TextureCompressor \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/PhysXFormats/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/PhysXFormats \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DesktopPlatform/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SlateFileDialogs/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SlateFileDialogs \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SlateFileDialogs/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AppFramework/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AppFramework/Public/Widgets \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AppFramework/Public/Widgets/Colors \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AppFramework/Public/Widgets/Testing \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AppFramework/Public/Widgets/Views \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AppFramework/Public/Widgets/Workflow \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/AppFramework \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AppFramework \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Linux/LinuxTargetPlatform/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Linux/LinuxNoEditorTargetPlatform \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Engine/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SlateReflector/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SlateReflector \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SlateReflector \
@@ -580,17 +596,13 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/UMG/Public/Slate \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/UMG \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/UMG \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Internationalization/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Internationalization/Public/Serialization \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Internationalization \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Internationalization \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MaterialShaderQualitySettings/Classes \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/MaterialShaderQualitySettings \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MaterialShaderQualitySettings \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ImageCore/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ImageCore \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ImageCore \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/CollisionAnalyzer/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/CollisionAnalyzer \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/CollisionAnalyzer \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GeometryMode/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/LogVisualizer/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/LogVisualizer \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/LogVisualizer \
@@ -606,109 +618,152 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Navmesh/Public/DetourCrowd \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Navmesh/Public/DetourTileCache \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Navmesh/Public/Recast \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Navmesh \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Navmesh \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/CrashTracker/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/CrashTracker/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/CrashTracker \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/CrashTracker \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Advertising/Advertising/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Advertising/Advertising/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Advertising \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Advertising/Advertising \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/NetworkReplayStreaming/NetworkReplayStreaming/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/NetworkReplayStreaming \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/NetworkReplayStreaming/NetworkReplayStreaming \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneCapture/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/MovieSceneCapture \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneCapture \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/MeshUtilities/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/MeshUtilities \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/MeshUtilities \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/TextureCompressor \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TextureCompressor \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/PhysXFormats/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/PhysXFormats \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/PhysXFormats \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AppFramework/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AppFramework/Private/Framework \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AppFramework/Private/Framework/Testing \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AppFramework/Private/Widgets \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AppFramework/Private/Widgets/Colors \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AppFramework/Private/Widgets/Input \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AppFramework/Private/Widgets/Testing \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AppFramework/Private/Widgets/Workflow \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SlateReflector/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SlateReflector/Private/Models \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SlateReflector/Private/Widgets \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Networking/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Sockets/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Foliage/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Foliage \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Foliage \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/Application \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/Commands \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/Docking \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/Layout \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/MultiBox \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/Notifications \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/Styling \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/Text \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/Text/IOS \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Framework/Text/Tests \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Widgets/Colors \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Widgets/Docking \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Widgets/Images \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Widgets/Input \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Widgets/Layout \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Widgets/Notifications \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Widgets/Text \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Slate/Private/Widgets/Views \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Toolbox/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Animation \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Application \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Brushes \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Fonts \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Input \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Layout \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Logging \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Rendering \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Sound \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Styling \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Textures \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Types \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateCore/Private/Widgets \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Linux/LinuxServerTargetPlatform \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AllDesktopTargetPlatform \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/IOS/LaunchDaemonMessages/Classes \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/IOS/LaunchDaemonMessages/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/LaunchDaemonMessages \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/IOS/LaunchDaemonMessages \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TargetDeviceServices/Classes \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TargetDeviceServices/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TargetDeviceServices/Public/Interfaces \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/TargetDeviceServices \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TargetDeviceServices \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ShaderFormatOpenGL \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ShaderCompilerCommon/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ShaderCompilerCommon \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ShaderPreprocessor/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ShaderPreprocessor \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/hlslcc \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/OpenGLDrv/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/OpenGLDrv \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/NullDrv/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/NullDrv/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/NullDrv \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/NullDrv \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/OpenGLDrv/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/OpenGLDrv/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/OpenGLDrv \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/OpenGLDrv \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/UtilityShaders/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/UtilityShaders \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/UtilityShaders \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ImageWrapper/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/libPNG/libPNG-1.5.2 \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/libPNG \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/libJPG \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Renderer/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/MCPP/mcpp-2.7.2/inc \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/MCPP \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Networking/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Sockets/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DirectoryWatcher/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Foliage/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Foliage \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Foliage \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/MaterialUtilities/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/MaterialUtilities \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Renderer/Private/CompositionLighting \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Renderer/Private/PostProcess \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Foliage/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor/Private/Presentation \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor/Private/Presentation/PropertyTable \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor/Private/Presentation/PropertyEditor \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor/Private/UserInterface \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyTable \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyEditor \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyTree \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyDetails \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ConfigEditor/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ConfigEditor/Public/PropertyVisualization \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ConfigEditor \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ConfigEditor \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ClassViewer/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ClassViewer \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UnrealEd/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UnrealEd/Private/Settings \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UnrealEd/Private/FeaturePack \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PackagesDialog/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/AnimGraph/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/AnimGraph/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/AnimGraph \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AnimGraphRuntime/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AnimGraphRuntime/Public/BoneControllers \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/AnimGraphRuntime \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AnimGraphRuntime \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/AnimGraph \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/OnlineBlueprintSupport/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/OnlineBlueprintSupport \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/OnlineBlueprintSupport \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/InputBindingEditor/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/InputBindingEditor/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/InputBindingEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/InputBindingEditor \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/LauncherAutomatedService/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/LauncherAutomatedService/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/LauncherAutomatedService \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/LauncherAutomatedService \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/LauncherServices/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/LauncherServices/Public/Common \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/LauncherServices/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/LauncherServices \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TargetDeviceServices/Classes \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TargetDeviceServices/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TargetDeviceServices/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/TargetDeviceServices \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TargetDeviceServices \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/LauncherServices \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MaterialEditor/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/MaterialEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MaterialEditor \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/MessageLog/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/MessageLog \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/MessageLog \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/NetworkFileSystem/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/NetworkFileSystem/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/NetworkFileSystem \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/NetworkFileSystem \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/SoundClassEditor/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SoundClassEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/SoundClassEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/SoundCueEditor/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SoundCueEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/SoundCueEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/SourceControlWindows/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SourceControlWindows \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/SourceControlWindows \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/StatsViewer/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/StatsViewer/Public \
@@ -725,7 +780,6 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/JsonUtilities \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/JsonUtilities \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TreeMap/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/TreeMap \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TreeMap \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/HACD/HACD_1.0/public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/HACD \
@@ -736,39 +790,31 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/BehaviorTreeEditor/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/BehaviorTreeEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/BehaviorTreeEditor \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ClassViewer/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ClassViewer \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ClassViewer \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/EnvironmentQueryEditor/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/EnvironmentQueryEditor/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/EnvironmentQueryEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/EnvironmentQueryEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ProjectTargetPlatformEditor/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ProjectTargetPlatformEditor/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ProjectTargetPlatformEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ProjectTargetPlatformEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MergeActors/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/MergeActors \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MergeActors \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PlacementMode/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/PlacementMode \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PlacementMode \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SettingsEditor/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SettingsEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SettingsEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ReferenceViewer/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ReferenceViewer/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ReferenceViewer \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ReferenceViewer \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SuperSearch/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SuperSearch \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SuperSearch \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/OutputLog/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/OutputLog \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/OutputLog \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/SizeMap/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SizeMap \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/SizeMap \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/LevelSequence/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieScene/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/AnimGraph/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GraphEditor/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GraphEditor/Private/AnimationPins \
@@ -778,41 +824,19 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GraphEditor/Private/MaterialNodes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GraphEditor/Private/MaterialPins \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GraphEditor/Private/SoundNodes \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DesktopPlatform/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/LinuxNativeDialogs/UELinuxNativeDialogs/include \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/LinuxNativeDialogs \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DirectoryWatcher/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor/Private/Presentation \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor/Private/Presentation/PropertyTable \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor/Private/Presentation/PropertyEditor \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor/Private/Presentation/PropertyDetails \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor/Private/UserInterface \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyTable \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyEditor \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyTree \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyDetails \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ConfigEditor/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ConfigEditor/Public/PropertyVisualization \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ConfigEditor \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ConfigEditor \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Documentation/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AssetTools/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/CurveAssetEditor/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/CurveAssetEditor \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Persona/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Persona \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/FontEditor/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/FontEditor \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/WorkspaceMenuStructure/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SourceControl/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/MessageLog/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/MessageLog/Private/Presentation \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/MessageLog/Private/UserInterface \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/MessageLog/Private/Model \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AssetTools/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/CurveAssetEditor/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/CurveAssetEditor \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/CurveAssetEditor \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Persona/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Persona \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Persona \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/FontEditor/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/FontEditor \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/FontEditor \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/WorkspaceMenuStructure/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/TextureEditor/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/TextureEditor/Private/Menus \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/TextureEditor/Private/Models \
@@ -824,58 +848,60 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/TranslationEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/TranslationEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DeviceProfileEditor/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/DeviceProfileEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DeviceProfileEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UndoHistory/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UndoHistory/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/UndoHistory \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UndoHistory \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Toolbox \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Toolbox \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/LocalizationDashboard/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/LocalizationDashboard \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/LocalizationDashboard \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/CrashTracker/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/EngineSettings/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ShaderPreprocessor/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ShaderPreprocessor \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ShaderPreprocessor \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/MCPP/mcpp-2.7.2/inc \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/MCPP \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ShaderFormatOpenGL \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ShaderFormatOpenGL \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ShaderCompilerCommon/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ShaderCompilerCommon \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ShaderCompilerCommon \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/hlslcc/hlslcc/src/hlslcc_lib \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/hlslcc \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/TextureFormatDXT \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TextureFormatDXT \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/nvTextureTools/nvTextureTools-2.0.8/src/src \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/nvTextureTools \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/TextureFormatPVR \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TextureFormatPVR \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/TextureFormatASTC \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TextureFormatASTC \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/TextureFormatUncompressed \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TextureFormatUncompressed \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/AudioFormatOgg \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AudioFormatOgg \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/AudioFormatOpus \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AudioFormatOpus \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/TranslationEditor/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Internationalization/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DeviceProfileEditor/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DeviceProfileEditor/Private/DetailsPanel \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/AddContentDialog/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/AddContentDialog/Private/ViewModels \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/AddContentDialog/Private/ContentSourceProviders/FeaturePack \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/WidgetCarousel/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/WidgetCarousel \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/WidgetCarousel \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/WidgetCarousel/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/HTTP/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/libcurl/include/Linux/x86_64-unknown-linux-gnu \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/libcurl \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/IntroTutorials/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Kismet/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Merge/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Merge \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Merge/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/KismetWidgets/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/BlueprintGraph/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MovieSceneTools/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MovieSceneTools \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/FunctionalTesting/Classes \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/FunctionalTesting/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/FunctionalTesting \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/FunctionalTesting \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MovieSceneTools/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MovieSceneTools/Private/CurveKeyEditors \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/PropertyTrackEditors \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MovieSceneTools/Private/Sections \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneTracks/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneTracks/Private/Sections \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneTracks/Private/TrackInstances \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Sequencer/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/SequencerWidgets/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/SequencerWidgets \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneCapture/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/SequencerWidgets/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/NewsFeed/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/NewsFeed/Public/Interfaces \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/NewsFeed \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/NewsFeed \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DeviceProfileServices/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/DeviceProfileServices \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DeviceProfileServices \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/SceneOutliner/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SceneOutliner \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/SceneOutliner \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/WebBrowser/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/WebBrowser \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/WebBrowser \
@@ -883,103 +909,18 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/NewsFeed/Private/Implementation \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/NewsFeed/Private/Models \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/NewsFeed/Private/Widgets \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/HTTP/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/libcurl/include/Linux/x86_64-unknown-linux-gnu \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/libcurl \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/OnlineSubsystem/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/StatsViewer/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/StatsViewer/Private/StatsPages \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/StatsViewer/Private/StatsEntries \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DeviceProfileServices/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/AddContentDialog/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/AddContentDialog \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/AddContentDialog \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/AddContentDialog/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/AddContentDialog/Private/ViewModels \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/AddContentDialog/Private/ContentSourceProviders/AssetPack \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/AddContentDialog/Private/ContentSourceProviders/FeaturePack \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/WidgetCarousel/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/WidgetCarousel \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/WidgetCarousel \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/WidgetCarousel/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/IntroTutorials/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Kismet/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Merge/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Merge \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Merge \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Merge/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Kismet \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/KismetWidgets/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/BlueprintGraph/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/KismetCompiler/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/KismetCompiler \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/KismetCompiler \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneCore/Classes \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneCore/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/MovieSceneCore \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneCore \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/MovieSceneTools/Classes \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/MovieSceneTools/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/MovieSceneTools \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/MovieSceneTools \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/FunctionalTesting/Classes \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/FunctionalTesting/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/FunctionalTesting \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/FunctionalTesting \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneCore/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/MovieSceneTools/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneCoreTypes/Classes \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneCoreTypes/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/MovieSceneCoreTypes \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneCoreTypes \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Sequencer/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Sequencer \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Sequencer \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneCoreTypes/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MovieSceneCoreTypes/Private/Instances \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Sequencer/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/SequencerWidgets/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SequencerWidgets \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/SequencerWidgets \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/SequencerWidgets/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/MessageLog/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Stats/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/FunctionalTesting/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AIModule/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AITestSuite/Classes \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AITestSuite/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/AITestSuite \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AITestSuite \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AITestSuite/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Navmesh/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/GameplayTags/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/GameProjectGeneration/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/GameProjectGeneration/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/GameProjectGeneration/Classes \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/HardwareTargeting/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/HardwareTargeting \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/HardwareTargeting \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/BlueprintCompilerCppBackend/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/BlueprintCompilerCppBackend/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/BlueprintCompilerCppBackend \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/BlueprintCompilerCppBackend \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/LauncherServices/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/LauncherServices/Private/Devices \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/LauncherServices/Private/Games \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/LauncherServices/Private/Launcher \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/LauncherServices/Private/Profiles \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SessionMessages/Classes \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SessionMessages/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SessionMessages \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SessionMessages \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/SessionMessages/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UnrealEdMessages/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/WebBrowser/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/CEF3Utils/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/CEF3Utils \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/CEF3Utils \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Serialization/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/CEF3Utils/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Persona/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Foliage/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DeviceManager/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DeviceManager/Private/Models \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DeviceManager/Private/Widgets \
@@ -991,7 +932,6 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DeviceManager/Private/Widgets/Toolbar \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DeviceManager/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DeviceManager/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/DeviceManager \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DeviceManager \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SettingsEditor/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SettingsEditor/Private/Models \
@@ -1002,31 +942,29 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SessionFrontend/Private/Widgets/Browser \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SessionFrontend/Private/Widgets/Console \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SessionFrontend/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SessionFrontend \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SessionFrontend \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AutomationWindow/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AutomationWindow/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/AutomationWindow \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AutomationWindow \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ScreenShotComparison/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ScreenShotComparison/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ScreenShotComparison \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ScreenShotComparison \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ScreenShotComparisonTools/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ScreenShotComparisonTools/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ScreenShotComparisonTools \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ScreenShotComparisonTools \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Profiler/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Profiler/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Profiler \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Profiler \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SessionMessages/Classes \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SessionMessages/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/SessionMessages \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SessionMessages \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/EngineMessages/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AutomationController/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AutomationMessages/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AutomationMessages/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/AutomationMessages \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AutomationMessages \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/AutomationMessages/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UnrealEdMessages/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ScreenShotComparison/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ScreenShotComparison/Private/Widgets \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ScreenShotComparison/Private/Models \
@@ -1037,15 +975,12 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ProfilerMessages/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ProfilerMessages \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ProfilerMessages \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ProfilerMessages/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Layers/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Layers \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Layers \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/WorldBrowser/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/WorldBrowser/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/WorldBrowser \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/WorldBrowser \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/LandscapeEditor/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/LandscapeEditor/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/LandscapeEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/LandscapeEditor \
@@ -1053,16 +988,32 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/nvTriStrip \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/ForsythTriOO/Src \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/ForsythTriOO \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/MeshSimplifier/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/MeshSimplifier \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/MeshSimplifier \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/MikkTSpace/inc \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/MikkTSpace \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/Kiss_FFT/kiss_fft129 \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/Kiss_FFT \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/NewLevelDialog/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/NewLevelDialog \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/NewLevelDialog \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DeviceProfileEditor/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DeviceProfileEditor/Private/DetailsPanel \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/FunctionalTesting/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AIModule/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AITestSuite/Classes \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AITestSuite/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/AITestSuite \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AITestSuite \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AITestSuite/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/GameplayTasks/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Navmesh/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/GameplayTags/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Settings/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/BlueprintCompilerCppBackend/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/BlueprintCompilerCppBackend/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/BlueprintCompilerCppBackend \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/LauncherServices/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/LauncherServices/Private/Launcher \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/LauncherServices/Private/Profiles \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Localization/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/LocalizationService/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UndoHistory/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UndoHistory/Private/Widgets \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ProjectTargetPlatformEditor/Private \
@@ -1079,18 +1030,17 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/Voice/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/Voice/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Voice \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/Voice \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/Voice/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/PacketHandlers/ReliabilityHandlerComponent/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/PacketHandlers/ReliabilityHandlerComponent \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/LocalizationDashboard/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Niagara/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Engine/Classes/Engine \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Engine/Classes/Curves \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/CurveTableEditor/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/CurveTableEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/CurveTableEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DataTableEditor/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/DataTableEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DataTableEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DestructibleMeshEditor/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DestructibleMeshEditor/Public \
@@ -1099,34 +1049,26 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DesktopWidgets/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DesktopWidgets/Public/Widgets \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DesktopWidgets/Public/Widgets/Input \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/DesktopWidgets \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DesktopWidgets \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DesktopWidgets/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DesktopWidgets/Private/Widgets \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DesktopWidgets/Private/Widgets/Input \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ConfigEditor/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ConfigEditor/Private/PropertyVisualization \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AnimGraphRuntime/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/InputBindingEditor/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/InputBindingEditor/Private/Widgets \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/LauncherAutomatedService/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/NetworkFileSystem/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/NetworkFileSystem/Private/Simple \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/NetworkFileSystem/Private/Streaming \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Messaging/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Messaging/Private/Bus \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Messaging/Private/Bridge \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Messaging/Private/Serialization \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/UnrealAudio/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/UnrealAudio/Private/Tests \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/StaticMeshEditor/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/StaticMeshEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/StaticMeshEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DistCurveEditor/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Cascade/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Cascade/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Cascade \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Cascade \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/DistCurveEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DistCurveEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UMGEditor/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UMGEditor/Private/Templates \
@@ -1145,10 +1087,6 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UMGEditor/Public/Settings \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/UMGEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/UMGEditor \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DetailCustomizations/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DetailCustomizations/Public/Customizations \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/DetailCustomizations \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DetailCustomizations \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/UMG/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/SlateRHIRenderer/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/DetailCustomizations/Private \
@@ -1156,18 +1094,17 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MediaAssets/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/MediaAssets/Private/Assets \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Media/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ConfigEditor/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ConfigEditor/Private/PropertyVisualization \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Matinee/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Matinee/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Matinee \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Matinee \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/EditorSettingsViewer/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/EditorSettingsViewer \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/EditorSettingsViewer \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ComponentVisualizers/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ComponentVisualizers/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ComponentVisualizers \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ComponentVisualizers \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/PackagesDialog \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PackagesDialog \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PhAT/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PhAT/Public \
@@ -1184,22 +1121,19 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ProjectLauncher/Private/Widgets/Profile \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ProjectLauncher/Private/Widgets/Project \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ProjectLauncher/Private/Widgets/Shared \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ProjectLauncher/Private/Widgets/Toolbar \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ProjectLauncher/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ProjectLauncher/Public/Interfaces \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ProjectLauncher \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ProjectLauncher \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GeometryMode/Classes \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GeometryMode/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/GeometryMode \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GeometryMode \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/TextureAlignMode/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/TextureAlignMode \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/TextureAlignMode \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/FoliageEdit/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/FoliageEdit \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/FoliageEdit \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/PackageDependencyInfo/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/PackageDependencyInfo \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/PackageDependencyInfo \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Blutility/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/Blutility/Classes \
@@ -1210,10 +1144,8 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MergeActors/Private/MeshMergingTool \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/MergeActors/Private/MeshProxyTool \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ProjectSettingsViewer/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ProjectSettingsViewer \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/ProjectSettingsViewer \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PListEditor/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/PListEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/PListEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/AIGraph/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/BehaviorTreeEditor/Private \
@@ -1222,7 +1154,6 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/AIGraph \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/AIGraph \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/GameplayDebugger/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AIModule/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/GameplayAbilities/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/GameplayDebugger/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/GameplayDebugger \
@@ -1240,12 +1171,16 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GameplayTagsEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GameplayTagsEditor/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/EnvironmentQueryEditor/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GameplayTasksEditor/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GameplayTasksEditor/Classes \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GameplayTasksEditor/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/GameplayTasksEditor \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GameplayTasksEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GameplayAbilitiesEditor/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GameplayAbilitiesEditor/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GameplayAbilitiesEditor/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/GameplayAbilitiesEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Editor/GameplayAbilitiesEditor \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/IOSPlatformEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/iOS/IOSPlatformEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/IOS/IOSRuntimeSettings/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/IOSRuntimeSettings \
@@ -1254,262 +1189,91 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/HTML5PlatformEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/HTML5/HTML5PlatformEditor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/HTML5/HTML5TargetPlatform/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/HTML5TargetPlatform \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/HTML5/HTML5TargetPlatform \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/HTML5TargetPlatform/Classes \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/SynthBenchmark/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/DatabaseSupport/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/ADO \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/StreamingPauseRendering/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/StreamingPauseRendering/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/StreamingPauseRendering \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/StreamingPauseRendering \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/BlankModule/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/BlankModule/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/BlankModule \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/BlankModule \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/LinuxTargetPlatform/Classes \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Linux/LinuxTargetPlatform/Classes \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/LinuxTargetPlatform \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Linux/LinuxTargetPlatform \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Linux/LinuxTargetPlatform/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/LinuxNoEditorTargetPlatform \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Linux/LinuxNoEditorTargetPlatform \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/LinuxServerTargetPlatform \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/Linux/LinuxServerTargetPlatform \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/DesktopTargetPlatform \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/DesktopTargetPlatform \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/IOS/LaunchDaemonMessages/Classes \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/IOS/LaunchDaemonMessages/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/LaunchDaemonMessages \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/IOS/LaunchDaemonMessages \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Analytics/AnalyticsET/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/AnalyticsET \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Analytics/AnalyticsET \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/NetworkReplayStreaming/NetworkReplayStreaming/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/NetworkReplayStreaming/NullNetworkReplayStreaming/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/NetworkReplayStreaming/NullNetworkReplayStreaming/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/NullNetworkReplayStreaming \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/NetworkReplayStreaming/NullNetworkReplayStreaming \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/NetworkReplayStreaming/HttpNetworkReplayStreaming/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/HttpNetworkReplayStreaming \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/NetworkReplayStreaming/HttpNetworkReplayStreaming/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/NetworkReplayStreaming/HttpNetworkReplayStreaming \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Serialization/Private \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TextureFormatDXT \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/nvTextureTools/nvTextureTools-2.0.8/src/src \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/nvTextureTools \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TextureFormatPVR \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TextureFormatASTC \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/TextureFormatUncompressed \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AudioFormatOgg \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/AudioFormatOpus \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/AutomationWorker/Private \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Linux/ALAudio/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ALAudio \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Linux/ALAudio \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/ALAudio/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/ALAudio \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/OpenAL/1.15.1/include \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/OpenAL \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/RealtimeProfiler \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/RealtimeProfiler \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/GammaUI/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/GammaUI \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/GammaUI \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ModuleUI/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/ModuleUI \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ModuleUI \
+	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Runtime/LiveEditorListenServer/Source/LiveEditorListenServer/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/OnlineSubsystemNull/Public \
-	/home/robertb/Downloads/UnrealEngine/Engine/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/OnlineSubsystemNull \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/OnlineSubsystemNull \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/BlankProgram/Inc/BlankProgram \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/BlankProgram \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/BlankProgram/Inc/Projects \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/BlankProgram/Inc/Json \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/BuildPatchTool/Inc/BuildPatchTool \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/BuildPatchTool \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/BuildPatchServices/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/BuildPatchServices/Public/Interfaces \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/BuildPatchTool/Inc/BuildPatchServices \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/BuildPatchTool/Inc/CoreUObject \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/Online/BuildPatchServices \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/BuildPatchTool/Inc/Projects \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/BuildPatchTool/Inc/Json \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/CrashReporter/CrashReportClient/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/CrashReporter/CrashReportClient/Public \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrashReportClient/Inc/CrashReportClient \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/CrashReporter/CrashReportClient \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrashReportClient/Inc/CoreUObject \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/CrashDebugHelper/Public \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrashReportClient/Inc/CrashDebugHelper \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrashReportClient/Inc/SourceControl \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrashReportClient/Inc/InputCore \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/CrashDebugHelper \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrashReportClient/Inc/HTTP \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrashReportClient/Inc/Json \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrashReportClient/Inc/Projects \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrashReportClient/Inc/XmlParser \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrashReportClient/Inc/Analytics \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrashReportClient/Inc/AnalyticsET \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/CrashReporter/MinidumpDiagnostics/Public \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/MinidumpDiagnostics/Inc/MinidumpDiagnostics \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/CrashReporter/MinidumpDiagnostics \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/MinidumpDiagnostics/Inc/CrashDebugHelper \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/MinidumpDiagnostics/Inc/SourceControl \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/MinidumpDiagnostics/Inc/CoreUObject \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/MinidumpDiagnostics/Inc/InputCore \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/PerforceSourceControl/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/MinidumpDiagnostics/Inc/PerforceSourceControl \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/MinidumpDiagnostics/Inc/Projects \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/MinidumpDiagnostics/Inc/Json \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/MinidumpDiagnostics/Inc/Launch \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/MinidumpDiagnostics/Inc/ProfilerService \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/iOS/MetalShaderFormat/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ShaderFormatOpenGL/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/ShaderCompilerCommon/Private \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrossCompilerTool/Inc/CrossCompilerTool \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/CrossCompilerTool \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrossCompilerTool/Inc/Projects \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrossCompilerTool/Inc/Json \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrossCompilerTool/Inc/ShaderCompilerCommon \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Runtime/IOS/MetalRHI/Public \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrossCompilerTool/Inc/MetalShaderFormat \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/iOS/MetalShaderFormat \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrossCompilerTool/Inc/ShaderFormatOpenGL \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrossCompilerTool/Inc/ShaderPreprocessor \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrossCompilerTool/Inc/ShaderCore \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrossCompilerTool/Inc/RHI \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/CrossCompilerTool/Inc/RenderCore \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLaunchDaemon/Inc/UnrealLaunchDaemon \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/IOS/UnrealLaunchDaemon \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLaunchDaemon/Inc/NetworkFile \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLaunchDaemon/Inc/Projects \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLaunchDaemon/Inc/Json \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLaunchDaemon/Inc/StreamingFile \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLaunchDaemon/Inc/Sockets \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLaunchDaemon/Inc/Slate \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLaunchDaemon/Inc/CoreUObject \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLaunchDaemon/Inc/InputCore \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLaunchDaemon/Inc/SlateCore \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLaunchDaemon/Inc/EditorStyle \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/StandaloneRenderer/Public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/StandaloneRenderer/Public/IOS \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLaunchDaemon/Inc/StandaloneRenderer \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Developer/StandaloneRenderer \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLaunchDaemon/Inc/LaunchDaemonMessages \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLaunchDaemon/Inc/Messaging \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Messaging/UdpMessaging/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLaunchDaemon/Inc/UdpMessaging \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/Mac/DsymExporter/Public \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/DsymExporter/Inc/DsymExporter \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/Mac/DsymExporter \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/DsymExporter/Inc/Projects \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/DsymExporter/Inc/Json \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/DsymExporter/Inc/Launch \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/DsymExporter/Inc/ProfilerService \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4EditorServices/Inc/UE4EditorServices \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/Mac/UE4EditorServices \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4EditorServices/Inc/DesktopPlatform \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4EditorServices/Inc/Json \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4EditorServices/Inc/Projects \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/Mac/UnrealAtoS/Public \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealAtoS/Inc/UnrealAtoS \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/Mac/UnrealAtoS \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealAtoS/Inc/Projects \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealAtoS/Inc/Json \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealAtoS/Inc/Launch \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealAtoS/Inc/ProfilerService \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/ShaderCompileWorker/Inc/ShaderCompileWorker \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/ParallelExecutor \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/ShaderCompileWorker \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/ShaderCompileWorker/Inc/Projects \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/ShaderCompileWorker/Inc/Json \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/ShaderCompileWorker/Inc/ShaderCore \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/ShaderCompileWorker/Inc/RHI \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/ShaderCompileWorker/Inc/RenderCore \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/ShaderCompileWorker/Inc/SandboxFile \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/ShaderCompileWorker/Inc/TargetPlatform \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/ShaderCompileWorker/Inc/DesktopPlatform \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/ShaderCompileWorker/Inc/NetworkFile \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/ShaderCompileWorker/Inc/PakFile \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/ShaderCompileWorker/Inc/StreamingFile \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/ShaderCompileWorker/Inc/Sockets \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/ShaderCompileWorker/Inc/Launch \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/ShaderCompileWorker/Inc/ProfilerService \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/SlateViewer/Public \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SlateViewer/Inc/SlateViewer \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/SlateViewer \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SlateViewer/Inc/AppFramework \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SlateViewer/Inc/Slate \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SlateViewer/Inc/CoreUObject \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SlateViewer/Inc/InputCore \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SlateViewer/Inc/Json \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SlateViewer/Inc/SlateCore \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SlateViewer/Inc/Projects \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SlateViewer/Inc/SlateReflector \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SlateViewer/Inc/StandaloneRenderer \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SlateViewer/Inc/SourceCodeAccess \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SlateViewer/Inc/Settings \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SlateViewer/Inc/WebBrowser \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/SymbolDebugger/Public \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SymbolDebugger/Inc/SymbolDebugger \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/SymbolDebugger \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SymbolDebugger/Inc/Slate \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SymbolDebugger/Inc/CoreUObject \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SymbolDebugger/Inc/InputCore \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SymbolDebugger/Inc/Json \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SymbolDebugger/Inc/SlateCore \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SymbolDebugger/Inc/EditorStyle \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SymbolDebugger/Inc/StandaloneRenderer \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SymbolDebugger/Inc/DesktopPlatform \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SymbolDebugger/Inc/CrashDebugHelper \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SymbolDebugger/Inc/SourceControl \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Developer/PerforceSourceControl/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SymbolDebugger/Inc/PerforceSourceControl \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SymbolDebugger/Inc/MessageLog \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/SymbolDebugger/Inc/Projects \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/TestPAL/Inc/TestPAL \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/TestPAL \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/TestPAL/Inc/Projects \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/TestPAL/Inc/Json \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/TestPAL/Inc/DirectoryWatcher \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealCEFSubProcess/Private \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealCEFSubProcess/Inc/UnrealCEFSubProcess \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealCEFSubProcess \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealCEFSubProcess/Inc/Projects \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealCEFSubProcess/Inc/Json \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealCEFSubProcess/Inc/CEF3Utils \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/CEF3 \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFileServer/Inc/UnrealFileServer \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/llvm/3.5.0/include \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealCodeAnalyzer/Public \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealCodeAnalyzer \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/llvm \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealFileServer \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFileServer/Inc/DirectoryWatcher \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFileServer/Inc/NetworkFileSystem \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFileServer/Inc/Sockets \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFileServer/Inc/SandboxFile \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFileServer/Inc/Projects \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFileServer/Inc/Json \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealFrontend/Private/Commands \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/UnrealFrontend \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealFrontend \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/AutomationController \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/CoreUObject \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/DeviceManager \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/TargetDeviceServices \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/LauncherServices \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/Messaging \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/ProfilerClient \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/ProfilerService \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/ProjectLauncher \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/TargetPlatform \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/DesktopPlatform \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/Projects \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/Json \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/SessionFrontend \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/Slate \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/InputCore \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/SlateCore \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/EditorStyle \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/SessionServices \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/SlateReflector \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/SourceCodeAccess \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/Settings \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/StandaloneRenderer \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/Networking \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/Sockets \
-	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Messaging/UdpMessaging/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealFrontend/Inc/UdpMessaging \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealHeaderTool/Public \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealHeaderTool/Inc/UnrealHeaderTool \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealHeaderTool \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealHeaderTool/Inc/CoreUObject \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealHeaderTool/Inc/Json \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealHeaderTool/Inc/Projects \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealLightmass/Private/Launch \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealLightmass/Private/ImportExport \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealLightmass/Private/CPUSolver \
@@ -1518,45 +1282,14 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealLightmass/Private/LightmassCore/Misc \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealLightmass/Private/LightmassCore/Math \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealLightmass/Private/LightmassCore/Templates \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealLightmass/Private/LightmassCore/Types \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLightmass/Inc/UnrealLightmass \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealLightmass \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLightmass/Inc/CoreUObject \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLightmass/Inc/SwarmInterface \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLightmass/Inc/Projects \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLightmass/Inc/Json \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLightmass/Inc/Networking \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLightmass/Inc/Sockets \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLightmass/Inc/Messaging \
 	/home/robertb/Downloads/UnrealEngine/Engine/Plugins/Messaging/UdpMessaging/Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealLightmass/Inc/UdpMessaging \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealPak/Inc/UnrealPak \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealPak \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealPak/Inc/PakFile \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealPak/Inc/Projects \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealPak/Inc/Json \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealSync/Inc/UnrealSync \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealSync \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealSync/Inc/Projects \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealSync/Inc/Json \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealSync/Inc/Slate \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealSync/Inc/CoreUObject \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealSync/Inc/InputCore \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealSync/Inc/SlateCore \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealSync/Inc/StandaloneRenderer \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealSync/Inc/XmlParser \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealVersionSelector/Inc/UnrealVersionSelector \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/UnrealVersionSelector \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealVersionSelector/Inc/Projects \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealVersionSelector/Inc/Json \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UnrealVersionSelector/Inc/DesktopPlatform \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/BootstrapPackagedGame/Inc/BootstrapPackagedGame \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/Programs/Windows/BootstrapPackagedGame \
-	Source \
-	Intermediate/Build/Linux/x86_64-unknown-linux-gnu/UE4Editor/Inc/Wizards \
-	Source/Wizards \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/Perforce/p4api-2014.1/include \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/FreeType2/FreeType2-2.4.12/include \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/ICU/icu4c-53_1/include \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/PhysX/PhysX-3.3/include \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/PhysX/PhysX-3.3/include/foundation \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/PhysX/PhysX-3.3/include/cooking \
@@ -1573,6 +1306,7 @@ INCLUDEPATH += \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/PhysX/APEX-1.3/module/legacy/public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/PhysX/APEX-1.3/NxParameterized/public \
 	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/Ogg/libogg-1.2.2/include \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/FBX/2014.2.1/include \
-	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/FBX/2014.2.1/include/fbxsdk \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/hlslcc/hlslcc/src/hlslcc_lib \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/FBX/2016.1.1/include \
+	/home/robertb/Downloads/UnrealEngine/Engine/Source/ThirdParty/FBX/2016.1.1/include/fbxsdk \
 

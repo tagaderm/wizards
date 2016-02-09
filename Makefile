@@ -70,6 +70,11 @@ TARGETS = \
 	UnrealAtoS-Linux-Shipping  \
 	UnrealAtoS-Linux-Test  \
 	UnrealAtoS \
+	ParallelExecutor-Linux-Debug  \
+	ParallelExecutor-Linux-DebugGame  \
+	ParallelExecutor-Linux-Shipping  \
+	ParallelExecutor-Linux-Test  \
+	ParallelExecutor \
 	ShaderCompileWorker-Linux-Debug  \
 	ShaderCompileWorker-Linux-DebugGame  \
 	ShaderCompileWorker-Linux-Shipping  \
@@ -95,6 +100,11 @@ TARGETS = \
 	UnrealCEFSubProcess-Linux-Shipping  \
 	UnrealCEFSubProcess-Linux-Test  \
 	UnrealCEFSubProcess \
+	UnrealCodeAnalyzer-Linux-Debug  \
+	UnrealCodeAnalyzer-Linux-DebugGame  \
+	UnrealCodeAnalyzer-Linux-Shipping  \
+	UnrealCodeAnalyzer-Linux-Test  \
+	UnrealCodeAnalyzer \
 	UnrealFileServer-Linux-Debug  \
 	UnrealFileServer-Linux-DebugGame  \
 	UnrealFileServer-Linux-Shipping  \
@@ -354,6 +364,21 @@ UnrealAtoS-Linux-Test:
 UnrealAtoS:
 	 $(BUILD) UnrealAtoS Linux Development  $(ARGS)
 
+ParallelExecutor-Linux-Debug:
+	 $(BUILD) ParallelExecutor Linux Debug  $(ARGS)
+
+ParallelExecutor-Linux-DebugGame:
+	 $(BUILD) ParallelExecutor Linux DebugGame  $(ARGS)
+
+ParallelExecutor-Linux-Shipping:
+	 $(BUILD) ParallelExecutor Linux Shipping  $(ARGS)
+
+ParallelExecutor-Linux-Test:
+	 $(BUILD) ParallelExecutor Linux Test  $(ARGS)
+
+ParallelExecutor:
+	 $(BUILD) ParallelExecutor Linux Development  $(ARGS)
+
 ShaderCompileWorker-Linux-Debug:
 	 $(BUILD) ShaderCompileWorker Linux Debug  $(ARGS)
 
@@ -428,6 +453,21 @@ UnrealCEFSubProcess-Linux-Test:
 
 UnrealCEFSubProcess:
 	 $(BUILD) UnrealCEFSubProcess Linux Development  $(ARGS)
+
+UnrealCodeAnalyzer-Linux-Debug:
+	 $(BUILD) UnrealCodeAnalyzer Linux Debug  $(ARGS)
+
+UnrealCodeAnalyzer-Linux-DebugGame:
+	 $(BUILD) UnrealCodeAnalyzer Linux DebugGame  $(ARGS)
+
+UnrealCodeAnalyzer-Linux-Shipping:
+	 $(BUILD) UnrealCodeAnalyzer Linux Shipping  $(ARGS)
+
+UnrealCodeAnalyzer-Linux-Test:
+	 $(BUILD) UnrealCodeAnalyzer Linux Test  $(ARGS)
+
+UnrealCodeAnalyzer:
+	 $(BUILD) UnrealCodeAnalyzer Linux Development  $(ARGS)
 
 UnrealFileServer-Linux-Debug:
 	 $(BUILD) UnrealFileServer Linux Debug  $(ARGS)
