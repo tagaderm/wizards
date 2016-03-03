@@ -231,6 +231,7 @@ bool AWizardsCharacter::EnableTouchscreenMovement(class UInputComponent* InputCo
 }
 
 float AWizardsCharacter::GetHealth(){
+	Health = 100.0;
 	return Health;
 }
 float AWizardsCharacter::GetMana(){
