@@ -31,11 +31,6 @@ AWizardsProjectile::AWizardsProjectile()
 	InitialLifeSpan = 3.0f;
 }
 
-void AWizardsProjectile::PostActorCreated(AWizardsCharacter::Spell* theSpell){
-	Super::PostActorCreated();
-}
-
-
 void AWizardsProjectile::OnHit(AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
 	// Only add impulse and destroy projectile if we hit a physics

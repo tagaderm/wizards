@@ -24,7 +24,7 @@ public:
 	UFUNCTION()
 	void OnHit(AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 
-	void SpellCreation(AWizardsCharacter::Spell* theSpell);
+	void PostActorCreated(AWizardsCharacter::Spell* theSpell) override;
 
 	/** Returns CollisionComp subobject **/
 	FORCEINLINE class USphereComponent* GetCollisionComp() const { return CollisionComp; }
