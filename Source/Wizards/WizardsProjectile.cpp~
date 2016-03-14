@@ -22,19 +22,14 @@ AWizardsProjectile::AWizardsProjectile()
 	// Use a ProjectileMovementComponent to govern this projectile's movement
 	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileComp"));
 	ProjectileMovement->UpdatedComponent = CollisionComp;
-	ProjectileMovement->InitialSpeed = 7000.f;
-	ProjectileMovement->MaxSpeed = 7000.f;
+	ProjectileMovement->InitialSpeed = 3000.f;
+	ProjectileMovement->MaxSpeed = 3000.f;
 	ProjectileMovement->bRotationFollowsVelocity = true;
 	ProjectileMovement->bShouldBounce = true;
 
 	// Die after 3 seconds by default
 	InitialLifeSpan = 3.0f;
 }
-
-void AWizardsProjectile::PostActorCreated(AWizardsCharacter::Spell* theSpell){
-	Super::PostActorCreated();
-}
-
 
 void AWizardsProjectile::OnHit(AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {

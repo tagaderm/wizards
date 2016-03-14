@@ -34,6 +34,18 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
 	FVector GunOffset;
 
+	/** Health */
+	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
+	float Health;
+	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
+	float maxHealth;
+
+	/** Mana */
+	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
+	float Mana;
+	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
+	float maxMana;
+
 	/** Projectile class to spawn */
 	UPROPERTY(EditDefaultsOnly, Category=Projectile)
 	TSubclassOf<class AWizardsProjectile> ProjectileClass;
@@ -81,30 +93,6 @@ protected:
 	void EndTouch(const ETouchIndex::Type FingerIndex, const FVector Location);
 	void TouchUpdate(const ETouchIndex::Type FingerIndex, const FVector Location);
 	TouchData	TouchItem;
-protected: //This section is for all of the character's traits as well as its spells and their traits
-	/** Health */
-	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
-	float Health;
-	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
-	float maxHealth;
-
-	/** Mana */
-	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
-	float Mana;
-	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
-	float maxMana;
-	//Long term I don't expect Spell to be here but for now it's convenient
-	struct Spell
-	{
-		//UParticleSystem particleEffect;//Whatever Particle Stuff is associated with this
-		int32 spellType;//The type of spell. beam, explosion, ranged explosion, etc
-		int32 spellEffect;//Fire, Water, Steam, Ice, Forks, Hotdogs, etc.
-		int32 spellIntensity;//The amount of damage inflicted by spell
-		int32 spellSize;//The size of spell
-		int32 spellDistance;//How far the spell goes
-		float spellCost;//How much mana the spell costs
-	};
-	Spell SList;
 	
 protected:
 	// APawn interface

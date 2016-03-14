@@ -21,17 +21,6 @@ AWizardsCharacter::AWizardsCharacter()
 	Mana = 100.0;
 	maxMana = 100.0;
 
-
-
-	//SList.particleEffect = CreateDefaultSubobject<UParticleSystem>(TEXT("P_Fire"));
-	SList.spellType = 1;
-	SList.spellEffect = 1;
-	SList.spellIntensity = 40;
-	SList.spellSize = 30;
-	SList.spellDistance = 20;
-	SList.spellCost = 10.0;
-
-
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 
@@ -101,8 +90,8 @@ void AWizardsCharacter::SetupPlayerInputComponent(class UInputComponent* InputCo
 
 void AWizardsCharacter::OnFire()
 { 
-	if(Mana > SList.spellCost){
-		Mana -= SList.spellCost;
+	if(Mana > 50.0){
+		Mana -= 50.0;
 		// try and fire a projectile
 		if (ProjectileClass != NULL)
 		{
@@ -114,8 +103,7 @@ void AWizardsCharacter::OnFire()
 			if (World != NULL)
 			{
 				// spawn the projectile at the muzzle
-				AWizardsProjectile* wizardsSpell = (AWizardsProjectile*)World->SpawnActor<AWizardsProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);
-				wizardsSpell->SpellCreation(&SList);
+				World->SpawnActor<AWizardsProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);
 			}
 		}
 
