@@ -13,7 +13,7 @@ class AWizardsProjectile : public AActor
 	/** Sphere collision component */
 	UPROPERTY(VisibleDefaultsOnly, Category=Projectile)
 	class USphereComponent* CollisionComp;
-	class UParticleSystemComponent* MyParticleSystem;
+	class UParticleSystem* MyParticleSystem;
 
 	/** Projectile movement component */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))

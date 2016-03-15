@@ -30,6 +30,9 @@ AWizardsProjectile::AWizardsProjectile()
 
 	// Die after 3 seconds by default
 	InitialLifeSpan = 3.0f;
+
+  MyParticleSystem = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("Madness"));
+
 }
 
 void AWizardsProjectile::OnHit(AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
@@ -45,9 +48,11 @@ void AWizardsProjectile::OnHit(AActor* OtherActor, UPrimitiveComponent* OtherCom
 
 void AWizardsProjectile::SpellCreation(AWizardsCharacter::spell* theSpell) {
 	if(theSpell != NULL){
-		MyParticleSystem = theSpell->myParticle;
-		UE_LOG(LogTemp, Warning, TEXT("I can't believe it's not null!"));
-		MyParticleSystem->BuildEmitters();
+		MyParticleSystem->SetTemplate(theSpell->myParticle);
+		MyParticleSystem->AttachTo(RootComponent);
+		MyParticleSystem->SetWorldScale3D( FVector( 20 ) );
+		//UE_LOG(LogTemp, Warning, TEXT("I can't believe it's not null!"));
+		//MyParticleSystem->BuildEmitters();
 		//MyParticleSystem = CreateDefaultSubobject<UParticleSystem>(this, MyParticleSystem);
 		//CollisionComp->SetSphereRadius(20.f);
 		//MyParticleSystem->Template = ArbitraryParticleName.Object;
