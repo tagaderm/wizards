@@ -4,8 +4,9 @@
 #include "WizardsProjectile.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 
-AWizardsProjectile::AWizardsProjectile() 
+AWizardsProjectile::AWizardsProjectile()
 {
+	UE_LOG(LogTemp, Warning, TEXT("The constructor is being called!"));
 	// Use a sphere as a simple collision representation
 	CollisionComp = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComp"));
 	CollisionComp->InitSphereRadius(5.0f);
@@ -40,4 +41,19 @@ void AWizardsProjectile::OnHit(AActor* OtherActor, UPrimitiveComponent* OtherCom
 
 		Destroy();
 	}
+}
+
+void AWizardsProjectile::SpellCreation(AWizardsCharacter::spell* theSpell) {
+	if(theSpell != NULL){
+		MyParticleSystem = theSpell->myParticle;
+		UE_LOG(LogTemp, Warning, TEXT("I can't believe it's not null!"));
+		MyParticleSystem->BuildEmitters();
+		//MyParticleSystem = CreateDefaultSubobject<UParticleSystem>(this, MyParticleSystem);
+		//CollisionComp->SetSphereRadius(20.f);
+		//MyParticleSystem->Template = ArbitraryParticleName.Object;
+		//MyParticleSystem->bAutoActivate = true;
+		//MyParticleSystem->SetHiddenInGame(false);
+	}
+	//FString spellName = theSpell->particleLocation.ToString;
+	//ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName(spellName.);
 }

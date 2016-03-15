@@ -6,13 +6,13 @@
 #include "Animation/AnimInstance.h"
 #include "GameFramework/InputSettings.h"
 
-DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
+//DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
 //////////////////////////////////////////////////////////////////////////
 // AWizardsCharacter
 
 AWizardsCharacter::AWizardsCharacter()
-{
+{ 
 	//Tick for mana regen
 	PrimaryActorTick.bCanEverTick = true;
 	//Set Health and Mana
@@ -20,6 +20,13 @@ AWizardsCharacter::AWizardsCharacter()
 	maxHealth = 100.0;
 	Mana = 100.0;
 	maxMana = 100.0;
+	//Spell Stuff for Testing
+	SList.spellCost = 10.0;
+
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Sparks.P_Sparks'"));
+	SList.myParticle = ArbitraryParticleName.Object;
+	SList.test = &ArbitraryParticleName;
+	//SList.particleLocation = FName(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Sparks.P_Sparks'"));
 
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
@@ -90,21 +97,30 @@ void AWizardsCharacter::SetupPlayerInputComponent(class UInputComponent* InputCo
 
 void AWizardsCharacter::OnFire()
 { 
-	if(Mana > 50.0){
-		Mana -= 50.0;
+	if(Mana > SList.spellCost){
+		Mana -= SList.spellCost;
 		// try and fire a projectile
-		if (ProjectileClass != NULL)
-		{
+		//if (ProjectileClass != NULL)
+		//{
 			const FRotator SpawnRotation = GetControlRotation();
 			// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
 			const FVector SpawnLocation = GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
 
 			UWorld* const World = GetWorld();
-			if (World != NULL)
+			if (World)
 			{
 				// spawn the projectile at the muzzle
-				World->SpawnActor<AWizardsProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);
-			}
+				FActorSpawnParameters myparams;
+				myparams.Owner = Cast<AActor>(this);
+				myparams.Instigator = Cast<APawn>(this);
+				myparams.bAllowDuringConstructionScript = false;
+				myparams.bNoFail = true;
+				myparams.bRemoteOwned = false;
+				//AWizardsProjectile* wizardsSpell = 
+				AWizardsProjectile* wizardsSpell = World->SpawnActor<AWizardsProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);// , myparams);
+				wizardsSpell->SpellCreation(&SList);
+				 
+			//}
 		}
 
 		// try and play the sound if specified
