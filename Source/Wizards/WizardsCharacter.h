@@ -47,12 +47,24 @@ public:
 	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
 	float maxMana;
 	struct spell {
-		FName* particleLocation;
-		ConstructorHelpers::FObjectFinder<UParticleSystem>* test;
+		//FName* particleLocation;
+		//ConstructorHelpers::FObjectFinder<UParticleSystem>* test;
 		UParticleSystem* myParticle;
 		float spellCost;
+		float spellSpeed; 
+		float spellDamage;
+		float spellRange; //lifetime for projectiles, distance for rays and blasts
+		float spellSize;
+		bool canBounce;
+		bool hasGravity;
+		AWizardsCharacter* theWizard;
+		//bool isHoming;
+		//bool explodeOnCollision;
+		//bool explodeOnDeath;
+		//float explosionDamage;
 	};
-	spell SList;
+	spell SList[5];
+	int8 currSpell;
 
 	/** Projectile class to spawn */
 	UPROPERTY(EditAnywhere, Category=Projectile)

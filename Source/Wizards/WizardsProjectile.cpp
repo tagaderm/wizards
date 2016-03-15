@@ -6,7 +6,6 @@
 
 AWizardsProjectile::AWizardsProjectile()
 {
-	UE_LOG(LogTemp, Warning, TEXT("The constructor is being called!"));
 	// Use a sphere as a simple collision representation
 	CollisionComp = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComp"));
 	CollisionComp->InitSphereRadius(5.0f);
@@ -27,6 +26,7 @@ AWizardsProjectile::AWizardsProjectile()
 	ProjectileMovement->MaxSpeed = 7000.f;
 	ProjectileMovement->bRotationFollowsVelocity = true;
 	ProjectileMovement->bShouldBounce = true;
+	ProjectileMovement->ProjectileGravityScale = 0.0f;
 
 	// Die after 3 seconds by default
 	InitialLifeSpan = 3.0f;
@@ -44,6 +44,12 @@ void AWizardsProjectile::OnHit(AActor* OtherActor, UPrimitiveComponent* OtherCom
 
 		Destroy();
 	}
+  else if(shouldBounce == false && (OtherActor != this) && (OtherActor != owningWizard)){
+  	//UE_LOG(LogTemp, Warning, TEXT("Bounce!"));
+    //ProjectileMovement->InitialSpeed = 0.f;
+		ProjectileMovement->MaxSpeed = 0.01f;//need to look up how to just set speed to 0
+  	ProjectileMovement->ProjectileGravityScale = 0.f;
+	}
 }
 
 void AWizardsProjectile::SpellCreation(AWizardsCharacter::spell* theSpell) {
@@ -51,14 +57,13 @@ void AWizardsProjectile::SpellCreation(AWizardsCharacter::spell* theSpell) {
 		MyParticleSystem->SetTemplate(theSpell->myParticle);
 		MyParticleSystem->AttachTo(RootComponent);
 		MyParticleSystem->SetWorldScale3D( FVector( 20 ) );
+		owningWizard = theSpell->theWizard;
+  	shouldBounce = theSpell->canBounce;
+
 		//UE_LOG(LogTemp, Warning, TEXT("I can't believe it's not null!"));
-		//MyParticleSystem->BuildEmitters();
-		//MyParticleSystem = CreateDefaultSubobject<UParticleSystem>(this, MyParticleSystem);
 		//CollisionComp->SetSphereRadius(20.f);
 		//MyParticleSystem->Template = ArbitraryParticleName.Object;
 		//MyParticleSystem->bAutoActivate = true;
 		//MyParticleSystem->SetHiddenInGame(false);
 	}
-	//FString spellName = theSpell->particleLocation.ToString;
-	//ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName(spellName.);
 }

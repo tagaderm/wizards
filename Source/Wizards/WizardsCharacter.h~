@@ -1,6 +1,7 @@
 // Copyright 1998-2015 Epic Games, Inc. All Rights Reserved.
 #pragma once
 #include "GameFramework/Character.h"
+#include "ParticleDefinitions.h"
 #include "WizardsCharacter.generated.h"
 
 class UInputComponent;
@@ -45,9 +46,27 @@ public:
 	float Mana;
 	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
 	float maxMana;
+	struct spell {
+		//FName* particleLocation;
+		//ConstructorHelpers::FObjectFinder<UParticleSystem>* test;
+		UParticleSystem* myParticle;
+		float spellCost;
+		float spellSpeed; 
+		float spellDamage;
+		float spellRange; //lifetime for projectiles, distance for rays and blasts
+		float spellSize;
+		bool canBounce;
+		bool hasGravity;
+		//bool isHoming;
+		//bool explodeOnCollision;
+		//bool explodeOnDeath;
+		//float explosionDamage;
+	};
+	spell SList[5];
+	int8 currSpell;
 
 	/** Projectile class to spawn */
-	UPROPERTY(EditDefaultsOnly, Category=Projectile)
+	UPROPERTY(EditAnywhere, Category=Projectile)
 	TSubclassOf<class AWizardsProjectile> ProjectileClass;
 
 	/** Sound to play each time we fire */

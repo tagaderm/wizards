@@ -13,12 +13,14 @@ class AWizardsProjectile : public AActor
 	/** Sphere collision component */
 	UPROPERTY(VisibleDefaultsOnly, Category=Projectile)
 	class USphereComponent* CollisionComp;
-	class UParticleSystem* MyParticleSystem;
+	class UParticleSystemComponent* MyParticleSystem;
 
 	/** Projectile movement component */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
 	class UProjectileMovementComponent* ProjectileMovement;
 	//AWizardsCharacter* owningWizard;
+
+	bool shouldBounce;
 
 public:
 	AWizardsProjectile();

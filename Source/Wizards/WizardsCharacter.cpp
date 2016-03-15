@@ -20,12 +20,15 @@ AWizardsCharacter::AWizardsCharacter()
 	maxHealth = 100.0;
 	Mana = 100.0;
 	maxMana = 100.0;
-	//Spell Stuff for Testing
-	SList.spellCost = 10.0;
+	currSpell = 0;
 
+	//Spell Stuff for Testing
+	SList[currSpell].spellCost = 10.0;
+	SList[currSpell].theWizard = this;
+  SList[currSpell].canBounce = true;
 	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Sparks.P_Sparks'"));
-	SList.myParticle = ArbitraryParticleName.Object;
-	SList.test = &ArbitraryParticleName;
+	SList[currSpell].myParticle = ArbitraryParticleName.Object;
+	//SList.test = &ArbitraryParticleName;
 	//SList.particleLocation = FName(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Sparks.P_Sparks'"));
 
 	// Set size for collision capsule
@@ -97,8 +100,8 @@ void AWizardsCharacter::SetupPlayerInputComponent(class UInputComponent* InputCo
 
 void AWizardsCharacter::OnFire()
 { 
-	if(Mana > SList.spellCost){
-		Mana -= SList.spellCost;
+	if(Mana > SList[currSpell].spellCost){
+		Mana -= SList[currSpell].spellCost;
 		// try and fire a projectile
 		if (ProjectileClass != NULL)
 		{
@@ -118,7 +121,7 @@ void AWizardsCharacter::OnFire()
 				myparams.bRemoteOwned = false;
 				//AWizardsProjectile* wizardsSpell = 
 				AWizardsProjectile* wizardsSpell = World->SpawnActor<AWizardsProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);// , myparams);
-				wizardsSpell->SpellCreation(&SList);
+				wizardsSpell->SpellCreation(&SList[currSpell]);
 				 
 			}
 		}
