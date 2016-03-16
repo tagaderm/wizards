@@ -15,6 +15,8 @@ class WIZARDS_API UCustomSpellFunctions : public UBlueprintFunctionLibrary
 
 	UFUNCTION(BlueprintCallable, Category = "VictoryBPLibrary")
 	static int32 MostDefinitelyaTest();
+
+	int32 testint;
 	
 	
 	
