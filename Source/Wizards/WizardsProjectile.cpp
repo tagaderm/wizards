@@ -26,13 +26,13 @@ AWizardsProjectile::AWizardsProjectile()
 	ProjectileMovement->MaxSpeed = 7000.f;
 	ProjectileMovement->bRotationFollowsVelocity = true;
 	ProjectileMovement->bShouldBounce = true;
-	ProjectileMovement->ProjectileGravityScale = 0.0f;
+	ProjectileMovement->ProjectileGravityScale = 1.0f;
 
 	// Die after 3 seconds by default
 	InitialLifeSpan = 3.0f;
 
   MyParticleSystem = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("Madness"));
-
+  //SetLifeSpan(30.f);
 }
 
 void AWizardsProjectile::OnHit(AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
@@ -56,7 +56,7 @@ void AWizardsProjectile::SpellCreation(AWizardsCharacter::spell* theSpell) {
 	if(theSpell != NULL){
 		MyParticleSystem->SetTemplate(theSpell->myParticle);
 		MyParticleSystem->AttachTo(RootComponent);
-		MyParticleSystem->SetWorldScale3D( FVector( 20 ) );
+		MyParticleSystem->SetWorldScale3D( FVector( 10 ) );
 		owningWizard = theSpell->theWizard;
   	shouldBounce = theSpell->canBounce;
 

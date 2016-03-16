@@ -57,11 +57,13 @@ public:
 		float spellSize;
 		bool canBounce;
 		bool hasGravity;
-		AWizardsCharacter* theWizard;
 		//bool isHoming;
 		//bool explodeOnCollision;
 		//bool explodeOnDeath;
 		//float explosionDamage;
+		//float explosionSize;
+		AWizardsCharacter* theWizard;
+
 	};
 	spell SList[5];
 	int8 currSpell;
