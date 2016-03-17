@@ -60,12 +60,14 @@ public:
 		bool isHoming;
 		bool explodeOnCollision;
 		bool explodeOnDeath;
-		//float explosionDamage;
-		//float explosionSize;
+		float explosionHitDamage;
+		float explosionHitSize;
+		float explosionDeathDamage;
+		float explosionDeathSize;
 		AWizardsCharacter* theWizard;
 
 	};
-	spell SList[5];
+	TArray spell SList;
 	int8 currSpell;
 
 	/** Projectile class to spawn */
