@@ -57,9 +57,9 @@ public:
 		float spellSize;
 		bool canBounce;
 		bool hasGravity;
-		//bool isHoming;
-		//bool explodeOnCollision;
-		//bool explodeOnDeath;
+		bool isHoming;
+		bool explodeOnCollision;
+		bool explodeOnDeath;
 		//float explosionDamage;
 		//float explosionSize;
 		AWizardsCharacter* theWizard;
