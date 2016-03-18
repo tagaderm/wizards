@@ -9,15 +9,49 @@
 #include "Wizards.generated.dep.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeWizards() {}
-	void UCustomSpellFunctions::StaticRegisterNativesUCustomSpellFunctions()
-	{
-		FNativeFunctionRegistrar::RegisterFunction(UCustomSpellFunctions::StaticClass(),"MostDefinitelyaTest",(Native)&UCustomSpellFunctions::execMostDefinitelyaTest);
-	}
-	IMPLEMENT_CLASS(UCustomSpellFunctions, 2148337733);
 	void AWizardsCharacter::StaticRegisterNativesAWizardsCharacter()
 	{
 	}
 	IMPLEMENT_CLASS(AWizardsCharacter, 1963677156);
+	void UWizardsSaveGame::StaticRegisterNativesUWizardsSaveGame()
+	{
+	}
+	IMPLEMENT_CLASS(UWizardsSaveGame, 4226726797);
+	void UWizardMenuWidget::StaticRegisterNativesUWizardMenuWidget()
+	{
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"getBounce",(Native)&UWizardMenuWidget::execgetBounce);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"getCost",(Native)&UWizardMenuWidget::execgetCost);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"getDamage",(Native)&UWizardMenuWidget::execgetDamage);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"getExplDeathDamage",(Native)&UWizardMenuWidget::execgetExplDeathDamage);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"getExplDeathSize",(Native)&UWizardMenuWidget::execgetExplDeathSize);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"getExplHitDamage",(Native)&UWizardMenuWidget::execgetExplHitDamage);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"getExplHitSize",(Native)&UWizardMenuWidget::execgetExplHitSize);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"getExplodeDeath",(Native)&UWizardMenuWidget::execgetExplodeDeath);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"getExplodeHit",(Native)&UWizardMenuWidget::execgetExplodeHit);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"getGravity",(Native)&UWizardMenuWidget::execgetGravity);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"getHoming",(Native)&UWizardMenuWidget::execgetHoming);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"getRange",(Native)&UWizardMenuWidget::execgetRange);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"getSize",(Native)&UWizardMenuWidget::execgetSize);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"getSpeed",(Native)&UWizardMenuWidget::execgetSpeed);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setBounce",(Native)&UWizardMenuWidget::execsetBounce);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setCost",(Native)&UWizardMenuWidget::execsetCost);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setDamage",(Native)&UWizardMenuWidget::execsetDamage);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setExplDeathDamage",(Native)&UWizardMenuWidget::execsetExplDeathDamage);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setExplDeathSize",(Native)&UWizardMenuWidget::execsetExplDeathSize);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setExplHitDamage",(Native)&UWizardMenuWidget::execsetExplHitDamage);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setExplHitSize",(Native)&UWizardMenuWidget::execsetExplHitSize);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setExplodeDeath",(Native)&UWizardMenuWidget::execsetExplodeDeath);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setExplodeHit",(Native)&UWizardMenuWidget::execsetExplodeHit);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setGravity",(Native)&UWizardMenuWidget::execsetGravity);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setHoming",(Native)&UWizardMenuWidget::execsetHoming);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setRange",(Native)&UWizardMenuWidget::execsetRange);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setSize",(Native)&UWizardMenuWidget::execsetSize);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setSpeed",(Native)&UWizardMenuWidget::execsetSpeed);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"spellChange",(Native)&UWizardMenuWidget::execspellChange);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"spellsInitialize",(Native)&UWizardMenuWidget::execspellsInitialize);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"spellsSave",(Native)&UWizardMenuWidget::execspellsSave);
+	}
+	IMPLEMENT_CLASS(UWizardMenuWidget, 3610790241);
 	void AWizardsGameMode::StaticRegisterNativesAWizardsGameMode()
 	{
 	}
@@ -33,13 +67,14 @@ void EmptyLinkFunctionForGeneratedCodeWizards() {}
 	IMPLEMENT_CLASS(AWizardsProjectile, 587859448);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
-	ENGINE_API class UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API class UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USoundBase_NoRegister();
 	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_USaveGame();
+	UMG_API class UClass* Z_Construct_UClass_UUserWidget();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 	ENGINE_API class UClass* Z_Construct_UClass_AHUD();
 	ENGINE_API class UClass* Z_Construct_UClass_UFont_NoRegister();
@@ -50,11 +85,43 @@ void EmptyLinkFunctionForGeneratedCodeWizards() {}
 	ENGINE_API class UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 
-	WIZARDS_API class UFunction* Z_Construct_UFunction_UCustomSpellFunctions_MostDefinitelyaTest();
-	WIZARDS_API class UClass* Z_Construct_UClass_UCustomSpellFunctions_NoRegister();
-	WIZARDS_API class UClass* Z_Construct_UClass_UCustomSpellFunctions();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsCharacter_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsCharacter();
+	WIZARDS_API class UClass* Z_Construct_UClass_UWizardsSaveGame_NoRegister();
+	WIZARDS_API class UClass* Z_Construct_UClass_UWizardsSaveGame();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_getBounce();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_getCost();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_getDamage();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_getExplDeathDamage();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_getExplDeathSize();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_getExplHitDamage();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_getExplHitSize();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_getExplodeDeath();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_getExplodeHit();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_getGravity();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_getHoming();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_getRange();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_getSize();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_getSpeed();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setBounce();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setCost();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setDamage();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setExplDeathDamage();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setExplDeathSize();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setExplHitDamage();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setExplHitSize();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setExplodeDeath();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setExplodeHit();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setGravity();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setHoming();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setRange();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setSize();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setSpeed();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_spellChange();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_spellsInitialize();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_spellsSave();
+	WIZARDS_API class UClass* Z_Construct_UClass_UWizardMenuWidget_NoRegister();
+	WIZARDS_API class UClass* Z_Construct_UClass_UWizardMenuWidget();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsGameMode_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsGameMode();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsHUD_NoRegister();
@@ -63,61 +130,6 @@ void EmptyLinkFunctionForGeneratedCodeWizards() {}
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsProjectile_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsProjectile();
 	WIZARDS_API class UPackage* Z_Construct_UPackage_Wizards();
-	UFunction* Z_Construct_UFunction_UCustomSpellFunctions_MostDefinitelyaTest()
-	{
-		struct CustomSpellFunctions_eventMostDefinitelyaTest_Parms
-		{
-			int32 ReturnValue;
-		};
-		UObject* Outer=Z_Construct_UClass_UCustomSpellFunctions();
-		static UFunction* ReturnFunction = NULL;
-		if (!ReturnFunction)
-		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("MostDefinitelyaTest"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04042401, 65535, sizeof(CustomSpellFunctions_eventMostDefinitelyaTest_Parms));
-			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UIntProperty(CPP_PROPERTY_BASE(ReturnValue, CustomSpellFunctions_eventMostDefinitelyaTest_Parms), 0x0000000000000580);
-			ReturnFunction->Bind();
-			ReturnFunction->StaticLink();
-#if WITH_METADATA
-			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VictoryBPLibrary"));
-			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("CustomSpellFunctions.h"));
-#endif
-		}
-		return ReturnFunction;
-	}
-	UClass* Z_Construct_UClass_UCustomSpellFunctions_NoRegister()
-	{
-		return UCustomSpellFunctions::StaticClass();
-	}
-	UClass* Z_Construct_UClass_UCustomSpellFunctions()
-	{
-		static UClass* OuterClass = NULL;
-		if (!OuterClass)
-		{
-			Z_Construct_UClass_UBlueprintFunctionLibrary();
-			Z_Construct_UPackage_Wizards();
-			OuterClass = UCustomSpellFunctions::StaticClass();
-			if (!(OuterClass->ClassFlags & CLASS_Constructed))
-			{
-				UObjectForceRegistration(OuterClass);
-				OuterClass->ClassFlags |= 0x20100080;
-
-				OuterClass->LinkChild(Z_Construct_UFunction_UCustomSpellFunctions_MostDefinitelyaTest());
-
-				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UCustomSpellFunctions_MostDefinitelyaTest()); // 1968400657
-				OuterClass->StaticLink();
-#if WITH_METADATA
-				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
-				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("CustomSpellFunctions.h"));
-				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("CustomSpellFunctions.h"));
-#endif
-			}
-		}
-		check(OuterClass->GetClass());
-		return OuterClass;
-	}
-	static FCompiledInDefer Z_CompiledInDefer_UClass_UCustomSpellFunctions(Z_Construct_UClass_UCustomSpellFunctions, TEXT("UCustomSpellFunctions"));
-	DEFINE_VTABLE_PTR_HELPER_CTOR(UCustomSpellFunctions);
 	UClass* Z_Construct_UClass_AWizardsCharacter_NoRegister()
 	{
 		return AWizardsCharacter::StaticClass();
@@ -188,6 +200,822 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AWizardsCharacter(Z_Construct_UClass_AWizardsCharacter, TEXT("AWizardsCharacter"));
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AWizardsCharacter);
+	UClass* Z_Construct_UClass_UWizardsSaveGame_NoRegister()
+	{
+		return UWizardsSaveGame::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UWizardsSaveGame()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_USaveGame();
+			Z_Construct_UPackage_Wizards();
+			OuterClass = UWizardsSaveGame::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20100080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_SaveSlotName = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SaveSlotName"), RF_Public|RF_Transient|RF_Native) UStrProperty(CPP_PROPERTY_BASE(SaveSlotName, UWizardsSaveGame), 0x0000000000020001);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("WizardsSaveGame.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("WizardsSaveGame.h"));
+				MetaData->SetValue(NewProp_SaveSlotName, TEXT("Category"), TEXT("Basic"));
+				MetaData->SetValue(NewProp_SaveSlotName, TEXT("ModuleRelativePath"), TEXT("WizardsSaveGame.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UWizardsSaveGame(Z_Construct_UClass_UWizardsSaveGame, TEXT("UWizardsSaveGame"));
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UWizardsSaveGame);
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_getBounce()
+	{
+		struct WizardMenuWidget_eventgetBounce_Parms
+		{
+			bool ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("getBounce"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventgetBounce_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, WizardMenuWidget_eventgetBounce_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, WizardMenuWidget_eventgetBounce_Parms), 0x0000000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, WizardMenuWidget_eventgetBounce_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_getCost()
+	{
+		struct WizardMenuWidget_eventgetCost_Parms
+		{
+			float ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("getCost"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventgetCost_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, WizardMenuWidget_eventgetCost_Parms), 0x0000000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_getDamage()
+	{
+		struct WizardMenuWidget_eventgetDamage_Parms
+		{
+			float ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("getDamage"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventgetDamage_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, WizardMenuWidget_eventgetDamage_Parms), 0x0000000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_getExplDeathDamage()
+	{
+		struct WizardMenuWidget_eventgetExplDeathDamage_Parms
+		{
+			float ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("getExplDeathDamage"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventgetExplDeathDamage_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, WizardMenuWidget_eventgetExplDeathDamage_Parms), 0x0000000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_getExplDeathSize()
+	{
+		struct WizardMenuWidget_eventgetExplDeathSize_Parms
+		{
+			float ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("getExplDeathSize"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventgetExplDeathSize_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, WizardMenuWidget_eventgetExplDeathSize_Parms), 0x0000000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_getExplHitDamage()
+	{
+		struct WizardMenuWidget_eventgetExplHitDamage_Parms
+		{
+			float ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("getExplHitDamage"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventgetExplHitDamage_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, WizardMenuWidget_eventgetExplHitDamage_Parms), 0x0000000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_getExplHitSize()
+	{
+		struct WizardMenuWidget_eventgetExplHitSize_Parms
+		{
+			float ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("getExplHitSize"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventgetExplHitSize_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, WizardMenuWidget_eventgetExplHitSize_Parms), 0x0000000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_getExplodeDeath()
+	{
+		struct WizardMenuWidget_eventgetExplodeDeath_Parms
+		{
+			bool ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("getExplodeDeath"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventgetExplodeDeath_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, WizardMenuWidget_eventgetExplodeDeath_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, WizardMenuWidget_eventgetExplodeDeath_Parms), 0x0000000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, WizardMenuWidget_eventgetExplodeDeath_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_getExplodeHit()
+	{
+		struct WizardMenuWidget_eventgetExplodeHit_Parms
+		{
+			bool ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("getExplodeHit"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventgetExplodeHit_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, WizardMenuWidget_eventgetExplodeHit_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, WizardMenuWidget_eventgetExplodeHit_Parms), 0x0000000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, WizardMenuWidget_eventgetExplodeHit_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_getGravity()
+	{
+		struct WizardMenuWidget_eventgetGravity_Parms
+		{
+			bool ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("getGravity"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventgetGravity_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, WizardMenuWidget_eventgetGravity_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, WizardMenuWidget_eventgetGravity_Parms), 0x0000000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, WizardMenuWidget_eventgetGravity_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("List of all getters"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_getHoming()
+	{
+		struct WizardMenuWidget_eventgetHoming_Parms
+		{
+			bool ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("getHoming"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventgetHoming_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, WizardMenuWidget_eventgetHoming_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, WizardMenuWidget_eventgetHoming_Parms), 0x0000000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, WizardMenuWidget_eventgetHoming_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_getRange()
+	{
+		struct WizardMenuWidget_eventgetRange_Parms
+		{
+			float ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("getRange"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventgetRange_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, WizardMenuWidget_eventgetRange_Parms), 0x0000000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_getSize()
+	{
+		struct WizardMenuWidget_eventgetSize_Parms
+		{
+			float ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("getSize"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventgetSize_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, WizardMenuWidget_eventgetSize_Parms), 0x0000000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_getSpeed()
+	{
+		struct WizardMenuWidget_eventgetSpeed_Parms
+		{
+			float ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("getSpeed"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventgetSpeed_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, WizardMenuWidget_eventgetSpeed_Parms), 0x0000000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_setBounce()
+	{
+		struct WizardMenuWidget_eventsetBounce_Parms
+		{
+			bool hasBounce;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("setBounce"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventsetBounce_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(hasBounce, WizardMenuWidget_eventsetBounce_Parms, bool);
+			UProperty* NewProp_hasBounce = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("hasBounce"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(hasBounce, WizardMenuWidget_eventsetBounce_Parms), 0x0000000000000080, CPP_BOOL_PROPERTY_BITMASK(hasBounce, WizardMenuWidget_eventsetBounce_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_setCost()
+	{
+		struct WizardMenuWidget_eventsetCost_Parms
+		{
+			float cost;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("setCost"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventsetCost_Parms));
+			UProperty* NewProp_cost = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("cost"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(cost, WizardMenuWidget_eventsetCost_Parms), 0x0000000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_setDamage()
+	{
+		struct WizardMenuWidget_eventsetDamage_Parms
+		{
+			float damage;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("setDamage"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventsetDamage_Parms));
+			UProperty* NewProp_damage = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("damage"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(damage, WizardMenuWidget_eventsetDamage_Parms), 0x0000000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_setExplDeathDamage()
+	{
+		struct WizardMenuWidget_eventsetExplDeathDamage_Parms
+		{
+			float damage;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("setExplDeathDamage"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventsetExplDeathDamage_Parms));
+			UProperty* NewProp_damage = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("damage"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(damage, WizardMenuWidget_eventsetExplDeathDamage_Parms), 0x0000000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_setExplDeathSize()
+	{
+		struct WizardMenuWidget_eventsetExplDeathSize_Parms
+		{
+			float size;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("setExplDeathSize"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventsetExplDeathSize_Parms));
+			UProperty* NewProp_size = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("size"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(size, WizardMenuWidget_eventsetExplDeathSize_Parms), 0x0000000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_setExplHitDamage()
+	{
+		struct WizardMenuWidget_eventsetExplHitDamage_Parms
+		{
+			float damage;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("setExplHitDamage"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventsetExplHitDamage_Parms));
+			UProperty* NewProp_damage = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("damage"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(damage, WizardMenuWidget_eventsetExplHitDamage_Parms), 0x0000000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_setExplHitSize()
+	{
+		struct WizardMenuWidget_eventsetExplHitSize_Parms
+		{
+			float size;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("setExplHitSize"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventsetExplHitSize_Parms));
+			UProperty* NewProp_size = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("size"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(size, WizardMenuWidget_eventsetExplHitSize_Parms), 0x0000000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_setExplodeDeath()
+	{
+		struct WizardMenuWidget_eventsetExplodeDeath_Parms
+		{
+			bool explodeDeath;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("setExplodeDeath"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventsetExplodeDeath_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(explodeDeath, WizardMenuWidget_eventsetExplodeDeath_Parms, bool);
+			UProperty* NewProp_explodeDeath = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("explodeDeath"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(explodeDeath, WizardMenuWidget_eventsetExplodeDeath_Parms), 0x0000000000000080, CPP_BOOL_PROPERTY_BITMASK(explodeDeath, WizardMenuWidget_eventsetExplodeDeath_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_setExplodeHit()
+	{
+		struct WizardMenuWidget_eventsetExplodeHit_Parms
+		{
+			bool explodeHit;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("setExplodeHit"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventsetExplodeHit_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(explodeHit, WizardMenuWidget_eventsetExplodeHit_Parms, bool);
+			UProperty* NewProp_explodeHit = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("explodeHit"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(explodeHit, WizardMenuWidget_eventsetExplodeHit_Parms), 0x0000000000000080, CPP_BOOL_PROPERTY_BITMASK(explodeHit, WizardMenuWidget_eventsetExplodeHit_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_setGravity()
+	{
+		struct WizardMenuWidget_eventsetGravity_Parms
+		{
+			bool hasGravity;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("setGravity"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventsetGravity_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(hasGravity, WizardMenuWidget_eventsetGravity_Parms, bool);
+			UProperty* NewProp_hasGravity = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("hasGravity"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(hasGravity, WizardMenuWidget_eventsetGravity_Parms), 0x0000000000000080, CPP_BOOL_PROPERTY_BITMASK(hasGravity, WizardMenuWidget_eventsetGravity_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("List of all setters"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_setHoming()
+	{
+		struct WizardMenuWidget_eventsetHoming_Parms
+		{
+			bool isHoming;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("setHoming"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventsetHoming_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(isHoming, WizardMenuWidget_eventsetHoming_Parms, bool);
+			UProperty* NewProp_isHoming = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("isHoming"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(isHoming, WizardMenuWidget_eventsetHoming_Parms), 0x0000000000000080, CPP_BOOL_PROPERTY_BITMASK(isHoming, WizardMenuWidget_eventsetHoming_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_setRange()
+	{
+		struct WizardMenuWidget_eventsetRange_Parms
+		{
+			float life;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("setRange"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventsetRange_Parms));
+			UProperty* NewProp_life = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("life"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(life, WizardMenuWidget_eventsetRange_Parms), 0x0000000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_setSize()
+	{
+		struct WizardMenuWidget_eventsetSize_Parms
+		{
+			float size;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("setSize"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventsetSize_Parms));
+			UProperty* NewProp_size = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("size"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(size, WizardMenuWidget_eventsetSize_Parms), 0x0000000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_setSpeed()
+	{
+		struct WizardMenuWidget_eventsetSpeed_Parms
+		{
+			float speed;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("setSpeed"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventsetSpeed_Parms));
+			UProperty* NewProp_speed = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("speed"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(speed, WizardMenuWidget_eventsetSpeed_Parms), 0x0000000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_spellChange()
+	{
+		struct WizardMenuWidget_eventspellChange_Parms
+		{
+			int32 spellSlot;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("spellChange"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535, sizeof(WizardMenuWidget_eventspellChange_Parms));
+			UProperty* NewProp_spellSlot = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("spellSlot"), RF_Public|RF_Transient|RF_Native) UIntProperty(CPP_PROPERTY_BASE(spellSlot, WizardMenuWidget_eventspellChange_Parms), 0x0000000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Called when spell is changed in spell bar\nChanges all values to this spells values"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_spellsInitialize()
+	{
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("spellsInitialize"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Initialize with previous values or defaults if nothing present"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_spellsSave()
+	{
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("spellsSave"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04040401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Saves the spells"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_UWizardMenuWidget_NoRegister()
+	{
+		return UWizardMenuWidget::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UWizardMenuWidget()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UUserWidget();
+			Z_Construct_UPackage_Wizards();
+			OuterClass = UWizardMenuWidget::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20901080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_getBounce());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_getCost());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_getDamage());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_getExplDeathDamage());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_getExplDeathSize());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_getExplHitDamage());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_getExplHitSize());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_getExplodeDeath());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_getExplodeHit());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_getGravity());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_getHoming());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_getRange());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_getSize());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_getSpeed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setBounce());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setCost());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setDamage());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setExplDeathDamage());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setExplDeathSize());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setExplHitDamage());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setExplHitSize());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setExplodeDeath());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setExplodeHit());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setGravity());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setHoming());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setRange());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setSize());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setSpeed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_spellChange());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_spellsInitialize());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_spellsSave());
+
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_getBounce()); // 3736278181
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_getCost()); // 610292555
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_getDamage()); // 75053600
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_getExplDeathDamage()); // 3237706084
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_getExplDeathSize()); // 857586338
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_getExplHitDamage()); // 3637458622
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_getExplHitSize()); // 3985634144
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_getExplodeDeath()); // 951396810
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_getExplodeHit()); // 2924936235
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_getGravity()); // 2964308146
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_getHoming()); // 4018664025
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_getRange()); // 1776733471
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_getSize()); // 1040502999
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_getSpeed()); // 900829777
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setBounce()); // 2795237113
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setCost()); // 4214672637
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setDamage()); // 1146519019
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setExplDeathDamage()); // 2626192414
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setExplDeathSize()); // 2599457266
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setExplHitDamage()); // 3771374688
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setExplHitSize()); // 1032297184
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setExplodeDeath()); // 3256147029
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setExplodeHit()); // 2978652611
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setGravity()); // 3997696639
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setHoming()); // 60469465
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setRange()); // 2449964022
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setSize()); // 2066495726
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setSpeed()); // 876437672
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_spellChange()); // 1038439854
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_spellsInitialize()); // 497887014
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_spellsSave()); // 2062413803
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("WizardMenuWidget.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UWizardMenuWidget(Z_Construct_UClass_UWizardMenuWidget, TEXT("UWizardMenuWidget"));
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UWizardMenuWidget);
 	UClass* Z_Construct_UClass_AWizardsGameMode_NoRegister()
 	{
 		return AWizardsGameMode::StaticClass();
@@ -344,8 +1172,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Wizards")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x80A7085D;
-			Guid.B = 0x35080D3D;
+			Guid.A = 0xD835B720;
+			Guid.B = 0xB509ADCF;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

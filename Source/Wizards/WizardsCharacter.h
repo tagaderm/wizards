@@ -47,9 +47,8 @@ public:
 	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
 	float maxMana;
 	struct spell {
-		//FName* particleLocation;
-		//ConstructorHelpers::FObjectFinder<UParticleSystem>* test;
 		UParticleSystem* myParticle;
+		int8 spellType;
 		float spellCost;
 		float spellSpeed; 
 		float spellDamage;
@@ -67,7 +66,7 @@ public:
 		AWizardsCharacter* theWizard;
 
 	};
-	TArray spell SList;
+	TArray<spell> SList;
 	int8 currSpell;
 
 	/** Projectile class to spawn */
