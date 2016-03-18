@@ -1,94 +1,103 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<ItemGroup>
-		<None Include="..\..\Wizards.uproject" />
-		<Filter Include="Source">
-			<UniqueIdentifier>{8590AF79-9D56-4A7E-BE74-3409DE450C4C}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Source\Wizards.Target.cs">
-			<Filter>Source</Filter>
-		</None >
-		<None Include="..\..\Source\WizardsEditor.Target.cs">
-			<Filter>Source</Filter>
-		</None >
-		<Filter Include="Config">
-			<UniqueIdentifier>{6387B2FE-7EA5-4274-8976-865A140F5795}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Config\DefaultEditor.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultEngine.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultGame.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultInput.ini">
-			<Filter>Config</Filter>
-		</None >
-		<Filter Include="Source\Wizards">
-			<UniqueIdentifier>{74584085-6A80-4A03-9302-50CC42BFAA16}</UniqueIdentifier>
-		</Filter>
-		<ClCompile Include="..\..\Source\Wizards\CustomSpellFunctions.cpp">
-			<Filter>Source\Wizards</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\Wizards\CustomSpellFunctions.h">
-			<Filter>Source\Wizards</Filter>
-		</ClInclude >
-		<None Include="..\..\Source\Wizards\Wizards.Build.cs">
-			<Filter>Source\Wizards</Filter>
-		</None >
-		<ClCompile Include="..\..\Source\Wizards\Wizards.cpp">
-			<Filter>Source\Wizards</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\Wizards\Wizards.h">
-			<Filter>Source\Wizards</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\Wizards\WizardsCharacter.cpp">
-			<Filter>Source\Wizards</Filter>
-		</ClCompile >
-		<None Include="..\..\Source\Wizards\WizardsCharacter.cpp~">
-			<Filter>Source\Wizards</Filter>
-		</None >
-		<ClInclude Include="..\..\Source\Wizards\WizardsCharacter.h">
-			<Filter>Source\Wizards</Filter>
-		</ClInclude >
-		<None Include="..\..\Source\Wizards\WizardsCharacter.h~">
-			<Filter>Source\Wizards</Filter>
-		</None >
-		<ClCompile Include="..\..\Source\Wizards\WizardsGameMode.cpp">
-			<Filter>Source\Wizards</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\Wizards\WizardsGameMode.h">
-			<Filter>Source\Wizards</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\Wizards\WizardsHUD.cpp">
-			<Filter>Source\Wizards</Filter>
-		</ClCompile >
-		<None Include="..\..\Source\Wizards\WizardsHUD.cpp~">
-			<Filter>Source\Wizards</Filter>
-		</None >
-		<ClInclude Include="..\..\Source\Wizards\WizardsHUD.h">
-			<Filter>Source\Wizards</Filter>
-		</ClInclude >
-		<None Include="..\..\Source\Wizards\WizardsHUD.h~">
-			<Filter>Source\Wizards</Filter>
-		</None >
-		<ClCompile Include="..\..\Source\Wizards\WizardsProjectile.cpp">
-			<Filter>Source\Wizards</Filter>
-		</ClCompile >
-		<None Include="..\..\Source\Wizards\WizardsProjectile.cpp~">
-			<Filter>Source\Wizards</Filter>
-		</None >
-		<ClInclude Include="..\..\Source\Wizards\WizardsProjectile.h">
-			<Filter>Source\Wizards</Filter>
-		</ClInclude >
-		<None Include="..\..\Source\Wizards\WizardsProjectile.h~">
-			<Filter>Source\Wizards</Filter>
-		</None >
-	</ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Wizards.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{E1D3F081-F6ED-4594-87CE-DA811B4BA89F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Wizards.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\WizardsEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{DB605A0D-F714-4D04-9730-B06F945DC651}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Wizards">
+      <UniqueIdentifier>{002789D5-12C8-484D-A47A-DA0AD28B9903}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Wizards\WizardMenuWidget.cpp">
+      <Filter>Source\Wizards</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Wizards\WizardMenuWidget.h">
+      <Filter>Source\Wizards</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\Wizards\Wizards.Build.cs">
+      <Filter>Source\Wizards</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Wizards\Wizards.cpp">
+      <Filter>Source\Wizards</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Wizards\Wizards.h">
+      <Filter>Source\Wizards</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Wizards\WizardsCharacter.cpp">
+      <Filter>Source\Wizards</Filter>
+    </ClCompile>
+    <None Include="..\..\Source\Wizards\WizardsCharacter.cpp~">
+      <Filter>Source\Wizards</Filter>
+    </None>
+    <ClInclude Include="..\..\Source\Wizards\WizardsCharacter.h">
+      <Filter>Source\Wizards</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\Wizards\WizardsCharacter.h~">
+      <Filter>Source\Wizards</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Wizards\WizardsGameMode.cpp">
+      <Filter>Source\Wizards</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Wizards\WizardsGameMode.h">
+      <Filter>Source\Wizards</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Wizards\WizardsHUD.cpp">
+      <Filter>Source\Wizards</Filter>
+    </ClCompile>
+    <None Include="..\..\Source\Wizards\WizardsHUD.cpp~">
+      <Filter>Source\Wizards</Filter>
+    </None>
+    <ClInclude Include="..\..\Source\Wizards\WizardsHUD.h">
+      <Filter>Source\Wizards</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\Wizards\WizardsHUD.h~">
+      <Filter>Source\Wizards</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Wizards\WizardsProjectile.cpp">
+      <Filter>Source\Wizards</Filter>
+    </ClCompile>
+    <None Include="..\..\Source\Wizards\WizardsProjectile.cpp~">
+      <Filter>Source\Wizards</Filter>
+    </None>
+    <ClInclude Include="..\..\Source\Wizards\WizardsProjectile.h">
+      <Filter>Source\Wizards</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\Wizards\WizardsProjectile.h~">
+      <Filter>Source\Wizards</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\Wizards\WizardsSaveGame.h">
+      <Filter>Source\Wizards</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\Wizards\WizardsSaveGame.cpp">
+      <Filter>Source\Wizards</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

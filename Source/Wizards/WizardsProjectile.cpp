@@ -52,12 +52,12 @@ void AWizardsProjectile::OnHit(AActor* OtherActor, UPrimitiveComponent* OtherCom
 	}
 }
 
-void AWizardsProjectile::SpellCreation(AWizardsCharacter::spell* theSpell) {
+void AWizardsProjectile::SpellCreation(AWizardsCharacter::spell* theSpell, AWizardsCharacter* theWiz) {
 	if(theSpell != NULL){
 		MyParticleSystem->SetTemplate(theSpell->myParticle);
 		MyParticleSystem->AttachTo(RootComponent);
 		MyParticleSystem->SetWorldScale3D( FVector( 10 ) );
-		owningWizard = theSpell->theWizard;
+		owningWizard = theSpell->theWiz;
   	shouldBounce = theSpell->canBounce;
 
 		//UE_LOG(LogTemp, Warning, TEXT("I can't believe it's not null!"));

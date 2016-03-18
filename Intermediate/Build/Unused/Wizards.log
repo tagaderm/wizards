@@ -1,63 +1,21 @@
-﻿Build started 3/15/2016 5:50:30 PM.
-     1>Project "I:\Projects\wizards\Intermediate\ProjectFiles\Wizards.vcxproj" on node 2 (Build target(s)).
-     1>Build:
-         "I:\EPIC\Epic Games\4.10\Engine\Build\BatchFiles\Build.bat" WizardsEditor Win64 Development "I:\Projects\wizards\Wizards.uproject" -rocket -waitmutex -2015
-         Creating makefile for WizardsEditor (no existing makefile)
-         Parsing headers for WizardsEditor
-           Running UnrealHeaderTool "I:\Projects\wizards\Wizards.uproject" "I:\Projects\wizards\Intermediate\Build\Win64\WizardsEditor\Development\UnrealHeaderTool.manifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -rocket -installed
-         Reflection code generated for WizardsEditor in 4.0846618 seconds
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-1113.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-1113.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-1134.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-1134.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-1720.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-1720.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-2618.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-2618.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-268.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-268.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-2767.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-2767.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-339.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-339.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-3749.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-3749.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-4588.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-4588.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-4608.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-4608.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-4855.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-4855.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-4859.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-4859.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-5693.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-5693.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-5727.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-5727.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-5759.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-5759.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-6651.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-6651.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-803.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-803.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-810.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-810.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-8534.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-8534.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-8662.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-8662.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-8819.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-8819.pdb".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-919.dll".
-         Deleting old hot reload file: "I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-919.pdb".
-         Performing 2 actions (4 in parallel)
-         WizardsProjectile.cpp
-         [2/2] Link UE4Editor-Wizards.dll
-            Creating library I:\Projects\wizards\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-Wizards.lib and object I:\Projects\wizards\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-Wizards.exp
-         -------- End Detailed Actions Stats -----------------------------------------------------------
-         Total build time: 9.97 seconds
-     1>Done Building Project "I:\Projects\wizards\Intermediate\ProjectFiles\Wizards.vcxproj" (Build target(s)).
+﻿Build started 3/17/2016 8:00:32 PM.
+     1>Project "I:\Projects\wizards\Intermediate\ProjectFiles\Wizards.vcxproj" on node 3 (Rebuild target(s)).
+     1>Rebuild:
+         "I:\EPIC\Epic Games\4.10\Engine\Build\BatchFiles\Rebuild.bat" WizardsEditor Win64 Development "I:\Projects\wizards\Wizards.uproject" -rocket -waitmutex -2015
+         Cleaning WizardsEditor Binaries...
+         Compiling game modules for hot reload
+     1>EXEC : error : System.UnauthorizedAccessException: Access to the path 'I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-7707.dll' is denied.
+            at UnrealBuildTool.UEBuildTarget.CleanFile(String Filename)
+            at UnrealBuildTool.UEBuildTarget.CleanTarget(BuildManifest Manifest)
+            at UnrealBuildTool.UEBuildTarget.GenerateManifest()
+            at UnrealBuildTool.UEBuildTarget.Build(IUEToolChain TargetToolChain, List`1& OutputItems, List`1& UObjectModules, String& EULAViolationWarning)
+            at UnrealBuildTool.UnrealBuildTool.RunUBT(String[] Arguments)
+         Creating makefile for hot reloading WizardsEditor (modules to compile have changed)
+         Compiling game modules for hot reload
+         Target is up to date.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.MakeFile.Targets(42,5): error MSB3073: The command ""I:\EPIC\Epic Games\4.10\Engine\Build\BatchFiles\Rebuild.bat" WizardsEditor Win64 Development "I:\Projects\wizards\Wizards.uproject" -rocket -waitmutex -2015" exited with code 2.
+     1>Done Building Project "I:\Projects\wizards\Intermediate\ProjectFiles\Wizards.vcxproj" (Rebuild target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:10.31
+Time Elapsed 00:00:23.22

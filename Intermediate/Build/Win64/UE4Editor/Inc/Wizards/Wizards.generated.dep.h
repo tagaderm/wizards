@@ -5,11 +5,14 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#ifndef WIZARDS_CustomSpellFunctions_generated_h
-	#include "CustomSpellFunctions.h"
-#endif
 #ifndef WIZARDS_WizardsCharacter_generated_h
 	#include "WizardsCharacter.h"
+#endif
+#ifndef WIZARDS_WizardsSaveGame_generated_h
+	#include "WizardsSaveGame.h"
+#endif
+#ifndef WIZARDS_WizardMenuWidget_generated_h
+	#include "WizardMenuWidget.h"
 #endif
 #ifndef WIZARDS_WizardsGameMode_generated_h
 	#include "WizardsGameMode.h"

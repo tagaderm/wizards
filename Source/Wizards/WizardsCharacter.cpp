@@ -23,8 +23,10 @@ AWizardsCharacter::AWizardsCharacter()
 	currSpell = 0;
 
 	//Spell Stuff for Testing
+	spell test;
+	SList.Add(test);
 	SList[currSpell].spellCost = 10.0;
-	SList[currSpell].theWizard = this;
+	//SList[currSpell].theWizard = this;
   SList[currSpell].canBounce = true;
 	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Sparks.P_Sparks'"));
 	SList[currSpell].myParticle = ArbitraryParticleName.Object;
@@ -121,7 +123,7 @@ void AWizardsCharacter::OnFire()
 				myparams.bRemoteOwned = false;
 				//AWizardsProjectile* wizardsSpell = 
 				AWizardsProjectile* wizardsSpell = World->SpawnActor<AWizardsProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);// , myparams);
-				wizardsSpell->SpellCreation(&SList[currSpell]);
+				wizardsSpell->SpellCreation(&SList[currSpell], this);
 				 
 			}
 		}
