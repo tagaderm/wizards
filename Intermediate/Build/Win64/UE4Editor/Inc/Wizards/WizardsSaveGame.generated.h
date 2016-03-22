@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define WIZARDS_WizardsSaveGame_generated_h
 
-#define wizards_Source_Wizards_WizardsSaveGame_h_16_RPC_WRAPPERS
-#define wizards_Source_Wizards_WizardsSaveGame_h_16_RPC_WRAPPERS_NO_PURE_DECLS
-#define wizards_Source_Wizards_WizardsSaveGame_h_16_INCLASS_NO_PURE_DECLS \
+#define wizards_Source_Wizards_WizardsSaveGame_h_21_RPC_WRAPPERS
+#define wizards_Source_Wizards_WizardsSaveGame_h_21_RPC_WRAPPERS_NO_PURE_DECLS
+#define wizards_Source_Wizards_WizardsSaveGame_h_21_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesUWizardsSaveGame(); \
 	friend WIZARDS_API class UClass* Z_Construct_UClass_UWizardsSaveGame(); \
@@ -26,7 +26,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<UWizardsSaveGame*>(this); }
 
 
-#define wizards_Source_Wizards_WizardsSaveGame_h_16_INCLASS \
+#define wizards_Source_Wizards_WizardsSaveGame_h_21_INCLASS \
 	private: \
 	static void StaticRegisterNativesUWizardsSaveGame(); \
 	friend WIZARDS_API class UClass* Z_Construct_UClass_UWizardsSaveGame(); \
@@ -37,7 +37,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<UWizardsSaveGame*>(this); }
 
 
-#define wizards_Source_Wizards_WizardsSaveGame_h_16_STANDARD_CONSTRUCTORS \
+#define wizards_Source_Wizards_WizardsSaveGame_h_21_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UWizardsSaveGame(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UWizardsSaveGame) \
@@ -49,7 +49,7 @@ private: \
 public:
 
 
-#define wizards_Source_Wizards_WizardsSaveGame_h_16_ENHANCED_CONSTRUCTORS \
+#define wizards_Source_Wizards_WizardsSaveGame_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private copy-constructor, should never be used */ \
 	NO_API UWizardsSaveGame(const UWizardsSaveGame& InCopy); \
@@ -59,23 +59,23 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UWizardsSaveGame); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UWizardsSaveGame)
 
 
-#define wizards_Source_Wizards_WizardsSaveGame_h_13_PROLOG
-#define wizards_Source_Wizards_WizardsSaveGame_h_16_GENERATED_BODY_LEGACY \
+#define wizards_Source_Wizards_WizardsSaveGame_h_18_PROLOG
+#define wizards_Source_Wizards_WizardsSaveGame_h_21_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	wizards_Source_Wizards_WizardsSaveGame_h_16_RPC_WRAPPERS \
-	wizards_Source_Wizards_WizardsSaveGame_h_16_INCLASS \
-	wizards_Source_Wizards_WizardsSaveGame_h_16_STANDARD_CONSTRUCTORS \
+	wizards_Source_Wizards_WizardsSaveGame_h_21_RPC_WRAPPERS \
+	wizards_Source_Wizards_WizardsSaveGame_h_21_INCLASS \
+	wizards_Source_Wizards_WizardsSaveGame_h_21_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define wizards_Source_Wizards_WizardsSaveGame_h_16_GENERATED_BODY \
+#define wizards_Source_Wizards_WizardsSaveGame_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	wizards_Source_Wizards_WizardsSaveGame_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	wizards_Source_Wizards_WizardsSaveGame_h_16_INCLASS_NO_PURE_DECLS \
-	wizards_Source_Wizards_WizardsSaveGame_h_16_ENHANCED_CONSTRUCTORS \
+	wizards_Source_Wizards_WizardsSaveGame_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	wizards_Source_Wizards_WizardsSaveGame_h_21_INCLASS_NO_PURE_DECLS \
+	wizards_Source_Wizards_WizardsSaveGame_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

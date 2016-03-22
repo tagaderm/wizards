@@ -3,6 +3,7 @@
 #include "Wizards.h"
 #include "WizardsCharacter.h"
 #include "WizardsProjectile.h"
+#include "WizardsSaveGame.h"
 #include "Animation/AnimInstance.h"
 #include "GameFramework/InputSettings.h"
 
@@ -21,15 +22,29 @@ AWizardsCharacter::AWizardsCharacter()
 	Mana = 100.0;
 	maxMana = 100.0;
 	currSpell = 0;
+	//Projectiles
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName1(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Fire_Projectile.P_Fire_Projectile'"));
+	particleList.Add(ArbitraryParticleName1.Object);
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName2(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Lightning_Projectile.P_Lightning_Projectile'"));
+	particleList.Add(ArbitraryParticleName2.Object);
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName3(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Water_Projectile.P_Water_Projectile'"));
+	particleList.Add(ArbitraryParticleName3.Object);
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName4(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Ice_Projectile.P_Ice_Projectile'"));
+	particleList.Add(ArbitraryParticleName4.Object);
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName5(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Earth_Projectile.P_Earth_Projectile'"));
+	particleList.Add(ArbitraryParticleName5.Object);
+	//Now for all of the EXPLOSIONS
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName6(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Sparks.P_Sparks'"));
+	particleList.Add(ArbitraryParticleName6.Object);
 
 	//Spell Stuff for Testing
 	spell test;
 	SList.Add(test);
 	SList[currSpell].spellCost = 10.0;
 	//SList[currSpell].theWizard = this;
-  SList[currSpell].canBounce = true;
-	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Sparks.P_Sparks'"));
-	SList[currSpell].myParticle = ArbitraryParticleName.Object;
+    SList[currSpell].canBounce = true;
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName7(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Sparks.P_Sparks'"));
+	SList[currSpell].myParticle = ArbitraryParticleName7.Object;
 	//SList.test = &ArbitraryParticleName;
 	//SList.particleLocation = FName(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Sparks.P_Sparks'"));
 
@@ -59,6 +74,43 @@ AWizardsCharacter::AWizardsCharacter()
 
 	// Note: The ProjectileClass and the skeletal mesh/anim blueprints for Mesh1P are set in the
 	// derived blueprint asset named MyCharacter (to avoid direct content references in C++)
+}
+
+
+void AWizardsCharacter::newCharactersSpells() 
+{
+	UWizardsSaveGame* LoadGameInstance = NewObject<UWizardsSaveGame>();
+	//	spellList = LoadGameInstance->spellList;
+	//if is empty
+	if (LoadGameInstance->LoadGameDataFromFile()) {
+
+		for (int i = 0; i < 1; i++) {
+			thisSpell = NewObject<UspellBook>(this);//From what I can tell, LoadGameInstance's spellBook gets destroyed after this function, so we need our own
+			mySpellBook.Add(thisSpell);
+			mySpellBook[i]->spellEffect = LoadGameInstance->spellBook[i]->spellEffect;
+			mySpellBook[i]->spellType = LoadGameInstance->spellBook[i]->spellType;
+			mySpellBook[i]->spellCost = LoadGameInstance->spellBook[i]->spellCost;
+			mySpellBook[i]->spellSpeed = LoadGameInstance->spellBook[i]->spellSpeed*9000.0 + 1000.0;//range from 1000 to 10000
+			mySpellBook[i]->spellDamage = LoadGameInstance->spellBook[i]->spellDamage;//not in at the moment
+			mySpellBook[i]->spellRange = LoadGameInstance->spellBook[i]->spellRange*4.0 +1.0; //1 to 5 seconds
+			mySpellBook[i]->spellSize = LoadGameInstance->spellBook[i]->spellSize*4.0 + 1.0;//range 1 to 5
+			mySpellBook[i]->canBounce = LoadGameInstance->spellBook[i]->canBounce;//boolean, in
+			mySpellBook[i]->hasGravity = LoadGameInstance->spellBook[i]->hasGravity;//totally in
+			mySpellBook[i]->isHoming = LoadGameInstance->spellBook[i]->isHoming; //not currenttly implemented
+			mySpellBook[i]->explodeOnCollision = LoadGameInstance->spellBook[i]->explodeOnCollision; //none of this shit down here is implemented
+			mySpellBook[i]->explodeOnDeath = LoadGameInstance->spellBook[i]->explodeOnDeath;
+			mySpellBook[i]->explosionHitDamage = LoadGameInstance->spellBook[i]->explosionHitDamage;
+			mySpellBook[i]->explosionHitSize = LoadGameInstance->spellBook[i]->explosionHitSize;
+			mySpellBook[i]->explosionDeathDamage = LoadGameInstance->spellBook[i]->explosionDeathDamage;
+			mySpellBook[i]->explosionDeathSize = LoadGameInstance->spellBook[i]->explosionDeathSize;
+			mySpellBook[i]->myParticle = particleList[mySpellBook[i]->spellEffect];
+			UE_LOG(LogTemp, Warning, TEXT("Spell Gathering Succesful!"));
+		}
+		float whatever = mySpellBook[currSpell]->spellCost;
+	}
+	else {
+		UE_LOG(LogTemp, Warning, TEXT("Abort Mission!"));
+	}
 }
 
 /////////////
@@ -101,51 +153,54 @@ void AWizardsCharacter::SetupPlayerInputComponent(class UInputComponent* InputCo
 }
 
 void AWizardsCharacter::OnFire()
-{ 
-	if(Mana > SList[currSpell].spellCost){
-		Mana -= SList[currSpell].spellCost;
-		// try and fire a projectile
-		if (ProjectileClass != NULL)
-		{
-			const FRotator SpawnRotation = GetControlRotation();
-			// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
-			const FVector SpawnLocation = GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
-
-			UWorld* const World = GetWorld();
-			if (World)
-			{
-				// spawn the projectile at the muzzle
-				FActorSpawnParameters myparams;
-				myparams.Owner = Cast<AActor>(this);
-				myparams.Instigator = Cast<APawn>(this);
-				myparams.bAllowDuringConstructionScript = false;
-				myparams.bNoFail = true;
-				myparams.bRemoteOwned = false;
-				//AWizardsProjectile* wizardsSpell = 
-				AWizardsProjectile* wizardsSpell = World->SpawnActor<AWizardsProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);// , myparams);
-				wizardsSpell->SpellCreation(&SList[currSpell], this);
-				 
-			}
-		}
-
-		// try and play the sound if specified
-		if (FireSound != NULL)
-		{
-			UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
-		}
-
-		// try and play a firing animation if specified
-		if(FireAnimation != NULL)
-		{
-			// Get the animation object for the arms mesh
-			UAnimInstance* AnimInstance = Mesh1P->GetAnimInstance();
-			if(AnimInstance != NULL)
-			{
-				AnimInstance->Montage_Play(FireAnimation, 1.f);
-			}
-		}
+{
+	if (!mySpellBook.IsValidIndex(0)) {
+		UE_LOG(LogTemp, Warning, TEXT("Spell Gathering Needed!"));
+		newCharactersSpells();
 	}
+		if (Mana > mySpellBook[currSpell]->spellCost) {
+			Mana -= mySpellBook[currSpell]->spellCost;
+			// try and fire a projectile
+			if (ProjectileClass != NULL)
+			{
+				const FRotator SpawnRotation = GetControlRotation();
+				// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
+				const FVector SpawnLocation = GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
 
+				UWorld* const World = GetWorld();
+				if (World)
+				{
+					// spawn the projectile at the muzzle
+					FActorSpawnParameters myparams;
+					myparams.Owner = Cast<AActor>(this);
+					myparams.Instigator = Cast<APawn>(this);
+					myparams.bAllowDuringConstructionScript = false;
+					myparams.bNoFail = true;
+					myparams.bRemoteOwned = false;
+					//AWizardsProjectile* wizardsSpell = 
+					AWizardsProjectile* wizardsSpell = World->SpawnActor<AWizardsProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);// , myparams);
+					wizardsSpell->SpellCreation(mySpellBook[currSpell], this);
+
+				}
+			}
+
+			// God this sound is so annoying
+			/*if (FireSound != NULL)
+			{
+				UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
+			}*/
+
+			// try and play a firing animation if specified
+			if (FireAnimation != NULL)
+			{
+				// Get the animation object for the arms mesh
+				UAnimInstance* AnimInstance = Mesh1P->GetAnimInstance();
+				if (AnimInstance != NULL)
+				{
+					AnimInstance->Montage_Play(FireAnimation, 1.f);
+				}
+			}
+	}
 }
 
 void AWizardsCharacter::BeginTouch(const ETouchIndex::Type FingerIndex, const FVector Location)

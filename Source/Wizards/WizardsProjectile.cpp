@@ -22,11 +22,11 @@ AWizardsProjectile::AWizardsProjectile()
 	// Use a ProjectileMovementComponent to govern this projectile's movement
 	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileComp"));
 	ProjectileMovement->UpdatedComponent = CollisionComp;
-	ProjectileMovement->InitialSpeed = 7000.f;
-	ProjectileMovement->MaxSpeed = 7000.f;
+	ProjectileMovement->InitialSpeed = 10000.f;
+	ProjectileMovement->MaxSpeed = 10000.f;
 	ProjectileMovement->bRotationFollowsVelocity = true;
 	ProjectileMovement->bShouldBounce = true;
-	ProjectileMovement->ProjectileGravityScale = 1.0f;
+	ProjectileMovement->ProjectileGravityScale = 0.0f;
 
 	// Die after 3 seconds by default
 	InitialLifeSpan = 3.0f;
@@ -52,14 +52,19 @@ void AWizardsProjectile::OnHit(AActor* OtherActor, UPrimitiveComponent* OtherCom
 	}
 }
 
-void AWizardsProjectile::SpellCreation(AWizardsCharacter::spell* theSpell, AWizardsCharacter* theWiz) {
+void AWizardsProjectile::SpellCreation(UspellBook* theSpell, AWizardsCharacter* theWiz) {
 	if(theSpell != NULL){
 		MyParticleSystem->SetTemplate(theSpell->myParticle);
 		MyParticleSystem->AttachTo(RootComponent);
-		MyParticleSystem->SetWorldScale3D( FVector( 10 ) );
-		owningWizard = theSpell->theWiz;
-  	shouldBounce = theSpell->canBounce;
-
+		MyParticleSystem->SetWorldScale3D( FVector( theSpell->spellSize ) );
+		shouldBounce = theSpell->canBounce;
+		ProjectileMovement->bShouldBounce = theSpell->canBounce;
+		owningWizard = theWiz;
+		if (theSpell->hasGravity) {
+			ProjectileMovement->ProjectileGravityScale = 1.0f;
+		}
+		ProjectileMovement->MaxSpeed = theSpell->spellSpeed;
+		SetLifeSpan(theSpell->spellRange);
 		//UE_LOG(LogTemp, Warning, TEXT("I can't believe it's not null!"));
 		//CollisionComp->SetSphereRadius(20.f);
 		//MyParticleSystem->Template = ArbitraryParticleName.Object;

@@ -4,8 +4,13 @@
 
 #include "GameFramework/SaveGame.h"
 #include "WizardsCharacter.h"
+#include "spellBook.h"
+#include "Archive.h"
+#include "ArchiveBase.h"
+#include "FileManager.h"
 #include "Kismet/GameplayStatics.h"
 #include "WizardsSaveGame.generated.h"
+
 
 /**
  * 
@@ -16,16 +21,13 @@ class WIZARDS_API UWizardsSaveGame : public USaveGame
 	GENERATED_BODY()
 
 public:
-	
-	UPROPERTY(VisibleAnywhere, Category = Basic)
-	FString SaveSlotName;
-	
-	//UPROPERTY(VisibleAnywhere, Category = Basic)
-	TArray<AWizardsCharacter::spell> spellList;
-	bool gameSaved;
-	uint32 UserIndex;
+
 	UWizardsSaveGame();
 
-
+	TArray<UspellBook*> spellBook;
+	FString ThePath;
+	void SaveLoadData(FArchive& Ar, TArray<UspellBook*>& spellBook);
+	bool UWizardsSaveGame::SaveGameDataToFile();
+	bool UWizardsSaveGame::LoadGameDataFromFile();
 
 };

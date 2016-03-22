@@ -5,6 +5,9 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
+#ifndef WIZARDS_spellBook_generated_h
+	#include "Public/spellBook.h"
+#endif
 #ifndef WIZARDS_WizardsCharacter_generated_h
 	#include "WizardsCharacter.h"
 #endif
