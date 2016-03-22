@@ -2,6 +2,7 @@
 #pragma once
 #include "GameFramework/Character.h"
 #include "ParticleDefinitions.h"
+#include "spellBook.h"
 #include "WizardsCharacter.generated.h"
 
 class UInputComponent;
@@ -20,6 +21,9 @@ class AWizardsCharacter : public ACharacter
 	class UCameraComponent* FirstPersonCameraComponent;
 public:
 	AWizardsCharacter();
+
+	UFUNCTION(BlueprintCallable, Category = "CharacterFunctions")
+	void newCharactersSpells();
 
 	void Tick(float DeltaTime) override;	
 
@@ -46,6 +50,11 @@ public:
 	float Mana;
 	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
 	float maxMana;
+	UPROPERTY()
+	UspellBook* thisSpell;
+	UPROPERTY()
+	TArray<UspellBook*> mySpellBook;
+	TArray<UParticleSystem*> particleList;
 	struct spell {
 		UParticleSystem* myParticle;
 		int8 spellType;
@@ -63,8 +72,6 @@ public:
 		float explosionHitSize;
 		float explosionDeathDamage;
 		float explosionDeathSize;
-		AWizardsCharacter* theWizard;
-
 	};
 	TArray<spell> SList;
 	int8 currSpell;

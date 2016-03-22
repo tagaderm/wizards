@@ -2,6 +2,7 @@
 #pragma once
 #include "GameFramework/Actor.h"
 #include "WizardsCharacter.h"
+#include "spellBook.h"
 #include "ParticleDefinitions.h"
 #include "WizardsProjectile.generated.h"
 
@@ -29,7 +30,7 @@ public:
 	UFUNCTION()
 	void OnHit(AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 
-	void SpellCreation(AWizardsCharacter::spell* theSpell, AWizardsCharacter* theWiz);
+	void SpellCreation(UspellBook* theSpell, AWizardsCharacter* theWiz);
 
 	/** Returns CollisionComp subobject **/
 	FORCEINLINE class USphereComponent* GetCollisionComp() const { return CollisionComp; }

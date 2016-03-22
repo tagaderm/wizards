@@ -13,9 +13,25 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define WIZARDS_WizardsCharacter_generated_h
 
-#define wizards_Source_Wizards_WizardsCharacter_h_12_RPC_WRAPPERS
-#define wizards_Source_Wizards_WizardsCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define wizards_Source_Wizards_WizardsCharacter_h_12_INCLASS_NO_PURE_DECLS \
+#define wizards_Source_Wizards_WizardsCharacter_h_13_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execnewCharactersSpells) \
+	{ \
+		P_FINISH; \
+		this->newCharactersSpells(); \
+	}
+
+
+#define wizards_Source_Wizards_WizardsCharacter_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execnewCharactersSpells) \
+	{ \
+		P_FINISH; \
+		this->newCharactersSpells(); \
+	}
+
+
+#define wizards_Source_Wizards_WizardsCharacter_h_13_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesAWizardsCharacter(); \
 	friend WIZARDS_API class UClass* Z_Construct_UClass_AWizardsCharacter(); \
@@ -26,7 +42,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<AWizardsCharacter*>(this); }
 
 
-#define wizards_Source_Wizards_WizardsCharacter_h_12_INCLASS \
+#define wizards_Source_Wizards_WizardsCharacter_h_13_INCLASS \
 	private: \
 	static void StaticRegisterNativesAWizardsCharacter(); \
 	friend WIZARDS_API class UClass* Z_Construct_UClass_AWizardsCharacter(); \
@@ -37,7 +53,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<AWizardsCharacter*>(this); }
 
 
-#define wizards_Source_Wizards_WizardsCharacter_h_12_STANDARD_CONSTRUCTORS \
+#define wizards_Source_Wizards_WizardsCharacter_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AWizardsCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AWizardsCharacter) \
@@ -49,7 +65,7 @@ private: \
 public:
 
 
-#define wizards_Source_Wizards_WizardsCharacter_h_12_ENHANCED_CONSTRUCTORS \
+#define wizards_Source_Wizards_WizardsCharacter_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private copy-constructor, should never be used */ \
 	NO_API AWizardsCharacter(const AWizardsCharacter& InCopy); \
@@ -59,23 +75,23 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AWizardsCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AWizardsCharacter)
 
 
-#define wizards_Source_Wizards_WizardsCharacter_h_9_PROLOG
-#define wizards_Source_Wizards_WizardsCharacter_h_12_GENERATED_BODY_LEGACY \
+#define wizards_Source_Wizards_WizardsCharacter_h_10_PROLOG
+#define wizards_Source_Wizards_WizardsCharacter_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	wizards_Source_Wizards_WizardsCharacter_h_12_RPC_WRAPPERS \
-	wizards_Source_Wizards_WizardsCharacter_h_12_INCLASS \
-	wizards_Source_Wizards_WizardsCharacter_h_12_STANDARD_CONSTRUCTORS \
+	wizards_Source_Wizards_WizardsCharacter_h_13_RPC_WRAPPERS \
+	wizards_Source_Wizards_WizardsCharacter_h_13_INCLASS \
+	wizards_Source_Wizards_WizardsCharacter_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define wizards_Source_Wizards_WizardsCharacter_h_12_GENERATED_BODY \
+#define wizards_Source_Wizards_WizardsCharacter_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	wizards_Source_Wizards_WizardsCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	wizards_Source_Wizards_WizardsCharacter_h_12_INCLASS_NO_PURE_DECLS \
-	wizards_Source_Wizards_WizardsCharacter_h_12_ENHANCED_CONSTRUCTORS \
+	wizards_Source_Wizards_WizardsCharacter_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	wizards_Source_Wizards_WizardsCharacter_h_13_INCLASS_NO_PURE_DECLS \
+	wizards_Source_Wizards_WizardsCharacter_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

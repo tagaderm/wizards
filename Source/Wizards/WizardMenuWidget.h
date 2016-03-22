@@ -5,6 +5,7 @@
 #include "Blueprint/UserWidget.h"
 #include "WizardsCharacter.h"
 #include "WizardsSaveGame.h"
+#include "ParticleDefinitions.h"
 #include "WizardMenuWidget.generated.h"
 
 /**
@@ -14,6 +15,9 @@ UCLASS()
 class WIZARDS_API UWizardMenuWidget : public UUserWidget
 {
 	GENERATED_BODY()
+public:
+
+	void UWizardsMenuWidget();
 
 	//Initialize with previous values or defaults if nothing present
 	UFUNCTION(BlueprintCallable, Category = "CustomSpells")
@@ -22,6 +26,9 @@ class WIZARDS_API UWizardMenuWidget : public UUserWidget
 	//Saves the spells
 	UFUNCTION(BlueprintCallable, Category = "CustomSpells")
 	void spellsSave();
+
+	UFUNCTION(BlueprintCallable, Category = "CustomSpells")
+	void setEffect(int32 effectChange);
 
 	//Called when spell is changed in spell bar
 	//Changes all values to this spells values
@@ -76,6 +83,9 @@ class WIZARDS_API UWizardMenuWidget : public UUserWidget
 	//List of all getters
 
 	UFUNCTION(BlueprintCallable, Category = "CustomSpells")
+	FName getEffect();
+
+	UFUNCTION(BlueprintCallable, Category = "CustomSpells")
 	bool getGravity();
 
 	UFUNCTION(BlueprintCallable, Category = "CustomSpells")
@@ -118,8 +128,9 @@ class WIZARDS_API UWizardMenuWidget : public UUserWidget
 	float getExplDeathSize();
 
 	//The Spell Array that gets Loaded/Saved and is called by character
-	int32 currSpell;
-	TArray<AWizardsCharacter::spell> spellList;
+	int32 currSpell = 0;
+	TArray<UspellBook*> spellList;
+	UParticleSystem* theParticle;
 
 
 	

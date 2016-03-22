@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define WIZARDS_WizardMenuWidget_generated_h
 
-#define wizards_Source_Wizards_WizardMenuWidget_h_16_RPC_WRAPPERS \
+#define wizards_Source_Wizards_WizardMenuWidget_h_17_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execgetExplDeathSize) \
 	{ \
@@ -97,6 +97,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	{ \
 		P_FINISH; \
 		*(bool*)Z_Param__Result=this->getGravity(); \
+	} \
+ \
+	DECLARE_FUNCTION(execgetEffect) \
+	{ \
+		P_FINISH; \
+		*(FName*)Z_Param__Result=this->getEffect(); \
 	} \
  \
 	DECLARE_FUNCTION(execsetExplDeathSize) \
@@ -204,6 +210,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		this->spellChange(Z_Param_spellSlot); \
 	} \
  \
+	DECLARE_FUNCTION(execsetEffect) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_effectChange); \
+		P_FINISH; \
+		this->setEffect(Z_Param_effectChange); \
+	} \
+ \
 	DECLARE_FUNCTION(execspellsSave) \
 	{ \
 		P_FINISH; \
@@ -217,7 +230,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define wizards_Source_Wizards_WizardMenuWidget_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define wizards_Source_Wizards_WizardMenuWidget_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execgetExplDeathSize) \
 	{ \
@@ -301,6 +314,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	{ \
 		P_FINISH; \
 		*(bool*)Z_Param__Result=this->getGravity(); \
+	} \
+ \
+	DECLARE_FUNCTION(execgetEffect) \
+	{ \
+		P_FINISH; \
+		*(FName*)Z_Param__Result=this->getEffect(); \
 	} \
  \
 	DECLARE_FUNCTION(execsetExplDeathSize) \
@@ -408,6 +427,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		this->spellChange(Z_Param_spellSlot); \
 	} \
  \
+	DECLARE_FUNCTION(execsetEffect) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_effectChange); \
+		P_FINISH; \
+		this->setEffect(Z_Param_effectChange); \
+	} \
+ \
 	DECLARE_FUNCTION(execspellsSave) \
 	{ \
 		P_FINISH; \
@@ -421,7 +447,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define wizards_Source_Wizards_WizardMenuWidget_h_16_INCLASS_NO_PURE_DECLS \
+#define wizards_Source_Wizards_WizardMenuWidget_h_17_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesUWizardMenuWidget(); \
 	friend WIZARDS_API class UClass* Z_Construct_UClass_UWizardMenuWidget(); \
@@ -432,7 +458,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<UWizardMenuWidget*>(this); }
 
 
-#define wizards_Source_Wizards_WizardMenuWidget_h_16_INCLASS \
+#define wizards_Source_Wizards_WizardMenuWidget_h_17_INCLASS \
 	private: \
 	static void StaticRegisterNativesUWizardMenuWidget(); \
 	friend WIZARDS_API class UClass* Z_Construct_UClass_UWizardMenuWidget(); \
@@ -443,7 +469,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<UWizardMenuWidget*>(this); }
 
 
-#define wizards_Source_Wizards_WizardMenuWidget_h_16_STANDARD_CONSTRUCTORS \
+#define wizards_Source_Wizards_WizardMenuWidget_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UWizardMenuWidget(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UWizardMenuWidget) \
@@ -455,7 +481,7 @@ private: \
 public:
 
 
-#define wizards_Source_Wizards_WizardMenuWidget_h_16_ENHANCED_CONSTRUCTORS \
+#define wizards_Source_Wizards_WizardMenuWidget_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UWizardMenuWidget(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -467,23 +493,23 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UWizardMenuWidget); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UWizardMenuWidget)
 
 
-#define wizards_Source_Wizards_WizardMenuWidget_h_13_PROLOG
-#define wizards_Source_Wizards_WizardMenuWidget_h_16_GENERATED_BODY_LEGACY \
+#define wizards_Source_Wizards_WizardMenuWidget_h_14_PROLOG
+#define wizards_Source_Wizards_WizardMenuWidget_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	wizards_Source_Wizards_WizardMenuWidget_h_16_RPC_WRAPPERS \
-	wizards_Source_Wizards_WizardMenuWidget_h_16_INCLASS \
-	wizards_Source_Wizards_WizardMenuWidget_h_16_STANDARD_CONSTRUCTORS \
+	wizards_Source_Wizards_WizardMenuWidget_h_17_RPC_WRAPPERS \
+	wizards_Source_Wizards_WizardMenuWidget_h_17_INCLASS \
+	wizards_Source_Wizards_WizardMenuWidget_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define wizards_Source_Wizards_WizardMenuWidget_h_16_GENERATED_BODY \
+#define wizards_Source_Wizards_WizardMenuWidget_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	wizards_Source_Wizards_WizardMenuWidget_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	wizards_Source_Wizards_WizardMenuWidget_h_16_INCLASS_NO_PURE_DECLS \
-	wizards_Source_Wizards_WizardMenuWidget_h_16_ENHANCED_CONSTRUCTORS \
+	wizards_Source_Wizards_WizardMenuWidget_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	wizards_Source_Wizards_WizardMenuWidget_h_17_INCLASS_NO_PURE_DECLS \
+	wizards_Source_Wizards_WizardMenuWidget_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
