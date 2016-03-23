@@ -34,17 +34,26 @@ AWizardsCharacter::AWizardsCharacter()
 	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName5(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Earth_Projectile.P_Earth_Projectile'"));
 	particleList.Add(ArbitraryParticleName5.Object);
 	//Now for all of the EXPLOSIONS
-	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName6(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Sparks.P_Sparks'"));
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName6(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Fire_Blast.P_Fire_Blast'"));
 	particleList.Add(ArbitraryParticleName6.Object);
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName7(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Lightning_Blast.P_Lightning_Blast'"));
+	particleList.Add(ArbitraryParticleName7.Object);
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName8(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Water_Blast.P_Water_Blast'"));
+	particleList.Add(ArbitraryParticleName8.Object);
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName9(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Ice_Blast.P_Ice_Blast'"));
+	particleList.Add(ArbitraryParticleName9.Object);
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName10(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Earth_Blast.P_Earth_Blast'"));
+	particleList.Add(ArbitraryParticleName10.Object);
 
-	//Spell Stuff for Testing
+	
+
 	spell test;
 	SList.Add(test);
 	SList[currSpell].spellCost = 10.0;
 	//SList[currSpell].theWizard = this;
     SList[currSpell].canBounce = true;
-	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName7(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Sparks.P_Sparks'"));
-	SList[currSpell].myParticle = ArbitraryParticleName7.Object;
+	//ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName8(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Sparks.P_Sparks'"));
+	//SList[currSpell].myParticle = ArbitraryParticleName8.Object;
 	//SList.test = &ArbitraryParticleName;
 	//SList.particleLocation = FName(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Sparks.P_Sparks'"));
 
@@ -84,7 +93,7 @@ void AWizardsCharacter::newCharactersSpells()
 	//if is empty
 	if (LoadGameInstance->LoadGameDataFromFile()) {
 
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < 5; i++) {
 			thisSpell = NewObject<UspellBook>(this);//From what I can tell, LoadGameInstance's spellBook gets destroyed after this function, so we need our own
 			mySpellBook.Add(thisSpell);
 			mySpellBook[i]->spellEffect = LoadGameInstance->spellBook[i]->spellEffect;
@@ -100,13 +109,13 @@ void AWizardsCharacter::newCharactersSpells()
 			mySpellBook[i]->explodeOnCollision = LoadGameInstance->spellBook[i]->explodeOnCollision; //none of this shit down here is implemented
 			mySpellBook[i]->explodeOnDeath = LoadGameInstance->spellBook[i]->explodeOnDeath;
 			mySpellBook[i]->explosionHitDamage = LoadGameInstance->spellBook[i]->explosionHitDamage;
-			mySpellBook[i]->explosionHitSize = LoadGameInstance->spellBook[i]->explosionHitSize;
+			mySpellBook[i]->explosionHitSize = LoadGameInstance->spellBook[i]->explosionHitSize*3.0+2.0;
 			mySpellBook[i]->explosionDeathDamage = LoadGameInstance->spellBook[i]->explosionDeathDamage;
-			mySpellBook[i]->explosionDeathSize = LoadGameInstance->spellBook[i]->explosionDeathSize;
+			mySpellBook[i]->explosionDeathSize = LoadGameInstance->spellBook[i]->explosionDeathSize*3.0+2.0;
 			mySpellBook[i]->myParticle = particleList[mySpellBook[i]->spellEffect];
+			mySpellBook[i]->explParticle = particleList[i+5];
 			UE_LOG(LogTemp, Warning, TEXT("Spell Gathering Succesful!"));
 		}
-		float whatever = mySpellBook[currSpell]->spellCost;
 	}
 	else {
 		UE_LOG(LogTemp, Warning, TEXT("Abort Mission!"));
@@ -133,7 +142,15 @@ void AWizardsCharacter::SetupPlayerInputComponent(class UInputComponent* InputCo
 
 	InputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	InputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
-	
+	InputComponent->BindAction("ChangeSpell1", IE_Pressed, this, &AWizardsCharacter::spellSwitch<0>);
+	InputComponent->BindAction("ChangeSpell2", IE_Pressed, this, &AWizardsCharacter::spellSwitch<1>);
+	InputComponent->BindAction("ChangeSpell3", IE_Pressed, this, &AWizardsCharacter::spellSwitch<2>);
+	InputComponent->BindAction("ChangeSpell4", IE_Pressed, this, &AWizardsCharacter::spellSwitch<3>);
+	InputComponent->BindAction("ChangeSpell5", IE_Pressed, this, &AWizardsCharacter::spellSwitch<4>);
+
+
+
+
 	//InputComponent->BindTouch(EInputEvent::IE_Pressed, this, &AWizardsCharacter::TouchStarted);
 	if( EnableTouchscreenMovement(InputComponent) == false )
 	{
@@ -171,13 +188,6 @@ void AWizardsCharacter::OnFire()
 				if (World)
 				{
 					// spawn the projectile at the muzzle
-					FActorSpawnParameters myparams;
-					myparams.Owner = Cast<AActor>(this);
-					myparams.Instigator = Cast<APawn>(this);
-					myparams.bAllowDuringConstructionScript = false;
-					myparams.bNoFail = true;
-					myparams.bRemoteOwned = false;
-					//AWizardsProjectile* wizardsSpell = 
 					AWizardsProjectile* wizardsSpell = World->SpawnActor<AWizardsProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);// , myparams);
 					wizardsSpell->SpellCreation(mySpellBook[currSpell], this);
 
@@ -305,6 +315,13 @@ bool AWizardsCharacter::EnableTouchscreenMovement(class UInputComponent* InputCo
 	}
 	return bResult;
 }
+
+template<int newspell>
+void AWizardsCharacter::spellSwitch()
+{
+	currSpell = newspell;
+}
+
 
 float AWizardsCharacter::GetHealth(){
 	return Health;

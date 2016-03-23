@@ -9,6 +9,10 @@
 #include "Wizards.generated.dep.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeWizards() {}
+	void AMyActor::StaticRegisterNativesAMyActor()
+	{
+	}
+	IMPLEMENT_CLASS(AMyActor, 2625356464);
 	void UspellBook::StaticRegisterNativesUspellBook()
 	{
 	}
@@ -59,6 +63,10 @@ void EmptyLinkFunctionForGeneratedCodeWizards() {}
 		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"spellsSave",(Native)&UWizardMenuWidget::execspellsSave);
 	}
 	IMPLEMENT_CLASS(UWizardMenuWidget, 3298688074);
+	void AWizardsBlast::StaticRegisterNativesAWizardsBlast()
+	{
+	}
+	IMPLEMENT_CLASS(AWizardsBlast, 2272097975);
 	void AWizardsGameMode::StaticRegisterNativesAWizardsGameMode()
 	{
 	}
@@ -71,9 +79,10 @@ void EmptyLinkFunctionForGeneratedCodeWizards() {}
 	{
 		FNativeFunctionRegistrar::RegisterFunction(AWizardsProjectile::StaticClass(),"OnHit",(Native)&AWizardsProjectile::execOnHit);
 	}
-	IMPLEMENT_CLASS(AWizardsProjectile, 587859448);
+	IMPLEMENT_CLASS(AWizardsProjectile, 4184148652);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
+	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	COREUOBJECT_API class UClass* Z_Construct_UClass_UObject();
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API class UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
@@ -83,16 +92,17 @@ void EmptyLinkFunctionForGeneratedCodeWizards() {}
 	ENGINE_API class UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USaveGame();
 	UMG_API class UClass* Z_Construct_UClass_UUserWidget();
+	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 	ENGINE_API class UClass* Z_Construct_UClass_AHUD();
 	ENGINE_API class UClass* Z_Construct_UClass_UFont_NoRegister();
 	ENGINE_API class UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API class UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AActor_NoRegister();
-	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	ENGINE_API class UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
-	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 
+	WIZARDS_API class UClass* Z_Construct_UClass_AMyActor_NoRegister();
+	WIZARDS_API class UClass* Z_Construct_UClass_AMyActor();
 	WIZARDS_API class UClass* Z_Construct_UClass_UspellBook_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_UspellBook();
 	WIZARDS_API class UFunction* Z_Construct_UFunction_AWizardsCharacter_newCharactersSpells();
@@ -135,6 +145,8 @@ void EmptyLinkFunctionForGeneratedCodeWizards() {}
 	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_spellsSave();
 	WIZARDS_API class UClass* Z_Construct_UClass_UWizardMenuWidget_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_UWizardMenuWidget();
+	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsBlast_NoRegister();
+	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsBlast();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsGameMode_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsGameMode();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsHUD_NoRegister();
@@ -143,6 +155,37 @@ void EmptyLinkFunctionForGeneratedCodeWizards() {}
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsProjectile_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsProjectile();
 	WIZARDS_API class UPackage* Z_Construct_UPackage_Wizards();
+	UClass* Z_Construct_UClass_AMyActor_NoRegister()
+	{
+		return AMyActor::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AMyActor()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage_Wizards();
+			OuterClass = AMyActor::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("MyActor.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/MyActor.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AMyActor(Z_Construct_UClass_AMyActor, TEXT("AMyActor"));
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AMyActor);
 	UClass* Z_Construct_UClass_UspellBook_NoRegister()
 	{
 		return UspellBook::StaticClass();
@@ -1127,6 +1170,44 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UWizardMenuWidget(Z_Construct_UClass_UWizardMenuWidget, TEXT("UWizardMenuWidget"));
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UWizardMenuWidget);
+	UClass* Z_Construct_UClass_AWizardsBlast_NoRegister()
+	{
+		return AWizardsBlast::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AWizardsBlast()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage_Wizards();
+			OuterClass = AWizardsBlast::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_CollisionComp = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CollisionComp"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(CollisionComp, AWizardsBlast), 0x00000000000b0009, Z_Construct_UClass_USphereComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->ClassConfigName = FName(TEXT("Game"));
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("WizardsBlast.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/WizardsBlast.h"));
+				MetaData->SetValue(NewProp_CollisionComp, TEXT("Category"), TEXT("Projectile"));
+				MetaData->SetValue(NewProp_CollisionComp, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_CollisionComp, TEXT("ModuleRelativePath"), TEXT("Public/WizardsBlast.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AWizardsBlast(Z_Construct_UClass_AWizardsBlast, TEXT("AWizardsBlast"));
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AWizardsBlast);
 	UClass* Z_Construct_UClass_AWizardsGameMode_NoRegister()
 	{
 		return AWizardsGameMode::StaticClass();
@@ -1248,6 +1329,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->LinkChild(Z_Construct_UFunction_AWizardsProjectile_OnHit());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_BlastClass = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("BlastClass"), RF_Public|RF_Transient|RF_Native) UClassProperty(CPP_PROPERTY_BASE(BlastClass, AWizardsProjectile), 0x0004000000000001, Z_Construct_UClass_AWizardsBlast_NoRegister());
 				UProperty* NewProp_ProjectileMovement = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ProjectileMovement"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(ProjectileMovement, AWizardsProjectile), 0x00000000000a001d, Z_Construct_UClass_UProjectileMovementComponent_NoRegister());
 				UProperty* NewProp_CollisionComp = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CollisionComp"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(CollisionComp, AWizardsProjectile), 0x00000000000b0009, Z_Construct_UClass_USphereComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
@@ -1258,6 +1340,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("WizardsProjectile.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("WizardsProjectile.h"));
+				MetaData->SetValue(NewProp_BlastClass, TEXT("Category"), TEXT("WizardsProjectile"));
+				MetaData->SetValue(NewProp_BlastClass, TEXT("ModuleRelativePath"), TEXT("WizardsProjectile.h"));
 				MetaData->SetValue(NewProp_ProjectileMovement, TEXT("AllowPrivateAccess"), TEXT("true"));
 				MetaData->SetValue(NewProp_ProjectileMovement, TEXT("Category"), TEXT("Movement"));
 				MetaData->SetValue(NewProp_ProjectileMovement, TEXT("EditInline"), TEXT("true"));
@@ -1283,8 +1367,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Wizards")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xC09BE5B8;
-			Guid.B = 0xC102F395;
+			Guid.A = 0x0054C1AD;
+			Guid.B = 0x6222CFD8;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
