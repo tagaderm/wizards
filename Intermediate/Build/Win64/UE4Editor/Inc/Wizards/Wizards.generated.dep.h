@@ -5,6 +5,9 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
+#ifndef WIZARDS_MyActor_generated_h
+	#include "Public/MyActor.h"
+#endif
 #ifndef WIZARDS_spellBook_generated_h
 	#include "Public/spellBook.h"
 #endif
@@ -16,6 +19,9 @@
 #endif
 #ifndef WIZARDS_WizardMenuWidget_generated_h
 	#include "WizardMenuWidget.h"
+#endif
+#ifndef WIZARDS_WizardsBlast_generated_h
+	#include "Public/WizardsBlast.h"
 #endif
 #ifndef WIZARDS_WizardsGameMode_generated_h
 	#include "WizardsGameMode.h"

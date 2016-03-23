@@ -2,6 +2,7 @@
 #pragma once
 #include "GameFramework/Actor.h"
 #include "WizardsCharacter.h"
+#include "WizardsBlast.h"
 #include "spellBook.h"
 #include "ParticleDefinitions.h"
 #include "WizardsProjectile.generated.h"
@@ -36,5 +37,19 @@ public:
 	FORCEINLINE class USphereComponent* GetCollisionComp() const { return CollisionComp; }
 	/** Returns ProjectileMovement subobject **/
 	FORCEINLINE class UProjectileMovementComponent* GetProjectileMovement() const { return ProjectileMovement; }
+	//UPROPERTY(EditAnywhere)
+	UParticleSystem* blastParticle;
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<class AWizardsBlast> BlastClass;
+	bool explodeDeath = false;
+	bool explodeHit = false;
+	float bBlastSize;
+	float bBlastDamage;
+	float dBlastSize;
+	float dBlastDamage;
+	int8 maxBlasts = 5;
+
+	void LifeSpanExpired() override;
+
 };
 

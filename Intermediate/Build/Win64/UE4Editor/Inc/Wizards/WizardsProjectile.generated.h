@@ -17,7 +17,7 @@ struct FHitResult;
 #endif
 #define WIZARDS_WizardsProjectile_generated_h
 
-#define wizards_Source_Wizards_WizardsProjectile_h_12_RPC_WRAPPERS \
+#define wizards_Source_Wizards_WizardsProjectile_h_13_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnHit) \
 	{ \
@@ -30,7 +30,7 @@ struct FHitResult;
 	}
 
 
-#define wizards_Source_Wizards_WizardsProjectile_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+#define wizards_Source_Wizards_WizardsProjectile_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnHit) \
 	{ \
@@ -43,7 +43,7 @@ struct FHitResult;
 	}
 
 
-#define wizards_Source_Wizards_WizardsProjectile_h_12_INCLASS_NO_PURE_DECLS \
+#define wizards_Source_Wizards_WizardsProjectile_h_13_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesAWizardsProjectile(); \
 	friend WIZARDS_API class UClass* Z_Construct_UClass_AWizardsProjectile(); \
@@ -56,7 +56,7 @@ struct FHitResult;
 	virtual UObject* _getUObject() const override { return const_cast<AWizardsProjectile*>(this); }
 
 
-#define wizards_Source_Wizards_WizardsProjectile_h_12_INCLASS \
+#define wizards_Source_Wizards_WizardsProjectile_h_13_INCLASS \
 	private: \
 	static void StaticRegisterNativesAWizardsProjectile(); \
 	friend WIZARDS_API class UClass* Z_Construct_UClass_AWizardsProjectile(); \
@@ -69,7 +69,7 @@ struct FHitResult;
 	virtual UObject* _getUObject() const override { return const_cast<AWizardsProjectile*>(this); }
 
 
-#define wizards_Source_Wizards_WizardsProjectile_h_12_STANDARD_CONSTRUCTORS \
+#define wizards_Source_Wizards_WizardsProjectile_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AWizardsProjectile(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AWizardsProjectile) \
@@ -81,7 +81,7 @@ private: \
 public:
 
 
-#define wizards_Source_Wizards_WizardsProjectile_h_12_ENHANCED_CONSTRUCTORS \
+#define wizards_Source_Wizards_WizardsProjectile_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private copy-constructor, should never be used */ \
 	NO_API AWizardsProjectile(const AWizardsProjectile& InCopy); \
@@ -91,23 +91,23 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AWizardsProjectile); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AWizardsProjectile)
 
 
-#define wizards_Source_Wizards_WizardsProjectile_h_9_PROLOG
-#define wizards_Source_Wizards_WizardsProjectile_h_12_GENERATED_BODY_LEGACY \
+#define wizards_Source_Wizards_WizardsProjectile_h_10_PROLOG
+#define wizards_Source_Wizards_WizardsProjectile_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	wizards_Source_Wizards_WizardsProjectile_h_12_RPC_WRAPPERS \
-	wizards_Source_Wizards_WizardsProjectile_h_12_INCLASS \
-	wizards_Source_Wizards_WizardsProjectile_h_12_STANDARD_CONSTRUCTORS \
+	wizards_Source_Wizards_WizardsProjectile_h_13_RPC_WRAPPERS \
+	wizards_Source_Wizards_WizardsProjectile_h_13_INCLASS \
+	wizards_Source_Wizards_WizardsProjectile_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define wizards_Source_Wizards_WizardsProjectile_h_12_GENERATED_BODY \
+#define wizards_Source_Wizards_WizardsProjectile_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	wizards_Source_Wizards_WizardsProjectile_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	wizards_Source_Wizards_WizardsProjectile_h_12_INCLASS_NO_PURE_DECLS \
-	wizards_Source_Wizards_WizardsProjectile_h_12_ENHANCED_CONSTRUCTORS \
+	wizards_Source_Wizards_WizardsProjectile_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	wizards_Source_Wizards_WizardsProjectile_h_13_INCLASS_NO_PURE_DECLS \
+	wizards_Source_Wizards_WizardsProjectile_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
