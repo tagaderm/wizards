@@ -65,6 +65,10 @@ void UWizardMenuWidget::setEffect(int effectChange) {
 	spellList[currSpell]->spellEffect = abs((spellList[currSpell]->spellEffect + effectChange)%5);// %however many spell types we have
 }
 
+void UWizardMenuWidget::setType(int typeChange) {
+	spellList[currSpell]->spellType = abs((spellList[currSpell]->spellType + typeChange) % 3);// %however many spell types we have
+}
+
 void UWizardMenuWidget::setGravity(bool hasGravity) {
 	spellList[currSpell]->hasGravity = hasGravity;
 }
@@ -146,6 +150,27 @@ FName UWizardMenuWidget::getEffect() {
 	default:
 		spellList[currSpell]->spellEffect = 0;
 		returnName = "Fire";
+		break;
+	}
+	return returnName;
+}
+
+FName UWizardMenuWidget::getType() {
+	FName returnName;
+	switch (spellList[currSpell]->spellType)
+	{
+	case 0:
+		returnName = "Projectile";
+		break;
+	case 1:
+		returnName = "Blast";
+		break;
+	case 2:
+		returnName = "Cone";
+		break;
+	default:
+		spellList[currSpell]->spellType = 0;
+		returnName = "Projectile";
 		break;
 	}
 	return returnName;

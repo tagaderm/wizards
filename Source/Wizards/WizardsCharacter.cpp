@@ -3,6 +3,8 @@
 #include "Wizards.h"
 #include "WizardsCharacter.h"
 #include "WizardsProjectile.h"
+#include "WizardsBlast.h"
+#include "WizardsCone.h"
 #include "WizardsSaveGame.h"
 #include "Animation/AnimInstance.h"
 #include "GameFramework/InputSettings.h"
@@ -22,30 +24,43 @@ AWizardsCharacter::AWizardsCharacter()
 	Mana = 100.0;
 	maxMana = 100.0;
 	currSpell = 0;
+	//For the record, this probably isn't the best way to get particles for the spells but it works
+	//A better method, implemented at a later and unknown date, would be to hold this array in its own class
+	//that is called once and never destroyed
 	//Projectiles
-	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName1(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Fire_Projectile.P_Fire_Projectile'"));
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName0(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Fire_Projectile.P_Fire_Projectile'"));
+	particleList.Add(ArbitraryParticleName0.Object);
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName1(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Lightning_Projectile.P_Lightning_Projectile'"));
 	particleList.Add(ArbitraryParticleName1.Object);
-	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName2(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Lightning_Projectile.P_Lightning_Projectile'"));
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName2(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Water_Projectile.P_Water_Projectile'"));
 	particleList.Add(ArbitraryParticleName2.Object);
-	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName3(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Water_Projectile.P_Water_Projectile'"));
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName3(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Ice_Projectile.P_Ice_Projectile'"));
 	particleList.Add(ArbitraryParticleName3.Object);
-	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName4(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Ice_Projectile.P_Ice_Projectile'"));
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName4(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Earth_Projectile.P_Earth_Projectile'"));
 	particleList.Add(ArbitraryParticleName4.Object);
-	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName5(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Earth_Projectile.P_Earth_Projectile'"));
-	particleList.Add(ArbitraryParticleName5.Object);
 	//Now for all of the EXPLOSIONS
-	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName6(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Fire_Blast.P_Fire_Blast'"));
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName5(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Fire_Blast.P_Fire_Blast'"));
+	particleList.Add(ArbitraryParticleName5.Object);
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName6(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Lightning_Blast.P_Lightning_Blast'"));
 	particleList.Add(ArbitraryParticleName6.Object);
-	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName7(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Lightning_Blast.P_Lightning_Blast'"));
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName7(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Water_Blast.P_Water_Blast'"));
 	particleList.Add(ArbitraryParticleName7.Object);
-	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName8(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Water_Blast.P_Water_Blast'"));
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName8(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Ice_Blast.P_Ice_Blast'"));
 	particleList.Add(ArbitraryParticleName8.Object);
-	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName9(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Ice_Blast.P_Ice_Blast'"));
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName9(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Earth_Blast.P_Earth_Blast'"));
 	particleList.Add(ArbitraryParticleName9.Object);
-	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName10(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Earth_Blast.P_Earth_Blast'"));
+	//Next up is cones
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName10(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Fire_Cone.P_Fire_Cone'"));
 	particleList.Add(ArbitraryParticleName10.Object);
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName11(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Lightning_Cone.P_Lightning_Cone'"));
+	particleList.Add(ArbitraryParticleName11.Object);
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName12(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Water_Cone.P_Water_Cone'"));
+	particleList.Add(ArbitraryParticleName12.Object);
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName13(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Ice_Cone.P_Ice_Cone'"));
+	particleList.Add(ArbitraryParticleName13.Object);
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName14(TEXT("ParticleSystem'/Game/FirstPerson/Particles/P_Earth_Cone.P_Earth_Cone'"));
+	particleList.Add(ArbitraryParticleName14.Object);
 
-	
 
 	spell test;
 	SList.Add(test);
@@ -112,7 +127,7 @@ void AWizardsCharacter::newCharactersSpells()
 			mySpellBook[i]->explosionHitSize = LoadGameInstance->spellBook[i]->explosionHitSize*3.0+2.0;
 			mySpellBook[i]->explosionDeathDamage = LoadGameInstance->spellBook[i]->explosionDeathDamage;
 			mySpellBook[i]->explosionDeathSize = LoadGameInstance->spellBook[i]->explosionDeathSize*3.0+2.0;
-			mySpellBook[i]->myParticle = particleList[mySpellBook[i]->spellEffect];
+			mySpellBook[i]->myParticle = particleList[mySpellBook[i]->spellEffect + mySpellBook[i]->spellType*5];
 			mySpellBook[i]->explParticle = particleList[i+5];
 			UE_LOG(LogTemp, Warning, TEXT("Spell Gathering Succesful!"));
 		}
@@ -155,6 +170,8 @@ void AWizardsCharacter::SetupPlayerInputComponent(class UInputComponent* InputCo
 	if( EnableTouchscreenMovement(InputComponent) == false )
 	{
 		InputComponent->BindAction("Fire", IE_Pressed, this, &AWizardsCharacter::OnFire);
+		InputComponent->BindAction("Fire", IE_Released, this, &AWizardsCharacter::OffFire);
+
 	}
 	
 	InputComponent->BindAxis("MoveForward", this, &AWizardsCharacter::MoveForward);
@@ -178,7 +195,8 @@ void AWizardsCharacter::OnFire()
 		if (Mana > mySpellBook[currSpell]->spellCost) {
 			Mana -= mySpellBook[currSpell]->spellCost;
 			// try and fire a projectile
-			if (ProjectileClass != NULL)
+				
+			if (mySpellBook[currSpell]->spellType == 0)
 			{
 				const FRotator SpawnRotation = GetControlRotation();
 				// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
@@ -193,6 +211,38 @@ void AWizardsCharacter::OnFire()
 
 				}
 			}
+			else if(mySpellBook[currSpell]->spellType == 1){
+				const FRotator SpawnRotation = FRotator(0.0);//GetControlRotation();
+				// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
+				const FVector SpawnLocation = FVector(0.0);//GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
+
+				UWorld* const World = GetWorld();
+				if (World)
+				{
+					// spawn the projectile at the muzzle
+					AWizardsBlast* wizardsSpell = World->SpawnActor<AWizardsBlast>(BlastClass, SpawnLocation, SpawnRotation);// , myparams);
+					wizardsSpell->SpellCreation(mySpellBook[currSpell]->myParticle, mySpellBook[currSpell]->spellSize, mySpellBook[currSpell]->spellDamage, this);
+					wizardsSpell->AttachRootComponentTo(GetCapsuleComponent());//Probably useful for Blasts, Rays, and Conical attacks
+				}
+			}
+			else if (mySpellBook[currSpell]->spellType == 2) {
+				const FRotator SpawnRotation = FRotator(0.0);//GetControlRotation();
+				// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
+				const FVector SpawnLocation = FVector(0.0);//GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
+
+				UWorld* const World = GetWorld();
+				if (World)
+				{
+					// spawn the projectile at the muzzle
+					AWizardsCone* wizardsCone = World->SpawnActor<AWizardsCone>(ConeClass, SpawnLocation, SpawnRotation);// , myparams);
+					wizardsCone->SpellCreation(mySpellBook[currSpell]->myParticle, mySpellBook[currSpell]->spellSize, mySpellBook[currSpell]->spellDamage, this);
+					wizardsCone->AttachRootComponentTo(GetCapsuleComponent());//Probably useful for Blasts, Rays, and Conical attacks
+					activeAttack = Cast<AActor>(wizardsCone);
+				}
+			}
+
+
+
 
 			// God this sound is so annoying
 			/*if (FireSound != NULL)
@@ -212,6 +262,11 @@ void AWizardsCharacter::OnFire()
 			}
 	}
 }
+
+void AWizardsCharacter::OffFire() {
+	activeAttack->Destroy();
+}
+
 
 void AWizardsCharacter::BeginTouch(const ETouchIndex::Type FingerIndex, const FVector Location)
 {

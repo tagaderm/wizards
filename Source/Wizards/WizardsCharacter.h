@@ -2,6 +2,7 @@
 #pragma once
 #include "GameFramework/Character.h"
 #include "ParticleDefinitions.h"
+//#include "WizardsCone.h"
 #include "spellBook.h"
 #include "WizardsCharacter.generated.h"
 
@@ -75,10 +76,17 @@ public:
 	};
 	TArray<spell> SList;
 	int8 currSpell;
+	//AWizardsCone* wizardsCone;
+	AActor* activeAttack;
 
 	/** Projectile class to spawn */
 	UPROPERTY(EditAnywhere, Category=Projectile)
 	TSubclassOf<class AWizardsProjectile> ProjectileClass;
+	UPROPERTY(EditAnywhere, Category = Projectile)
+	TSubclassOf<class AWizardsBlast> BlastClass;
+	UPROPERTY(EditAnywhere, Category = Projectile)
+	TSubclassOf<class AWizardsCone> ConeClass;
+
 
 	/** Sound to play each time we fire */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
@@ -92,6 +100,8 @@ protected:
 	
 	/** Fires a projectile. */
 	void OnFire();
+
+	void OffFire();//stops cones
 
 	/** Handles moving forward/backward */
 	void MoveForward(float Val);
@@ -127,6 +137,7 @@ protected:
 	//Called when you switch a spell
 	template<int newspell>
 	void spellSwitch();
+	bool shooting = false;
 
 protected:
 	// APawn interface
