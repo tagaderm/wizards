@@ -30,6 +30,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "CustomSpells")
 	void setEffect(int32 effectChange);
 
+	UFUNCTION(BlueprintCallable, Category = "CustomSpells")
+	void setType(int32 effectChange);
+
 	//Called when spell is changed in spell bar
 	//Changes all values to this spells values
 	UFUNCTION(BlueprintCallable, Category = "CustomSpells")
@@ -84,6 +87,10 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "CustomSpells")
 	FName getEffect();
+
+	UFUNCTION(BlueprintCallable, Category = "CustomSpells")
+	FName getType();
+
 
 	UFUNCTION(BlueprintCallable, Category = "CustomSpells")
 	bool getGravity();
