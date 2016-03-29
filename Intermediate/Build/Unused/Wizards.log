@@ -1,0 +1,36 @@
+﻿Build started 3/22/2016 5:26:55 PM.
+     1>Project "I:\Projects\wizards\Intermediate\ProjectFiles\Wizards.vcxproj" on node 3 (Rebuild target(s)).
+     1>Rebuild:
+         "I:\EPIC\Epic Games\4.10\Engine\Build\BatchFiles\Rebuild.bat" WizardsEditor Win64 Development "I:\Projects\wizards\Wizards.uproject" -rocket -waitmutex -2015
+         Cleaning WizardsEditor Binaries...
+         Compiling game modules for hot reload
+         Creating makefile for hot reloading WizardsEditor (no existing makefile)
+         Compiling game modules for hot reload
+         Performing full C++ include scan (no include cache file)
+         Parsing headers for WizardsEditor
+           Running UnrealHeaderTool "I:\Projects\wizards\Wizards.uproject" "I:\Projects\wizards\Intermediate\Build\Win64\WizardsEditor\Development\UnrealHeaderTool.manifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -rocket -installed
+         Reflection code generated for WizardsEditor in 5.225103 seconds
+         Performing 15 actions (4 in parallel)
+         [3/15] Resource ModuleVersionResource.rc.inl
+         [2/15] Resource PCLaunch.rc
+         PCH.Wizards.h.cpp
+         Wizards.cpp
+         WizardsGameMode.cpp
+         WizardMenuWidget.cpp
+         WizardsCharacter.cpp
+         WizardsHUD.cpp
+         WizardsProjectile.cpp
+         WizardsSaveGame.cpp
+         MyActor.cpp
+         spellBook.cpp
+         Wizards.generated.cpp
+         WizardsBlast.cpp
+         [15/15] Link UE4Editor-Wizards-3888.dll
+            Creating library I:\Projects\wizards\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-Wizards-3888.lib and object I:\Projects\wizards\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-Wizards-3888.exp
+         -------- End Detailed Actions Stats -----------------------------------------------------------
+         Total build time: 48.98 seconds
+     1>Done Building Project "I:\Projects\wizards\Intermediate\ProjectFiles\Wizards.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:53.22

@@ -1,0 +1,24 @@
+﻿[2016.03.29-05.46.36:142][  0]Log file open, 03/28/16 22:46:36
+[2016.03.29-05.46.36:142][  0]LogInit:Display: Running engine for game: Wizards
+[2016.03.29-05.46.36:142][  0]LogPlatformFile: Not using cached read wrapper
+[2016.03.29-05.46.36:142][  0]LogInit:Display: RandInit(-532313891) SRandInit(-532313890).
+[2016.03.29-05.46.36:142][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2016.03.29-05.46.36:142][  0]LogStats: Stats thread started at 0.074284
+[2016.03.29-05.46.36:142][  0]LogInit:Warning: Incompatible or missing module: UE4Editor-Wizards.dll
+[2016.03.29-05.46.37:803][  0]LogExit: Preparing to exit.
+[2016.03.29-05.46.37:804][  0]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.03.29-05.46.37:804][  0]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.03.29-05.46.37:804][  0]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.03.29-05.46.37:804][  0]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.03.29-05.46.37:804][  0]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.03.29-05.46.37:805][  0]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.03.29-05.46.37:805][  0]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.03.29-05.46.37:805][  0]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.03.29-05.46.37:805][  0]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.03.29-05.46.37:805][  0]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.03.29-05.46.37:805][  0]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.03.29-05.46.37:805][  0]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.03.29-05.46.37:805][  0]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.03.29-05.46.37:805][  0]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.03.29-05.46.37:805][  0]LogExit: Exiting.
+[2016.03.29-05.46.37:806][  0]Log file closed, 03/28/16 22:46:37

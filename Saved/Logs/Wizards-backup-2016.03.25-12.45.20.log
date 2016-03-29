@@ -1,0 +1,1054 @@
+﻿[2016.03.25-19.13.17:065][  0]Log file open, 03/25/16 12:13:17
+[2016.03.25-19.13.17:065][  0]LogInit:Display: Running engine for game: Wizards
+[2016.03.25-19.13.17:065][  0]LogPlatformFile: Not using cached read wrapper
+[2016.03.25-19.13.17:065][  0]LogInit:Display: RandInit(-1851576451) SRandInit(-1851576448).
+[2016.03.25-19.13.17:065][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2016.03.25-19.13.17:065][  0]LogStats: Stats thread started at 0.533501
+[2016.03.25-19.13.17:065][  0]LogInit: Version: 4.10.4-2872498+++depot+UE4-Releases+4.10
+[2016.03.25-19.13.17:065][  0]LogInit: API Version: 2758231
+[2016.03.25-19.13.17:065][  0]LogInit: Compiled (64-bit): Feb 18 2016 15:47:04
+[2016.03.25-19.13.17:065][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
+[2016.03.25-19.13.17:065][  0]LogInit: Build Configuration: Development
+[2016.03.25-19.13.17:065][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
+[2016.03.25-19.13.17:065][  0]LogInit: Command line:  
+[2016.03.25-19.13.17:065][  0]LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.10/Engine/Binaries/Win64/
+[2016.03.25-19.13.17:065][  0]LogInit: Rocket: 1
+[2016.03.25-19.13.17:080][  0]LogInit: Using libcurl 7.41.0
+[2016.03.25-19.13.17:080][  0]LogInit:  - built for x86_64-pc-win32
+[2016.03.25-19.13.17:080][  0]LogInit:  - supports SSL with WinSSL
+[2016.03.25-19.13.17:080][  0]LogInit:  - other features:
+[2016.03.25-19.13.17:080][  0]LogInit:      CURL_VERSION_SSL
+[2016.03.25-19.13.17:080][  0]LogInit:      CURL_VERSION_IPV6
+[2016.03.25-19.13.17:080][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2016.03.25-19.13.17:080][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2016.03.25-19.13.17:080][  0]LogInit:      CURL_VERSION_IDN
+[2016.03.25-19.13.17:082][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2016.03.25-19.13.17:082][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2016.03.25-19.13.17:082][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2016.03.25-19.13.17:082][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2016.03.25-19.13.17:082][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2016.03.25-19.13.17:101][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2016.03.25-19.13.17:115][  0]LogInit: Object subsystem initialized
+[2016.03.25-19.13.17:129][  0]LogInit: Selected Device Profile: [Windows]
+[2016.03.25-19.13.17:129][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.03.25-19.13.17:139][  0]LogInit: Computer: ALPHA
+[2016.03.25-19.13.17:139][  0]LogInit: User: Logical
+[2016.03.25-19.13.17:139][  0]LogInit: CPU Page size=4096, Cores=4
+[2016.03.25-19.13.17:139][  0]LogInit: High frequency timer resolution =4.233085 MHz
+[2016.03.25-19.13.17:139][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.03.25-19.13.17:139][  0]LogMemory: Platform Memory Stats for Windows
+[2016.03.25-19.13.17:139][  0]LogMemory: Process Physical Memory: 57.10 MB used, 57.10 MB peak
+[2016.03.25-19.13.17:139][  0]LogMemory: Process Virtual Memory: 60.75 MB used, 60.75 MB peak
+[2016.03.25-19.13.17:139][  0]LogMemory: Physical Memory: 3009.99 MB used, 16282.42 MB total
+[2016.03.25-19.13.17:139][  0]LogMemory: Virtual Memory: 356.21 MB used, 8388608.00 MB total
+[2016.03.25-19.13.17:253][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.03.25-19.13.17:763][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 960 (Feature Level 11_0)
+[2016.03.25-19.13.17:763][  0]LogD3D11RHI: Adapter has 4011MB of dedicated video memory, 0MB of dedicated system memory, and 7885MB of shared system memory, 1 output[s]
+[2016.03.25-19.13.17:763][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2016.03.25-19.13.17:769][  0]LogD3D11RHI: !Direct3DDevice
+[2016.03.25-19.13.17:769][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.03.25-19.13.17:778][  0]LogD3D11RHI: Async texture creation enabled
+[2016.03.25-19.13.17:833][  0]LogShaderCompilers: Guid format shader working directory is -8 characters bigger than the processId version (../../../../../../Users/Logical/Documents/Github/wizards/Intermediate/Shaders/WorkingDirectory/5368/).
+[2016.03.25-19.13.17:833][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Logical/AppData/Local/Temp/UnrealShaderWorkingDir/C8B44FAC4E9F56E37F8477A9C761EF50/'.
+[2016.03.25-19.13.17:834][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.03.25-19.13.19:375][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.03.25-19.13.19:381][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.03.25-19.13.19:387][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.03.25-19.13.19:393][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.03.25-19.13.19:399][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.03.25-19.13.19:404][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.03.25-19.13.19:409][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.03.25-19.13.19:414][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.03.25-19.13.19:418][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.03.25-19.13.19:424][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.03.25-19.13.19:429][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.03.25-19.13.19:439][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.03.25-19.13.19:439][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.03.25-19.13.19:441][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.03.25-19.13.19:464][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.03.25-19.13.19:468][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.03.25-19.13.19:474][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.03.25-19.13.19:479][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.03.25-19.13.19:479][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.03.25-19.13.19:607][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.03.25-19.13.19:769][  0]LogDerivedDataCache: Loaded boot cache 0.16s 44MB C:/Users/Logical/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.03.25-19.13.19:769][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Logical/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
+[2016.03.25-19.13.19:769][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Logical/Documents/Github/wizards/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.03.25-19.13.19:769][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.03.25-19.13.19:769][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Logical/Documents/Github/wizards/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.03.25-19.13.19:769][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.03.25-19.13.19:836][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.03.25-19.13.19:849][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Logical/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.03.25-19.13.20:388][  0]LogInit: Selected Device Profile: [Windows]
+[2016.03.25-19.13.20:390][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2016.03.25-19.13.20:477][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.03.25-19.13.20:477][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.03.25-19.13.21:008][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.03.25-19.13.22:610][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.03.25-19.13.23:063][  0]LogAssetRegistry: FAssetRegistry took 0.0124 seconds to start up
+[2016.03.25-19.13.23:353][  0]SourceControl: Info Source control is disabled
+[2016.03.25-19.13.23:355][  0]SourceControl: Info Source control is disabled
+[2016.03.25-19.13.23:383][  0]SourceControl: Info Source control is disabled
+[2016.03.25-19.13.23:400][  0]SourceControl: Info Source control is disabled
+[2016.03.25-19.13.23:739][  0]LogObj: 32350 objects as part of root set at end of initial load.
+[2016.03.25-19.13.23:739][  0]LogUObjectAllocator: 7426744 out of 0 bytes used by permanent object pool.
+[2016.03.25-19.13.23:837][  0]LogEngine: Initializing Engine...
+[2016.03.25-19.13.23:841][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.03.25-19.13.23:843][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.03.25-19.13.24:024][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.03.25-19.13.24:038][  0]LogInit: XAudio2 using 'Speakers (Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.03.25-19.13.24:048][  0]LogInit: FAudioDevice initialized.
+[2016.03.25-19.13.24:088][  0]LogDerivedDataCache: Saved boot cache 0.04s 44MB C:/Users/Logical/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.03.25-19.13.24:100][  0]LogInit: Texture streaming: Enabled
+[2016.03.25-19.13.24:108][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2016.03.25-19.13.24:109][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.4-2872498+++depot+UE4-Releases+4.10
+[2016.03.25-19.13.24:109][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 6adc7db841d972496a4138bf1fd52a82|95dbfcfbadea45bc810ef15143a39ae1|43985850-9a8d-48b6-b74f-8b1df78056ea
+[2016.03.25-19.13.24:109][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2016.03.25-19.13.24:122][  0]LogInit: Transaction tracking system initialized
+[2016.03.25-19.13.24:182][  0]BlueprintLog: New page: Editor Load
+[2016.03.25-19.13.24:455][  0]LocalizationService: Info Localization service is disabled
+[2016.03.25-19.13.24:664][  0]LogConsoleResponse:Display: 
+[2016.03.25-19.13.24:807][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.03.25-19.13.24:928][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Logical/Documents/Github/wizards/Content/' took 0.01s
+[2016.03.25-19.13.24:928][  0]SourceControl: Info Source control is disabled
+[2016.03.25-19.13.24:935][  0]LogFactory: FactoryCreateBinary: PackFactory with PackFactory (0 0 C:/Program Files (x86)/Epic Games/4.10/FeaturePacks/StarterContent.upack)
+[2016.03.25-19.13.24:950][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
+[2016.03.25-19.13.24:951][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Floor_400x400.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Architecture/Floor_400x400.uasset"
+[2016.03.25-19.13.24:952][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Pillar_50x500.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Architecture/Pillar_50x500.uasset"
+[2016.03.25-19.13.24:955][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/SM_AssetPlatform.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Architecture/SM_AssetPlatform.uasset"
+[2016.03.25-19.13.24:956][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x200.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Architecture/Wall_400x200.uasset"
+[2016.03.25-19.13.24:957][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x300.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Architecture/Wall_400x300.uasset"
+[2016.03.25-19.13.24:958][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x400.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Architecture/Wall_400x400.uasset"
+[2016.03.25-19.13.24:958][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_500x500.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Architecture/Wall_500x500.uasset"
+[2016.03.25-19.13.24:959][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x300.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Architecture/Wall_Door_400x300.uasset"
+[2016.03.25-19.13.24:960][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x400.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Architecture/Wall_Door_400x400.uasset"
+[2016.03.25-19.13.24:961][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x300.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Architecture/Wall_Window_400x300.uasset"
+[2016.03.25-19.13.24:962][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x400.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Architecture/Wall_Window_400x400.uasset"
+[2016.03.25-19.13.24:964][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse01.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Collapse01.uasset"
+[2016.03.25-19.13.24:966][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse02.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Collapse02.uasset"
+[2016.03.25-19.13.24:967][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse_Cue.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Collapse_Cue.uasset"
+[2016.03.25-19.13.24:969][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion01.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Explosion01.uasset"
+[2016.03.25-19.13.24:971][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion02.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Explosion02.uasset"
+[2016.03.25-19.13.24:972][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion_Cue.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Explosion_Cue.uasset"
+[2016.03.25-19.13.24:977][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Fire01.uasset"
+[2016.03.25-19.13.24:980][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01_Cue.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Fire01_Cue.uasset"
+[2016.03.25-19.13.24:996][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Fire_Sparks01.uasset"
+[2016.03.25-19.13.24:997][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset"
+[2016.03.25-19.13.24:999][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Light01.uasset"
+[2016.03.25-19.13.25:000][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01_Cue.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Light01_Cue.uasset"
+[2016.03.25-19.13.25:002][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Light02.uasset"
+[2016.03.25-19.13.25:003][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02_Cue.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Light02_Cue.uasset"
+[2016.03.25-19.13.25:006][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Smoke01.uasset"
+[2016.03.25-19.13.25:007][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01_Cue.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Smoke01_Cue.uasset"
+[2016.03.25-19.13.25:007][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Background_Cue.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Starter_Background_Cue.uasset"
+[2016.03.25-19.13.25:017][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Birds01.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Starter_Birds01.uasset"
+[2016.03.25-19.13.25:045][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music01.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Starter_Music01.uasset"
+[2016.03.25-19.13.25:046][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music_Cue.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Starter_Music_Cue.uasset"
+[2016.03.25-19.13.25:056][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind05.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Starter_Wind05.uasset"
+[2016.03.25-19.13.25:064][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind06.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Starter_Wind06.uasset"
+[2016.03.25-19.13.25:069][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Steam01.uasset"
+[2016.03.25-19.13.25:069][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01_Cue.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Audio/Steam01_Cue.uasset"
+[2016.03.25-19.13.25:071][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset"
+[2016.03.25-19.13.25:071][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
+[2016.03.25-19.13.25:072][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
+[2016.03.25-19.13.25:073][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
+[2016.03.25-19.13.25:073][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
+[2016.03.25-19.13.25:074][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset"
+[2016.03.25-19.13.25:075][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset"
+[2016.03.25-19.13.25:078][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/BP_LightStudio.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Blueprints/BP_LightStudio.uasset"
+[2016.03.25-19.13.25:079][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset"
+[2016.03.25-19.13.25:079][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset"
+[2016.03.25-19.13.25:081][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset"
+[2016.03.25-19.13.25:082][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset"
+[2016.03.25-19.13.25:083][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset"
+[2016.03.25-19.13.25:086][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/Skybox.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Blueprints/Assets/Skybox.uasset"
+[2016.03.25-19.13.25:088][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset"
+[2016.03.25-19.13.25:089][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset"
+[2016.03.25-19.13.25:307][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
+[2016.03.25-19.13.25:309][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting.umap" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Maps/Advanced_Lighting.umap"
+[2016.03.25-19.13.25:316][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default.umap" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Maps/Minimal_Default.umap"
+[2016.03.25-19.13.25:367][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap.umap" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Maps/StarterMap.umap"
+[2016.03.25-19.13.25:368][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_AssetPlatform.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_AssetPlatform.uasset"
+[2016.03.25-19.13.25:369][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Floor.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Basic_Floor.uasset"
+[2016.03.25-19.13.25:370][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Wall.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Basic_Wall.uasset"
+[2016.03.25-19.13.25:371][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset"
+[2016.03.25-19.13.25:373][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Brick_Clay_New.uasset"
+[2016.03.25-19.13.25:374][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset"
+[2016.03.25-19.13.25:375][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset"
+[2016.03.25-19.13.25:376][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset"
+[2016.03.25-19.13.25:378][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
+[2016.03.25-19.13.25:379][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset"
+[2016.03.25-19.13.25:381][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset"
+[2016.03.25-19.13.25:382][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset"
+[2016.03.25-19.13.25:383][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset"
+[2016.03.25-19.13.25:384][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Grime.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Concrete_Grime.uasset"
+[2016.03.25-19.13.25:385][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Panels.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Concrete_Panels.uasset"
+[2016.03.25-19.13.25:386][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Poured.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Concrete_Poured.uasset"
+[2016.03.25-19.13.25:387][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Concrete_Tiles.uasset"
+[2016.03.25-19.13.25:388][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Glass.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Glass.uasset"
+[2016.03.25-19.13.25:389][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Grass.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Ground_Grass.uasset"
+[2016.03.25-19.13.25:390][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Gravel.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Ground_Gravel.uasset"
+[2016.03.25-19.13.25:394][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Moss.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Ground_Moss.uasset"
+[2016.03.25-19.13.25:395][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
+[2016.03.25-19.13.25:396][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset"
+[2016.03.25-19.13.25:397][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Chrome.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Metal_Chrome.uasset"
+[2016.03.25-19.13.25:398][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Copper.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Metal_Copper.uasset"
+[2016.03.25-19.13.25:399][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Gold.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Metal_Gold.uasset"
+[2016.03.25-19.13.25:400][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Rust.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Metal_Rust.uasset"
+[2016.03.25-19.13.25:401][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Steel.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Metal_Steel.uasset"
+[2016.03.25-19.13.25:403][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Basalt.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Rock_Basalt.uasset"
+[2016.03.25-19.13.25:404][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset"
+[2016.03.25-19.13.25:405][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Rock_Sandstone.uasset"
+[2016.03.25-19.13.25:406][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Slate.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Rock_Slate.uasset"
+[2016.03.25-19.13.25:407][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset"
+[2016.03.25-19.13.25:409][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset"
+[2016.03.25-19.13.25:410][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
+[2016.03.25-19.13.25:411][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Panel.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Tech_Panel.uasset"
+[2016.03.25-19.13.25:412][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Lake.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Water_Lake.uasset"
+[2016.03.25-19.13.25:413][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Ocean.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Water_Ocean.uasset"
+[2016.03.25-19.13.25:414][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
+[2016.03.25-19.13.25:415][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
+[2016.03.25-19.13.25:417][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Oak.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Wood_Oak.uasset"
+[2016.03.25-19.13.25:418][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Pine.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Wood_Pine.uasset"
+[2016.03.25-19.13.25:419][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Walnut.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Materials/M_Wood_Walnut.uasset"
+[2016.03.25-19.13.25:420][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Ambient_Dust.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Particles/P_Ambient_Dust.uasset"
+[2016.03.25-19.13.25:422][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Explosion.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Particles/P_Explosion.uasset"
+[2016.03.25-19.13.25:423][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Fire.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Particles/P_Fire.uasset"
+[2016.03.25-19.13.25:424][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Smoke.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Particles/P_Smoke.uasset"
+[2016.03.25-19.13.25:425][  0]LogPackFactory:Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Sparks.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Particles/P_Sparks.uasset".
+[2016.03.25-19.13.25:427][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Steam_Lit.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Particles/P_Steam_Lit.uasset"
+[2016.03.25-19.13.25:428][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Burst.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Particles/Materials/M_Burst.uasset"
+[2016.03.25-19.13.25:429][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset"
+[2016.03.25-19.13.25:429][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset"
+[2016.03.25-19.13.25:430][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset"
+[2016.03.25-19.13.25:431][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/m_flare_01.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Particles/Materials/m_flare_01.uasset"
+[2016.03.25-19.13.25:432][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset"
+[2016.03.25-19.13.25:433][  0]LogPackFactory:Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset".
+[2016.03.25-19.13.25:433][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset"
+[2016.03.25-19.13.25:434][  0]LogPackFactory:Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset".
+[2016.03.25-19.13.25:435][  0]LogPackFactory:Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Spark.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Particles/Materials/M_Spark.uasset".
+[2016.03.25-19.13.25:436][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/MaterialSphere.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/MaterialSphere.uasset"
+[2016.03.25-19.13.25:438][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Bush.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/SM_Bush.uasset"
+[2016.03.25-19.13.25:439][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Chair.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/SM_Chair.uasset"
+[2016.03.25-19.13.25:440][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_CornerFrame.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/SM_CornerFrame.uasset"
+[2016.03.25-19.13.25:442][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Couch.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/SM_Couch.uasset"
+[2016.03.25-19.13.25:444][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Door.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/SM_Door.uasset"
+[2016.03.25-19.13.25:445][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_DoorFrame.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/SM_DoorFrame.uasset"
+[2016.03.25-19.13.25:446][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_GlassWindow.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/SM_GlassWindow.uasset"
+[2016.03.25-19.13.25:448][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset"
+[2016.03.25-19.13.25:450][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Wall.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/SM_Lamp_Wall.uasset"
+[2016.03.25-19.13.25:457][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset"
+[2016.03.25-19.13.25:459][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/SM_PillarFrame.uasset"
+[2016.03.25-19.13.25:460][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame300.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/SM_PillarFrame300.uasset"
+[2016.03.25-19.13.25:461][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Rock.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/SM_Rock.uasset"
+[2016.03.25-19.13.25:462][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Shelf.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/SM_Shelf.uasset"
+[2016.03.25-19.13.25:463][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Stairs.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/SM_Stairs.uasset"
+[2016.03.25-19.13.25:466][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Statue.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/SM_Statue.uasset"
+[2016.03.25-19.13.25:469][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_TableRound.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/SM_TableRound.uasset"
+[2016.03.25-19.13.25:470][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_WindowFrame.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/SM_WindowFrame.uasset"
+[2016.03.25-19.13.25:471][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Bush.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/Materials/M_Bush.uasset"
+[2016.03.25-19.13.25:472][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Chair.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/Materials/M_Chair.uasset"
+[2016.03.25-19.13.25:473][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Door.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/Materials/M_Door.uasset"
+[2016.03.25-19.13.25:474][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Frame.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/Materials/M_Frame.uasset"
+[2016.03.25-19.13.25:475][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Lamp.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/Materials/M_Lamp.uasset"
+[2016.03.25-19.13.25:476][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset"
+[2016.03.25-19.13.25:477][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset"
+[2016.03.25-19.13.25:479][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Rock.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/Materials/M_Rock.uasset"
+[2016.03.25-19.13.25:480][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Shelf.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/Materials/M_Shelf.uasset"
+[2016.03.25-19.13.25:481][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Statue.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/Materials/M_Statue.uasset"
+[2016.03.25-19.13.25:482][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_StatueGlass.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/Materials/M_StatueGlass.uasset"
+[2016.03.25-19.13.25:483][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_TableRound.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Props/Materials/M_TableRound.uasset"
+[2016.03.25-19.13.25:484][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cone.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Shapes/Shape_Cone.uasset"
+[2016.03.25-19.13.25:485][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cube.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Shapes/Shape_Cube.uasset"
+[2016.03.25-19.13.25:486][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cylinder.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Shapes/Shape_Cylinder.uasset"
+[2016.03.25-19.13.25:487][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset"
+[2016.03.25-19.13.25:488][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Shapes/Shape_Pipe.uasset"
+[2016.03.25-19.13.25:490][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_180.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Shapes/Shape_Pipe_180.uasset"
+[2016.03.25-19.13.25:493][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_90.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Shapes/Shape_Pipe_90.uasset"
+[2016.03.25-19.13.25:494][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Plane.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Shapes/Shape_Plane.uasset"
+[2016.03.25-19.13.25:495][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset"
+[2016.03.25-19.13.25:497][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Sphere.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Shapes/Shape_Sphere.uasset"
+[2016.03.25-19.13.25:500][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Torus.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Shapes/Shape_Torus.uasset"
+[2016.03.25-19.13.25:501][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Shapes/Shape_Trim.uasset"
+[2016.03.25-19.13.25:502][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset"
+[2016.03.25-19.13.25:503][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset"
+[2016.03.25-19.13.25:504][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_TriPyramid.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Shapes/Shape_TriPyramid.uasset"
+[2016.03.25-19.13.25:505][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Tube.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Shapes/Shape_Tube.uasset"
+[2016.03.25-19.13.25:506][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_A.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Shapes/Shape_Wedge_A.uasset"
+[2016.03.25-19.13.25:507][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_B.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Shapes/Shape_Wedge_B.uasset"
+[2016.03.25-19.13.25:508][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_WideCapsule.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Shapes/Shape_WideCapsule.uasset"
+[2016.03.25-19.13.25:534][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset"
+[2016.03.25-19.13.25:560][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset"
+[2016.03.25-19.13.25:583][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset"
+[2016.03.25-19.13.25:603][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset"
+[2016.03.25-19.13.25:631][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset"
+[2016.03.25-19.13.25:654][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset"
+[2016.03.25-19.13.25:691][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset"
+[2016.03.25-19.13.25:718][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset"
+[2016.03.25-19.13.25:761][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset"
+[2016.03.25-19.13.25:783][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset"
+[2016.03.25-19.13.25:807][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset"
+[2016.03.25-19.13.25:830][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset"
+[2016.03.25-19.13.25:858][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset"
+[2016.03.25-19.13.25:860][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Burst_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Burst_M.uasset"
+[2016.03.25-19.13.25:863][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Bush_D.uasset"
+[2016.03.25-19.13.25:865][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Bush_N.uasset"
+[2016.03.25-19.13.25:867][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset"
+[2016.03.25-19.13.25:869][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset"
+[2016.03.25-19.13.25:872][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Chair_M.uasset"
+[2016.03.25-19.13.25:880][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Chair_N.uasset"
+[2016.03.25-19.13.25:881][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Checker_Noise_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Checker_Noise_M.uasset"
+[2016.03.25-19.13.25:917][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset"
+[2016.03.25-19.13.25:923][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset"
+[2016.03.25-19.13.26:140][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset"
+[2016.03.25-19.13.26:263][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset"
+[2016.03.25-19.13.26:369][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset"
+[2016.03.25-19.13.26:504][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset"
+[2016.03.25-19.13.26:522][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset"
+[2016.03.25-19.13.26:552][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset"
+[2016.03.25-19.13.26:586][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset"
+[2016.03.25-19.13.26:613][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset"
+[2016.03.25-19.13.26:634][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset"
+[2016.03.25-19.13.26:670][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset"
+[2016.03.25-19.13.26:693][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset"
+[2016.03.25-19.13.26:712][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset"
+[2016.03.25-19.13.26:730][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset"
+[2016.03.25-19.13.26:753][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset"
+[2016.03.25-19.13.26:754][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset"
+[2016.03.25-19.13.26:765][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset"
+[2016.03.25-19.13.26:767][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Door_M.uasset"
+[2016.03.25-19.13.26:772][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Door_N.uasset"
+[2016.03.25-19.13.26:773][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Dust_Particle_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Dust_Particle_D.uasset"
+[2016.03.25-19.13.26:784][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Explosion_SubUV.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Explosion_SubUV.uasset"
+[2016.03.25-19.13.26:787][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_SubUV.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Fire_SubUV.uasset"
+[2016.03.25-19.13.26:790][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset"
+[2016.03.25-19.13.26:793][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Frame_M.uasset"
+[2016.03.25-19.13.26:798][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Frame_N.uasset"
+[2016.03.25-19.13.26:799][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Gradinet_01.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Gradinet_01.uasset"
+[2016.03.25-19.13.26:836][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Ground_Grass_D.uasset"
+[2016.03.25-19.13.26:871][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Ground_Grass_N.uasset"
+[2016.03.25-19.13.26:905][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset"
+[2016.03.25-19.13.26:930][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset"
+[2016.03.25-19.13.26:975][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_ground_Moss_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_ground_Moss_D.uasset"
+[2016.03.25-19.13.27:003][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Moss_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Ground_Moss_N.uasset"
+[2016.03.25-19.13.27:007][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Lamp_M.uasset"
+[2016.03.25-19.13.27:018][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Lamp_N.uasset"
+[2016.03.25-19.13.27:051][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_MacroVariation.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_MacroVariation.uasset"
+[2016.03.25-19.13.27:084][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset"
+[2016.03.25-19.13.27:115][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Copper_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Metal_Copper_D.uasset"
+[2016.03.25-19.13.27:143][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Metal_Gold_D.uasset"
+[2016.03.25-19.13.27:153][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Metal_Gold_N.uasset"
+[2016.03.25-19.13.27:184][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Metal_Rust_D.uasset"
+[2016.03.25-19.13.27:207][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Metal_Rust_N.uasset"
+[2016.03.25-19.13.27:221][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Metal_Steel_D.uasset"
+[2016.03.25-19.13.27:239][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Metal_Steel_N.uasset"
+[2016.03.25-19.13.27:266][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset"
+[2016.03.25-19.13.27:276][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_RockMesh_M.uasset"
+[2016.03.25-19.13.27:293][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_RockMesh_N.uasset"
+[2016.03.25-19.13.27:323][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset"
+[2016.03.25-19.13.27:349][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset"
+[2016.03.25-19.13.27:369][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset"
+[2016.03.25-19.13.27:402][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset"
+[2016.03.25-19.13.27:430][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset"
+[2016.03.25-19.13.27:469][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Rock_Slate_D.uasset"
+[2016.03.25-19.13.27:500][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Rock_Slate_N.uasset"
+[2016.03.25-19.13.27:529][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset"
+[2016.03.25-19.13.27:533][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Shelf_M.uasset"
+[2016.03.25-19.13.27:539][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Shelf_N.uasset"
+[2016.03.25-19.13.27:539][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Single_Tile_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Single_Tile_N.uasset"
+[2016.03.25-19.13.27:541][  0]LogPackFactory:Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_SubUV.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Smoke_SubUV.uasset".
+[2016.03.25-19.13.27:542][  0]LogPackFactory:Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset".
+[2016.03.25-19.13.27:543][  0]LogPackFactory:Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Spark_Core.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Spark_Core.uasset".
+[2016.03.25-19.13.27:546][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Statue_M.uasset"
+[2016.03.25-19.13.27:549][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Statue_N.uasset"
+[2016.03.25-19.13.27:553][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_TableRound_M.uasset"
+[2016.03.25-19.13.27:558][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_TableRound_N.uasset"
+[2016.03.25-19.13.27:559][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Tech_Dot_M.uasset"
+[2016.03.25-19.13.27:561][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Tech_Dot_N.uasset"
+[2016.03.25-19.13.27:565][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset"
+[2016.03.25-19.13.27:567][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset"
+[2016.03.25-19.13.27:572][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Tech_Panel_M.uasset"
+[2016.03.25-19.13.27:579][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Tech_Panel_N.uasset"
+[2016.03.25-19.13.27:587][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Water_M.uasset"
+[2016.03.25-19.13.27:596][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Water_N.uasset"
+[2016.03.25-19.13.27:610][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset"
+[2016.03.25-19.13.27:624][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset"
+[2016.03.25-19.13.27:635][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset"
+[2016.03.25-19.13.27:656][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Wood_Oak_D.uasset"
+[2016.03.25-19.13.27:678][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Wood_Oak_N.uasset"
+[2016.03.25-19.13.27:708][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Wood_Pine_D.uasset"
+[2016.03.25-19.13.27:720][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Wood_Pine_N.uasset"
+[2016.03.25-19.13.27:741][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset"
+[2016.03.25-19.13.27:755][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset" to "../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset"
+[2016.03.25-19.13.27:860][  0]LogRenderer: Reallocating scene render targets to support 256x256 (Frame:2).
+[2016.03.25-19.13.28:017][  0]LogSavePackage: Save=19.811083ms
+[2016.03.25-19.13.28:017][  0]LogSavePackage: Moving '../../../../../../Users/Logical/Documents/Github/wizards/Saved/Floor_400x40026C8C6F543DD90AD987ED79AD50B0FD1.tmp' to '../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Architecture/Floor_400x400.uasset'
+[2016.03.25-19.13.28:018][  0]LogSavePackage: Total save time: 37.908051ms
+[2016.03.25-19.13.28:018][  0]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Logical/Documents/Github/wizards/Content/StarterContent/Architecture/Floor_400x400.uasset
+[2016.03.25-19.13.28:023][  0]LogFeaturePack:Warning: Inserted 1 feature packs
+[2016.03.25-19.13.28:028][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Maps/main_menu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.03.25-19.13.28:044][  0]LightingResults: New page: Lighting Build
+[2016.03.25-19.13.28:115][  0]MapCheck: New page: Map Check
+[2016.03.25-19.13.28:115][  0]LightingResults: New page: Lighting Build
+[2016.03.25-19.13.28:189][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000259BA160
+[2016.03.25-19.13.28:216][  0]LogLinker:Warning: Asset '../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Maps/main_menu.umap' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2016.03.25-19.13.28:357][  0]LogAIModule: Creating AISystem for world main_menu
+[2016.03.25-19.13.28:372][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.03.25-19.13.28:373][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.03.25-19.13.28:417][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 43.632ms to complete.
+[2016.03.25-19.13.28:417][  0]LogFileHelpers: Loading map 'main_menu' took 0.391
+[2016.03.25-19.13.28:567][  0]LogCollectionManager: Loaded 0 collections in 0.001942 seconds
+[2016.03.25-19.13.28:622][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Logical/Documents/Github/wizards/Saved/Collections/' took 0.01s
+[2016.03.25-19.13.28:622][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Logical/Documents/Github/wizards/Content/Developers/Logical/Collections/' took 0.01s
+[2016.03.25-19.13.28:622][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Logical/Documents/Github/wizards/Content/Collections/' took 0.01s
+[2016.03.25-19.13.28:622][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.03.25-19.13.28:636][  0]LogContentBrowser: Native class hierarchy populated in 0.0128 seconds. Added 1897 classes and 340 folders.
+[2016.03.25-19.13.28:647][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0018 seconds. Added 0 classes and 0 folders.
+[2016.03.25-19.13.28:764][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0019 seconds. Added 0 classes and 0 folders.
+[2016.03.25-19.13.28:778][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0018 seconds. Added 1 classes and 2 folders.
+[2016.03.25-19.13.28:837][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.03.25-19.13.28:894][  0]LogLoad: Full Startup: 13.21 seconds (BP compile: 0.15 seconds)
+[2016.03.25-19.13.28:905][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.03.25-19.13.29:028][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.03.25-19.13.29:180][  0]LogRenderer: Reallocating scene render targets to support 1056x552 (Frame:3).
+[2016.03.25-19.13.29:391][  5]LogAssetRegistry: Asset discovery search completed in 6.3397 seconds
+[2016.03.25-19.13.29:391][  5]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.03.25-19.13.29:391][  5]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000022 seconds (updated 0 objects)
+[2016.03.25-19.13.53:093][823]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu' with GeneratedClass '/Game/FirstPerson/Maps/main_menu.main_menu_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu'
+[2016.03.25-19.13.53:093][823]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.03.25-19.13.53:093][823]PIE: New page: PIE session: main_menu (Mar 25, 2016, 5:13:53 AM)
+[2016.03.25-19.13.53:094][823]LogPlayLevel: Creating play world package: /Game/FirstPerson/Maps/UEDPIE_0_main_menu
+[2016.03.25-19.13.53:096][823]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002617s)
+[2016.03.25-19.13.53:097][823]LogAIModule: Creating AISystem for world main_menu
+[2016.03.25-19.13.53:097][823]LogPlayLevel: PIE: World Init took: (0.000914s)
+[2016.03.25-19.13.53:097][823]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPerson/Maps/main_menu.main_menu to /Game/FirstPerson/Maps/UEDPIE_0_main_menu.main_menu (0.003909s)
+[2016.03.25-19.13.53:124][823]LogInit: XAudio2 using 'Speakers (Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.03.25-19.13.53:130][823]LogInit: FAudioDevice initialized.
+[2016.03.25-19.13.53:179][823]LogWorld: Game class is 'WizardsGameMode'
+[2016.03.25-19.13.53:183][823]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_0_main_menu.main_menu up for play (max tick rate 0) at 2016.03.25-12.13.53
+[2016.03.25-19.13.53:183][823]LogActor:Warning: GameSession /Game/FirstPerson/Maps/UEDPIE_0_main_menu.main_menu:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.25-19.13.53:183][823]LogActor:Warning: GameNetworkManager /Game/FirstPerson/Maps/UEDPIE_0_main_menu.main_menu:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.25-19.13.53:183][823]LogWorld: Bringing up level for play took: 0.001368
+[2016.03.25-19.13.53:198][823]PIE: Info Play in editor start time for /Game/FirstPerson/Maps/UEDPIE_0_main_menu 0.904
+[2016.03.25-19.13.53:198][823]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu' with GeneratedClass '/Game/FirstPerson/Maps/main_menu.main_menu_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu'
+[2016.03.25-19.13.59:047][513]LogPackageName: SearchForPackageOnDisk took   0.061s to resolve FirstPersonExampleMap.umap.
+[2016.03.25-19.13.59:104][513]LogPackageName: SearchForPackageOnDisk took   0.057s to resolve FirstPersonExampleMap.umap.
+[2016.03.25-19.13.59:104][513]LogNet: Browse: /Game/FirstPerson/Maps/FirstPersonExampleMap
+[2016.03.25-19.13.59:105][513]LogLoad: LoadMap: /Game/FirstPerson/Maps/FirstPersonExampleMap
+[2016.03.25-19.13.59:122][513]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002B7FD300
+[2016.03.25-19.13.59:124][513]Cmd: MEM
+[2016.03.25-19.13.59:141][513]LogMemory: Platform Memory Stats for Windows
+[2016.03.25-19.13.59:141][513]LogMemory: Process Physical Memory: 625.53 MB used, 636.30 MB peak
+[2016.03.25-19.13.59:141][513]LogMemory: Process Virtual Memory: 1056.07 MB used, 1066.64 MB peak
+[2016.03.25-19.13.59:141][513]LogMemory: Physical Memory: 3702.02 MB used, 16282.42 MB total
+[2016.03.25-19.13.59:141][513]LogMemory: Virtual Memory: 1681.54 MB used, 8388608.00 MB total
+[2016.03.25-19.13.59:141][513]LogMemory: 
+[2016.03.25-19.13.59:141][513]Allocator Stats for TBB: (not implemented)
+[2016.03.25-19.14.00:078][513]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.03.25-19.14.00:079][513]LogWorld: Game class is 'WizardsGameMode'
+[2016.03.25-19.14.00:112][513]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2016.03.25-12.14.00
+[2016.03.25-19.14.00:113][513]LogActor:Warning: GameSession /Game/FirstPerson/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.GameSession_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.25-19.14.00:113][513]LogActor:Warning: GameNetworkManager /Game/FirstPerson/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.GameNetworkManager_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.25-19.14.00:113][513]LogWorld: Bringing up level for play took: 0.023823
+[2016.03.25-19.15.26:322][189]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu' with GeneratedClass '/Game/FirstPerson/Maps/main_menu.main_menu_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu'
+[2016.03.25-19.15.26:358][189]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu' with GeneratedClass '/Game/FirstPerson/Maps/main_menu.main_menu_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu'
+[2016.03.25-19.15.26:381][189]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000004EC328E0
+[2016.03.25-19.15.27:836][358]LogEditorViewport: Clicking Background
+[2016.03.25-19.16.22:689][646]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu' with GeneratedClass '/Game/FirstPerson/Maps/main_menu.main_menu_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu'
+[2016.03.25-19.16.22:689][646]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.03.25-19.16.22:691][646]PIE: New page: PIE session: main_menu (Mar 25, 2016, 5:16:22 AM)
+[2016.03.25-19.16.22:691][646]LogPlayLevel: Creating play world package: /Game/FirstPerson/Maps/UEDPIE_1_main_menu
+[2016.03.25-19.16.22:694][646]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002503s)
+[2016.03.25-19.16.22:695][646]LogAIModule: Creating AISystem for world main_menu
+[2016.03.25-19.16.22:695][646]LogPlayLevel: PIE: World Init took: (0.000831s)
+[2016.03.25-19.16.22:695][646]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPerson/Maps/main_menu.main_menu to /Game/FirstPerson/Maps/UEDPIE_1_main_menu.main_menu (0.003509s)
+[2016.03.25-19.16.22:719][646]LogInit: XAudio2 using 'Speakers (Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.03.25-19.16.22:725][646]LogInit: FAudioDevice initialized.
+[2016.03.25-19.16.22:757][646]LogWorld: Game class is 'WizardsGameMode'
+[2016.03.25-19.16.22:759][646]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_1_main_menu.main_menu up for play (max tick rate 0) at 2016.03.25-12.16.22
+[2016.03.25-19.16.22:759][646]LogActor:Warning: GameSession /Game/FirstPerson/Maps/UEDPIE_1_main_menu.main_menu:PersistentLevel.GameSession_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.25-19.16.22:759][646]LogActor:Warning: GameNetworkManager /Game/FirstPerson/Maps/UEDPIE_1_main_menu.main_menu:PersistentLevel.GameNetworkManager_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.25-19.16.22:759][646]LogWorld: Bringing up level for play took: 0.001141
+[2016.03.25-19.16.22:761][646]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.03.25-19.16.22:762][646]LogInit: WinSock: I am Alpha (192.168.56.1:0)
+[2016.03.25-19.16.22:763][646]LogNet: GameNetDriver IpNetDriver_0 IpNetDriver listening on port 7777
+[2016.03.25-19.16.22:765][646]PIE: Info Play in editor start time for /Game/FirstPerson/Maps/UEDPIE_1_main_menu 0.49
+[2016.03.25-19.16.22:768][646]PIE: New page: PIE session: main_menu (Mar 25, 2016, 5:16:22 AM)
+[2016.03.25-19.16.22:846][646]LogNet: Browse: 127.0.0.1//Game/FirstPerson/Maps/main_menu
+[2016.03.25-19.16.22:847][646]LogInit: WinSock: Socket queue 32768 / 32768
+[2016.03.25-19.16.22:847][646]LogNet: Game client on port 7777, rate 10000
+[2016.03.25-19.16.22:847][646]LogNet: GetLocalNetworkVersion: GEngineNetVersion: 2872498, ProjectName: wizards, ProjectVersion: 1.0.0.0, InternalProtocolVersion: 9, LocalNetworkVersion: 2491060336
+[2016.03.25-19.16.22:861][646]PIE: Info Play in editor start time for /Game/FirstPerson/Maps/main_menu 0.586
+[2016.03.25-19.16.22:864][646]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu' with GeneratedClass '/Game/FirstPerson/Maps/main_menu.main_menu_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu'
+[2016.03.25-19.16.22:865][646]LogNet: NotifyAcceptingConnection: Server main_menu accept
+[2016.03.25-19.16.22:865][646]LogNet: Open main_menu 03/25/16 12:16:22 127.0.0.1
+[2016.03.25-19.16.22:865][646]LogNet: Added client connection.  Remote address = 127.0.0.1:54561
+[2016.03.25-19.16.22:865][646]LogNet: NotifyAcceptingChannel Control 0 server World /Game/FirstPerson/Maps/UEDPIE_1_main_menu.main_menu: Accepted
+[2016.03.25-19.16.22:865][646]LogNet: Remote platform little endian=1
+[2016.03.25-19.16.22:865][646]LogNet: This platform little endian=1
+[2016.03.25-19.16.22:865][646]LogNet: GetLocalNetworkVersion: GEngineNetVersion: 2872498, ProjectName: wizards, ProjectVersion: 1.0.0.0, InternalProtocolVersion: 9, LocalNetworkVersion: 2491060336
+[2016.03.25-19.16.22:877][647]LogNet: Login request: /Game/FirstPerson/Maps/main_menu userId: Invalid
+[2016.03.25-19.16.22:878][647]LogNet: Welcomed by server (Level: /Game/FirstPerson/Maps/UEDPIE_1_main_menu, Game: /Script/Wizards.WizardsGameMode)
+[2016.03.25-19.16.22:878][647]LogLoad: LoadMap: 127.0.0.1//Game/FirstPerson/Maps/UEDPIE_1_main_menu?game=/Script/Wizards.WizardsGameMode
+[2016.03.25-19.16.22:895][647]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000004DF6BCE0
+[2016.03.25-19.16.22:897][647]Cmd: MEM
+[2016.03.25-19.16.22:912][647]LogMemory: Platform Memory Stats for Windows
+[2016.03.25-19.16.22:912][647]LogMemory: Process Physical Memory: 899.23 MB used, 924.47 MB peak
+[2016.03.25-19.16.22:912][647]LogMemory: Process Virtual Memory: 1486.90 MB used, 1486.90 MB peak
+[2016.03.25-19.16.22:912][647]LogMemory: Physical Memory: 3896.10 MB used, 16282.42 MB total
+[2016.03.25-19.16.22:912][647]LogMemory: Virtual Memory: 2115.55 MB used, 8388608.00 MB total
+[2016.03.25-19.16.22:912][647]LogMemory: 
+[2016.03.25-19.16.22:912][647]Allocator Stats for TBB: (not implemented)
+[2016.03.25-19.16.22:914][647]LogWorld: PIE: Copying PIE streaming level from /Game/FirstPerson/Maps/main_menu.main_menu to /Game/FirstPerson/Maps/UEDPIE_2_main_menu.main_menu. OwningWorld: None
+[2016.03.25-19.16.22:915][647]LogAIModule: Creating AISystem for world main_menu
+[2016.03.25-19.16.22:918][647]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_2_main_menu.main_menu up for play (max tick rate 0) at 2016.03.25-12.16.22
+[2016.03.25-19.16.22:918][647]LogWorld: Bringing up level for play took: 0.001289
+[2016.03.25-19.16.22:926][648]LogRenderer: Reallocating scene render targets to support 1280x720 (Frame:16570).
+[2016.03.25-19.16.22:926][648]LogNet: Client netspeed is 10000
+[2016.03.25-19.16.22:926][648]LogNet: Join request: /Game/FirstPerson/Maps/main_menu?SplitscreenCount=1
+[2016.03.25-19.16.22:929][648]LogNet: Join succeeded: 259
+[2016.03.25-19.16.27:850][220]LogPackageName: SearchForPackageOnDisk took   0.060s to resolve FirstPersonExampleMap.umap.
+[2016.03.25-19.16.27:909][220]LogPackageName: SearchForPackageOnDisk took   0.057s to resolve FirstPersonExampleMap.umap.
+[2016.03.25-19.16.27:909][220]LogNet: Browse: /Game/FirstPerson/Maps/FirstPersonExampleMap
+[2016.03.25-19.16.27:909][220]LogLoad: LoadMap: /Game/FirstPerson/Maps/FirstPersonExampleMap
+[2016.03.25-19.16.27:909][220]LogNet: World NetDriver shutdown IpNetDriver_1 [GameNetDriver]
+[2016.03.25-19.16.27:909][220]LogNet: DestroyNamedNetDriver IpNetDriver_1 [GameNetDriver]
+[2016.03.25-19.16.27:909][220]LogNet: UNetConnection::Close: Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_1, PC: PlayerController_5, Owner: PlayerController_5, Channels: 11, RemoteAddr: 127.0.0.1:7777, Time: 2016.03.25-19.16.27
+[2016.03.25-19.16.27:909][220]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: ControlChannel_0
+[2016.03.25-19.16.27:910][220]LogExit: GameNetDriver IpNetDriver_1 shut down
+[2016.03.25-19.16.27:931][220]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000046E0B420
+[2016.03.25-19.16.27:931][220]Cmd: MEM
+[2016.03.25-19.16.27:947][220]LogMemory: Platform Memory Stats for Windows
+[2016.03.25-19.16.27:947][220]LogMemory: Process Physical Memory: 906.65 MB used, 924.47 MB peak
+[2016.03.25-19.16.27:947][220]LogMemory: Process Virtual Memory: 1464.80 MB used, 1696.10 MB peak
+[2016.03.25-19.16.27:947][220]LogMemory: Physical Memory: 3882.04 MB used, 16282.42 MB total
+[2016.03.25-19.16.27:947][220]LogMemory: Virtual Memory: 2082.74 MB used, 8388608.00 MB total
+[2016.03.25-19.16.27:947][220]LogMemory: 
+[2016.03.25-19.16.27:947][220]Allocator Stats for TBB: (not implemented)
+[2016.03.25-19.16.28:363][220]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.03.25-19.16.28:364][220]LogWorld: Game class is 'WizardsGameMode'
+[2016.03.25-19.16.28:374][220]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_2_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2016.03.25-12.16.28
+[2016.03.25-19.16.28:374][220]LogActor:Warning: GameSession /Game/FirstPerson/Maps/UEDPIE_2_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.GameSession_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.25-19.16.28:374][220]LogActor:Warning: GameNetworkManager /Game/FirstPerson/Maps/UEDPIE_2_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.GameNetworkManager_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.25-19.16.28:375][220]LogWorld: Bringing up level for play took: 0.009820
+[2016.03.25-19.16.28:385][221]LogNet: UChannel::ReceivedSequencedBunch: Bunch.bClose == true. ChIndex == 0. Calling ConditionalCleanUp.
+[2016.03.25-19.16.28:385][221]LogNet: UChannel::CleanUp: [GameNetDriver] [PlayerController_4] [PlayerController_4]. ChIndex == 0. Closing connection.
+[2016.03.25-19.16.28:385][221]LogNet: UNetConnection::Close: Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, PC: PlayerController_4, Owner: PlayerController_4, Channels: 11, RemoteAddr: 127.0.0.1:54561, Time: 2016.03.25-19.16.28
+[2016.03.25-19.16.28:385][221]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: ControlChannel_1
+[2016.03.25-19.16.29:698][307]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu' with GeneratedClass '/Game/FirstPerson/Maps/main_menu.main_menu_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu'
+[2016.03.25-19.16.29:726][307]LogSpawn:Warning: SpawnActor failed because we are in the process of tearing down the world
+[2016.03.25-19.16.29:755][307]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu' with GeneratedClass '/Game/FirstPerson/Maps/main_menu.main_menu_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu'
+[2016.03.25-19.16.29:780][307]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000004E01BCE0
+[2016.03.25-19.16.29:780][307]LogExit: GameNetDriver None shut down
+[2016.03.25-19.16.29:825][308]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000004DF69BC0
+[2016.03.25-19.16.48:612][369]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu' with GeneratedClass '/Game/FirstPerson/Maps/main_menu.main_menu_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu'
+[2016.03.25-19.16.48:612][369]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.03.25-19.16.48:615][369]PIE: New page: PIE session: main_menu (Mar 25, 2016, 5:16:48 AM)
+[2016.03.25-19.16.48:615][369]LogPlayLevel: Creating play world package: /Game/FirstPerson/Maps/UEDPIE_1_main_menu
+[2016.03.25-19.16.48:617][369]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002541s)
+[2016.03.25-19.16.48:618][369]LogAIModule: Creating AISystem for world main_menu
+[2016.03.25-19.16.48:618][369]LogPlayLevel: PIE: World Init took: (0.000800s)
+[2016.03.25-19.16.48:618][369]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPerson/Maps/main_menu.main_menu to /Game/FirstPerson/Maps/UEDPIE_1_main_menu.main_menu (0.003508s)
+[2016.03.25-19.16.48:641][369]LogInit: XAudio2 using 'Speakers (Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.03.25-19.16.48:647][369]LogInit: FAudioDevice initialized.
+[2016.03.25-19.16.48:684][369]LogWorld: Game class is 'WizardsGameMode'
+[2016.03.25-19.16.48:686][369]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_1_main_menu.main_menu up for play (max tick rate 0) at 2016.03.25-12.16.48
+[2016.03.25-19.16.48:686][369]LogActor:Warning: GameSession /Game/FirstPerson/Maps/UEDPIE_1_main_menu.main_menu:PersistentLevel.GameSession_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.25-19.16.48:686][369]LogActor:Warning: GameNetworkManager /Game/FirstPerson/Maps/UEDPIE_1_main_menu.main_menu:PersistentLevel.GameNetworkManager_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.25-19.16.48:686][369]LogWorld: Bringing up level for play took: 0.001193
+[2016.03.25-19.16.48:687][369]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.03.25-19.16.48:687][369]LogNet: GameNetDriver IpNetDriver_2 IpNetDriver listening on port 7777
+[2016.03.25-19.16.48:690][369]PIE: Info Play in editor start time for /Game/FirstPerson/Maps/UEDPIE_1_main_menu 0.421
+[2016.03.25-19.16.48:693][369]PIE: New page: PIE session: main_menu (Mar 25, 2016, 5:16:48 AM)
+[2016.03.25-19.16.48:757][369]LogNet: Browse: 127.0.0.1//Game/FirstPerson/Maps/main_menu
+[2016.03.25-19.16.48:757][369]LogInit: WinSock: Socket queue 32768 / 32768
+[2016.03.25-19.16.48:758][369]LogNet: Game client on port 7777, rate 10000
+[2016.03.25-19.16.48:758][369]LogNet: GetLocalNetworkVersion: GEngineNetVersion: 2872498, ProjectName: wizards, ProjectVersion: 1.0.0.0, InternalProtocolVersion: 9, LocalNetworkVersion: 2491060336
+[2016.03.25-19.16.48:771][369]PIE: Info Play in editor start time for /Game/FirstPerson/Maps/main_menu 0.504
+[2016.03.25-19.16.48:774][369]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu' with GeneratedClass '/Game/FirstPerson/Maps/main_menu.main_menu_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu'
+[2016.03.25-19.16.48:774][369]LogNet: NotifyAcceptingConnection: Server main_menu accept
+[2016.03.25-19.16.48:774][369]LogNet: Open main_menu 03/25/16 12:16:48 127.0.0.1
+[2016.03.25-19.16.48:774][369]LogNet: Added client connection.  Remote address = 127.0.0.1:52478
+[2016.03.25-19.16.48:774][369]LogNet: NotifyAcceptingChannel Control 0 server World /Game/FirstPerson/Maps/UEDPIE_1_main_menu.main_menu: Accepted
+[2016.03.25-19.16.48:774][369]LogNet: Remote platform little endian=1
+[2016.03.25-19.16.48:774][369]LogNet: This platform little endian=1
+[2016.03.25-19.16.48:774][369]LogNet: GetLocalNetworkVersion: GEngineNetVersion: 2872498, ProjectName: wizards, ProjectVersion: 1.0.0.0, InternalProtocolVersion: 9, LocalNetworkVersion: 2491060336
+[2016.03.25-19.16.48:787][370]LogNet: Login request: /Game/FirstPerson/Maps/main_menu userId: Invalid
+[2016.03.25-19.16.48:788][370]LogNet: Welcomed by server (Level: /Game/FirstPerson/Maps/UEDPIE_1_main_menu, Game: /Script/Wizards.WizardsGameMode)
+[2016.03.25-19.16.48:788][370]LogLoad: LoadMap: 127.0.0.1//Game/FirstPerson/Maps/UEDPIE_1_main_menu?game=/Script/Wizards.WizardsGameMode
+[2016.03.25-19.16.48:805][370]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000053601120
+[2016.03.25-19.16.48:806][370]Cmd: MEM
+[2016.03.25-19.16.48:822][370]LogMemory: Platform Memory Stats for Windows
+[2016.03.25-19.16.48:822][370]LogMemory: Process Physical Memory: 982.94 MB used, 990.70 MB peak
+[2016.03.25-19.16.48:822][370]LogMemory: Process Virtual Memory: 1659.78 MB used, 1696.10 MB peak
+[2016.03.25-19.16.48:822][370]LogMemory: Physical Memory: 3937.14 MB used, 16282.42 MB total
+[2016.03.25-19.16.48:822][370]LogMemory: Virtual Memory: 2272.61 MB used, 8388608.00 MB total
+[2016.03.25-19.16.48:822][370]LogMemory: 
+[2016.03.25-19.16.48:822][370]Allocator Stats for TBB: (not implemented)
+[2016.03.25-19.16.48:825][370]LogWorld: PIE: Copying PIE streaming level from /Game/FirstPerson/Maps/main_menu.main_menu to /Game/FirstPerson/Maps/UEDPIE_2_main_menu.main_menu. OwningWorld: None
+[2016.03.25-19.16.48:826][370]LogAIModule: Creating AISystem for world main_menu
+[2016.03.25-19.16.48:828][370]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_2_main_menu.main_menu up for play (max tick rate 0) at 2016.03.25-12.16.48
+[2016.03.25-19.16.48:828][370]LogWorld: Bringing up level for play took: 0.000880
+[2016.03.25-19.16.48:847][371]LogNet: Client netspeed is 10000
+[2016.03.25-19.16.48:847][371]LogNet: Join request: /Game/FirstPerson/Maps/main_menu?SplitscreenCount=1
+[2016.03.25-19.16.48:850][371]LogNet: Join succeeded: 262
+[2016.03.25-19.16.53:714][941]LogPackageName: SearchForPackageOnDisk took   0.058s to resolve FirstPersonExampleMap.umap.
+[2016.03.25-19.16.53:774][941]LogPackageName: SearchForPackageOnDisk took   0.058s to resolve FirstPersonExampleMap.umap.
+[2016.03.25-19.16.53:774][941]LogNet: Browse: /Game/FirstPerson/Maps/FirstPersonExampleMap
+[2016.03.25-19.16.53:774][941]LogLoad: LoadMap: /Game/FirstPerson/Maps/FirstPersonExampleMap
+[2016.03.25-19.16.53:774][941]LogNet: World NetDriver shutdown IpNetDriver_3 [GameNetDriver]
+[2016.03.25-19.16.53:774][941]LogNet: DestroyNamedNetDriver IpNetDriver_3 [GameNetDriver]
+[2016.03.25-19.16.53:774][941]LogNet: UNetConnection::Close: Name: IpConnection_2, Driver: GameNetDriver IpNetDriver_3, PC: PlayerController_10, Owner: PlayerController_10, Channels: 11, RemoteAddr: 127.0.0.1:7777, Time: 2016.03.25-19.16.53
+[2016.03.25-19.16.53:774][941]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: ControlChannel_2
+[2016.03.25-19.16.53:774][941]LogExit: GameNetDriver IpNetDriver_3 shut down
+[2016.03.25-19.16.53:794][941]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000004DF685E0
+[2016.03.25-19.16.53:794][941]Cmd: MEM
+[2016.03.25-19.16.53:811][941]LogMemory: Platform Memory Stats for Windows
+[2016.03.25-19.16.53:811][941]LogMemory: Process Physical Memory: 983.15 MB used, 990.70 MB peak
+[2016.03.25-19.16.53:811][941]LogMemory: Process Virtual Memory: 1663.68 MB used, 1715.88 MB peak
+[2016.03.25-19.16.53:811][941]LogMemory: Physical Memory: 3936.07 MB used, 16282.42 MB total
+[2016.03.25-19.16.53:811][941]LogMemory: Virtual Memory: 2285.99 MB used, 8388608.00 MB total
+[2016.03.25-19.16.53:811][941]LogMemory: 
+[2016.03.25-19.16.53:811][941]Allocator Stats for TBB: (not implemented)
+[2016.03.25-19.16.54:216][941]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.03.25-19.16.54:217][941]LogWorld: Game class is 'WizardsGameMode'
+[2016.03.25-19.16.54:227][941]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_2_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2016.03.25-12.16.54
+[2016.03.25-19.16.54:227][941]LogActor:Warning: GameSession /Game/FirstPerson/Maps/UEDPIE_2_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.GameSession_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.25-19.16.54:227][941]LogActor:Warning: GameNetworkManager /Game/FirstPerson/Maps/UEDPIE_2_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.GameNetworkManager_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.25-19.16.54:228][941]LogWorld: Bringing up level for play took: 0.009953
+[2016.03.25-19.16.54:239][942]LogNet: UChannel::ReceivedSequencedBunch: Bunch.bClose == true. ChIndex == 0. Calling ConditionalCleanUp.
+[2016.03.25-19.16.54:239][942]LogNet: UChannel::CleanUp: [GameNetDriver] [PlayerController_9] [PlayerController_9]. ChIndex == 0. Closing connection.
+[2016.03.25-19.16.54:239][942]LogNet: UNetConnection::Close: Name: IpConnection_3, Driver: GameNetDriver IpNetDriver_2, PC: PlayerController_9, Owner: PlayerController_9, Channels: 11, RemoteAddr: 127.0.0.1:52478, Time: 2016.03.25-19.16.54
+[2016.03.25-19.16.54:239][942]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: ControlChannel_3
+[2016.03.25-19.17.01:683][267]LogPackageName: SearchForPackageOnDisk took   0.058s to resolve FirstPersonExampleMap.umap.
+[2016.03.25-19.17.01:742][267]LogPackageName: SearchForPackageOnDisk took   0.058s to resolve FirstPersonExampleMap.umap.
+[2016.03.25-19.17.01:742][267]LogNet: Browse: /Game/FirstPerson/Maps/FirstPersonExampleMap
+[2016.03.25-19.17.01:742][267]LogLoad: LoadMap: /Game/FirstPerson/Maps/FirstPersonExampleMap
+[2016.03.25-19.17.01:742][267]LogNet: World NetDriver shutdown IpNetDriver_2 [GameNetDriver]
+[2016.03.25-19.17.01:742][267]LogNet: DestroyNamedNetDriver IpNetDriver_2 [GameNetDriver]
+[2016.03.25-19.17.01:742][267]LogExit: GameNetDriver IpNetDriver_2 shut down
+[2016.03.25-19.17.01:762][267]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000004E01B420
+[2016.03.25-19.17.01:762][267]Cmd: MEM
+[2016.03.25-19.17.01:779][267]LogMemory: Platform Memory Stats for Windows
+[2016.03.25-19.17.01:779][267]LogMemory: Process Physical Memory: 1002.21 MB used, 1018.45 MB peak
+[2016.03.25-19.17.01:779][267]LogMemory: Process Virtual Memory: 1718.70 MB used, 1762.16 MB peak
+[2016.03.25-19.17.01:779][267]LogMemory: Physical Memory: 3947.68 MB used, 16282.42 MB total
+[2016.03.25-19.17.01:779][267]LogMemory: Virtual Memory: 2340.93 MB used, 8388608.00 MB total
+[2016.03.25-19.17.01:779][267]LogMemory: 
+[2016.03.25-19.17.01:779][267]Allocator Stats for TBB: (not implemented)
+[2016.03.25-19.17.02:209][267]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.03.25-19.17.02:210][267]LogWorld: Game class is 'WizardsGameMode'
+[2016.03.25-19.17.02:220][267]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_1_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2016.03.25-12.17.02
+[2016.03.25-19.17.02:220][267]LogActor:Warning: GameSession /Game/FirstPerson/Maps/UEDPIE_1_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.GameSession_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.25-19.17.02:220][267]LogActor:Warning: GameNetworkManager /Game/FirstPerson/Maps/UEDPIE_1_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.GameNetworkManager_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.25-19.17.02:220][267]LogWorld: Bringing up level for play took: 0.009606
+[2016.03.25-19.17.10:983][996]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu' with GeneratedClass '/Game/FirstPerson/Maps/main_menu.main_menu_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu'
+[2016.03.25-19.17.11:020][996]LogSpawn:Warning: SpawnActor failed because we are in the process of tearing down the world
+[2016.03.25-19.17.11:049][996]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu' with GeneratedClass '/Game/FirstPerson/Maps/main_menu.main_menu_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu'
+[2016.03.25-19.17.11:073][996]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000053602200
+[2016.03.25-19.17.11:148][997]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000004DF3C720
+[2016.03.25-19.30.45:389][908]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu' with GeneratedClass '/Game/FirstPerson/Maps/main_menu.main_menu_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu'
+[2016.03.25-19.30.45:389][908]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.03.25-19.30.45:392][908]PIE: New page: PIE session: main_menu (Mar 25, 2016, 5:30:45 AM)
+[2016.03.25-19.30.45:392][908]LogPlayLevel: Creating play world package: /Game/FirstPerson/Maps/UEDPIE_1_main_menu
+[2016.03.25-19.30.45:394][908]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002592s)
+[2016.03.25-19.30.45:395][908]LogAIModule: Creating AISystem for world main_menu
+[2016.03.25-19.30.45:395][908]LogPlayLevel: PIE: World Init took: (0.000888s)
+[2016.03.25-19.30.45:395][908]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPerson/Maps/main_menu.main_menu to /Game/FirstPerson/Maps/UEDPIE_1_main_menu.main_menu (0.003663s)
+[2016.03.25-19.30.45:395][908]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.03.25-19.30.45:396][908]LogActorComponent: UnregisterComponent: (/Engine/Transient.ProjectileComp) Not registered. Aborting.
+[2016.03.25-19.30.45:419][908]LogInit: XAudio2 using 'Speakers (Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.03.25-19.30.45:424][908]LogInit: FAudioDevice initialized.
+[2016.03.25-19.30.45:456][908]LogWorld: Game class is 'WizardsGameMode'
+[2016.03.25-19.30.45:458][908]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_1_main_menu.main_menu up for play (max tick rate 0) at 2016.03.25-12.30.45
+[2016.03.25-19.30.45:458][908]LogActor:Warning: GameSession /Game/FirstPerson/Maps/UEDPIE_1_main_menu.main_menu:PersistentLevel.GameSession_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.25-19.30.45:458][908]LogActor:Warning: GameNetworkManager /Game/FirstPerson/Maps/UEDPIE_1_main_menu.main_menu:PersistentLevel.GameNetworkManager_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.25-19.30.45:458][908]LogWorld: Bringing up level for play took: 0.001054
+[2016.03.25-19.30.45:459][908]LogInit: WinSock: Socket queue 131072 / 131072
+[2016.03.25-19.30.45:460][908]LogNet: GameNetDriver IpNetDriver_4 IpNetDriver listening on port 7777
+[2016.03.25-19.30.45:462][908]PIE: Info Play in editor start time for /Game/FirstPerson/Maps/UEDPIE_1_main_menu -0.722
+[2016.03.25-19.30.45:465][908]PIE: New page: PIE session: main_menu (Mar 25, 2016, 5:30:45 AM)
+[2016.03.25-19.30.45:542][908]LogNet: Browse: 127.0.0.1//Game/FirstPerson/Maps/main_menu
+[2016.03.25-19.30.45:542][908]LogInit: WinSock: Socket queue 32768 / 32768
+[2016.03.25-19.30.45:542][908]LogNet: Game client on port 7777, rate 10000
+[2016.03.25-19.30.45:542][908]LogNet: GetLocalNetworkVersion: GEngineNetVersion: 2872498, ProjectName: wizards, ProjectVersion: 1.0.0.0, InternalProtocolVersion: 9, LocalNetworkVersion: 2491060336
+[2016.03.25-19.30.45:555][908]PIE: Info Play in editor start time for /Game/FirstPerson/Maps/main_menu -0.629
+[2016.03.25-19.30.45:558][908]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu' with GeneratedClass '/Game/FirstPerson/Maps/main_menu.main_menu_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu'
+[2016.03.25-19.30.45:558][908]LogNet: NotifyAcceptingConnection: Server main_menu accept
+[2016.03.25-19.30.45:558][908]LogNet: Open main_menu 03/25/16 12:30:45 127.0.0.1
+[2016.03.25-19.30.45:558][908]LogNet: Added client connection.  Remote address = 127.0.0.1:56396
+[2016.03.25-19.30.45:558][908]LogNet: NotifyAcceptingChannel Control 0 server World /Game/FirstPerson/Maps/UEDPIE_1_main_menu.main_menu: Accepted
+[2016.03.25-19.30.45:558][908]LogNet: Remote platform little endian=1
+[2016.03.25-19.30.45:558][908]LogNet: This platform little endian=1
+[2016.03.25-19.30.45:558][908]LogNet: GetLocalNetworkVersion: GEngineNetVersion: 2872498, ProjectName: wizards, ProjectVersion: 1.0.0.0, InternalProtocolVersion: 9, LocalNetworkVersion: 2491060336
+[2016.03.25-19.30.45:569][909]LogNet: Login request: /Game/FirstPerson/Maps/main_menu userId: Invalid
+[2016.03.25-19.30.45:570][909]LogNet: Welcomed by server (Level: /Game/FirstPerson/Maps/UEDPIE_1_main_menu, Game: /Script/Wizards.WizardsGameMode)
+[2016.03.25-19.30.45:571][909]LogLoad: LoadMap: 127.0.0.1//Game/FirstPerson/Maps/UEDPIE_1_main_menu?game=/Script/Wizards.WizardsGameMode
+[2016.03.25-19.30.45:587][909]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000004DF3FEC0
+[2016.03.25-19.30.45:589][909]Cmd: MEM
+[2016.03.25-19.30.45:605][909]LogMemory: Platform Memory Stats for Windows
+[2016.03.25-19.30.45:605][909]LogMemory: Process Physical Memory: 1114.94 MB used, 1138.14 MB peak
+[2016.03.25-19.30.45:605][909]LogMemory: Process Virtual Memory: 1875.89 MB used, 1903.98 MB peak
+[2016.03.25-19.30.45:605][909]LogMemory: Physical Memory: 4366.21 MB used, 16282.42 MB total
+[2016.03.25-19.30.45:605][909]LogMemory: Virtual Memory: 2495.30 MB used, 8388608.00 MB total
+[2016.03.25-19.30.45:605][909]LogMemory: 
+[2016.03.25-19.30.45:605][909]Allocator Stats for TBB: (not implemented)
+[2016.03.25-19.30.45:607][909]LogWorld: PIE: Copying PIE streaming level from /Game/FirstPerson/Maps/main_menu.main_menu to /Game/FirstPerson/Maps/UEDPIE_2_main_menu.main_menu. OwningWorld: None
+[2016.03.25-19.30.45:608][909]LogAIModule: Creating AISystem for world main_menu
+[2016.03.25-19.30.45:610][909]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_2_main_menu.main_menu up for play (max tick rate 0) at 2016.03.25-12.30.45
+[2016.03.25-19.30.45:610][909]LogWorld: Bringing up level for play took: 0.000725
+[2016.03.25-19.30.45:618][910]LogNet: Client netspeed is 10000
+[2016.03.25-19.30.45:618][910]LogNet: Join request: /Game/FirstPerson/Maps/main_menu?SplitscreenCount=1
+[2016.03.25-19.30.45:620][910]LogNet: Join succeeded: 266
+[2016.03.25-19.30.48:723][275]LogPackageName: SearchForPackageOnDisk took   0.059s to resolve FirstPersonExampleMap.umap.
+[2016.03.25-19.30.48:782][275]LogPackageName: SearchForPackageOnDisk took   0.057s to resolve FirstPersonExampleMap.umap.
+[2016.03.25-19.30.48:782][275]LogNet: Browse: /Game/FirstPerson/Maps/FirstPersonExampleMap
+[2016.03.25-19.30.48:782][275]LogLoad: LoadMap: /Game/FirstPerson/Maps/FirstPersonExampleMap
+[2016.03.25-19.30.48:782][275]LogNet: World NetDriver shutdown IpNetDriver_5 [GameNetDriver]
+[2016.03.25-19.30.48:782][275]LogNet: DestroyNamedNetDriver IpNetDriver_5 [GameNetDriver]
+[2016.03.25-19.30.48:782][275]LogNet: UNetConnection::Close: Name: IpConnection_4, Driver: GameNetDriver IpNetDriver_5, PC: PlayerController_16, Owner: PlayerController_16, Channels: 11, RemoteAddr: 127.0.0.1:7777, Time: 2016.03.25-19.30.48
+[2016.03.25-19.30.48:782][275]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: ControlChannel_4
+[2016.03.25-19.30.48:782][275]LogExit: GameNetDriver IpNetDriver_5 shut down
+[2016.03.25-19.30.48:802][275]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002596F4C0
+[2016.03.25-19.30.48:802][275]Cmd: MEM
+[2016.03.25-19.30.48:818][275]LogMemory: Platform Memory Stats for Windows
+[2016.03.25-19.30.48:818][275]LogMemory: Process Physical Memory: 1115.04 MB used, 1138.14 MB peak
+[2016.03.25-19.30.48:818][275]LogMemory: Process Virtual Memory: 1872.22 MB used, 1932.01 MB peak
+[2016.03.25-19.30.48:818][275]LogMemory: Physical Memory: 4366.37 MB used, 16282.42 MB total
+[2016.03.25-19.30.48:818][275]LogMemory: Virtual Memory: 2491.55 MB used, 8388608.00 MB total
+[2016.03.25-19.30.48:818][275]LogMemory: 
+[2016.03.25-19.30.48:818][275]Allocator Stats for TBB: (not implemented)
+[2016.03.25-19.30.49:205][275]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.03.25-19.30.49:205][275]LogWorld: Game class is 'WizardsGameMode'
+[2016.03.25-19.30.49:216][275]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_2_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2016.03.25-12.30.49
+[2016.03.25-19.30.49:216][275]LogActor:Warning: GameSession /Game/FirstPerson/Maps/UEDPIE_2_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.GameSession_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.25-19.30.49:216][275]LogActor:Warning: GameNetworkManager /Game/FirstPerson/Maps/UEDPIE_2_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.GameNetworkManager_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.25-19.30.49:216][275]LogWorld: Bringing up level for play took: 0.009812
+[2016.03.25-19.30.49:226][276]LogNet: UChannel::ReceivedSequencedBunch: Bunch.bClose == true. ChIndex == 0. Calling ConditionalCleanUp.
+[2016.03.25-19.30.49:226][276]LogNet: UChannel::CleanUp: [GameNetDriver] [PlayerController_15] [PlayerController_15]. ChIndex == 0. Closing connection.
+[2016.03.25-19.30.49:226][276]LogNet: UNetConnection::Close: Name: IpConnection_5, Driver: GameNetDriver IpNetDriver_4, PC: PlayerController_15, Owner: PlayerController_15, Channels: 11, RemoteAddr: 127.0.0.1:56396, Time: 2016.03.25-19.30.49
+[2016.03.25-19.30.49:226][276]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: ControlChannel_5
+[2016.03.25-19.30.53:871][625]LogPackageName: SearchForPackageOnDisk took   0.057s to resolve FirstPersonExampleMap.umap.
+[2016.03.25-19.30.53:929][625]LogPackageName: SearchForPackageOnDisk took   0.057s to resolve FirstPersonExampleMap.umap.
+[2016.03.25-19.30.53:929][625]LogNet: Browse: /Game/FirstPerson/Maps/FirstPersonExampleMap
+[2016.03.25-19.30.53:929][625]LogLoad: LoadMap: /Game/FirstPerson/Maps/FirstPersonExampleMap
+[2016.03.25-19.30.53:929][625]LogNet: World NetDriver shutdown IpNetDriver_4 [GameNetDriver]
+[2016.03.25-19.30.53:929][625]LogNet: DestroyNamedNetDriver IpNetDriver_4 [GameNetDriver]
+[2016.03.25-19.30.53:929][625]LogExit: GameNetDriver IpNetDriver_4 shut down
+[2016.03.25-19.30.53:947][625]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000145D1EE0
+[2016.03.25-19.30.53:949][625]Cmd: MEM
+[2016.03.25-19.30.53:966][625]LogMemory: Platform Memory Stats for Windows
+[2016.03.25-19.30.53:966][625]LogMemory: Process Physical Memory: 1126.34 MB used, 1145.52 MB peak
+[2016.03.25-19.30.53:966][625]LogMemory: Process Virtual Memory: 1911.32 MB used, 1963.18 MB peak
+[2016.03.25-19.30.53:966][625]LogMemory: Physical Memory: 4338.75 MB used, 16282.42 MB total
+[2016.03.25-19.30.53:966][625]LogMemory: Virtual Memory: 2530.61 MB used, 8388608.00 MB total
+[2016.03.25-19.30.53:966][625]LogMemory: 
+[2016.03.25-19.30.53:966][625]Allocator Stats for TBB: (not implemented)
+[2016.03.25-19.30.54:354][625]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.03.25-19.30.54:354][625]LogWorld: Game class is 'WizardsGameMode'
+[2016.03.25-19.30.54:365][625]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_1_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2016.03.25-12.30.54
+[2016.03.25-19.30.54:365][625]LogActor:Warning: GameSession /Game/FirstPerson/Maps/UEDPIE_1_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.GameSession_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.25-19.30.54:365][625]LogActor:Warning: GameNetworkManager /Game/FirstPerson/Maps/UEDPIE_1_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.GameNetworkManager_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.25-19.30.54:365][625]LogWorld: Bringing up level for play took: 0.009742
+[2016.03.25-19.31.02:450][410]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu' with GeneratedClass '/Game/FirstPerson/Maps/main_menu.main_menu_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu'
+[2016.03.25-19.31.02:485][410]LogSpawn:Warning: SpawnActor failed because we are in the process of tearing down the world
+[2016.03.25-19.31.02:513][410]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu' with GeneratedClass '/Game/FirstPerson/Maps/main_menu.main_menu_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu'
+[2016.03.25-19.31.02:535][410]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000004DF685E0
+[2016.03.25-19.31.02:605][411]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000145D3060
+[2016.03.25-19.32.18:245][535]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.03.25-19.32.18:248][535]LogParticles:Warning: InitializeSystem called on an unregistered component. Template=/Game/StarterContent/Particles/P_Evil_Sparks.P_Evil_Sparks Component=/Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.P_Evil_Sparks_8.ParticleSystemComponent0
+[2016.03.25-19.32.18:287][535]Cmd: MAP LOAD FILE="../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.03.25-19.32.18:287][535]LightingResults: New page: Lighting Build
+[2016.03.25-19.32.18:301][535]LoadErrors: New page: Loading map: FirstPersonExampleMap.umap
+[2016.03.25-19.32.18:301][535]MapCheck: New page: Map Check
+[2016.03.25-19.32.18:301][535]LightingResults: New page: Lighting Build
+[2016.03.25-19.32.18:318][535]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002C1C59E0
+[2016.03.25-19.32.18:326][535]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.03.25-19.32.18:341][535]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.03.25-19.32.18:392][535]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 51.363ms to complete.
+[2016.03.25-19.32.18:392][535]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.110
+[2016.03.25-19.32.20:547][787]LogEditorViewport: Clicking on Actor (LMB): Emitter (P_Evil_Sparks)
+[2016.03.25-19.32.23:605][142]LogLinker:Warning: Asset '../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Maps/main_menu.umap' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2016.03.25-19.32.23:622][142]LogAIModule: Creating AISystem for world main_menu
+[2016.03.25-19.32.23:644][142]Cmd: MAP LOAD FILE="../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Maps/main_menu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.03.25-19.32.23:644][142]LightingResults: New page: Lighting Build
+[2016.03.25-19.32.23:657][142]LoadErrors: New page: Loading map: main_menu.umap
+[2016.03.25-19.32.23:659][142]MapCheck: New page: Map Check
+[2016.03.25-19.32.23:659][142]LightingResults: New page: Lighting Build
+[2016.03.25-19.32.23:680][142]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000053578C20
+[2016.03.25-19.32.23:681][142]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.03.25-19.32.23:695][142]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.03.25-19.32.23:745][142]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 49.72ms to complete.
+[2016.03.25-19.32.23:745][142]LogFileHelpers: Loading map 'main_menu' took 0.103
+[2016.03.25-19.32.26:266][433]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.03.25-19.32.26:268][433]LogParticles:Warning: InitializeSystem called on an unregistered component. Template=/Game/StarterContent/Particles/P_Evil_Sparks.P_Evil_Sparks Component=/Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.P_Evil_Sparks_8.ParticleSystemComponent0
+[2016.03.25-19.32.26:297][433]Cmd: MAP LOAD FILE="../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.03.25-19.32.26:297][433]LightingResults: New page: Lighting Build
+[2016.03.25-19.32.26:310][433]LoadErrors: New page: Loading map: FirstPersonExampleMap.umap
+[2016.03.25-19.32.26:310][433]MapCheck: New page: Map Check
+[2016.03.25-19.32.26:310][433]LightingResults: New page: Lighting Build
+[2016.03.25-19.32.26:327][433]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000145D18A0
+[2016.03.25-19.32.26:335][433]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.03.25-19.32.26:350][433]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.03.25-19.32.26:400][433]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 50.177ms to complete.
+[2016.03.25-19.32.26:400][433]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.105
+[2016.03.25-19.32.48:052][245]Cmd: MAP LOAD FILE="../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Maps/MultiplayerTest.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.03.25-19.32.48:053][245]LightingResults: New page: Lighting Build
+[2016.03.25-19.32.48:067][245]LoadErrors: New page: Loading map: MultiplayerTest.umap
+[2016.03.25-19.32.48:068][245]MapCheck: New page: Map Check
+[2016.03.25-19.32.48:068][245]LightingResults: New page: Lighting Build
+[2016.03.25-19.32.48:087][245]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000145D1E40
+[2016.03.25-19.32.48:090][245]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.03.25-19.32.48:091][245]LogAIModule: Creating AISystem for world MultiplayerTest
+[2016.03.25-19.32.48:107][245]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.03.25-19.32.48:157][245]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 50.293ms to complete.
+[2016.03.25-19.32.48:164][245]LogFileHelpers: Loading map 'MultiplayerTest' took 0.113
+[2016.03.25-19.33.04:979][249]LogEditorViewport: Clicking Background
+[2016.03.25-19.33.06:392][418]LogEditorViewport: Clicking Background
+[2016.03.25-19.33.11:236][831]LightingResults: New page: Lighting Build
+[2016.03.25-19.33.11:241][831]MapCheck: New page: Map Check
+[2016.03.25-19.33.11:241][831]LightingResults: New page: Lighting Build
+[2016.03.25-19.33.11:258][831]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002B509EE0
+[2016.03.25-19.33.11:260][831]LogAIModule: Creating AISystem for world NewWorld
+[2016.03.25-19.33.11:270][831]LoadErrors: New page: New Map
+[2016.03.25-19.33.11:271][831]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/MultiplayerTest'
+[2016.03.25-19.33.11:272][831]LogLinker: Can't find file '/Game/FirstPerson/Maps/MultiplayerTest'
+[2016.03.25-19.33.12:624][964]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.03.25-19.33.12:626][964]LogParticles:Warning: InitializeSystem called on an unregistered component. Template=/Game/StarterContent/Particles/P_Evil_Sparks.P_Evil_Sparks Component=/Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.P_Evil_Sparks_8.ParticleSystemComponent0
+[2016.03.25-19.33.12:658][964]Cmd: MAP LOAD FILE="../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.03.25-19.33.12:658][964]LightingResults: New page: Lighting Build
+[2016.03.25-19.33.12:672][964]LoadErrors: New page: Loading map: FirstPersonExampleMap.umap
+[2016.03.25-19.33.12:672][964]MapCheck: New page: Map Check
+[2016.03.25-19.33.12:672][964]LightingResults: New page: Lighting Build
+[2016.03.25-19.33.12:698][964]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000053EA0540
+[2016.03.25-19.33.12:698][964]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.03.25-19.33.12:712][964]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.03.25-19.33.12:762][964]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 49.518ms to complete.
+[2016.03.25-19.33.12:762][964]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.109
+[2016.03.25-19.33.30:005][994]LogLinker:Warning: Asset '../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Maps/main_menu.umap' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2016.03.25-19.33.30:022][994]LogAIModule: Creating AISystem for world main_menu
+[2016.03.25-19.33.30:044][994]Cmd: MAP LOAD FILE="../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Maps/main_menu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.03.25-19.33.30:044][994]LightingResults: New page: Lighting Build
+[2016.03.25-19.33.30:057][994]LoadErrors: New page: Loading map: main_menu.umap
+[2016.03.25-19.33.30:059][994]MapCheck: New page: Map Check
+[2016.03.25-19.33.30:059][994]LightingResults: New page: Lighting Build
+[2016.03.25-19.33.30:077][994]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000145D32E0
+[2016.03.25-19.33.30:081][994]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.03.25-19.33.30:095][994]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.03.25-19.33.30:151][994]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 56.315ms to complete.
+[2016.03.25-19.33.30:152][994]LogFileHelpers: Loading map 'main_menu' took 0.109
+[2016.03.25-19.33.35:665][653]LogEditorViewport: Clicking Background
+[2016.03.25-19.44.59:032][947]Cmd: QUIT_EDITOR
+[2016.03.25-19.44.59:955][947]LogExit: Preparing to exit.
+[2016.03.25-19.45.00:815][947]LogExit: Editor shut down
+[2016.03.25-19.45.00:815][947]LogExit: Transaction tracking system shut down
+[2016.03.25-19.45.00:816][947]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002C0D67A0
+[2016.03.25-19.45.00:816][947]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001A56E0C0
+[2016.03.25-19.45.00:816][947]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002B5A9800
+[2016.03.25-19.45.00:822][947]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000004DF6B4C0
+[2016.03.25-19.45.01:023][947]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000005357BCE0
+[2016.03.25-19.45.01:023][947]LogExit: Object subsystem successfully closed.
+[2016.03.25-19.45.01:043][947]LogD3D11RHI: Shutdown
+[2016.03.25-19.45.01:043][947]LogD3D11RHI: CleanupD3DDevice
+[2016.03.25-19.45.01:132][947]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.03.25-19.45.01:153][947]LogModuleManager: Shutting down and abandoning module CrashTracker (200)
+[2016.03.25-19.45.01:153][947]LogModuleManager: Shutting down and abandoning module SceneOutliner (199)
+[2016.03.25-19.45.01:153][947]LogModuleManager: Shutting down and abandoning module SuperSearch (198)
+[2016.03.25-19.45.01:153][947]LogModuleManager: Shutting down and abandoning module WidgetCarousel (197)
+[2016.03.25-19.45.01:153][947]LogModuleManager: Shutting down and abandoning module AddContentDialog (196)
+[2016.03.25-19.45.01:154][947]LogModuleManager: Shutting down and abandoning module EditorWidgets (195)
+[2016.03.25-19.45.01:154][947]LogModuleManager: Shutting down and abandoning module CollectionManager (194)
+[2016.03.25-19.45.01:154][947]LogModuleManager: Shutting down and abandoning module StatsViewer (193)
+[2016.03.25-19.45.01:154][947]LogModuleManager: Shutting down and abandoning module CookingStats (192)
+[2016.03.25-19.45.01:154][947]LogModuleManager: Shutting down and abandoning module FoliageEdit (191)
+[2016.03.25-19.45.01:154][947]LogModuleManager: Shutting down and abandoning module LandscapeEditor (190)
+[2016.03.25-19.45.01:155][947]LogModuleManager: Shutting down and abandoning module ActorPickerMode (189)
+[2016.03.25-19.45.01:155][947]LogModuleManager: Shutting down and abandoning module GeometryMode (188)
+[2016.03.25-19.45.01:155][947]LogModuleManager: Shutting down and abandoning module TextureAlignMode (187)
+[2016.03.25-19.45.01:155][947]LogModuleManager: Shutting down and abandoning module BspMode (186)
+[2016.03.25-19.45.01:155][947]LogModuleManager: Shutting down and abandoning module PlacementMode (185)
+[2016.03.25-19.45.01:155][947]LogModuleManager: Shutting down and abandoning module AutomationWorker (184)
+[2016.03.25-19.45.01:155][947]LogModuleManager: Shutting down and abandoning module CharacterAI (183)
+[2016.03.25-19.45.01:155][947]LogModuleManager: Shutting down and abandoning module SmartSnapping (182)
+[2016.03.25-19.45.01:155][947]LogModuleManager: Shutting down and abandoning module ViewportSnapping (181)
+[2016.03.25-19.45.01:155][947]LogModuleManager: Shutting down and abandoning module LogVisualizer (180)
+[2016.03.25-19.45.01:155][947]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (179)
+[2016.03.25-19.45.01:156][947]LogModuleManager: Shutting down and abandoning module IntroTutorials (178)
+[2016.03.25-19.45.01:156][947]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (177)
+[2016.03.25-19.45.01:156][947]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (176)
+[2016.03.25-19.45.01:156][947]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (175)
+[2016.03.25-19.45.01:156][947]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (174)
+[2016.03.25-19.45.01:655][947]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (173)
+[2016.03.25-19.45.01:655][947]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (172)
+[2016.03.25-19.45.01:655][947]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (171)
+[2016.03.25-19.45.01:655][947]LogModuleManager: Shutting down and abandoning module MergeActors (170)
+[2016.03.25-19.45.01:655][947]LogModuleManager: Shutting down and abandoning module SizeMap (169)
+[2016.03.25-19.45.01:655][947]LogModuleManager: Shutting down and abandoning module TreeMap (168)
+[2016.03.25-19.45.01:655][947]LogModuleManager: Shutting down and abandoning module ReferenceViewer (167)
+[2016.03.25-19.45.01:655][947]LogModuleManager: Shutting down and abandoning module LocalizationService (166)
+[2016.03.25-19.45.01:655][947]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (165)
+[2016.03.25-19.45.01:656][947]LogModuleManager: Shutting down and abandoning module HardwareTargeting (164)
+[2016.03.25-19.45.01:656][947]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (163)
+[2016.03.25-19.45.01:656][947]LogModuleManager: Shutting down and abandoning module UndoHistory (162)
+[2016.03.25-19.45.01:656][947]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (161)
+[2016.03.25-19.45.01:656][947]LogModuleManager: Shutting down and abandoning module UserFeedback (160)
+[2016.03.25-19.45.01:656][947]LogModuleManager: Shutting down and abandoning module XmlParser (159)
+[2016.03.25-19.45.01:656][947]LogModuleManager: Shutting down and abandoning module Blutility (158)
+[2016.03.25-19.45.01:656][947]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (157)
+[2016.03.25-19.45.01:656][947]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (156)
+[2016.03.25-19.45.01:656][947]LogModuleManager: Shutting down and abandoning module InputBindingEditor (155)
+[2016.03.25-19.45.01:656][947]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (154)
+[2016.03.25-19.45.01:656][947]LogModuleManager: Shutting down and abandoning module SettingsEditor (153)
+[2016.03.25-19.45.01:656][947]LogModuleManager: Shutting down and abandoning module ProjectLauncher (152)
+[2016.03.25-19.45.01:657][947]LogModuleManager: Shutting down and abandoning module SessionFrontend (151)
+[2016.03.25-19.45.01:657][947]LogModuleManager: Shutting down and abandoning module ProfilerClient (150)
+[2016.03.25-19.45.01:657][947]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (149)
+[2016.03.25-19.45.01:657][947]LogModuleManager: Shutting down and abandoning module DeviceManager (148)
+[2016.03.25-19.45.01:657][947]LogModuleManager: Shutting down and abandoning module AutomationController (147)
+[2016.03.25-19.45.01:657][947]LogModuleManager: Shutting down and abandoning module AutomationWindow (146)
+[2016.03.25-19.45.01:658][947]LogModuleManager: Shutting down and abandoning module Layers (145)
+[2016.03.25-19.45.01:659][947]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (144)
+[2016.03.25-19.45.01:659][947]LogModuleManager: Shutting down and abandoning module DetailCustomizations (143)
+[2016.03.25-19.45.01:659][947]LogModuleManager: Shutting down and abandoning module PackagesDialog (142)
+[2016.03.25-19.45.01:659][947]LogModuleManager: Shutting down and abandoning module Persona (141)
+[2016.03.25-19.45.01:660][947]LogModuleManager: Shutting down and abandoning module Kismet (140)
+[2016.03.25-19.45.01:660][947]LogModuleManager: Shutting down and abandoning module GraphEditor (139)
+[2016.03.25-19.45.01:662][947]LogModuleManager: Shutting down and abandoning module ClassViewer (138)
+[2016.03.25-19.45.01:662][947]LogModuleManager: Shutting down and abandoning module Toolbox (137)
+[2016.03.25-19.45.01:662][947]LogModuleManager: Shutting down and abandoning module ModuleUI (136)
+[2016.03.25-19.45.01:662][947]LogModuleManager: Shutting down and abandoning module MovieSceneTools (135)
+[2016.03.25-19.45.01:662][947]LogModuleManager: Shutting down and abandoning module OutputLog (134)
+[2016.03.25-19.45.01:662][947]LogModuleManager: Shutting down and abandoning module GammaUI (133)
+[2016.03.25-19.45.01:663][947]LogModuleManager: Shutting down and abandoning module Documentation (132)
+[2016.03.25-19.45.01:663][947]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (131)
+[2016.03.25-19.45.01:663][947]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (130)
+[2016.03.25-19.45.01:663][947]LogModuleManager: Shutting down and abandoning module AnalyticsET (129)
+[2016.03.25-19.45.01:663][947]LogModuleManager: Shutting down and abandoning module Analytics (128)
+[2016.03.25-19.45.01:663][947]LogModuleManager: Shutting down and abandoning module AITestSuite (127)
+[2016.03.25-19.45.01:663][947]LogModuleManager: Shutting down and abandoning module GameplayDebugger (126)
+[2016.03.25-19.45.01:663][947]LogModuleManager: Shutting down and abandoning module AIModule (125)
+[2016.03.25-19.45.01:663][947]LogModuleManager: Shutting down and abandoning module ProfilerService (124)
+[2016.03.25-19.45.01:678][947]LogModuleManager: Shutting down and abandoning module TaskGraph (123)
+[2016.03.25-19.45.01:678][947]LogModuleManager: Shutting down and abandoning module SlateRemote (122)
+[2016.03.25-19.45.01:678][947]LogModuleManager: Shutting down and abandoning module SteamVRController (121)
+[2016.03.25-19.45.01:678][947]LogModuleManager: Shutting down and abandoning module SteamVR (120)
+[2016.03.25-19.45.01:678][947]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (119)
+[2016.03.25-19.45.01:678][947]LogModuleManager: Shutting down and abandoning module OculusLibrary (118)
+[2016.03.25-19.45.01:679][947]LogModuleManager: Shutting down and abandoning module OculusInput (117)
+[2016.03.25-19.45.01:679][947]LogModuleManager: Shutting down and abandoning module LeapMotionController (116)
+[2016.03.25-19.45.01:688][947]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (115)
+[2016.03.25-19.45.01:688][947]LogModuleManager: Shutting down and abandoning module CableComponent (114)
+[2016.03.25-19.45.01:688][947]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (113)
+[2016.03.25-19.45.01:688][947]LogModuleManager: Shutting down and abandoning module MessagingDebugger (112)
+[2016.03.25-19.45.01:689][947]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (111)
+[2016.03.25-19.45.01:689][947]LogModuleManager: Shutting down and abandoning module HTML5Networking (110)
+[2016.03.25-19.45.01:689][947]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (109)
+[2016.03.25-19.45.01:689][947]LogModuleManager: Shutting down and abandoning module PluginBrowser (108)
+[2016.03.25-19.45.01:689][947]LogModuleManager: Shutting down and abandoning module EpicSurvey (107)
+[2016.03.25-19.45.01:689][947]LogModuleManager: Shutting down and abandoning module DesktopPlatform (106)
+[2016.03.25-19.45.01:689][947]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (105)
+[2016.03.25-19.45.01:689][947]LogModuleManager: Shutting down and abandoning module UObjectPlugin (104)
+[2016.03.25-19.45.01:689][947]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (103)
+[2016.03.25-19.45.01:689][947]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (102)
+[2016.03.25-19.45.01:689][947]LogModuleManager: Shutting down and abandoning module SourceControl (101)
+[2016.03.25-19.45.01:690][947]LogModuleManager: Shutting down and abandoning module GitSourceControl (100)
+[2016.03.25-19.45.01:690][947]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (99)
+[2016.03.25-19.45.01:690][947]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (98)
+[2016.03.25-19.45.01:690][947]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (97)
+[2016.03.25-19.45.01:690][947]LogModuleManager: Shutting down and abandoning module MeshPaint (96)
+[2016.03.25-19.45.01:690][947]LogModuleManager: Shutting down and abandoning module SlateReflector (95)
+[2016.03.25-19.45.01:690][947]LogModuleManager: Shutting down and abandoning module HotReload (94)
+[2016.03.25-19.45.01:690][947]LogModuleManager: Shutting down and abandoning module MainFrame (93)
+[2016.03.25-19.45.01:690][947]LogModuleManager: Shutting down and abandoning module LevelEditor (92)
+[2016.03.25-19.45.01:691][947]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (91)
+[2016.03.25-19.45.01:692][947]LogModuleManager: Shutting down and abandoning module AssetRegistry (90)
+[2016.03.25-19.45.01:741][947]LogModuleManager: Shutting down and abandoning module ContentBrowser (89)
+[2016.03.25-19.45.01:742][947]LogModuleManager: Shutting down and abandoning module Paper2DEditor (88)
+[2016.03.25-19.45.01:742][947]LogModuleManager: Shutting down and abandoning module Wizards (87)
+[2016.03.25-19.45.01:742][947]LogModuleManager: Shutting down and abandoning module UdpMessaging (86)
+[2016.03.25-19.45.01:842][947]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (85)
+[2016.03.25-19.45.01:842][947]LogModuleManager: Shutting down and abandoning module Paper2D (84)
+[2016.03.25-19.45.01:842][947]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (83)
+[2016.03.25-19.45.01:846][947]LogModuleManager: Shutting down and abandoning module Media (82)
+[2016.03.25-19.45.01:846][947]LogModuleManager: Shutting down and abandoning module WmfMedia (81)
+[2016.03.25-19.45.01:846][947]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (80)
+[2016.03.25-19.45.01:846][947]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (79)
+[2016.03.25-19.45.01:846][947]LogModuleManager: Shutting down and abandoning module PropertyEditor (78)
+[2016.03.25-19.45.01:846][947]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (77)
+[2016.03.25-19.45.01:847][947]LogModuleManager: Shutting down and abandoning module FunctionalTesting (76)
+[2016.03.25-19.45.01:847][947]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (75)
+[2016.03.25-19.45.01:847][947]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (74)
+[2016.03.25-19.45.01:847][947]LogModuleManager: Shutting down and abandoning module MessageLog (73)
+[2016.03.25-19.45.01:847][947]LogModuleManager: Shutting down and abandoning module Sequencer (72)
+[2016.03.25-19.45.01:848][947]LogModuleManager: Shutting down and abandoning module AssetTools (71)
+[2016.03.25-19.45.01:848][947]LogModuleManager: Shutting down and abandoning module UMGEditor (70)
+[2016.03.25-19.45.01:849][947]LogModuleManager: Shutting down and abandoning module UMG (69)
+[2016.03.25-19.45.01:849][947]LogModuleManager: Shutting down and abandoning module Slate (68)
+[2016.03.25-19.45.01:849][947]LogModuleManager: Shutting down and abandoning module EditorStyle (67)
+[2016.03.25-19.45.01:851][947]LogModuleManager: Shutting down and abandoning module SessionServices (66)
+[2016.03.25-19.45.01:851][947]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (65)
+[2016.03.25-19.45.01:851][947]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (64)
+[2016.03.25-19.45.01:851][947]LogModuleManager: Shutting down and abandoning module XAudio2 (63)
+[2016.03.25-19.45.01:851][947]LogModuleManager: Shutting down and abandoning module Networking (61)
+[2016.03.25-19.45.01:851][947]LogModuleManager: Shutting down and abandoning module Core (60)
+[2016.03.25-19.45.01:851][947]LogModuleManager: Shutting down and abandoning module KismetCompiler (59)
+[2016.03.25-19.45.01:851][947]LogModuleManager: Shutting down and abandoning module PhysXFormats (58)
+[2016.03.25-19.45.01:851][947]LogModuleManager: Shutting down and abandoning module MeshUtilities (57)
+[2016.03.25-19.45.01:852][947]LogModuleManager: Shutting down and abandoning module DerivedDataCache (56)
+[2016.03.25-19.45.01:877][947]LogDerivedDataCache: Shutdown
+[2016.03.25-19.45.01:877][947]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (55)
+[2016.03.25-19.45.01:878][947]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (54)
+[2016.03.25-19.45.01:878][947]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (53)
+[2016.03.25-19.45.01:878][947]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (52)
+[2016.03.25-19.45.01:878][947]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (51)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (50)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (49)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module ImageWrapper (48)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (47)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (46)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (45)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (44)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (43)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (42)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (41)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (40)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.03.25-19.45.01:879][947]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.03.25-19.45.02:879][947]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.03.25-19.45.02:879][947]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.03.25-19.45.02:880][947]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.03.25-19.45.02:880][947]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.03.25-19.45.02:880][947]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.03.25-19.45.02:880][947]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.03.25-19.45.02:880][947]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.03.25-19.45.02:882][947]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.03.25-19.45.02:882][947]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.03.25-19.45.02:882][947]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.03.25-19.45.02:883][947]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.03.25-19.45.02:883][947]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.03.25-19.45.02:883][947]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.03.25-19.45.02:883][947]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.03.25-19.45.02:883][947]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.03.25-19.45.02:883][947]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.03.25-19.45.02:883][947]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.03.25-19.45.02:885][947]LogExit: Exiting.
+[2016.03.25-19.45.02:898][947]Log file closed, 03/25/16 12:45:02
