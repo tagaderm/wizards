@@ -1,6 +1,9 @@
 // Copyright 1998-2015 Epic Games, Inc. All Rights Reserved.
 #pragma once
 #include "GameFramework/Character.h"
+#include "ParticleDefinitions.h"
+//#include "WizardsCone.h"
+#include "spellBook.h"
 #include "WizardsCharacter.generated.h"
 
 class UInputComponent;
@@ -20,6 +23,11 @@ class AWizardsCharacter : public ACharacter
 public:
 	AWizardsCharacter();
 
+	UFUNCTION(BlueprintCallable, Category = "CharacterFunctions")
+	void newCharactersSpells();
+
+	void Tick(float DeltaTime) override;	
+
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseTurnRate;
@@ -32,9 +40,53 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
 	FVector GunOffset;
 
+	/** Health */
+	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
+	float Health;
+	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
+	float maxHealth;
+
+	/** Mana */
+	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
+	float Mana;
+	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
+	float maxMana;
+	UPROPERTY()
+	UspellBook* thisSpell;
+	UPROPERTY()
+	TArray<UspellBook*> mySpellBook;
+	TArray<UParticleSystem*> particleList;
+	struct spell {
+		UParticleSystem* myParticle;
+		int8 spellType;
+		float spellCost;
+		float spellSpeed; 
+		float spellDamage;
+		float spellRange; //lifetime for projectiles, distance for rays and blasts
+		float spellSize;
+		bool canBounce;
+		bool hasGravity;
+		bool isHoming;
+		bool explodeOnCollision;
+		bool explodeOnDeath;
+		float explosionHitDamage;
+		float explosionHitSize;
+		float explosionDeathDamage;
+		float explosionDeathSize;
+	};
+	TArray<spell> SList;
+	int8 currSpell;
+	//AWizardsCone* wizardsCone;
+	AActor* activeAttack;
+
 	/** Projectile class to spawn */
-	UPROPERTY(EditDefaultsOnly, Category=Projectile)
+	UPROPERTY(EditAnywhere, Category=Projectile)
 	TSubclassOf<class AWizardsProjectile> ProjectileClass;
+	UPROPERTY(EditAnywhere, Category = Projectile)
+	TSubclassOf<class AWizardsBlast> BlastClass;
+	UPROPERTY(EditAnywhere, Category = Projectile)
+	TSubclassOf<class AWizardsCone> ConeClass;
+
 
 	/** Sound to play each time we fire */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
@@ -48,6 +100,8 @@ protected:
 	
 	/** Fires a projectile. */
 	void OnFire();
+
+	void OffFire();//stops cones
 
 	/** Handles moving forward/backward */
 	void MoveForward(float Val);
@@ -80,6 +134,11 @@ protected:
 	void TouchUpdate(const ETouchIndex::Type FingerIndex, const FVector Location);
 	TouchData	TouchItem;
 	
+	//Called when you switch a spell
+	template<int newspell>
+	void spellSwitch();
+	bool shooting = false;
+
 protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
@@ -98,6 +157,8 @@ public:
 	FORCEINLINE class USkeletalMeshComponent* GetMesh1P() const { return Mesh1P; }
 	/** Returns FirstPersonCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
+	float GetHealth();
+	float GetMana();
 
 };
 
