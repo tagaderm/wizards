@@ -128,7 +128,7 @@ void AWizardsCharacter::newCharactersSpells()
 			mySpellBook[i]->explosionDeathDamage = LoadGameInstance->spellBook[i]->explosionDeathDamage;
 			mySpellBook[i]->explosionDeathSize = LoadGameInstance->spellBook[i]->explosionDeathSize*3.0+2.0;
 			mySpellBook[i]->myParticle = particleList[mySpellBook[i]->spellEffect + mySpellBook[i]->spellType*5];
-			mySpellBook[i]->explParticle = particleList[i+5];
+			mySpellBook[i]->explParticle = particleList[mySpellBook[i]->spellEffect+5];
 			UE_LOG(LogTemp, Warning, TEXT("Spell Gathering Succesful!"));
 		}
 	}
@@ -264,7 +264,9 @@ void AWizardsCharacter::OnFire()
 }
 
 void AWizardsCharacter::OffFire() {
-	activeAttack->Destroy();
+	if(activeAttack!= NULL){
+		activeAttack->Destroy();
+	}
 }
 
 

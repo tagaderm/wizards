@@ -27,7 +27,7 @@ public:
 	TArray<UspellBook*> spellBook;
 	FString ThePath;
 	void SaveLoadData(FArchive& Ar, TArray<UspellBook*>& spellBook);
-	bool SaveGameDataToFile();
-	bool LoadGameDataFromFile();
+	bool UWizardsSaveGame::SaveGameDataToFile();
+	bool UWizardsSaveGame::LoadGameDataFromFile();
 
 };
