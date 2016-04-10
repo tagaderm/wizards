@@ -123,6 +123,6 @@ void AWizardsProjectile::LifeSpanExpired() {
 			maxBlasts -= 1;
 
 		}
-		Super::LifeSpanExpired();
 	}
+		Super::LifeSpanExpired();
 }
