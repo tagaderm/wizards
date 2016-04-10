@@ -1,100 +1,95 @@
-﻿[2016.04.10-20.56.48:789][  0]Log file open, 04/10/16 13:56:48
-[2016.04.10-20.56.48:789][  0]LogInit:Display: Running engine without a game
-[2016.04.10-20.56.48:789][  0]LogPlatformFile: Not using cached read wrapper
-[2016.04.10-20.56.48:789][  0]LogInit:Display: Loading recent project file: ../../../../../../Projects/wizards/Wizards.uproject
-[2016.04.10-20.56.48:789][  0]LogInit:Display: RandInit(1609516455) SRandInit(1609516456).
-[2016.04.10-20.56.48:789][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
-[2016.04.10-20.56.48:789][  0]LogStats: Stats thread started at 0.230937
-[2016.04.10-20.56.48:789][  0]LogInit: Version: 4.10.4-2872498+++depot+UE4-Releases+4.10
-[2016.04.10-20.56.48:789][  0]LogInit: API Version: 2758231
-[2016.04.10-20.56.48:789][  0]LogInit: Compiled (64-bit): Feb 18 2016 15:47:04
-[2016.04.10-20.56.48:789][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
-[2016.04.10-20.56.48:789][  0]LogInit: Build Configuration: Development
-[2016.04.10-20.56.48:789][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
-[2016.04.10-20.56.48:789][  0]LogInit: Command line: -EpicPortal 
-[2016.04.10-20.56.48:789][  0]LogInit: Base directory: I:/EPIC/Epic Games/4.10/Engine/Binaries/Win64/
-[2016.04.10-20.56.48:789][  0]LogInit: Rocket: 1
-[2016.04.10-20.56.48:825][  0]LogInit: Using libcurl 7.41.0
-[2016.04.10-20.56.48:825][  0]LogInit:  - built for x86_64-pc-win32
-[2016.04.10-20.56.48:825][  0]LogInit:  - supports SSL with WinSSL
-[2016.04.10-20.56.48:825][  0]LogInit:  - other features:
-[2016.04.10-20.56.48:825][  0]LogInit:      CURL_VERSION_SSL
-[2016.04.10-20.56.48:825][  0]LogInit:      CURL_VERSION_IPV6
-[2016.04.10-20.56.48:825][  0]LogInit:      CURL_VERSION_ASYNCHDNS
-[2016.04.10-20.56.48:825][  0]LogInit:      CURL_VERSION_LARGEFILE
-[2016.04.10-20.56.48:825][  0]LogInit:      CURL_VERSION_IDN
-[2016.04.10-20.56.48:825][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
-[2016.04.10-20.56.48:825][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
-[2016.04.10-20.56.48:825][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
-[2016.04.10-20.56.48:825][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
-[2016.04.10-20.56.48:825][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
-[2016.04.10-20.56.49:009][  0]LogOnline:Display: STEAM: Loading Steam SDK 1.32
-[2016.04.10-20.56.49:063][  0]LogOnline:Warning: STEAM: Steam API disabled!
-[2016.04.10-20.56.49:063][  0]LogOnline:Display: STEAM: OnlineSubsystemSteam::Shutdown()
-[2016.04.10-20.56.49:132][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2016.04.10-20.56.49:170][  0]LogVoice:Warning: Failed to initialize voice interface
-[2016.04.10-20.56.49:173][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
-[2016.04.10-20.56.49:177][  0]LogInit: Object subsystem initialized
-[2016.04.10-20.56.49:178][  0]LogInit: Selected Device Profile: [Windows]
-[2016.04.10-20.56.49:178][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2016.04.10-20.56.49:188][  0]LogInit: Computer: COLE-PC
-[2016.04.10-20.56.49:188][  0]LogInit: User: cole
-[2016.04.10-20.56.49:188][  0]LogInit: CPU Page size=4096, Cores=4
-[2016.04.10-20.56.49:188][  0]LogInit: High frequency timer resolution =3.906248 MHz
-[2016.04.10-20.56.49:188][  0]LogMemory: Memory total: Physical=15.8GB (16GB approx)
-[2016.04.10-20.56.49:188][  0]LogMemory: Platform Memory Stats for Windows
-[2016.04.10-20.56.49:188][  0]LogMemory: Process Physical Memory: 57.98 MB used, 57.98 MB peak
-[2016.04.10-20.56.49:188][  0]LogMemory: Process Virtual Memory: 56.99 MB used, 56.99 MB peak
-[2016.04.10-20.56.49:188][  0]LogMemory: Physical Memory: 4676.65 MB used, 16229.52 MB total
-[2016.04.10-20.56.49:188][  0]LogMemory: Virtual Memory: 386.23 MB used, 134217728.00 MB total
-[2016.04.10-20.56.49:419][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
-[2016.04.10-20.56.49:715][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 970 (Feature Level 11_0)
-[2016.04.10-20.56.49:715][  0]LogD3D11RHI: Adapter has 4008MB of dedicated video memory, 0MB of dedicated system memory, and 8114MB of shared system memory, 1 output[s]
-[2016.04.10-20.56.49:719][  0]LogD3D11RHI: Found D3D11 adapter 1: Intel(R) HD Graphics 4600 (Feature Level 11_0)
-[2016.04.10-20.56.49:719][  0]LogD3D11RHI: Adapter has 112MB of dedicated video memory, 0MB of dedicated system memory, and 8114MB of shared system memory, 0 output[s]
-[2016.04.10-20.56.49:720][  0]LogD3D11RHI: Found D3D11 adapter 2: Microsoft Basic Render Driver (Feature Level 11_0)
-[2016.04.10-20.56.49:720][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 8114MB of shared system memory, 0 output[s]
-[2016.04.10-20.56.49:720][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
-[2016.04.10-20.56.49:723][  0]LogD3D11RHI: !Direct3DDevice
-[2016.04.10-20.56.49:723][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2016.04.10-20.56.49:732][  0]LogD3D11RHI: Async texture creation enabled
-[2016.04.10-20.56.49:746][  0]LogShaderCompilers: Guid format shader working directory is 10 characters bigger than the processId version (../../../../../../Projects/wizards/Intermediate/Shaders/WorkingDirectory/10712/).
-[2016.04.10-20.56.49:746][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/cole/AppData/Local/Temp/UnrealShaderWorkingDir/60C02A374FC07449B943068656694B08/'.
-[2016.04.10-20.56.49:746][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2016.04.10-20.56.51:265][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2016.04.10-20.56.51:268][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2016.04.10-20.56.51:271][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2016.04.10-20.56.51:274][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2016.04.10-20.56.51:276][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2016.04.10-20.56.51:280][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2016.04.10-20.56.51:282][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2016.04.10-20.56.51:284][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2016.04.10-20.56.51:285][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2016.04.10-20.56.51:287][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2016.04.10-20.56.51:289][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2016.04.10-20.56.51:294][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2016.04.10-20.56.51:294][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2016.04.10-20.56.51:294][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2016.04.10-20.56.51:340][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2016.04.10-20.56.51:342][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2016.04.10-20.56.51:343][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2016.04.10-20.56.51:347][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2016.04.10-20.56.51:347][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2016.04.10-20.56.51:914][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2016.04.10-20.56.52:270][  0]LogDerivedDataCache: Loaded boot cache 0.36s 53MB C:/Users/cole/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.04.10-20.56.52:270][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/cole/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
-[2016.04.10-20.56.52:270][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Projects/wizards/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2016.04.10-20.56.52:270][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2016.04.10-20.56.52:270][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Projects/wizards/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2016.04.10-20.56.52:270][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2016.04.10-20.56.52:403][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2016.04.10-20.56.52:415][  0]LogDerivedDataCache: Using Local data cache path C:/Users/cole/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2016.04.10-20.56.59:488][  0]LogInit: Selected Device Profile: [Windows]
-[2016.04.10-20.56.59:588][  0]LogContentStreaming: Texture pool size is 0.000000MB
-[2016.04.10-20.57.00:874][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2016.04.10-20.57.00:874][  0]LogMeshUtilities: No automatic mesh merging module available
-[2016.04.10-20.57.10:323][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2016.04.10-20.57.27:203][  0]LogOutputDevice:Warning: === Handled error: ===
+﻿[2016.04.10-21.46.13:846][  0]Log file open, 04/10/16 14:46:13
+[2016.04.10-21.46.13:846][  0]LogInit:Display: Running engine for game: Wizards
+[2016.04.10-21.46.13:846][  0]LogPlatformFile: Not using cached read wrapper
+[2016.04.10-21.46.13:846][  0]LogInit:Display: RandInit(-1204740647) SRandInit(-1204740645).
+[2016.04.10-21.46.13:846][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2016.04.10-21.46.13:846][  0]LogStats: Stats thread started at 0.075362
+[2016.04.10-21.46.13:846][  0]LogInit: Version: 4.10.4-2872498+++depot+UE4-Releases+4.10
+[2016.04.10-21.46.13:846][  0]LogInit: API Version: 2758231
+[2016.04.10-21.46.13:846][  0]LogInit: Compiled (64-bit): Feb 18 2016 15:47:04
+[2016.04.10-21.46.13:846][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
+[2016.04.10-21.46.13:846][  0]LogInit: Build Configuration: Development
+[2016.04.10-21.46.13:846][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
+[2016.04.10-21.46.13:846][  0]LogInit: Command line:  
+[2016.04.10-21.46.13:846][  0]LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.10/Engine/Binaries/Win64/
+[2016.04.10-21.46.13:846][  0]LogInit: Rocket: 1
+[2016.04.10-21.46.13:854][  0]LogInit: Using libcurl 7.41.0
+[2016.04.10-21.46.13:854][  0]LogInit:  - built for x86_64-pc-win32
+[2016.04.10-21.46.13:854][  0]LogInit:  - supports SSL with WinSSL
+[2016.04.10-21.46.13:854][  0]LogInit:  - other features:
+[2016.04.10-21.46.13:854][  0]LogInit:      CURL_VERSION_SSL
+[2016.04.10-21.46.13:854][  0]LogInit:      CURL_VERSION_IPV6
+[2016.04.10-21.46.13:854][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2016.04.10-21.46.13:854][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2016.04.10-21.46.13:854][  0]LogInit:      CURL_VERSION_IDN
+[2016.04.10-21.46.13:854][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2016.04.10-21.46.13:854][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2016.04.10-21.46.13:854][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2016.04.10-21.46.13:854][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2016.04.10-21.46.13:854][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2016.04.10-21.46.13:861][  0]LogOnline:Display: STEAM: Loading Steam SDK 1.32
+[2016.04.10-21.46.13:861][  0]LogOnline:Warning: STEAM: Steam API disabled!
+[2016.04.10-21.46.13:861][  0]LogOnline:Display: STEAM: OnlineSubsystemSteam::Shutdown()
+[2016.04.10-21.46.13:878][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.04.10-21.46.13:884][  0]LogVoice:Warning: Failed to initialize voice interface
+[2016.04.10-21.46.13:888][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2016.04.10-21.46.13:895][  0]LogInit: Object subsystem initialized
+[2016.04.10-21.46.13:897][  0]LogInit: Selected Device Profile: [Windows]
+[2016.04.10-21.46.13:897][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.04.10-21.46.13:904][  0]LogInit: Computer: ALPHA
+[2016.04.10-21.46.13:904][  0]LogInit: User: Logical
+[2016.04.10-21.46.13:904][  0]LogInit: CPU Page size=4096, Cores=4
+[2016.04.10-21.46.13:904][  0]LogInit: High frequency timer resolution =4.233818 MHz
+[2016.04.10-21.46.13:904][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.04.10-21.46.13:905][  0]LogMemory: Platform Memory Stats for Windows
+[2016.04.10-21.46.13:905][  0]LogMemory: Process Physical Memory: 59.25 MB used, 59.25 MB peak
+[2016.04.10-21.46.13:905][  0]LogMemory: Process Virtual Memory: 59.61 MB used, 59.61 MB peak
+[2016.04.10-21.46.13:905][  0]LogMemory: Physical Memory: 4240.98 MB used, 16282.42 MB total
+[2016.04.10-21.46.13:905][  0]LogMemory: Virtual Memory: 362.20 MB used, 8388608.00 MB total
+[2016.04.10-21.46.13:952][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.04.10-21.46.14:483][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 960 (Feature Level 11_0)
+[2016.04.10-21.46.14:483][  0]LogD3D11RHI: Adapter has 4010MB of dedicated video memory, 0MB of dedicated system memory, and 7885MB of shared system memory, 1 output[s]
+[2016.04.10-21.46.14:483][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2016.04.10-21.46.14:491][  0]LogD3D11RHI: !Direct3DDevice
+[2016.04.10-21.46.14:491][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.04.10-21.46.14:502][  0]LogD3D11RHI: Async texture creation enabled
+[2016.04.10-21.46.14:518][  0]LogShaderCompilers: Guid format shader working directory is -8 characters bigger than the processId version (../../../../../../Users/Logical/Documents/Github/wizards/Intermediate/Shaders/WorkingDirectory/8364/).
+[2016.04.10-21.46.14:518][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Logical/AppData/Local/Temp/UnrealShaderWorkingDir/74DF8125408BC832932052A582AAD6A6/'.
+[2016.04.10-21.46.14:518][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.04.10-21.46.15:436][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.04.10-21.46.15:441][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.04.10-21.46.15:446][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.04.10-21.46.15:451][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.04.10-21.46.15:455][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.04.10-21.46.15:459][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.04.10-21.46.15:462][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.04.10-21.46.15:465][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.04.10-21.46.15:469][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.04.10-21.46.15:472][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.04.10-21.46.15:475][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.04.10-21.46.15:483][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.04.10-21.46.15:483][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.04.10-21.46.15:484][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.04.10-21.46.15:500][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.04.10-21.46.15:503][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.04.10-21.46.15:506][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.04.10-21.46.15:509][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.04.10-21.46.15:509][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.04.10-21.46.15:598][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.04.10-21.46.15:692][  0]LogDerivedDataCache: Loaded boot cache 0.09s 53MB C:/Users/Logical/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.04.10-21.46.15:692][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Logical/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
+[2016.04.10-21.46.15:692][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Logical/Documents/Github/wizards/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.04.10-21.46.15:692][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.04.10-21.46.15:692][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Logical/Documents/Github/wizards/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.04.10-21.46.15:692][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.04.10-21.46.15:753][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.04.10-21.46.15:764][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Logical/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.04.10-21.46.15:962][  0]LogInit: Selected Device Profile: [Windows]
+[2016.04.10-21.46.15:962][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2016.04.10-21.46.16:006][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.04.10-21.46.16:006][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.04.10-21.46.17:165][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.04.10-21.46.19:106][  0]LogOutputDevice:Warning: === Handled error: ===
 
 Ensure condition failed: this->IsBound() [File:i:\epic\epic games\4.10\engine\source\runtime\core\public\delegates\DelegateSignatureImpl_Variadics.inl] [Line: 930]
 Unable to bind delegate to '&AWizardsCone::OnOverlap' (function might not be marked as a UFUNCTION)
@@ -118,612 +113,205 @@ UE4Editor.exe!GuardedMain() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10
 UE4Editor.exe!GuardedMainWrapper() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\launch\private\windows\launchwindows.cpp:126]
 UE4Editor.exe!WinMain() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\launch\private\windows\launchwindows.cpp:200]
 UE4Editor.exe!__scrt_common_main_seh() [f:\dd\vctools\crt\vcstartup\src\startup\exe_common.inl:264]
-KERNEL32.DLL
+kernel32.dll
 ntdll.dll
 ntdll.dll
 
-[2016.04.10-20.57.29:488][  0]LogAssetRegistry: FAssetRegistry took 0.0132 seconds to start up
-[2016.04.10-20.57.31:975][  0]SourceControl: Info Source control is disabled
-[2016.04.10-20.57.31:987][  0]SourceControl: Info Source control is disabled
-[2016.04.10-20.57.32:177][  0]SourceControl: Info Source control is disabled
-[2016.04.10-20.57.32:380][  0]SourceControl: Info Source control is disabled
-[2016.04.10-20.57.33:986][  0]LogObj: 33300 objects as part of root set at end of initial load.
-[2016.04.10-20.57.33:986][  0]LogUObjectAllocator: 7856480 out of 0 bytes used by permanent object pool.
-[2016.04.10-20.57.35:453][  0]LogEngine: Initializing Engine...
-[2016.04.10-20.57.35:526][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.04.10-20.57.35:962][  0]LogHMD: SteamVR failed to initialize.  Err: 108
-[2016.04.10-20.57.37:129][  0]LogAIModule: Creating AISystem for world NewWorld
-[2016.04.10-20.57.37:598][  0]LogInit: XAudio2 using 'Speakers (Plantronics GameCom 780/788)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.04.10-20.57.37:620][  0]LogInit: FAudioDevice initialized.
-[2016.04.10-20.57.37:640][  0]LogDerivedDataCache: Saved boot cache 0.02s 53MB C:/Users/cole/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.04.10-20.57.37:644][  0]LogInit: Texture streaming: Enabled
-[2016.04.10-20.57.37:699][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
-[2016.04.10-20.57.37:749][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.4-2872498+++depot+UE4-Releases+4.10
-[2016.04.10-20.57.37:749][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId f244412640bfd8fead7689b93b2fe5d8|e4fefaa4172043b682d7cba566f214b6|d18eda9e-c23b-4867-b15a-ff3bf9e82366
-[2016.04.10-20.57.37:787][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
-[2016.04.10-20.57.37:966][  0]LogInit: Transaction tracking system initialized
-[2016.04.10-20.57.39:157][  0]BlueprintLog: New page: Editor Load
-[2016.04.10-20.57.42:833][  0]LocalizationService: Info Localization service is disabled
-[2016.04.10-20.57.44:303][  0]LogConsoleResponse:Display: 
-[2016.04.10-20.57.46:558][  0]LogFileCache: Scanning file cache for directory 'I:/Projects/wizards/Content/' took 0.02s
-[2016.04.10-20.57.46:558][  0]LogCook:Display: Done creating registry. It took  0.00s.
-[2016.04.10-20.57.48:752][  0]SourceControl: Info Source control is disabled
-[2016.04.10-20.57.48:884][  0]Cmd: MAP LOAD FILE="../../../../../../Projects/wizards/Content/FirstPerson/Maps/main_menu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.04.10-20.57.48:969][  0]LightingResults: New page: Lighting Build
-[2016.04.10-20.57.49:396][  0]MapCheck: New page: Map Check
-[2016.04.10-20.57.49:396][  0]LightingResults: New page: Lighting Build
-[2016.04.10-20.57.49:948][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001CF37A27240
-[2016.04.10-20.57.50:742][  0]LogAIModule: Creating AISystem for world main_menu
-[2016.04.10-20.57.50:902][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.04.10-20.57.50:977][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.04.10-20.57.51:103][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 125.877ms to complete.
-[2016.04.10-20.57.51:103][  0]LogFileHelpers: Loading map 'main_menu' took 2.266
-[2016.04.10-20.57.53:846][  0]LogCollectionManager: Loaded 0 collections in 0.009930 seconds
-[2016.04.10-20.57.54:245][  0]LogFileCache: Scanning file cache for directory 'I:/Projects/wizards/Saved/Collections/' took 0.01s
-[2016.04.10-20.57.54:245][  0]LogFileCache: Scanning file cache for directory 'I:/Projects/wizards/Content/Developers/cole/Collections/' took 0.01s
-[2016.04.10-20.57.54:245][  0]LogFileCache: Scanning file cache for directory 'I:/Projects/wizards/Content/Collections/' took 0.01s
-[2016.04.10-20.57.54:245][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000008 seconds
-[2016.04.10-20.57.54:347][  0]LogContentBrowser: Native class hierarchy populated in 0.0803 seconds. Added 1905 classes and 343 folders.
-[2016.04.10-20.57.54:498][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0048 seconds. Added 0 classes and 0 folders.
-[2016.04.10-20.57.58:427][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0099 seconds. Added 0 classes and 0 folders.
-[2016.04.10-20.57.58:757][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0028 seconds. Added 1 classes and 2 folders.
-[2016.04.10-20.58.01:068][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2016.04.10-20.58.01:563][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2016.04.10-20.58.01:627][  0]LogLoad: Full Startup: 74.58 seconds (BP compile: 0.75 seconds)
-[2016.04.10-20.58.01:995][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.04.10-20.58.02:874][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2016.04.10-20.58.03:377][  0]LogRenderer: Reallocating scene render targets to support 884x420 (Frame:2).
-[2016.04.10-20.58.04:153][  1]LogFileCache: Retrieving MD5 hashes for directory 'I:/Projects/wizards/Content/' took 2.10s
-[2016.04.10-20.58.19:822][ 48]LogAssetRegistry: Asset discovery search completed in 50.3445 seconds
-[2016.04.10-20.58.19:835][ 48]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2016.04.10-20.58.19:835][ 48]LogCollectionManager: Fixed up redirectors for 0 collections in 0.009573 seconds (updated 0 objects)
-[2016.04.10-20.58.28:948][313]LogVSAccessor:Warning: Couldn't access Visual Studio
-[2016.04.10-20.58.28:967][313]Recompiling Wizards...
-[2016.04.10-20.58.28:967][313]Launching UnrealBuildTool... [I:/EPIC/Epic Games/4.10/Engine/Binaries/DotNET/UnrealBuildTool.exe Wizards -ModuleWithSuffix Wizards 6334 Win64 Development -editorrecompile -canskiplink "I:/Projects/wizards/Wizards.uproject" -rocket  -rocket -2015]
-[2016.04.10-20.58.28:968][313]Warning: Starting HotReload took  0.0s.
-[2016.04.10-20.58.30:639][483]LogRenderer: Reallocating scene render targets to support 1208x552 (Frame:392).
-[2016.04.10-20.59.18:577][185]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
-[2016.04.10-20.59.18:577][185]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading ../../../../../../Projects/wizards/Content/FirstPerson/Multiplayer/widgets/w_ErrorDialog.uasset.
-[2016.04.10-20.59.18:577][185]LoadErrors:Error: Error /Game/FirstPerson/Multiplayer/widgets/w_ErrorDialog : Can't find file for asset. /Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream
-[2016.04.10-20.59.18:578][185]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
-[2016.04.10-20.59.18:578][185]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading ../../../../../../Projects/wizards/Content/FirstPerson/Multiplayer/widgets/w_ErrorDialog.uasset.
-[2016.04.10-20.59.18:579][185]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
-[2016.04.10-20.59.18:579][185]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading ../../../../../../Projects/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset.
-[2016.04.10-20.59.18:579][185]LoadErrors:Error: Error /Game/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream : Can't find file for asset. /Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream
-[2016.04.10-20.59.18:579][185]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
-[2016.04.10-20.59.18:579][185]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading ../../../../../../Projects/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset.
-[2016.04.10-20.59.18:579][185]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
-[2016.04.10-20.59.18:579][185]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading ../../../../../../Projects/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset.
-[2016.04.10-20.59.18:607][185]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
-[2016.04.10-20.59.18:607][185]LoadErrors: Info Failed to load /Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream.GameInstace_MP_Stream_C Referenced by K2Node_DynamicCast_573
-[2016.04.10-20.59.18:607][185]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading ../../../../../../Projects/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset.
-[2016.04.10-20.59.18:607][185]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
-[2016.04.10-20.59.18:607][185]LoadErrors: Info Failed to load /Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream.GameInstace_MP_Stream_C Referenced by EdGraphPin_25656
-[2016.04.10-20.59.18:607][185]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading ../../../../../../Projects/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset.
-[2016.04.10-20.59.18:607][185]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
-[2016.04.10-20.59.18:607][185]LoadErrors: Info Failed to load /Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream.GameInstace_MP_Stream_C Referenced by K2Node_CallFunction_2579
-[2016.04.10-20.59.18:608][185]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading ../../../../../../Projects/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset.
-[2016.04.10-20.59.18:608][185]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
-[2016.04.10-20.59.18:608][185]LoadErrors: Info Failed to load /Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream.GameInstace_MP_Stream_C Referenced by EdGraphPin_25672
-[2016.04.10-20.59.18:608][185]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading ../../../../../../Projects/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset.
-[2016.04.10-20.59.18:613][185]LogBlueprint:Error: [compiler w_ErrorDialog] Error Could not find a function named "showMainMenu" in 'w_ErrorDialog'.
+[2016.04.10-21.46.19:501][  0]LogAssetRegistry: FAssetRegistry took 0.0115 seconds to start up
+[2016.04.10-21.46.19:702][  0]SourceControl: Info Source control is disabled
+[2016.04.10-21.46.19:703][  0]SourceControl: Info Source control is disabled
+[2016.04.10-21.46.19:715][  0]SourceControl: Info Source control is disabled
+[2016.04.10-21.46.19:731][  0]SourceControl: Info Source control is disabled
+[2016.04.10-21.46.20:007][  0]LogObj: 33304 objects as part of root set at end of initial load.
+[2016.04.10-21.46.20:007][  0]LogUObjectAllocator: 7857576 out of 0 bytes used by permanent object pool.
+[2016.04.10-21.46.20:068][  0]LogEngine: Initializing Engine...
+[2016.04.10-21.46.20:072][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.04.10-21.46.20:072][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.04.10-21.46.20:222][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.04.10-21.46.20:240][  0]LogInit: XAudio2 using 'Speakers (Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.04.10-21.46.20:259][  0]LogInit: FAudioDevice initialized.
+[2016.04.10-21.46.20:317][  0]LogDerivedDataCache: Saved boot cache 0.06s 53MB C:/Users/Logical/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.04.10-21.46.20:332][  0]LogInit: Texture streaming: Enabled
+[2016.04.10-21.46.20:338][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2016.04.10-21.46.20:338][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.4-2872498+++depot+UE4-Releases+4.10
+[2016.04.10-21.46.20:338][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 6adc7db841d972496a4138bf1fd52a82|95dbfcfbadea45bc810ef15143a39ae1|43985850-9a8d-48b6-b74f-8b1df78056ea
+[2016.04.10-21.46.20:338][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2016.04.10-21.46.20:347][  0]LogInit: Transaction tracking system initialized
+[2016.04.10-21.46.20:378][  0]BlueprintLog: New page: Editor Load
+[2016.04.10-21.46.20:525][  0]LocalizationService: Info Localization service is disabled
+[2016.04.10-21.46.20:619][  0]LogConsoleResponse:Display: 
+[2016.04.10-21.46.20:760][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.04.10-21.46.20:843][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Logical/Documents/Github/wizards/Content/' took 0.07s
+[2016.04.10-21.46.20:843][  0]SourceControl: Info Source control is disabled
+[2016.04.10-21.46.20:843][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Maps/main_menu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.04.10-21.46.20:844][  0]LightingResults: New page: Lighting Build
+[2016.04.10-21.46.20:847][  0]MapCheck: New page: Map Check
+[2016.04.10-21.46.20:847][  0]LightingResults: New page: Lighting Build
+[2016.04.10-21.46.20:867][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000073070EA0
+[2016.04.10-21.46.21:143][  0]LogAIModule: Creating AISystem for world main_menu
+[2016.04.10-21.46.21:144][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.04.10-21.46.21:144][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.04.10-21.46.21:207][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 62.037ms to complete.
+[2016.04.10-21.46.21:207][  0]LogFileHelpers: Loading map 'main_menu' took 0.363
+[2016.04.10-21.46.21:319][  0]LogCollectionManager: Loaded 0 collections in 0.002784 seconds
+[2016.04.10-21.46.21:360][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Logical/Documents/Github/wizards/Saved/Collections/' took 0.01s
+[2016.04.10-21.46.21:360][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Logical/Documents/Github/wizards/Content/Developers/Logical/Collections/' took 0.01s
+[2016.04.10-21.46.21:360][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Logical/Documents/Github/wizards/Content/Collections/' took 0.01s
+[2016.04.10-21.46.21:360][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.04.10-21.46.21:374][  0]LogContentBrowser: Native class hierarchy populated in 0.0135 seconds. Added 1905 classes and 343 folders.
+[2016.04.10-21.46.21:384][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0032 seconds. Added 0 classes and 0 folders.
+[2016.04.10-21.46.21:442][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0041 seconds. Added 0 classes and 0 folders.
+[2016.04.10-21.46.21:449][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0034 seconds. Added 1 classes and 2 folders.
+[2016.04.10-21.46.21:470][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.04.10-21.46.21:475][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.04.10-21.46.21:498][  0]LogLoad: Full Startup: 8.41 seconds (BP compile: 0.12 seconds)
+[2016.04.10-21.46.21:510][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.04.10-21.46.21:573][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.04.10-21.46.21:725][  0]LogRenderer: Reallocating scene render targets to support 1056x552 (Frame:2).
+[2016.04.10-21.46.21:800][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/Logical/Documents/Github/wizards/Content/' took 0.28s
+[2016.04.10-21.46.23:797][212]LogAssetRegistry: Asset discovery search completed in 4.3076 seconds
+[2016.04.10-21.46.23:798][212]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000002 seconds (found 0 objects)
+[2016.04.10-21.46.23:798][212]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000029 seconds (updated 0 objects)
+[2016.04.10-21.46.26:582][534]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.46.26:582][534]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading ../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/widgets/w_ErrorDialog.uasset.
+[2016.04.10-21.46.26:582][534]LoadErrors:Error: Error /Game/FirstPerson/Multiplayer/widgets/w_ErrorDialog : Can't find file for asset. /Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream
+[2016.04.10-21.46.26:584][534]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.46.26:584][534]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading ../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/widgets/w_ErrorDialog.uasset.
+[2016.04.10-21.46.26:585][534]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.46.26:585][534]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading ../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset.
+[2016.04.10-21.46.26:585][534]LoadErrors:Error: Error /Game/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream : Can't find file for asset. /Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream
+[2016.04.10-21.46.26:585][534]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.46.26:585][534]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading ../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset.
+[2016.04.10-21.46.26:585][534]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.46.26:585][534]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading ../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset.
+[2016.04.10-21.46.26:588][534]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.46.26:588][534]LoadErrors: Info Failed to load /Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream.GameInstace_MP_Stream_C Referenced by K2Node_DynamicCast_573
+[2016.04.10-21.46.26:588][534]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading ../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset.
+[2016.04.10-21.46.26:589][534]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.46.26:589][534]LoadErrors: Info Failed to load /Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream.GameInstace_MP_Stream_C Referenced by EdGraphPin_25656
+[2016.04.10-21.46.26:589][534]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading ../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset.
+[2016.04.10-21.46.26:589][534]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.46.26:589][534]LoadErrors: Info Failed to load /Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream.GameInstace_MP_Stream_C Referenced by K2Node_CallFunction_2579
+[2016.04.10-21.46.26:589][534]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading ../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset.
+[2016.04.10-21.46.26:590][534]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.46.26:590][534]LoadErrors: Info Failed to load /Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream.GameInstace_MP_Stream_C Referenced by EdGraphPin_25672
+[2016.04.10-21.46.26:590][534]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading ../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset.
+[2016.04.10-21.46.26:595][534]LogBlueprint:Error: [compiler w_ErrorDialog] Error Could not find a function named "showMainMenu" in 'w_ErrorDialog'.
 Make sure 'w_ErrorDialog' has been compiled for  Show Main Menu 
-[2016.04.10-20.59.18:613][185]LogBlueprint:Warning: [compiler w_ErrorDialog] Warning Can't connect pins  Return Value  and  Object : This cast has an invalid target type (was the class deleted without a redirect?).
-[2016.04.10-20.59.18:613][185]LogBlueprint:Warning: [compiler w_ErrorDialog] Warning Can't connect pins  Object  and  Return Value : This cast has an invalid target type (was the class deleted without a redirect?).
-[2016.04.10-20.59.18:613][185]LogBlueprint:Error: [compiler w_ErrorDialog] Error This blueprint (self) is not compatible with ' Target ', therefore that pin must have a connection.
-[2016.04.10-20.59.18:638][185]LogBlueprint:Warning: [compiler w_ErrorDialog] Warning [0151.59] Compile of w_ErrorDialog failed. 2 Fatal Issue(s) 2 Warning(s) [in 27 ms]
-[2016.04.10-20.59.18:638][185]LogBlueprint:Warning: [compiler w_ErrorDialog] Warning [0151.59] Compile of w_ErrorDialog failed. 2 Fatal Issue(s) 3 Warning(s) [in 0 ms]
-[2016.04.10-20.59.18:638][185]LogBlueprint:Warning: [compiler w_ErrorDialog] Warning [0151.59] Compile of w_ErrorDialog failed. 2 Fatal Issue(s) 4 Warning(s) [in 0 ms]
-[2016.04.10-20.59.18:676][185]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-20.59.18:676][185]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-20.59.18:677][185]LogBlueprint:Error: [compiler GameInstace_MP_Stream] Error The current value of the ' A ' pin is invalid: '' is not a valid enumerant of '<E_gameState>'
-[2016.04.10-20.59.18:679][185]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [0151.63] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 2 Warning(s) [in 30 ms]
-[2016.04.10-20.59.18:679][185]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [0151.63] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 3 Warning(s) [in 0 ms]
-[2016.04.10-20.59.18:679][185]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [0151.63] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 4 Warning(s) [in 0 ms]
-[2016.04.10-20.59.18:890][185]LogLinker:Warning: Asset '../../../Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2016.04.10-20.59.21:321][185]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0072 seconds. Added 107 classes and 0 folders.
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: New page: Compilation - Apr 10, 2016, 6:59:28 AM
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info Creating makefile for hot reloading Wizards (game project files are newer)
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info Compiling game modules for hot reload
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info Parsing headers for WizardsEditor
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info   Running UnrealHeaderTool "I:/Projects/wizards/Wizards.uproject" "I:\Projects\wizards\Intermediate\Build\Win64\WizardsEditor\Development\UnrealHeaderTool.manifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -rocket -installed
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info Reflection code generated for WizardsEditor in 5.3964202 seconds
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info Performing 14 actions (4 in parallel)
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info PCH.Wizards.h.cpp
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info WizardsCharacter.cpp
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info Wizards.cpp
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info WizardMenuWidget.cpp
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info WizardsGameMode.cpp
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info WizardsHUD.cpp
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info WizardsProjectile.cpp
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info MyActor.cpp
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info spellBook.cpp
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info WizardsSaveGame.cpp
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info WizardsBlast.cpp
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info WizardsCone.cpp
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info Wizards.generated.cpp
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info [14/14] Link UE4Editor-Wizards-6334.dll
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info    Creating library I:\Projects\wizards\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-Wizards-6334.lib and object I:\Projects\wizards\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-Wizards-6334.exp
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info -------- End Detailed Actions Stats -----------------------------------------------------------
-[2016.04.10-20.59.28:411][197]CompilerResultsLog: Info Total build time: 59.19 seconds
-[2016.04.10-20.59.28:411][197]LogMainFrame: MainFrame: Module compiling took 59.463 seconds
-[2016.04.10-20.59.28:524][197]LogClass: Could not find existing class WizardsCharacter in package /Script/Wizards for HotReload, assuming new class
-[2016.04.10-20.59.28:524][197]LogClass: Function newCharactersSpells is new.
-[2016.04.10-20.59.28:703][197]LogHotReload: Re-instancing WizardsCharacter after hot-reload.
-[2016.04.10-20.59.39:041][197]LogOutputDevice:Warning: === Handled error: ===
-
-Ensure condition failed: this->IsBound() [File:i:\epic\epic games\4.10\engine\source\runtime\core\public\delegates\DelegateSignatureImpl_Variadics.inl] [Line: 930]
-Unable to bind delegate to '&AWizardsCone::OnOverlap' (function might not be marked as a UFUNCTION)
-Stack: 
-UE4Editor-Core.dll!FWindowsPlatformStackWalk::StackWalkAndDump() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\core\private\windows\windowsplatformstackwalk.cpp:175]
-UE4Editor-Core.dll!FDebug::EnsureFailed() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\core\private\misc\outputdevice.cpp:276]
-UE4Editor-Core.dll!FDebug::OptionallyLogFormattedEnsureMessageReturningFalse() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\core\private\misc\outputdevice.cpp:385]
-UE4Editor-Wizards-6334.dll!TBaseDynamicDelegate<FWeakObjectPtr,void,AActor * __ptr64,UPrimitiveComponent * __ptr64,int,bool,FHitResult const & __ptr64>::__Internal_BindDynamic<AWizardsCone>() [i:\epic\epic games\4.10\engine\source\runtime\core\public\delegates\delegatesignatureimpl_variadics.inl:930]
-UE4Editor-Wizards-6334.dll!AWizardsCone::AWizardsCone() [i:\projects\wizards\source\wizards\private\wizardscone.cpp:19]
-UE4Editor-HotReload.dll!FHotReloadClassReinstancer::ReconstructClassDefaultObject() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\developer\hotreload\private\hotreloadclassreinstancer.cpp:198]
-UE4Editor-HotReload.dll!FHotReloadClassReinstancer::RecreateCDOAndSetupOldClassReinstancing() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\developer\hotreload\private\hotreloadclassreinstancer.cpp:234]
-UE4Editor-HotReload.dll!FHotReloadClassReinstancer::FHotReloadClassReinstancer() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\developer\hotreload\private\hotreloadclassreinstancer.cpp:307]
-UE4Editor-HotReload.dll!FHotReloadClassReinstancer::Create() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\developer\hotreload\private\hotreloadclassreinstancer.h:114]
-UE4Editor-HotReload.dll!FHotReloadModule::ReinstanceClass() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\developer\hotreload\private\hotreload.cpp:1028]
-UE4Editor-HotReload.dll!FHotReloadModule::ReinstanceClasses() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\developer\hotreload\private\hotreload.cpp:1019]
-UE4Editor-HotReload.dll!TBaseRawMethodDelegateInstance<0,FHotReloadModule,void __cdecl(void)>::ExecuteIfSafe() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\core\public\delegates\delegateinstancesimpl_variadics.inl:582]
-UE4Editor-CoreUObject.dll!UClassReplaceHotReloadClasses() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\coreuobject\private\uobject\uobjectbase.cpp:607]
-UE4Editor-CoreUObject.dll!ProcessNewlyLoadedUObjects() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\coreuobject\private\uobject\uobjectbase.cpp:754]
-UE4Editor-CoreUObject.dll!TBaseStaticDelegateInstance<void __cdecl(void)>::ExecuteIfSafe() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\core\public\delegates\delegateinstancesimpl_variadics.inl:921]
-UE4Editor-Core.dll!TBaseMulticastDelegate<void>::Broadcast() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\core\public\delegates\delegatesignatureimpl_variadics.inl:809]
-UE4Editor-Core.dll!FModuleManager::LoadModuleWithFailureReason() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\core\private\modules\modulemanager.cpp:426]
-UE4Editor-Core.dll!FModuleManager::LoadModule() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\core\private\modules\modulemanager.cpp:298]
-UE4Editor-HotReload.dll!FHotReloadModule::DoHotReloadInternal() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\developer\hotreload\private\hotreload.cpp:706]
-UE4Editor-HotReload.dll!FHotReloadModule::DoHotReloadCallback() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\developer\hotreload\private\hotreload.cpp:644]
-UE4Editor-HotReload.dll!TBaseRawMethodDelegateInstance<0,FHotReloadModule,TTypeWrapper<void> __cdecl(bool,enum ECompilationResult::Type),TArray<UPackage * __ptr64,FDefaultAllocator>,TArray<FName,FDefaultAllocator>,FOutputDevice & __ptr64>::Execute() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\core\public\delegates\delegateinstancesimpl_variadics.inl:492]
-UE4Editor-HotReload.dll!TBaseRawMethodDelegateInstance<0,FHotReloadModule,void __cdecl(bool,enum ECompilationResult::Type),TArray<UPackage * __ptr64,FDefaultAllocator>,TArray<FName,FDefaultAllocator>,FOutputDevice & __ptr64>::ExecuteIfSafe() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\core\public\delegates\delegateinstancesimpl_variadics.inl:582]
-UE4Editor-HotReload.dll!FHotReloadModule::CheckForFinishedModuleDLLCompile() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\developer\hotreload\private\hotreload.cpp:1629]
-UE4Editor-HotReload.dll!FHotReloadModule::Tick() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\developer\hotreload\private\hotreload.cpp:454]
-UE4Editor-UnrealEd.dll!UEditorEngine::Tick() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\editor\unrealed\private\editorengine.cpp:957]
-UE4Editor-UnrealEd.dll!UUnrealEdEngine::Tick() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\editor\unrealed\private\unrealedengine.cpp:361]
-UE4Editor.exe!FEngineLoop::Tick() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\launch\private\launchengineloop.cpp:2427]
-UE4Editor.exe!GuardedMain() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\launch\private\launch.cpp:142]
-UE4Editor.exe!GuardedMainWrapper() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\launch\private\windows\launchwindows.cpp:126]
-UE4Editor.exe!WinMain() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\launch\private\windows\launchwindows.cpp:200]
-UE4Editor.exe!__scrt_common_main_seh() [f:\dd\vctools\crt\vcstartup\src\startup\exe_common.inl:264]
-KERNEL32.DLL
-ntdll.dll
-ntdll.dll
-
-[2016.04.10-20.59.39:226][197]LogHotReload: Re-instancing WizardsCone after hot-reload.
-[2016.04.10-20.59.39:250][197]LogContentBrowser: Native class hierarchy updated for 'Wizards' in 0.0017 seconds. Added 10 classes and 3 folders.
-[2016.04.10-20.59.39:253][197]Warning: HotReload successful (36 functions remapped  0 scriptstructs remapped)
-[2016.04.10-20.59.39:605][197]LogContentBrowser: Native class hierarchy populated in 0.0067 seconds. Added 1906 classes and 345 folders.
-[2016.04.10-21.02.10:740][224]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.02.10:755][224]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.02.10:755][224]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.02.10:839][224]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [0323.79] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 99 ms]
-[2016.04.10-21.02.10:840][224]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.02.10:840][224]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.02.10:840][224]BlueprintEditorCompileResults:Warning: Warning [0323.79] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 99 ms]
-[2016.04.10-21.02.12:686][445]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.02.12:700][445]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.02.12:700][445]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.02.12:749][445]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [0325.70] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 63 ms]
-[2016.04.10-21.02.12:749][445]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.02.12:749][445]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.02.12:749][445]BlueprintEditorCompileResults:Warning: Warning [0325.70] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 63 ms]
-[2016.04.10-21.02.13:444][528]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.02.13:458][528]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.02.13:458][528]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.02.13:507][528]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [0326.46] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 62 ms]
-[2016.04.10-21.02.13:507][528]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.02.13:507][528]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.02.13:507][528]BlueprintEditorCompileResults:Warning: Warning [0326.46] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 62 ms]
-[2016.04.10-21.02.13:661][546]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.02.13:675][546]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.02.13:675][546]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.02.13:723][546]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [0326.67] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 62 ms]
-[2016.04.10-21.02.13:723][546]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.02.13:723][546]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.02.13:723][546]BlueprintEditorCompileResults:Warning: Warning [0326.67] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 62 ms]
-[2016.04.10-21.02.13:870][562]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.02.13:884][562]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.02.13:884][562]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.02.13:933][562]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [0326.88] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 62 ms]
-[2016.04.10-21.02.13:933][562]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.02.13:933][562]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.02.13:933][562]BlueprintEditorCompileResults:Warning: Warning [0326.88] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 62 ms]
-[2016.04.10-21.03.05:479][730]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.03.05:493][730]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.03.05:493][730]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.03.05:493][730]LogBlueprint:Error: [compiler GameInstace_MP_Stream] Error The current value of the ' A ' pin is invalid: '' is not a valid enumerant of '<E_gameState>'
-[2016.04.10-21.03.05:570][730]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [0378.52] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 2 Warning(s) [in 90 ms]
-[2016.04.10-21.03.05:570][730]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.03.05:570][730]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.03.05:570][730]BlueprintEditorCompileResults:Error: Error The current value of the ' A ' pin is invalid: '' is not a valid enumerant of '<E_gameState>'
-[2016.04.10-21.03.05:570][730]BlueprintEditorCompileResults:Warning: Warning [0378.52] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 2 Warning(s) [in 90 ms]
-[2016.04.10-21.04.28:285][629]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.04.28:299][629]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.04.28:299][629]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.04.28:300][629]LogBlueprint:Error: [compiler GameInstace_MP_Stream] Error The current value (NewEnumerator3) of the ' Byte ' pin is invalid: Expected a valid unsigned number for a byte property
-[2016.04.10-21.04.28:376][629]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [0461.32] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 2 Warning(s) [in 91 ms]
-[2016.04.10-21.04.28:376][629]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.04.28:376][629]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.04.28:376][629]BlueprintEditorCompileResults:Error: Error The current value (NewEnumerator3) of the ' Byte ' pin is invalid: Expected a valid unsigned number for a byte property
-[2016.04.10-21.04.28:376][629]BlueprintEditorCompileResults:Warning: Warning [0461.32] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 2 Warning(s) [in 91 ms]
-[2016.04.10-21.05.05:771][104]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.05.05:786][104]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.05.05:786][104]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.05.05:787][104]LogBlueprint:Error: [compiler GameInstace_MP_Stream] Error The current value (NewEnumerator3) of the ' Byte ' pin is invalid: Expected a valid unsigned number for a byte property
-[2016.04.10-21.05.05:870][104]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [0498.82] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 2 Warning(s) [in 98 ms]
-[2016.04.10-21.05.05:870][104]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.05.05:870][104]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.05.05:870][104]BlueprintEditorCompileResults:Error: Error The current value (NewEnumerator3) of the ' Byte ' pin is invalid: Expected a valid unsigned number for a byte property
-[2016.04.10-21.05.05:870][104]BlueprintEditorCompileResults:Warning: Warning [0498.82] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 2 Warning(s) [in 98 ms]
-[2016.04.10-21.05.52:006][623]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.05.52:020][623]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.05.52:020][623]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.05.52:071][623]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [0545.02] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 65 ms]
-[2016.04.10-21.05.52:071][623]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.05.52:071][623]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.05.52:071][623]BlueprintEditorCompileResults:Warning: Warning [0545.02] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 65 ms]
-[2016.04.10-21.05.57:764][302]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.05.57:778][302]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.05.57:778][302]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.05.57:779][302]LogBlueprint:Error: [compiler GameInstace_MP_Stream] Error The current value (NewEnumerator3) of the ' Byte ' pin is invalid: Expected a valid unsigned number for a byte property
-[2016.04.10-21.05.57:854][302]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [0550.80] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 2 Warning(s) [in 89 ms]
-[2016.04.10-21.05.57:855][302]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.05.57:855][302]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.05.57:855][302]BlueprintEditorCompileResults:Error: Error The current value (NewEnumerator3) of the ' Byte ' pin is invalid: Expected a valid unsigned number for a byte property
-[2016.04.10-21.05.57:855][302]BlueprintEditorCompileResults:Warning: Warning [0550.80] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 2 Warning(s) [in 89 ms]
-[2016.04.10-21.08.12:236][221]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.08.12:249][221]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.08.12:249][221]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.08.12:250][221]LogBlueprint:Error: [compiler GameInstace_MP_Stream] Error The current value of the ' A ' pin is invalid: '' is not a valid enumerant of '<E_gameState>'
-[2016.04.10-21.08.12:328][221]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [0685.28] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 2 Warning(s) [in 91 ms]
-[2016.04.10-21.08.12:328][221]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.08.12:328][221]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.08.12:328][221]BlueprintEditorCompileResults:Error: Error The current value of the ' A ' pin is invalid: '' is not a valid enumerant of '<E_gameState>'
-[2016.04.10-21.08.12:328][221]BlueprintEditorCompileResults:Warning: Warning [0685.28] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 2 Warning(s) [in 91 ms]
-[2016.04.10-21.08.49:173][627]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.08.49:188][627]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.08.49:188][627]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.08.49:239][627]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [0722.19] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 65 ms]
-[2016.04.10-21.08.49:239][627]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.08.49:239][627]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.08.49:239][627]BlueprintEditorCompileResults:Warning: Warning [0722.19] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 65 ms]
-[2016.04.10-21.08.57:520][616]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.08.57:534][616]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.08.57:534][616]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.08.57:585][616]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [0730.53] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 64 ms]
-[2016.04.10-21.08.57:585][616]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.08.57:585][616]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.08.57:585][616]BlueprintEditorCompileResults:Warning: Warning [0730.53] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 64 ms]
-[2016.04.10-21.09.03:898][370]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.09.03:912][370]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.09.03:912][370]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.09.03:961][370]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [0736.91] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 63 ms]
-[2016.04.10-21.09.03:961][370]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.09.03:961][370]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.09.03:961][370]BlueprintEditorCompileResults:Warning: Warning [0736.91] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 63 ms]
-[2016.04.10-21.09.04:058][381]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.09.04:072][381]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.09.04:072][381]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.09.04:122][381]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [0737.07] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 64 ms]
-[2016.04.10-21.09.04:122][381]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.09.04:122][381]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.09.04:122][381]BlueprintEditorCompileResults:Warning: Warning [0737.07] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 64 ms]
-[2016.04.10-21.09.05:753][559]LogSavePackage: Save=65.980705ms
-[2016.04.10-21.09.05:753][559]LogSavePackage: Moving '../../../../../../Projects/wizards/Saved/GameInstace_MP_Stream2545004544C7A08F0B4E4CB8436237A8.tmp' to '../../../../../../Projects/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset'
-[2016.04.10-21.09.05:755][559]LogSavePackage: Total save time: 90.680111ms
-[2016.04.10-21.09.05:755][559]LogSavePackage:Display: Finished SavePackage ../../../../../../Projects/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset
-[2016.04.10-21.09.42:645][239]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.09.42:659][239]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.09.42:659][239]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.09.42:710][239]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [0775.66] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 65 ms]
-[2016.04.10-21.09.42:710][239]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Selection  and  Current State : 
-[2016.04.10-21.09.42:710][239]BlueprintEditorCompileResults:Warning: Warning Can't connect pins  Current State  and  Selection : 
-[2016.04.10-21.09.42:710][239]BlueprintEditorCompileResults:Warning: Warning [0775.66] Compile of GameInstace_MP_Stream successful, but with 2 Warning(s) [in 65 ms]
-[2016.04.10-21.11.19:309][757]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.11.19:324][757]LogBlueprint:Error: [compiler GameInstace_MP_Stream] Error The current value (NewEnumerator0) of the ' Selection ' pin is invalid: Expected a valid unsigned number for a byte property
-[2016.04.10-21.11.19:404][757]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [0872.35] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 0 Warning(s) [in 94 ms]
-[2016.04.10-21.11.19:404][757]BlueprintEditorCompileResults:Error: Error The current value (NewEnumerator0) of the ' Selection ' pin is invalid: Expected a valid unsigned number for a byte property
-[2016.04.10-21.11.19:404][757]BlueprintEditorCompileResults:Warning: Warning [0872.35] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 0 Warning(s) [in 94 ms]
-[2016.04.10-21.15.04:056][954]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.15.04:120][954]BlueprintEditorCompileResults: Info [1097.07] Compile of GameInstace_MP_Stream successful! [in 65 ms]
-[2016.04.10-21.15.17:040][503]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.15.17:105][503]BlueprintEditorCompileResults: Info [1110.05] Compile of GameInstace_MP_Stream successful! [in 65 ms]
-[2016.04.10-21.15.22:155][645]LogSavePackage: Save=53.162010ms
-[2016.04.10-21.15.22:155][645]LogSavePackage: Moving '../../../../../../Projects/wizards/Saved/GameInstace_MP_StreamFF4D183F46A48F56709CFF9A8F9EE54F.tmp' to '../../../../../../Projects/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset'
-[2016.04.10-21.15.22:156][645]LogSavePackage: Total save time: 63.327007ms
-[2016.04.10-21.15.22:156][645]LogSavePackage:Display: Finished SavePackage ../../../../../../Projects/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset
-[2016.04.10-21.15.22:267][645]LogSavePackage: Save=64.476448ms
-[2016.04.10-21.15.22:267][645]LogSavePackage: Moving '../../../../../../Projects/wizards/Saved/UEDPCmain_menuD02901694B4D7E2EA9860DA7E526BD10.tmp' to '../../../../../../Projects/wizards/Saved/Autosaves/Game/FirstPerson/Maps/UEDPCmain_menu.umap'
-[2016.04.10-21.15.22:268][645]LogSavePackage: Total save time: 73.632807ms
-[2016.04.10-21.15.22:268][645]LogSavePackage:Display: Finished SavePackage ../../../../../../Projects/wizards/Saved/Autosaves/Game/FirstPerson/Maps/UEDPCmain_menu.umap
-[2016.04.10-21.15.42:051][927]LogSavePackage: Save=42.650135ms
-[2016.04.10-21.15.42:051][927]LogSavePackage: Moving '../../../../../../Projects/wizards/Saved/main_menu_Auto18572DFCC425AE15C602F11B37FEA1D2A.tmp' to '../../../../../../Projects/wizards/Saved/Autosaves/Game/FirstPerson/Maps/main_menu_Auto1.umap'
-[2016.04.10-21.15.42:052][927]LogSavePackage: Total save time: 50.089497ms
-[2016.04.10-21.15.42:052][927]LogSavePackage:Display: Finished SavePackage ../../../../../../Projects/wizards/Saved/Autosaves/Game/FirstPerson/Maps/main_menu_Auto1.umap
-[2016.04.10-21.15.42:054][927]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPerson/Maps/main_menu' took 0.079
-[2016.04.10-21.15.42:054][927]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.079
-[2016.04.10-21.17.19:292][405]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.17.19:308][405]LogBlueprint:Error: [compiler GameInstace_MP_Stream] Error Default value 'NewEnumerator0' for  Current State  is invalid: 'Expected a valid unsigned number for a byte property'
-[2016.04.10-21.17.19:391][405]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [1232.34] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 0 Warning(s) [in 99 ms]
-[2016.04.10-21.17.19:391][405]BlueprintEditorCompileResults:Error: Error Default value 'NewEnumerator0' for  Current State  is invalid: 'Expected a valid unsigned number for a byte property'
-[2016.04.10-21.17.19:391][405]BlueprintEditorCompileResults:Warning: Warning [1232.34] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 0 Warning(s) [in 99 ms]
-[2016.04.10-21.17.25:874][175]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.17.25:889][175]LogBlueprint:Error: [compiler GameInstace_MP_Stream] Error Default value 'NewEnumerator0' for  Current State  is invalid: 'Expected a valid unsigned number for a byte property'
-[2016.04.10-21.17.25:967][175]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [1238.92] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 0 Warning(s) [in 92 ms]
-[2016.04.10-21.17.25:967][175]BlueprintEditorCompileResults:Error: Error Default value 'NewEnumerator0' for  Current State  is invalid: 'Expected a valid unsigned number for a byte property'
-[2016.04.10-21.17.25:967][175]BlueprintEditorCompileResults:Warning: Warning [1238.92] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 0 Warning(s) [in 92 ms]
-[2016.04.10-21.17.26:375][223]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.17.26:390][223]LogBlueprint:Error: [compiler GameInstace_MP_Stream] Error Default value 'NewEnumerator0' for  Current State  is invalid: 'Expected a valid unsigned number for a byte property'
-[2016.04.10-21.17.26:468][223]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [1239.42] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 0 Warning(s) [in 92 ms]
-[2016.04.10-21.17.26:468][223]BlueprintEditorCompileResults:Error: Error Default value 'NewEnumerator0' for  Current State  is invalid: 'Expected a valid unsigned number for a byte property'
-[2016.04.10-21.17.26:468][223]BlueprintEditorCompileResults:Warning: Warning [1239.42] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 0 Warning(s) [in 92 ms]
-[2016.04.10-21.17.33:870][103]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.17.33:885][103]LogBlueprint:Error: [compiler GameInstace_MP_Stream] Error Default value 'NewEnumerator0' for  Current State  is invalid: 'Expected a valid unsigned number for a byte property'
-[2016.04.10-21.17.33:963][103]LogBlueprint:Warning: [compiler GameInstace_MP_Stream] Warning [1246.91] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 0 Warning(s) [in 93 ms]
-[2016.04.10-21.17.33:963][103]BlueprintEditorCompileResults:Error: Error Default value 'NewEnumerator0' for  Current State  is invalid: 'Expected a valid unsigned number for a byte property'
-[2016.04.10-21.17.33:963][103]BlueprintEditorCompileResults:Warning: Warning [1246.91] Compile of GameInstace_MP_Stream failed. 1 Fatal Issue(s) 0 Warning(s) [in 93 ms]
-[2016.04.10-21.17.53:196][209]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.17.53:264][209]BlueprintEditorCompileResults: Info [1266.21] Compile of GameInstace_MP_Stream successful! [in 68 ms]
-[2016.04.10-21.17.54:186][319]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.17.54:254][319]BlueprintEditorCompileResults: Info [1267.20] Compile of GameInstace_MP_Stream successful! [in 67 ms]
-[2016.04.10-21.17.59:106][900]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.17.59:174][900]BlueprintEditorCompileResults: Info [1272.12] Compile of GameInstace_MP_Stream successful! [in 68 ms]
-[2016.04.10-21.18.08:881][ 59]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.18.08:947][ 59]BlueprintEditorCompileResults: Info [1281.90] Compile of GameInstace_MP_Stream successful! [in 65 ms]
-[2016.04.10-21.18.09:044][ 70]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.18.09:110][ 70]BlueprintEditorCompileResults: Info [1282.06] Compile of GameInstace_MP_Stream successful! [in 66 ms]
-[2016.04.10-21.18.19:119][268]BlueprintLog: New page: Compile GameInstace_MP_Stream
-[2016.04.10-21.18.19:185][268]BlueprintEditorCompileResults: Info [1292.13] Compile of GameInstace_MP_Stream successful! [in 65 ms]
-[2016.04.10-21.18.27:599][ 65]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPerson/Maps/main_menu" FILE="../../../../../../Projects/wizards/Content/FirstPerson/Maps/main_menu.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2016.04.10-21.18.27:669][ 65]LogSavePackage: Save=42.962456ms
-[2016.04.10-21.18.27:669][ 65]LogSavePackage: Moving '../../../../../../Projects/wizards/Saved/main_menu55217DDB44964D21ECA1099647880A24.tmp' to '../../../../../../Projects/wizards/Content/FirstPerson/Maps/main_menu.umap'
-[2016.04.10-21.18.27:670][ 65]LogSavePackage: Total save time: 50.809115ms
-[2016.04.10-21.18.27:670][ 65]LogSavePackage:Display: Finished SavePackage ../../../../../../Projects/wizards/Content/FirstPerson/Maps/main_menu.umap
-[2016.04.10-21.18.27:686][ 65]LogFileHelpers: Saving map 'main_menu' took 0.129
-[2016.04.10-21.18.27:752][ 65]LogSavePackage: Save=52.943386ms
-[2016.04.10-21.18.27:752][ 65]LogSavePackage: Moving '../../../../../../Projects/wizards/Saved/GameInstace_MP_StreamBAC521064412FCB333B0B38D09FFBC3C.tmp' to '../../../../../../Projects/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset'
-[2016.04.10-21.18.27:753][ 65]LogSavePackage: Total save time: 60.614686ms
-[2016.04.10-21.18.27:753][ 65]LogSavePackage:Display: Finished SavePackage ../../../../../../Projects/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset
-[2016.04.10-21.18.29:462][263]LogVSAccessor:Warning: Couldn't access Visual Studio
-[2016.04.10-21.18.29:464][263]Recompiling Wizards...
-[2016.04.10-21.18.29:464][263]Launching UnrealBuildTool... [I:/EPIC/Epic Games/4.10/Engine/Binaries/DotNET/UnrealBuildTool.exe Wizards -ModuleWithSuffix Wizards 320 Win64 Development -editorrecompile -canskiplink "I:/Projects/wizards/Wizards.uproject" -rocket  -rocket -2015]
-[2016.04.10-21.18.29:465][263]Warning: Starting HotReload took  0.0s.
-[2016.04.10-21.18.29:926][303]CompilerResultsLog: New page: Compilation - Apr 10, 2016, 7:18:29 AM
-[2016.04.10-21.18.29:926][303]CompilerResultsLog: Info Compiling game modules for hot reload
-[2016.04.10-21.18.29:926][303]CompilerResultsLog: Info Target is up to date.
-[2016.04.10-21.18.29:926][303]LogMainFrame: MainFrame: Module compiling took 0.463 seconds
-[2016.04.10-21.18.59:896][200]LogContentBrowser: Native class hierarchy updated for 'Cascade' in 0.0019 seconds. Added 2 classes and 2 folders.
-[2016.04.10-21.20.22:597][979]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001CF51EEB880
-[2016.04.10-21.20.22:647][979]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPerson/Particles/P_Earth_Projectile" FILE="../../../../../../Projects/wizards/Content/FirstPerson/Particles/P_Earth_Projectile.uasset" SILENT=true
-[2016.04.10-21.20.22:674][979]LogSavePackage: Save=17.898504ms
-[2016.04.10-21.20.22:674][979]LogSavePackage: Moving '../../../../../../Projects/wizards/Saved/P_Earth_Projectile8E270668415C2E5AFCFFC8A88C27C02A.tmp' to '../../../../../../Projects/wizards/Content/FirstPerson/Particles/P_Earth_Projectile.uasset'
-[2016.04.10-21.20.22:675][979]LogSavePackage: Total save time: 27.363598ms
-[2016.04.10-21.20.22:675][979]LogSavePackage:Display: Finished SavePackage ../../../../../../Projects/wizards/Content/FirstPerson/Particles/P_Earth_Projectile.uasset
-[2016.04.10-21.20.23:336][ 58]LogCascade: Quitting Cascade. FXSystem=0x000001CF47774EA0
-[2016.04.10-21.20.48:830][ 76]LogCascade: Quitting Cascade. FXSystem=0x000001CF4714DA80
-[2016.04.10-21.20.54:564][731]LogCascade: Quitting Cascade. FXSystem=0x000001CF52FA8FE0
-[2016.04.10-21.20.59:768][342]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001CF47774EA0
-[2016.04.10-21.20.59:769][342]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001CF52FA8FE0
-[2016.04.10-21.20.59:770][342]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001CF4714DA80
-[2016.04.10-21.21.00:053][343]Cmd: QUIT_EDITOR
-[2016.04.10-21.21.00:144][343]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.04.10-21.21.00:187][343]LogExit: Preparing to exit.
-[2016.04.10-21.21.00:966][343]LogExit: Editor shut down
-[2016.04.10-21.21.00:967][343]LogExit: Transaction tracking system shut down
-[2016.04.10-21.21.00:970][343]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001CED29F6A20
-[2016.04.10-21.21.00:970][343]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001CF416596C0
-[2016.04.10-21.21.00:971][343]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001CF41CB2E80
-[2016.04.10-21.21.00:973][343]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001CF471FE700
-[2016.04.10-21.21.01:141][343]LogExit: Object subsystem successfully closed.
-[2016.04.10-21.21.01:157][343]LogD3D11RHI: Shutdown
-[2016.04.10-21.21.01:157][343]LogD3D11RHI: CleanupD3DDevice
-[2016.04.10-21.21.01:192][343]LogD3D11RHI: ~FD3D11DynamicRHI
-[2016.04.10-21.21.01:355][343]LogModuleManager: Shutting down and abandoning module DistCurveEditor (206)
-[2016.04.10-21.21.01:355][343]LogModuleManager: Shutting down and abandoning module Cascade (205)
-[2016.04.10-21.21.01:355][343]LogModuleManager: Shutting down and abandoning module CookingStats (204)
-[2016.04.10-21.21.01:355][343]LogModuleManager: Shutting down and abandoning module BlueprintGraph (203)
-[2016.04.10-21.21.01:355][343]LogModuleManager: Shutting down and abandoning module CrashTracker (202)
-[2016.04.10-21.21.01:355][343]LogModuleManager: Shutting down and abandoning module SceneOutliner (201)
-[2016.04.10-21.21.01:355][343]LogModuleManager: Shutting down and abandoning module SuperSearch (200)
-[2016.04.10-21.21.01:355][343]LogModuleManager: Shutting down and abandoning module WidgetCarousel (199)
-[2016.04.10-21.21.01:355][343]LogModuleManager: Shutting down and abandoning module AddContentDialog (198)
-[2016.04.10-21.21.01:360][343]LogModuleManager: Shutting down and abandoning module EditorWidgets (197)
-[2016.04.10-21.21.01:360][343]LogModuleManager: Shutting down and abandoning module CollectionManager (196)
-[2016.04.10-21.21.01:369][343]LogModuleManager: Shutting down and abandoning module StatsViewer (195)
-[2016.04.10-21.21.01:369][343]LogModuleManager: Shutting down and abandoning module FoliageEdit (194)
-[2016.04.10-21.21.01:369][343]LogModuleManager: Shutting down and abandoning module LandscapeEditor (193)
-[2016.04.10-21.21.01:378][343]LogModuleManager: Shutting down and abandoning module ActorPickerMode (192)
-[2016.04.10-21.21.01:378][343]LogModuleManager: Shutting down and abandoning module GeometryMode (191)
-[2016.04.10-21.21.01:378][343]LogModuleManager: Shutting down and abandoning module TextureAlignMode (190)
-[2016.04.10-21.21.01:378][343]LogModuleManager: Shutting down and abandoning module BspMode (189)
-[2016.04.10-21.21.01:378][343]LogModuleManager: Shutting down and abandoning module PlacementMode (188)
-[2016.04.10-21.21.01:378][343]LogModuleManager: Shutting down and abandoning module AutomationWorker (187)
-[2016.04.10-21.21.01:378][343]LogModuleManager: Shutting down and abandoning module CharacterAI (186)
-[2016.04.10-21.21.01:378][343]LogModuleManager: Shutting down and abandoning module SmartSnapping (185)
-[2016.04.10-21.21.01:378][343]LogModuleManager: Shutting down and abandoning module ViewportSnapping (184)
-[2016.04.10-21.21.01:378][343]LogModuleManager: Shutting down and abandoning module LogVisualizer (183)
-[2016.04.10-21.21.01:379][343]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (182)
-[2016.04.10-21.21.01:387][343]LogModuleManager: Shutting down and abandoning module IntroTutorials (181)
-[2016.04.10-21.21.01:387][343]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (180)
-[2016.04.10-21.21.01:387][343]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (179)
-[2016.04.10-21.21.01:387][343]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (178)
-[2016.04.10-21.21.01:387][343]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (177)
-[2016.04.10-21.21.01:888][343]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (176)
-[2016.04.10-21.21.01:888][343]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (175)
-[2016.04.10-21.21.01:888][343]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (174)
-[2016.04.10-21.21.01:888][343]LogModuleManager: Shutting down and abandoning module MergeActors (173)
-[2016.04.10-21.21.01:888][343]LogModuleManager: Shutting down and abandoning module SizeMap (172)
-[2016.04.10-21.21.01:888][343]LogModuleManager: Shutting down and abandoning module TreeMap (171)
-[2016.04.10-21.21.01:888][343]LogModuleManager: Shutting down and abandoning module ReferenceViewer (170)
-[2016.04.10-21.21.01:888][343]LogModuleManager: Shutting down and abandoning module LocalizationService (169)
-[2016.04.10-21.21.01:888][343]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (168)
-[2016.04.10-21.21.01:895][343]LogModuleManager: Shutting down and abandoning module HardwareTargeting (167)
-[2016.04.10-21.21.01:895][343]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (166)
-[2016.04.10-21.21.01:902][343]LogModuleManager: Shutting down and abandoning module UndoHistory (165)
-[2016.04.10-21.21.01:902][343]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (164)
-[2016.04.10-21.21.01:902][343]LogModuleManager: Shutting down and abandoning module UserFeedback (163)
-[2016.04.10-21.21.01:902][343]LogModuleManager: Shutting down and abandoning module XmlParser (162)
-[2016.04.10-21.21.01:902][343]LogModuleManager: Shutting down and abandoning module Blutility (161)
-[2016.04.10-21.21.01:902][343]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (160)
-[2016.04.10-21.21.01:902][343]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (159)
-[2016.04.10-21.21.01:902][343]LogModuleManager: Shutting down and abandoning module InputBindingEditor (158)
-[2016.04.10-21.21.01:902][343]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (157)
-[2016.04.10-21.21.01:902][343]LogModuleManager: Shutting down and abandoning module SettingsEditor (156)
-[2016.04.10-21.21.01:902][343]LogModuleManager: Shutting down and abandoning module ProjectLauncher (155)
-[2016.04.10-21.21.01:906][343]LogModuleManager: Shutting down and abandoning module SessionFrontend (154)
-[2016.04.10-21.21.01:906][343]LogModuleManager: Shutting down and abandoning module ProfilerClient (153)
-[2016.04.10-21.21.01:932][343]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (152)
-[2016.04.10-21.21.01:932][343]LogModuleManager: Shutting down and abandoning module DeviceManager (151)
-[2016.04.10-21.21.01:933][343]LogModuleManager: Shutting down and abandoning module AutomationController (150)
-[2016.04.10-21.21.01:933][343]LogModuleManager: Shutting down and abandoning module AutomationWindow (149)
-[2016.04.10-21.21.01:950][343]LogModuleManager: Shutting down and abandoning module Layers (148)
-[2016.04.10-21.21.01:984][343]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (147)
-[2016.04.10-21.21.01:984][343]LogModuleManager: Shutting down and abandoning module DetailCustomizations (146)
-[2016.04.10-21.21.01:984][343]LogModuleManager: Shutting down and abandoning module PackagesDialog (145)
-[2016.04.10-21.21.01:984][343]LogModuleManager: Shutting down and abandoning module Persona (144)
-[2016.04.10-21.21.02:003][343]LogModuleManager: Shutting down and abandoning module Kismet (143)
-[2016.04.10-21.21.02:003][343]LogModuleManager: Shutting down and abandoning module GraphEditor (142)
-[2016.04.10-21.21.02:003][343]LogModuleManager: Shutting down and abandoning module ClassViewer (141)
-[2016.04.10-21.21.02:003][343]LogModuleManager: Shutting down and abandoning module Toolbox (140)
-[2016.04.10-21.21.02:003][343]LogModuleManager: Shutting down and abandoning module ModuleUI (139)
-[2016.04.10-21.21.02:029][343]LogModuleManager: Shutting down and abandoning module MovieSceneTools (138)
-[2016.04.10-21.21.02:029][343]LogModuleManager: Shutting down and abandoning module OutputLog (137)
-[2016.04.10-21.21.02:029][343]LogModuleManager: Shutting down and abandoning module GammaUI (136)
-[2016.04.10-21.21.02:030][343]LogModuleManager: Shutting down and abandoning module Documentation (135)
-[2016.04.10-21.21.02:030][343]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (134)
-[2016.04.10-21.21.02:030][343]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (133)
-[2016.04.10-21.21.02:030][343]LogModuleManager: Shutting down and abandoning module AnalyticsET (132)
-[2016.04.10-21.21.02:030][343]LogModuleManager: Shutting down and abandoning module Analytics (131)
-[2016.04.10-21.21.02:030][343]LogModuleManager: Shutting down and abandoning module AITestSuite (130)
-[2016.04.10-21.21.02:030][343]LogModuleManager: Shutting down and abandoning module GameplayDebugger (129)
-[2016.04.10-21.21.02:030][343]LogModuleManager: Shutting down and abandoning module AIModule (128)
-[2016.04.10-21.21.02:030][343]LogModuleManager: Shutting down and abandoning module ProfilerService (127)
-[2016.04.10-21.21.02:070][343]LogModuleManager: Shutting down and abandoning module TaskGraph (126)
-[2016.04.10-21.21.02:070][343]LogModuleManager: Shutting down and abandoning module SlateRemote (125)
-[2016.04.10-21.21.02:070][343]LogModuleManager: Shutting down and abandoning module SteamVRController (124)
-[2016.04.10-21.21.02:070][343]LogModuleManager: Shutting down and abandoning module SteamVR (123)
-[2016.04.10-21.21.02:070][343]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (122)
-[2016.04.10-21.21.02:070][343]LogModuleManager: Shutting down and abandoning module OculusLibrary (121)
-[2016.04.10-21.21.02:070][343]LogModuleManager: Shutting down and abandoning module OculusInput (120)
-[2016.04.10-21.21.02:070][343]LogModuleManager: Shutting down and abandoning module LeapMotionController (119)
-[2016.04.10-21.21.02:082][343]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (118)
-[2016.04.10-21.21.02:082][343]LogModuleManager: Shutting down and abandoning module CableComponent (117)
-[2016.04.10-21.21.02:082][343]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (116)
-[2016.04.10-21.21.02:082][343]LogModuleManager: Shutting down and abandoning module MessagingDebugger (115)
-[2016.04.10-21.21.02:099][343]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (114)
-[2016.04.10-21.21.02:107][343]LogModuleManager: Shutting down and abandoning module HTML5Networking (113)
-[2016.04.10-21.21.02:107][343]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (112)
-[2016.04.10-21.21.02:107][343]LogModuleManager: Shutting down and abandoning module PluginBrowser (111)
-[2016.04.10-21.21.02:119][343]LogModuleManager: Shutting down and abandoning module EpicSurvey (110)
-[2016.04.10-21.21.02:119][343]LogModuleManager: Shutting down and abandoning module DesktopPlatform (109)
-[2016.04.10-21.21.02:119][343]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (108)
-[2016.04.10-21.21.02:119][343]LogModuleManager: Shutting down and abandoning module UObjectPlugin (107)
-[2016.04.10-21.21.02:119][343]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (106)
-[2016.04.10-21.21.02:119][343]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (105)
-[2016.04.10-21.21.02:119][343]LogModuleManager: Shutting down and abandoning module SourceControl (104)
-[2016.04.10-21.21.02:119][343]LogModuleManager: Shutting down and abandoning module GitSourceControl (103)
-[2016.04.10-21.21.02:119][343]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (102)
-[2016.04.10-21.21.02:119][343]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (101)
-[2016.04.10-21.21.02:119][343]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (100)
-[2016.04.10-21.21.02:119][343]LogModuleManager: Shutting down and abandoning module MeshPaint (99)
-[2016.04.10-21.21.02:119][343]LogModuleManager: Shutting down and abandoning module SlateReflector (98)
-[2016.04.10-21.21.02:126][343]LogModuleManager: Shutting down and abandoning module HotReload (97)
-[2016.04.10-21.21.02:126][343]LogModuleManager: Shutting down and abandoning module MainFrame (96)
-[2016.04.10-21.21.02:126][343]LogModuleManager: Shutting down and abandoning module LevelEditor (95)
-[2016.04.10-21.21.02:136][343]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (94)
-[2016.04.10-21.21.02:141][343]LogModuleManager: Shutting down and abandoning module AssetRegistry (93)
-[2016.04.10-21.21.02:348][343]LogModuleManager: Shutting down and abandoning module ContentBrowser (92)
-[2016.04.10-21.21.02:349][343]LogModuleManager: Shutting down and abandoning module Paper2DEditor (91)
-[2016.04.10-21.21.02:360][343]LogModuleManager: Shutting down and abandoning module Wizards (90)
-[2016.04.10-21.21.02:360][343]LogModuleManager: Shutting down and abandoning module UdpMessaging (89)
-[2016.04.10-21.21.02:462][343]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (88)
-[2016.04.10-21.21.02:462][343]LogModuleManager: Shutting down and abandoning module Paper2D (87)
-[2016.04.10-21.21.02:462][343]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (86)
-[2016.04.10-21.21.02:465][343]LogModuleManager: Shutting down and abandoning module Media (85)
-[2016.04.10-21.21.02:465][343]LogModuleManager: Shutting down and abandoning module WmfMedia (84)
-[2016.04.10-21.21.02:465][343]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (83)
-[2016.04.10-21.21.02:465][343]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (82)
-[2016.04.10-21.21.02:465][343]LogModuleManager: Shutting down and abandoning module PropertyEditor (81)
-[2016.04.10-21.21.02:465][343]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (80)
-[2016.04.10-21.21.02:465][343]LogModuleManager: Shutting down and abandoning module FunctionalTesting (79)
-[2016.04.10-21.21.02:465][343]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (78)
-[2016.04.10-21.21.02:465][343]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
-[2016.04.10-21.21.02:465][343]LogModuleManager: Shutting down and abandoning module MessageLog (76)
-[2016.04.10-21.21.02:465][343]LogModuleManager: Shutting down and abandoning module Sequencer (75)
-[2016.04.10-21.21.02:473][343]LogModuleManager: Shutting down and abandoning module AssetTools (74)
-[2016.04.10-21.21.02:473][343]LogModuleManager: Shutting down and abandoning module UMGEditor (73)
-[2016.04.10-21.21.02:473][343]LogModuleManager: Shutting down and abandoning module UMG (72)
-[2016.04.10-21.21.02:473][343]LogModuleManager: Shutting down and abandoning module Slate (71)
-[2016.04.10-21.21.02:473][343]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
-[2016.04.10-21.21.02:475][343]LogModuleManager: Shutting down and abandoning module SessionServices (69)
-[2016.04.10-21.21.02:475][343]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (68)
-[2016.04.10-21.21.02:475][343]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (67)
-[2016.04.10-21.21.02:475][343]LogModuleManager: Shutting down and abandoning module XAudio2 (66)
-[2016.04.10-21.21.02:475][343]LogModuleManager: Shutting down and abandoning module Networking (65)
-[2016.04.10-21.21.02:475][343]LogModuleManager: Shutting down and abandoning module Core (64)
-[2016.04.10-21.21.02:475][343]LogModuleManager: Shutting down and abandoning module KismetCompiler (63)
-[2016.04.10-21.21.02:475][343]LogModuleManager: Shutting down and abandoning module PhysXFormats (62)
-[2016.04.10-21.21.02:475][343]LogModuleManager: Shutting down and abandoning module MeshUtilities (61)
-[2016.04.10-21.21.02:475][343]LogModuleManager: Shutting down and abandoning module DerivedDataCache (60)
-[2016.04.10-21.21.02:523][343]LogDerivedDataCache: Shutdown
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (59)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (58)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (57)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (56)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (55)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (54)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (53)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module ImageWrapper (52)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (51)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (50)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (49)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (48)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (47)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (46)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (45)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (44)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module Messaging (43)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (42)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (41)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (40)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (39)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (38)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (37)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (36)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (35)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (34)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (33)
-[2016.04.10-21.21.02:523][343]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (32)
-[2016.04.10-21.21.02:524][343]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (31)
-[2016.04.10-21.21.02:524][343]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (30)
-[2016.04.10-21.21.02:524][343]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (29)
-[2016.04.10-21.21.02:524][343]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (28)
-[2016.04.10-21.21.02:524][343]LogModuleManager: Shutting down and abandoning module TargetPlatform (27)
-[2016.04.10-21.21.02:524][343]LogModuleManager: Shutting down and abandoning module InputCore (26)
-[2016.04.10-21.21.02:524][343]LogModuleManager: Shutting down and abandoning module Settings (25)
-[2016.04.10-21.21.02:524][343]LogModuleManager: Shutting down and abandoning module Voice (23)
-[2016.04.10-21.21.02:535][343]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
-[2016.04.10-21.21.02:535][343]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
-[2016.04.10-21.21.02:536][343]LogOnline:Display: Unloading online subsystem: STEAM
-[2016.04.10-21.21.02:536][343]LogOnline:Display: Unloading online subsystem: Null
-[2016.04.10-21.21.02:536][343]LogModuleManager: Shutting down and abandoning module HTTP (18)
-[2016.04.10-21.21.04:538][343]LogModuleManager: Shutting down and abandoning module XMPP (17)
-[2016.04.10-21.21.04:538][343]LogModuleManager: Shutting down and abandoning module OculusRift (16)
-[2016.04.10-21.21.04:538][343]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
-[2016.04.10-21.21.04:538][343]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
-[2016.04.10-21.21.04:538][343]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
-[2016.04.10-21.21.04:538][343]LogModuleManager: Shutting down and abandoning module Landscape (12)
-[2016.04.10-21.21.04:538][343]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
-[2016.04.10-21.21.04:545][343]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
-[2016.04.10-21.21.04:545][343]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
-[2016.04.10-21.21.04:545][343]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
-[2016.04.10-21.21.04:545][343]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2016.04.10-21.21.04:545][343]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2016.04.10-21.21.04:545][343]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2016.04.10-21.21.04:545][343]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2016.04.10-21.21.04:545][343]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2016.04.10-21.21.04:545][343]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2016.04.10-21.21.04:545][343]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2016.04.10-21.21.04:546][343]LogExit: Exiting.
-[2016.04.10-21.21.04:557][343]Log file closed, 04/10/16 14:21:04
+[2016.04.10-21.46.26:595][534]LogBlueprint:Warning: [compiler w_ErrorDialog] Warning Can't connect pins  Return Value  and  Object : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.04.10-21.46.26:595][534]LogBlueprint:Warning: [compiler w_ErrorDialog] Warning Can't connect pins  Object  and  Return Value : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.04.10-21.46.26:596][534]LogBlueprint:Error: [compiler w_ErrorDialog] Error This blueprint (self) is not compatible with ' Target ', therefore that pin must have a connection.
+[2016.04.10-21.46.26:599][534]LogBlueprint:Warning: [compiler w_ErrorDialog] Warning [0013.51] Compile of w_ErrorDialog failed. 2 Fatal Issue(s) 2 Warning(s) [in 4 ms]
+[2016.04.10-21.46.26:599][534]LogBlueprint:Warning: [compiler w_ErrorDialog] Warning [0013.51] Compile of w_ErrorDialog failed. 2 Fatal Issue(s) 3 Warning(s) [in 0 ms]
+[2016.04.10-21.46.26:599][534]LogBlueprint:Warning: [compiler w_ErrorDialog] Warning [0013.51] Compile of w_ErrorDialog failed. 2 Fatal Issue(s) 4 Warning(s) [in 0 ms]
+[2016.04.10-21.46.26:739][534]LogLinker:Warning: Asset '../../../Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2016.04.10-21.46.27:195][534]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0038 seconds. Added 107 classes and 0 folders.
+[2016.04.10-21.46.29:129][668]BlueprintLog: New page: Compile GameInstace_MP_Stream
+[2016.04.10-21.46.29:252][668]BlueprintEditorCompileResults: Info [0016.16] Compile of GameInstace_MP_Stream successful! [in 122 ms]
+[2016.04.10-21.46.41:774][906]BlueprintLog: New page: Compile GameInstace_MP_Stream
+[2016.04.10-21.46.41:887][906]BlueprintEditorCompileResults: Info [0028.79] Compile of GameInstace_MP_Stream successful! [in 112 ms]
+[2016.04.10-21.56.22:310][229]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPerson/Maps/main_menu' took 0.038
+[2016.04.10-21.56.22:315][229]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream] ([1] browsable assets)...
+[2016.04.10-21.56.22:315][229]OBJ SavePackage: Finished generating thumbnails for package [/Game/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream]
+[2016.04.10-21.56.22:415][229]LogSavePackage: Save=89.179321ms
+[2016.04.10-21.56.22:415][229]LogSavePackage: Moving '../../../../../../Users/Logical/Documents/Github/wizards/Saved/GameInstace_MP_Stream_Auto1A8AF5668438A6BB2FEC9E586F377CF77.tmp' to '../../../../../../Users/Logical/Documents/Github/wizards/Saved/Autosaves/Game/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream_Auto1.uasset'
+[2016.04.10-21.56.22:417][229]LogSavePackage: Total save time: 100.563370ms
+[2016.04.10-21.56.22:417][229]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Logical/Documents/Github/wizards/Saved/Autosaves/Game/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream_Auto1.uasset
+[2016.04.10-21.56.22:417][229]LogFileHelpers: Auto-saving content packages took 0.106
+[2016.04.10-23.26.10:975][119]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPerson/Maps/main_menu' took 0.038
+[2016.04.10-23.26.10:981][119]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream] ([1] browsable assets)...
+[2016.04.10-23.26.10:981][119]OBJ SavePackage: Finished generating thumbnails for package [/Game/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream]
+[2016.04.10-23.26.11:099][119]LogSavePackage: Save=111.873962ms
+[2016.04.10-23.26.11:099][119]LogSavePackage: Moving '../../../../../../Users/Logical/Documents/Github/wizards/Saved/GameInstace_MP_Stream_Auto22EA078824DFAAA462DF20DAD7F2A70DE.tmp' to '../../../../../../Users/Logical/Documents/Github/wizards/Saved/Autosaves/Game/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream_Auto2.uasset'
+[2016.04.10-23.26.11:100][119]LogSavePackage: Total save time: 118.613508ms
+[2016.04.10-23.26.11:100][119]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Logical/Documents/Github/wizards/Saved/Autosaves/Game/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream_Auto2.uasset
+[2016.04.10-23.26.11:101][119]LogFileHelpers: Auto-saving content packages took 0.124
+[2016.04.10-23.29.16:986][738]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_33.VerticalBox_2
+[2016.04.10-23.29.16:986][738]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_11.WidgetTree_34.VerticalBox_2
+[2016.04.10-23.29.16:986][738]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_35.VerticalBox_2
+[2016.04.10-23.29.16:986][738]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_12.WidgetTree_36.VerticalBox_2
+[2016.04.10-23.29.16:986][738]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_37.VerticalBox_2
+[2016.04.10-23.29.16:986][738]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_13.WidgetTree_38.VerticalBox_2
+[2016.04.10-23.29.16:986][738]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_39.VerticalBox_2
+[2016.04.10-23.29.16:986][738]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_14.WidgetTree_40.VerticalBox_2
+[2016.04.10-23.29.16:986][738]LogProperty:Warning: Illegal TEXT reference to a private object in external package (VerticalBoxSlot /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2.VerticalBoxSlot_1) from referencer (Button /Engine/UMG/Editor/Transient.Button_2).  Import failed...
+[2016.04.10-23.29.16:986][738]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'VerticalBoxSlot'VerticalBox_2.VerticalBoxSlot_1''
+[2016.04.10-23.29.16:986][738]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_33.VerticalBox_2
+[2016.04.10-23.29.16:986][738]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_11.WidgetTree_34.VerticalBox_2
+[2016.04.10-23.29.16:986][738]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_35.VerticalBox_2
+[2016.04.10-23.29.16:986][738]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_12.WidgetTree_36.VerticalBox_2
+[2016.04.10-23.29.16:986][738]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_37.VerticalBox_2
+[2016.04.10-23.29.16:986][738]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_13.WidgetTree_38.VerticalBox_2
+[2016.04.10-23.29.16:986][738]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_39.VerticalBox_2
+[2016.04.10-23.29.16:986][738]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_14.WidgetTree_40.VerticalBox_2
+[2016.04.10-23.29.16:987][738]LogProperty:Warning: Illegal TEXT reference to a private object in external package (VerticalBoxSlot /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2.VerticalBoxSlot_2) from referencer (Spacer /Engine/UMG/Editor/Transient.Spacer_2).  Import failed...
+[2016.04.10-23.29.16:987][738]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'VerticalBoxSlot'VerticalBox_2.VerticalBoxSlot_2''
+[2016.04.10-23.29.17:683][819]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_33.VerticalBox_2
+[2016.04.10-23.29.17:683][819]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_11.WidgetTree_34.VerticalBox_2
+[2016.04.10-23.29.17:683][819]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_35.VerticalBox_2
+[2016.04.10-23.29.17:683][819]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_12.WidgetTree_36.VerticalBox_2
+[2016.04.10-23.29.17:683][819]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_37.VerticalBox_2
+[2016.04.10-23.29.17:683][819]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_13.WidgetTree_38.VerticalBox_2
+[2016.04.10-23.29.17:683][819]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_39.VerticalBox_2
+[2016.04.10-23.29.17:683][819]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_14.WidgetTree_40.VerticalBox_2
+[2016.04.10-23.29.17:683][819]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_41.VerticalBox_2
+[2016.04.10-23.29.17:683][819]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_15.WidgetTree_42.VerticalBox_2
+[2016.04.10-23.29.17:683][819]LogProperty:Warning: Illegal TEXT reference to a private object in external package (VerticalBoxSlot /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2.VerticalBoxSlot_1) from referencer (Button /Engine/UMG/Editor/Transient.Button_2).  Import failed...
+[2016.04.10-23.29.17:683][819]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'VerticalBoxSlot'VerticalBox_2.VerticalBoxSlot_1''
+[2016.04.10-23.29.17:683][819]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_33.VerticalBox_2
+[2016.04.10-23.29.17:683][819]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_11.WidgetTree_34.VerticalBox_2
+[2016.04.10-23.29.17:683][819]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_35.VerticalBox_2
+[2016.04.10-23.29.17:683][819]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_12.WidgetTree_36.VerticalBox_2
+[2016.04.10-23.29.17:683][819]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_37.VerticalBox_2
+[2016.04.10-23.29.17:683][819]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_13.WidgetTree_38.VerticalBox_2
+[2016.04.10-23.29.17:683][819]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_39.VerticalBox_2
+[2016.04.10-23.29.17:683][819]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_14.WidgetTree_40.VerticalBox_2
+[2016.04.10-23.29.17:683][819]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_41.VerticalBox_2
+[2016.04.10-23.29.17:683][819]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_15.WidgetTree_42.VerticalBox_2
+[2016.04.10-23.29.17:683][819]LogProperty:Warning: Illegal TEXT reference to a private object in external package (VerticalBoxSlot /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2.VerticalBoxSlot_2) from referencer (Spacer /Engine/UMG/Editor/Transient.Spacer_2).  Import failed...
+[2016.04.10-23.29.17:683][819]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'VerticalBoxSlot'VerticalBox_2.VerticalBoxSlot_2''
+[2016.04.10-23.29.18:179][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_33.VerticalBox_2
+[2016.04.10-23.29.18:179][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_11.WidgetTree_34.VerticalBox_2
+[2016.04.10-23.29.18:179][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_35.VerticalBox_2
+[2016.04.10-23.29.18:179][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_12.WidgetTree_36.VerticalBox_2
+[2016.04.10-23.29.18:179][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_37.VerticalBox_2
+[2016.04.10-23.29.18:180][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_13.WidgetTree_38.VerticalBox_2
+[2016.04.10-23.29.18:180][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_39.VerticalBox_2
+[2016.04.10-23.29.18:180][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_14.WidgetTree_40.VerticalBox_2
+[2016.04.10-23.29.18:180][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_41.VerticalBox_2
+[2016.04.10-23.29.18:180][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_15.WidgetTree_42.VerticalBox_2
+[2016.04.10-23.29.18:180][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_43.VerticalBox_2
+[2016.04.10-23.29.18:180][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_16.WidgetTree_44.VerticalBox_2
+[2016.04.10-23.29.18:180][876]LogProperty:Warning: Illegal TEXT reference to a private object in external package (VerticalBoxSlot /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2.VerticalBoxSlot_1) from referencer (Button /Engine/UMG/Editor/Transient.Button_2).  Import failed...
+[2016.04.10-23.29.18:180][876]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'VerticalBoxSlot'VerticalBox_2.VerticalBoxSlot_1''
+[2016.04.10-23.29.18:180][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_33.VerticalBox_2
+[2016.04.10-23.29.18:180][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_11.WidgetTree_34.VerticalBox_2
+[2016.04.10-23.29.18:180][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_35.VerticalBox_2
+[2016.04.10-23.29.18:180][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_12.WidgetTree_36.VerticalBox_2
+[2016.04.10-23.29.18:180][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_37.VerticalBox_2
+[2016.04.10-23.29.18:180][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_13.WidgetTree_38.VerticalBox_2
+[2016.04.10-23.29.18:180][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_39.VerticalBox_2
+[2016.04.10-23.29.18:180][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_14.WidgetTree_40.VerticalBox_2
+[2016.04.10-23.29.18:180][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_41.VerticalBox_2
+[2016.04.10-23.29.18:180][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_15.WidgetTree_42.VerticalBox_2
+[2016.04.10-23.29.18:180][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu_C:WidgetTree_43.VerticalBox_2
+[2016.04.10-23.29.18:180][876]LogUObjectHash:Warning: Ambiguous search, could be VerticalBox /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2 or VerticalBox /Engine/Transient.World_4:w_mainMenu_C_16.WidgetTree_44.VerticalBox_2
+[2016.04.10-23.29.18:180][876]LogProperty:Warning: Illegal TEXT reference to a private object in external package (VerticalBoxSlot /Game/FirstPerson/Multiplayer/widgets/w_mainMenu.w_mainMenu:WidgetTree.VerticalBox_2.VerticalBoxSlot_2) from referencer (Spacer /Engine/UMG/Editor/Transient.Spacer_2).  Import failed...
+[2016.04.10-23.29.18:180][876]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'VerticalBoxSlot'VerticalBox_2.VerticalBoxSlot_2''
+[2016.04.10-23.44.26:812][743]LogEditorTransaction: Undo Create Pin Link
+[2016.04.10-23.44.27:148][776]LogEditorTransaction: Undo Create Pin Link
+[2016.04.10-23.44.27:848][848]LogEditorTransaction: Undo Change Bool Pin Value
+[2016.04.10-23.44.28:514][925]LogEditorTransaction: Undo Create Pin Link
+[2016.04.10-23.44.29:047][989]LogEditorTransaction: Undo Create Pin Link
+[2016.04.10-23.44.29:381][ 29]LogEditorTransaction: Undo Add Out Parameter
+[2016.04.10-23.44.29:622][ 54]LogEditorTransaction: Undo Delete current selection
+[2016.04.10-23.44.30:807][193]LogEditorTransaction: Redo Delete current selection
+[2016.04.10-23.45.23:577][880]LogSavePackage: Save=108.393654ms
+[2016.04.10-23.45.23:577][880]LogSavePackage: Moving '../../../../../../Users/Logical/Documents/Github/wizards/Saved/GameInstace_MP_Stream68C80810453CD584EDFD4590095734C3.tmp' to '../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset'
+[2016.04.10-23.45.23:580][880]LogSavePackage: Total save time: 116.153788ms
+[2016.04.10-23.45.23:580][880]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/GameInstace_MP_Stream.uasset
+[2016.04.10-23.45.23:645][880]LogSavePackage: Save=54.848366ms
+[2016.04.10-23.45.23:645][880]LogSavePackage: Moving '../../../../../../Users/Logical/Documents/Github/wizards/Saved/w_mainMenuE6B89A05441CF5B0CD8657A08E76FD3D.tmp' to '../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/widgets/w_mainMenu.uasset'
+[2016.04.10-23.45.23:647][880]LogSavePackage: Total save time: 57.136372ms
+[2016.04.10-23.45.23:647][880]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/widgets/w_mainMenu.uasset
+[2016.04.10-23.45.25:785][136]BlueprintLog: Ne
