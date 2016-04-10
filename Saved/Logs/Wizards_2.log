@@ -1,92 +1,96 @@
-﻿[2016.03.29-13.13.33:246][  0]Log file open, 03/29/16 06:13:33
-[2016.03.29-13.13.33:246][  0]LogInit:Display: Running engine for game: Wizards
-[2016.03.29-13.13.33:246][  0]LogPlatformFile: Not using cached read wrapper
-[2016.03.29-13.13.33:246][  0]LogInit:Display: RandInit(1323711976) SRandInit(1323711978).
-[2016.03.29-13.13.33:246][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
-[2016.03.29-13.13.33:246][  0]LogStats: Stats thread started at 0.100413
-[2016.03.29-13.13.33:246][  0]LogInit: Version: 4.10.4-2872498+++depot+UE4-Releases+4.10
-[2016.03.29-13.13.33:246][  0]LogInit: API Version: 2758231
-[2016.03.29-13.13.33:246][  0]LogInit: Compiled (64-bit): Feb 18 2016 15:47:04
-[2016.03.29-13.13.33:246][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
-[2016.03.29-13.13.33:246][  0]LogInit: Build Configuration: Development
-[2016.03.29-13.13.33:246][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
-[2016.03.29-13.13.33:246][  0]LogInit: Command line:  /Temp/Autosaves/Game/FirstPerson/Maps/UEDPCmain_menu -game -PIEVIACONSOLE -ResX=1280 -ResY=720 -Multiprocess 
-[2016.03.29-13.13.33:246][  0]LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.10/Engine/Binaries/Win64/
-[2016.03.29-13.13.33:246][  0]LogInit: Rocket: 1
-[2016.03.29-13.13.33:255][  0]LogInit: Using libcurl 7.41.0
-[2016.03.29-13.13.33:255][  0]LogInit:  - built for x86_64-pc-win32
-[2016.03.29-13.13.33:255][  0]LogInit:  - supports SSL with WinSSL
-[2016.03.29-13.13.33:255][  0]LogInit:  - other features:
-[2016.03.29-13.13.33:255][  0]LogInit:      CURL_VERSION_SSL
-[2016.03.29-13.13.33:255][  0]LogInit:      CURL_VERSION_IPV6
-[2016.03.29-13.13.33:255][  0]LogInit:      CURL_VERSION_ASYNCHDNS
-[2016.03.29-13.13.33:255][  0]LogInit:      CURL_VERSION_LARGEFILE
-[2016.03.29-13.13.33:255][  0]LogInit:      CURL_VERSION_IDN
-[2016.03.29-13.13.33:255][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
-[2016.03.29-13.13.33:255][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
-[2016.03.29-13.13.33:255][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
-[2016.03.29-13.13.33:255][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
-[2016.03.29-13.13.33:255][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
-[2016.03.29-13.13.33:263][  0]LogOnline:Display: STEAM: Loading Steam SDK 1.32
-[2016.03.29-13.13.33:502][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2016.03.29-13.13.33:527][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
-[2016.03.29-13.13.33:535][  0]LogInit: Object subsystem initialized
-[2016.03.29-13.13.33:536][  0]LogInit: Selected Device Profile: [Windows]
-[2016.03.29-13.13.33:536][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2016.03.29-13.13.33:539][  0]LogInit: Computer: ALPHA
-[2016.03.29-13.13.33:539][  0]LogInit: User: Logical
-[2016.03.29-13.13.33:539][  0]LogInit: CPU Page size=4096, Cores=4
-[2016.03.29-13.13.33:539][  0]LogInit: High frequency timer resolution =4.233037 MHz
-[2016.03.29-13.13.33:539][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2016.03.29-13.13.33:539][  0]LogMemory: Platform Memory Stats for Windows
-[2016.03.29-13.13.33:539][  0]LogMemory: Process Physical Memory: 96.82 MB used, 96.82 MB peak
-[2016.03.29-13.13.33:539][  0]LogMemory: Process Virtual Memory: 81.09 MB used, 81.09 MB peak
-[2016.03.29-13.13.33:539][  0]LogMemory: Physical Memory: 6126.81 MB used, 16282.42 MB total
-[2016.03.29-13.13.33:539][  0]LogMemory: Virtual Memory: 476.62 MB used, 8388608.00 MB total
-[2016.03.29-13.13.33:592][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
-[2016.03.29-13.13.34:048][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 960 (Feature Level 11_0)
-[2016.03.29-13.13.34:048][  0]LogD3D11RHI: Adapter has 4011MB of dedicated video memory, 0MB of dedicated system memory, and 7885MB of shared system memory, 1 output[s]
-[2016.03.29-13.13.34:049][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
-[2016.03.29-13.13.34:056][  0]LogD3D11RHI: !Direct3DDevice
-[2016.03.29-13.13.34:056][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2016.03.29-13.13.34:067][  0]LogD3D11RHI: Async texture creation enabled
-[2016.03.29-13.13.34:091][  0]LogShaderCompilers: Guid format shader working directory is -7 characters bigger than the processId version (../../../../../../Users/Logical/Documents/Github/wizards/Intermediate/Shaders/WorkingDirectory/368/).
-[2016.03.29-13.13.34:091][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Logical/AppData/Local/Temp/UnrealShaderWorkingDir/632925EB43A58B2329368598E101329C/'.
-[2016.03.29-13.13.34:091][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2016.03.29-13.13.35:018][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2016.03.29-13.13.35:024][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2016.03.29-13.13.35:030][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2016.03.29-13.13.35:035][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2016.03.29-13.13.35:040][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2016.03.29-13.13.35:044][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2016.03.29-13.13.35:048][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2016.03.29-13.13.35:051][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2016.03.29-13.13.35:055][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2016.03.29-13.13.35:059][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2016.03.29-13.13.35:063][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2016.03.29-13.13.35:071][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2016.03.29-13.13.35:071][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2016.03.29-13.13.35:072][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2016.03.29-13.13.35:090][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2016.03.29-13.13.35:093][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2016.03.29-13.13.35:097][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2016.03.29-13.13.35:101][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2016.03.29-13.13.35:101][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2016.03.29-13.13.35:194][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2016.03.29-13.13.35:302][  0]LogDerivedDataCache: Loaded boot cache 0.11s 68MB C:/Users/Logical/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.03.29-13.13.35:302][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Logical/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
-[2016.03.29-13.13.35:302][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Logical/Documents/Github/wizards/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2016.03.29-13.13.35:302][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2016.03.29-13.13.35:302][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Logical/Documents/Github/wizards/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2016.03.29-13.13.35:302][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2016.03.29-13.13.35:369][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2016.03.29-13.13.35:380][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Logical/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2016.03.29-13.13.35:682][  0]LogInit: Selected Device Profile: [Windows]
-[2016.03.29-13.13.35:683][  0]LogContentStreaming: Texture pool size is 1000.000000MB
-[2016.03.29-13.13.35:699][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2016.03.29-13.13.35:699][  0]LogMeshUtilities: No automatic mesh merging module available
-[2016.03.29-13.13.36:210][  0]LogWindowsMoviePlayer: Unable to load movie: ../../../../../../Users/Logical/Documents/Github/wizards/Content/Movies/Default_Startup.mp4
-[2016.03.29-13.13.38:218][  0]LogOutputDevice:Warning: === Handled error: ===
+﻿[2016.04.10-21.15.22:721][  0]Log file open, 04/10/16 14:15:22
+[2016.04.10-21.15.22:721][  0]LogInit:Display: Running engine for game: Wizards
+[2016.04.10-21.15.22:721][  0]LogPlatformFile: Not using cached read wrapper
+[2016.04.10-21.15.22:721][  0]LogInit:Display: RandInit(1670381611) SRandInit(1670381611).
+[2016.04.10-21.15.22:721][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2016.04.10-21.15.22:721][  0]LogStats: Stats thread started at 0.067084
+[2016.04.10-21.15.22:721][  0]LogInit: Version: 4.10.4-2872498+++depot+UE4-Releases+4.10
+[2016.04.10-21.15.22:721][  0]LogInit: API Version: 2758231
+[2016.04.10-21.15.22:721][  0]LogInit: Compiled (64-bit): Feb 18 2016 15:47:04
+[2016.04.10-21.15.22:721][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
+[2016.04.10-21.15.22:721][  0]LogInit: Build Configuration: Development
+[2016.04.10-21.15.22:721][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
+[2016.04.10-21.15.22:721][  0]LogInit: Command line:  /Temp/Autosaves/Game/FirstPerson/Maps/UEDPCmain_menu -game -PIEVIACONSOLE -ResX=1280 -ResY=720  -Multiprocess 
+[2016.04.10-21.15.22:721][  0]LogInit: Base directory: I:/EPIC/Epic Games/4.10/Engine/Binaries/Win64/
+[2016.04.10-21.15.22:721][  0]LogInit: Rocket: 1
+[2016.04.10-21.15.22:726][  0]LogInit: Using libcurl 7.41.0
+[2016.04.10-21.15.22:726][  0]LogInit:  - built for x86_64-pc-win32
+[2016.04.10-21.15.22:726][  0]LogInit:  - supports SSL with WinSSL
+[2016.04.10-21.15.22:726][  0]LogInit:  - other features:
+[2016.04.10-21.15.22:726][  0]LogInit:      CURL_VERSION_SSL
+[2016.04.10-21.15.22:726][  0]LogInit:      CURL_VERSION_IPV6
+[2016.04.10-21.15.22:726][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2016.04.10-21.15.22:726][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2016.04.10-21.15.22:726][  0]LogInit:      CURL_VERSION_IDN
+[2016.04.10-21.15.22:726][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2016.04.10-21.15.22:726][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2016.04.10-21.15.22:726][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2016.04.10-21.15.22:726][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2016.04.10-21.15.22:726][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2016.04.10-21.15.22:730][  0]LogOnline:Display: STEAM: Loading Steam SDK 1.32
+[2016.04.10-21.15.23:921][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.04.10-21.15.23:955][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2016.04.10-21.15.23:960][  0]LogInit: Object subsystem initialized
+[2016.04.10-21.15.23:960][  0]LogInit: Selected Device Profile: [Windows]
+[2016.04.10-21.15.23:960][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.04.10-21.15.23:962][  0]LogInit: Computer: COLE-PC
+[2016.04.10-21.15.23:962][  0]LogInit: User: cole
+[2016.04.10-21.15.23:962][  0]LogInit: CPU Page size=4096, Cores=4
+[2016.04.10-21.15.23:962][  0]LogInit: High frequency timer resolution =3.906248 MHz
+[2016.04.10-21.15.23:962][  0]LogMemory: Memory total: Physical=15.8GB (16GB approx)
+[2016.04.10-21.15.23:962][  0]LogMemory: Platform Memory Stats for Windows
+[2016.04.10-21.15.23:962][  0]LogMemory: Process Physical Memory: 97.76 MB used, 97.76 MB peak
+[2016.04.10-21.15.23:962][  0]LogMemory: Process Virtual Memory: 79.68 MB used, 79.68 MB peak
+[2016.04.10-21.15.23:962][  0]LogMemory: Physical Memory: 10499.56 MB used, 16229.52 MB total
+[2016.04.10-21.15.23:962][  0]LogMemory: Virtual Memory: 502.68 MB used, 134217728.00 MB total
+[2016.04.10-21.15.23:992][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.04.10-21.15.24:250][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 970 (Feature Level 11_0)
+[2016.04.10-21.15.24:250][  0]LogD3D11RHI: Adapter has 4008MB of dedicated video memory, 0MB of dedicated system memory, and 8114MB of shared system memory, 1 output[s]
+[2016.04.10-21.15.24:255][  0]LogD3D11RHI: Found D3D11 adapter 1: Intel(R) HD Graphics 4600 (Feature Level 11_0)
+[2016.04.10-21.15.24:255][  0]LogD3D11RHI: Adapter has 112MB of dedicated video memory, 0MB of dedicated system memory, and 8114MB of shared system memory, 0 output[s]
+[2016.04.10-21.15.24:255][  0]LogD3D11RHI: Found D3D11 adapter 2: Microsoft Basic Render Driver (Feature Level 11_0)
+[2016.04.10-21.15.24:255][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 8114MB of shared system memory, 0 output[s]
+[2016.04.10-21.15.24:255][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2016.04.10-21.15.24:259][  0]LogD3D11RHI: !Direct3DDevice
+[2016.04.10-21.15.24:259][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.04.10-21.15.24:268][  0]LogD3D11RHI: Async texture creation enabled
+[2016.04.10-21.15.24:282][  0]LogShaderCompilers: Guid format shader working directory is 11 characters bigger than the processId version (../../../../../../Projects/wizards/Intermediate/Shaders/WorkingDirectory/3008/).
+[2016.04.10-21.15.24:282][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/cole/AppData/Local/Temp/UnrealShaderWorkingDir/E205695741F392C1F5671C9FABEE6542/'.
+[2016.04.10-21.15.24:282][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.04.10-21.15.24:802][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.04.10-21.15.24:805][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.04.10-21.15.24:808][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.04.10-21.15.24:812][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.04.10-21.15.24:815][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.04.10-21.15.24:817][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.04.10-21.15.24:819][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.04.10-21.15.24:822][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.04.10-21.15.24:824][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.04.10-21.15.24:826][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.04.10-21.15.24:828][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.04.10-21.15.24:833][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.04.10-21.15.24:833][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.04.10-21.15.24:833][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.04.10-21.15.24:848][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.04.10-21.15.24:850][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.04.10-21.15.24:852][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.04.10-21.15.24:854][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.04.10-21.15.24:854][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.04.10-21.15.24:914][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.04.10-21.15.24:950][  0]LogDerivedDataCache: Loaded boot cache 0.04s 53MB C:/Users/cole/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.04.10-21.15.24:950][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/cole/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
+[2016.04.10-21.15.24:950][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Projects/wizards/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.04.10-21.15.24:950][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.04.10-21.15.24:950][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Projects/wizards/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.04.10-21.15.24:950][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.04.10-21.15.24:991][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.04.10-21.15.25:002][  0]LogDerivedDataCache: Using Local data cache path C:/Users/cole/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.04.10-21.15.25:155][  0]LogInit: Selected Device Profile: [Windows]
+[2016.04.10-21.15.25:157][  0]LogContentStreaming: Texture pool size is 1000.000000MB
+[2016.04.10-21.15.25:222][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.04.10-21.15.25:222][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.04.10-21.15.25:586][  0]LogWindowsMoviePlayer: Unable to load movie: ../../../../../../Projects/wizards/Content/Movies/Default_Startup.mp4
+[2016.04.10-21.15.27:116][  0]LogOutputDevice:Warning: === Handled error: ===
 
 Ensure condition failed: this->IsBound() [File:i:\epic\epic games\4.10\engine\source\runtime\core\public\delegates\DelegateSignatureImpl_Variadics.inl] [Line: 930]
 Unable to bind delegate to '&AWizardsCone::OnOverlap' (function might not be marked as a UFUNCTION)
@@ -94,8 +98,8 @@ Stack:
 UE4Editor-Core.dll!FWindowsPlatformStackWalk::StackWalkAndDump() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\core\private\windows\windowsplatformstackwalk.cpp:175]
 UE4Editor-Core.dll!FDebug::EnsureFailed() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\core\private\misc\outputdevice.cpp:276]
 UE4Editor-Core.dll!FDebug::OptionallyLogFormattedEnsureMessageReturningFalse() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\core\private\misc\outputdevice.cpp:385]
-UE4Editor-Wizards.dll!TBaseDynamicDelegate<FWeakObjectPtr,void,AActor * __ptr64,UPrimitiveComponent * __ptr64,int,bool,FHitResult const & __ptr64>::__Internal_BindDynamic<AWizardsCone>() [i:\epic\epic games\4.10\engine\source\runtime\core\public\delegates\delegatesignatureimpl_variadics.inl:930]
-UE4Editor-Wizards.dll!AWizardsCone::AWizardsCone() [i:\projects\wizards\source\wizards\private\wizardscone.cpp:19]
+UE4Editor-Wizards-6334.dll!TBaseDynamicDelegate<FWeakObjectPtr,void,AActor * __ptr64,UPrimitiveComponent * __ptr64,int,bool,FHitResult const & __ptr64>::__Internal_BindDynamic<AWizardsCone>() [i:\epic\epic games\4.10\engine\source\runtime\core\public\delegates\delegatesignatureimpl_variadics.inl:930]
+UE4Editor-Wizards-6334.dll!AWizardsCone::AWizardsCone() [i:\projects\wizards\source\wizards\private\wizardscone.cpp:19]
 UE4Editor-CoreUObject.dll!UClass::CreateDefaultObject() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\coreuobject\private\uobject\class.cpp:2657]
 UE4Editor-CoreUObject.dll!UObjectLoadAllCompiledInDefaultProperties() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\coreuobject\private\uobject\uobjectbase.cpp:658]
 UE4Editor-CoreUObject.dll!ProcessNewlyLoadedUObjects() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\coreuobject\private\uobject\uobjectbase.cpp:752]
@@ -110,72 +114,248 @@ UE4Editor.exe!GuardedMain() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10
 UE4Editor.exe!GuardedMainWrapper() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\launch\private\windows\launchwindows.cpp:126]
 UE4Editor.exe!WinMain() [d:\buildfarm\buildmachine_++depot+ue4-releases+4.10\engine\source\runtime\launch\private\windows\launchwindows.cpp:200]
 UE4Editor.exe!__scrt_common_main_seh() [f:\dd\vctools\crt\vcstartup\src\startup\exe_common.inl:264]
-kernel32.dll
+KERNEL32.DLL
 ntdll.dll
 ntdll.dll
 
-[2016.03.29-13.13.38:766][  0]SourceControl: Info Source control is disabled
-[2016.03.29-13.13.38:766][  0]SourceControl: Info Source control is disabled
-[2016.03.29-13.13.38:776][  0]SourceControl: Info Source control is disabled
-[2016.03.29-13.13.38:976][  0]LogObj: 32588 objects as part of root set at end of initial load.
-[2016.03.29-13.13.38:976][  0]LogUObjectAllocator: 7581416 out of 0 bytes used by permanent object pool.
-[2016.03.29-13.13.39:039][  0]LogEngine: Initializing Engine...
-[2016.03.29-13.13.39:043][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.03.29-13.13.39:044][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2016.03.29-13.13.39:159][  0]LogInit: XAudio2 using 'Speakers (Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.03.29-13.13.39:166][  0]LogInit: FAudioDevice initialized.
-[2016.03.29-13.13.39:184][  0]LogInit: Texture streaming: Enabled
-[2016.03.29-13.13.39:272][  0]LogNet: Browse: /Temp/Autosaves/Game/FirstPerson/Maps/UEDPCmain_menu?Name=Player
-[2016.03.29-13.13.39:272][  0]LogLoad: LoadMap: /Temp/Autosaves/Game/FirstPerson/Maps/UEDPCmain_menu?Name=Player
-[2016.03.29-13.13.39:291][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000018FD7240
-[2016.03.29-13.13.39:308][  0]LogMemory: Platform Memory Stats for Windows
-[2016.03.29-13.13.39:308][  0]LogMemory: Process Physical Memory: 1285.69 MB used, 1285.69 MB peak
-[2016.03.29-13.13.39:308][  0]LogMemory: Process Virtual Memory: 1337.62 MB used, 1353.66 MB peak
-[2016.03.29-13.13.39:308][  0]LogMemory: Physical Memory: 7091.59 MB used, 16282.42 MB total
-[2016.03.29-13.13.39:308][  0]LogMemory: Virtual Memory: 2300.55 MB used, 8388608.00 MB total
-[2016.03.29-13.13.39:308][  0]LogMemory: 
-[2016.03.29-13.13.39:308][  0]Allocator Stats for TBB: (not implemented)
-[2016.03.29-13.13.39:509][  0]LogAIModule: Creating AISystem for world main_menu
-[2016.03.29-13.13.39:509][  0]LogWorld: Game class is 'WizardsGameMode'
-[2016.03.29-13.13.39:511][  0]LogWorld: Bringing World /Temp/Autosaves/Game/FirstPerson/Maps/UEDPCmain_menu.main_menu up for play (max tick rate 0) at 2016.03.29-06.13.39
-[2016.03.29-13.13.39:511][  0]LogWorld: Bringing up level for play took: 0.000503
-[2016.03.29-13.13.39:512][  0]LogOnline:Warning: STEAM: Can't start an online game for session (Game) that hasn't been created
-[2016.03.29-13.13.39:518][  0]LogInit:Display: Game Engine Initialized.
-[2016.03.29-13.13.39:736][  0]LogLoad: Full Startup: 7.14 seconds (BP compile: 0.11 seconds)
-[2016.03.29-13.13.39:757][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.03.29-13.13.39:872][  2]LogRenderer: Reallocating scene render targets to support 1280x720 (Frame:2).
-[2016.03.29-13.13.41:756][110]LogPackageName: SearchForPackageOnDisk took   0.102s to resolve FirstPersonExampleMap.umap.
-[2016.03.29-13.13.41:757][110]LogStreaming:Warning: Failed to read file 'C:/Users/Logical/Documents/Github/wizards/Saved/SaveGames\spellBook.save' error.
-[2016.03.29-13.13.41:757][110]LogTemp:Warning: Abort Mission!
-[2016.03.29-13.13.41:849][110]LogPackageName: SearchForPackageOnDisk took   0.091s to resolve FirstPersonExampleMap.umap.
-[2016.03.29-13.13.41:849][110]LogNet: Browse: /Game/FirstPerson/Maps/FirstPersonExampleMap
-[2016.03.29-13.13.41:849][110]LogLoad: LoadMap: /Game/FirstPerson/Maps/FirstPersonExampleMap
-[2016.03.29-13.13.41:871][110]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000194749A0
-[2016.03.29-13.13.41:891][110]LogMemory: Platform Memory Stats for Windows
-[2016.03.29-13.13.41:891][110]LogMemory: Process Physical Memory: 1310.74 MB used, 1310.74 MB peak
-[2016.03.29-13.13.41:891][110]LogMemory: Process Virtual Memory: 1531.54 MB used, 1531.54 MB peak
-[2016.03.29-13.13.41:891][110]LogMemory: Physical Memory: 7102.73 MB used, 16282.42 MB total
-[2016.03.29-13.13.41:891][110]LogMemory: Virtual Memory: 2499.33 MB used, 8388608.00 MB total
-[2016.03.29-13.13.41:891][110]LogMemory: 
-[2016.03.29-13.13.41:891][110]Allocator Stats for TBB: (not implemented)
-[2016.03.29-13.13.42:072][110]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2016.03.29-13.13.42:072][110]LogWorld: Game class is 'WizardsGameMode'
-[2016.03.29-13.13.42:078][110]LogWorld: Bringing World /Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2016.03.29-06.13.42
-[2016.03.29-13.13.42:078][110]LogWorld: Bringing up level for play took: 0.005243
-[2016.03.29-13.13.42:079][110]LogOnline:Warning: STEAM: Can't start an online game for session (Game) that hasn't been created
-[2016.03.29-13.13.42:857][155]LogTemp:Warning: Spell Gathering Needed!
-[2016.03.29-13.13.42:857][155]LogStreaming:Warning: Failed to read file 'C:/Users/Logical/Documents/Github/wizards/Saved/SaveGames\spellBook.save' error.
-[2016.03.29-13.13.42:857][155]LogTemp:Warning: Abort Mission!
-[2016.03.29-13.13.42:857][155]LogWindows:Error: Windows GetLastError: The operation completed successfully. (0)
-[2016.03.29-13.13.43:244][155]LogWindows:Error: === Critical error: ===
-Assertion failed: (Index >= 0) & (Index < ArrayNum) [File:I:\EPIC\Epic Games\4.10\Engine\Source\Runtime\Core\Public\Containers\Array.h] [Line: 678] 
-Array index out of bounds: 0 from an array of size 0
-
-
-
-
-[2016.03.29-13.13.43:244][155]LogExit: Executing StaticShutdownAfterError
-[2016.03.29-13.13.43:248][155]LogPhysics:Warning: PHYSX: ..\..\PhysX\src\NpScene.cpp (2946) 8 : PxScene::unlockWrite() called without matching call to PxScene::lockWrite(), behaviour will be undefined.
-[2016.03.29-13.13.43:249][155]LogPhysics:Warning: PHYSX: ..\..\PhysX\src\NpScene.cpp (2946) 8 : PxScene::unlockWrite() called without matching call to PxScene::lockWrite(), behaviour will be undefined.
-[2016.03.29-13.13.43:249][155]LogWindows: FPlatformMisc::RequestExit(1)
-[2016.03.29-13.13.43:249][155]Log file closed, 03/29/16 06:13:43
+[2016.04.10-21.15.27:348][  0]SourceControl: Info Source control is disabled
+[2016.04.10-21.15.27:348][  0]SourceControl: Info Source control is disabled
+[2016.04.10-21.15.27:355][  0]SourceControl: Info Source control is disabled
+[2016.04.10-21.15.27:477][  0]LogObj: 32827 objects as part of root set at end of initial load.
+[2016.04.10-21.15.27:477][  0]LogUObjectAllocator: 7618088 out of 0 bytes used by permanent object pool.
+[2016.04.10-21.15.27:521][  0]LogEngine: Initializing Engine...
+[2016.04.10-21.15.27:525][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.04.10-21.15.27:531][  0]LogHMD: SteamVR failed to initialize.  Err: 108
+[2016.04.10-21.15.27:618][  0]LogInit: XAudio2 using 'Speakers (Plantronics GameCom 780/788)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.04.10-21.15.27:660][  0]LogInit: FAudioDevice initialized.
+[2016.04.10-21.15.27:663][  0]LogInit: Texture streaming: Enabled
+[2016.04.10-21.15.27:775][  0]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.15.27:775][  0]LogUObjectGlobals:Warning: Failed to load '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream': Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.15.27:775][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading NULL.
+[2016.04.10-21.15.27:775][  0]LogUObjectGlobals:Warning: Failed to load '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream': Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading NULL.
+[2016.04.10-21.15.27:776][  0]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.15.27:776][  0]LogUObjectGlobals:Warning: Failed to load '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream': Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.15.27:776][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading NULL.
+[2016.04.10-21.15.27:776][  0]LogUObjectGlobals:Warning: Failed to load '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream': Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading NULL.
+[2016.04.10-21.15.27:777][  0]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.15.27:777][  0]LoadErrors: Info Failed to load /Game/FirstPerson/Multiplayer/widgets/w_ErrorDialog.w_ErrorDialog_C Referenced by K2Node_DynamicCast_573
+[2016.04.10-21.15.27:777][  0]LogUObjectGlobals:Warning: Failed to load '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream': Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.15.27:777][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading NULL.
+[2016.04.10-21.15.27:777][  0]LoadErrors: Info Failed to load /Game/FirstPerson/Multiplayer/widgets/w_ErrorDialog.w_ErrorDialog_C Referenced by K2Node_DynamicCast_573
+[2016.04.10-21.15.27:777][  0]LogUObjectGlobals:Warning: Failed to load '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream': Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading NULL.
+[2016.04.10-21.15.27:777][  0]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.15.27:777][  0]LoadErrors: Info Failed to load /Game/FirstPerson/Multiplayer/widgets/w_ErrorDialog.w_ErrorDialog_C Referenced by EdGraphPin_25656
+[2016.04.10-21.15.27:777][  0]LogUObjectGlobals:Warning: Failed to load '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream': Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.15.27:777][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading NULL.
+[2016.04.10-21.15.27:777][  0]LoadErrors: Info Failed to load /Game/FirstPerson/Multiplayer/widgets/w_ErrorDialog.w_ErrorDialog_C Referenced by EdGraphPin_25656
+[2016.04.10-21.15.27:777][  0]LogUObjectGlobals:Warning: Failed to load '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream': Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading NULL.
+[2016.04.10-21.15.27:778][  0]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.15.27:778][  0]LoadErrors: Info Failed to load /Game/FirstPerson/Multiplayer/widgets/w_ErrorDialog.w_ErrorDialog_C Referenced by K2Node_CallFunction_2579
+[2016.04.10-21.15.27:778][  0]LogUObjectGlobals:Warning: Failed to load '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream': Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.15.27:778][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading NULL.
+[2016.04.10-21.15.27:778][  0]LoadErrors: Info Failed to load /Game/FirstPerson/Multiplayer/widgets/w_ErrorDialog.w_ErrorDialog_C Referenced by K2Node_CallFunction_2579
+[2016.04.10-21.15.27:778][  0]LogUObjectGlobals:Warning: Failed to load '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream': Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading NULL.
+[2016.04.10-21.15.27:778][  0]LogLinker:Warning: Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.15.27:778][  0]LoadErrors: Info Failed to load /Game/FirstPerson/Multiplayer/widgets/w_ErrorDialog.w_ErrorDialog_C Referenced by EdGraphPin_25672
+[2016.04.10-21.15.27:778][  0]LogUObjectGlobals:Warning: Failed to load '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream': Can't find file '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream'
+[2016.04.10-21.15.27:778][  0]LogLinker:Warning: Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading NULL.
+[2016.04.10-21.15.27:778][  0]LoadErrors: Info Failed to load /Game/FirstPerson/Multiplayer/widgets/w_ErrorDialog.w_ErrorDialog_C Referenced by EdGraphPin_25672
+[2016.04.10-21.15.27:778][  0]LogUObjectGlobals:Warning: Failed to load '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream': Can't find file for asset '/Game/FirstPerson/Maps/Multiplayer/Blueprints/GameInstace_MP_Stream' while loading NULL.
+[2016.04.10-21.15.27:780][  0]LogBlueprint:Error: [compiler w_ErrorDialog] Error Could not find a function named "showMainMenu" in 'w_ErrorDialog'.
+Make sure 'w_ErrorDialog' has been compiled for  showMainMenu 
+[2016.04.10-21.15.27:780][  0]LogBlueprint:Warning: [compiler w_ErrorDialog] Warning Can't connect pins  ReturnValue  and  Object : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.04.10-21.15.27:780][  0]LogBlueprint:Warning: [compiler w_ErrorDialog] Warning Can't connect pins  Object  and  ReturnValue : This cast has an invalid target type (was the class deleted without a redirect?).
+[2016.04.10-21.15.27:780][  0]LogBlueprint:Error: [compiler w_ErrorDialog] Error This blueprint (self) is not compatible with ' Target ', therefore that pin must have a connection.
+[2016.04.10-21.15.27:783][  0]LogBlueprint:Warning: [compiler w_ErrorDialog] Warning [0005.47] Compile of w_ErrorDialog failed. 2 Fatal Issue(s) 2 Warning(s) [in 2 ms]
+[2016.04.10-21.15.27:783][  0]LogBlueprint:Warning: [compiler w_ErrorDialog] Warning [0005.47] Compile of w_ErrorDialog failed. 2 Fatal Issue(s) 3 Warning(s) [in 0 ms]
+[2016.04.10-21.15.27:783][  0]LogBlueprint:Warning: [compiler w_ErrorDialog] Warning [0005.47] Compile of w_ErrorDialog failed. 2 Fatal Issue(s) 4 Warning(s) [in 0 ms]
+[2016.04.10-21.15.27:826][  0]LogNet: Browse: /Temp/Autosaves/Game/FirstPerson/Maps/UEDPCmain_menu?Name=Player
+[2016.04.10-21.15.27:826][  0]LogLoad: LoadMap: /Temp/Autosaves/Game/FirstPerson/Maps/UEDPCmain_menu?Name=Player
+[2016.04.10-21.15.27:863][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000154861AF1A0
+[2016.04.10-21.15.27:903][  0]LogMemory: Platform Memory Stats for Windows
+[2016.04.10-21.15.27:903][  0]LogMemory: Process Physical Memory: 2434.62 MB used, 2434.62 MB peak
+[2016.04.10-21.15.27:903][  0]LogMemory: Process Virtual Memory: 2487.79 MB used, 2487.79 MB peak
+[2016.04.10-21.15.27:903][  0]LogMemory: Physical Memory: 12873.32 MB used, 16229.52 MB total
+[2016.04.10-21.15.27:903][  0]LogMemory: Virtual Memory: 3472.50 MB used, 134217728.00 MB total
+[2016.04.10-21.15.27:903][  0]LogMemory: 
+[2016.04.10-21.15.27:903][  0]Allocator Stats for TBB: (not implemented)
+[2016.04.10-21.15.28:004][  0]LogAIModule: Creating AISystem for world main_menu
+[2016.04.10-21.15.28:020][  0]LogWorld: Game class is 'WizardsGameMode'
+[2016.04.10-21.15.28:022][  0]LogWorld: Bringing World /Temp/Autosaves/Game/FirstPerson/Maps/UEDPCmain_menu.main_menu up for play (max tick rate 0) at 2016.04.10-14.15.28
+[2016.04.10-21.15.28:032][  0]LogWorld: Bringing up level for play took: 0.010019
+[2016.04.10-21.15.28:076][  0]LogOnline:Warning: STEAM: Can't start an online game for session (Game) that hasn't been created
+[2016.04.10-21.15.28:194][  0]LogInit:Display: Game Engine Initialized.
+[2016.04.10-21.15.28:428][  0]LogLoad: Full Startup: 6.12 seconds (BP compile: 0.07 seconds)
+[2016.04.10-21.15.28:445][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.04.10-21.15.28:449][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.04.10-21.15.28:548][  2]LogRenderer: Reallocating scene render targets to support 1280x720 (Frame:2).
+[2016.04.10-21.15.30:946][144]LogPackageName: SearchForPackageOnDisk took   0.056s to resolve FirstPersonExampleMap.umap.
+[2016.04.10-21.15.30:947][144]LogTemp:Warning: 0.000000 , 0.000000, 0.000000, 0.000000, 0.000000
+[2016.04.10-21.15.30:947][144]LogTemp:Warning: 0.000000 , 0.000000, 0.000000, 0.000000, 0.000000
+[2016.04.10-21.15.30:947][144]LogTemp:Warning: 0.000000 , 0.000000, 0.000000, 0.000000, 0.000000
+[2016.04.10-21.15.30:947][144]LogTemp:Warning: 0.000000 , 0.000000, 0.000000, 0.000000, 0.000000
+[2016.04.10-21.15.30:947][144]LogTemp:Warning: 0.000000 , 0.000000, 0.000000, 0.000000, 0.000000
+[2016.04.10-21.15.30:947][144]LogTemp:Warning: Spell Gathering Succesful!
+[2016.04.10-21.15.30:947][144]LogTemp:Warning: Spell Gathering Succesful!
+[2016.04.10-21.15.30:947][144]LogTemp:Warning: Spell Gathering Succesful!
+[2016.04.10-21.15.30:947][144]LogTemp:Warning: Spell Gathering Succesful!
+[2016.04.10-21.15.30:947][144]LogTemp:Warning: Spell Gathering Succesful!
+[2016.04.10-21.15.31:000][144]LogPackageName: SearchForPackageOnDisk took   0.053s to resolve FirstPersonExampleMap.umap.
+[2016.04.10-21.15.31:000][144]LogNet: Browse: /Game/FirstPerson/Maps/FirstPersonExampleMap
+[2016.04.10-21.15.31:000][144]LogLoad: LoadMap: /Game/FirstPerson/Maps/FirstPersonExampleMap
+[2016.04.10-21.15.31:044][144]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000154863DCAE0
+[2016.04.10-21.15.31:053][144]LogMemory: Platform Memory Stats for Windows
+[2016.04.10-21.15.31:053][144]LogMemory: Process Physical Memory: 2462.91 MB used, 2467.48 MB peak
+[2016.04.10-21.15.31:053][144]LogMemory: Process Virtual Memory: 2670.79 MB used, 2674.94 MB peak
+[2016.04.10-21.15.31:053][144]LogMemory: Physical Memory: 12887.96 MB used, 16229.52 MB total
+[2016.04.10-21.15.31:053][144]LogMemory: Virtual Memory: 3681.28 MB used, 134217728.00 MB total
+[2016.04.10-21.15.31:053][144]LogMemory: 
+[2016.04.10-21.15.31:053][144]Allocator Stats for TBB: (not implemented)
+[2016.04.10-21.15.31:606][144]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.04.10-21.15.31:606][144]LogWorld: Game class is 'WizardsGameMode'
+[2016.04.10-21.15.31:774][144]LogWorld: Bringing World /Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2016.04.10-14.15.31
+[2016.04.10-21.15.31:775][144]LogWorld: Bringing up level for play took: 0.168707
+[2016.04.10-21.15.31:789][144]LogOnline:Warning: STEAM: Can't start an online game for session (Game) that hasn't been created
+[2016.04.10-21.15.32:740][194]LogTemp:Warning: Spell Gathering Needed!
+[2016.04.10-21.15.32:740][194]LogTemp:Warning: 0.000000 , 0.000000, 0.000000, 0.000000, 0.000000
+[2016.04.10-21.15.32:740][194]LogTemp:Warning: 0.000000 , 0.000000, 0.000000, 0.000000, 0.000000
+[2016.04.10-21.15.32:740][194]LogTemp:Warning: 0.000000 , 0.000000, 0.000000, 0.000000, 0.000000
+[2016.04.10-21.15.32:740][194]LogTemp:Warning: 0.000000 , 0.000000, 0.000000, 0.000000, 0.000000
+[2016.04.10-21.15.32:740][194]LogTemp:Warning: 0.000000 , 0.000000, 0.000000, 0.000000, 0.000000
+[2016.04.10-21.15.32:740][194]LogTemp:Warning: Spell Gathering Succesful!
+[2016.04.10-21.15.32:740][194]LogTemp:Warning: Spell Gathering Succesful!
+[2016.04.10-21.15.32:740][194]LogTemp:Warning: Spell Gathering Succesful!
+[2016.04.10-21.15.32:740][194]LogTemp:Warning: Spell Gathering Succesful!
+[2016.04.10-21.15.32:740][194]LogTemp:Warning: Spell Gathering Succesful!
+[2016.04.10-21.15.59:706][861]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.04.10-21.15.59:716][861]LogEngine: All Windows Closed
+[2016.04.10-21.15.59:716][861]LogWindows: FPlatformMisc::RequestExit(0)
+[2016.04.10-21.16.00:580][862]LogExit: Preparing to exit.
+[2016.04.10-21.16.00:719][862]LogExit: Game engine shut down
+[2016.04.10-21.16.01:199][862]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000015486578860
+[2016.04.10-21.16.01:199][862]LogExit: Object subsystem successfully closed.
+[2016.04.10-21.16.01:294][862]LogD3D11RHI: Shutdown
+[2016.04.10-21.16.01:294][862]LogD3D11RHI: CleanupD3DDevice
+[2016.04.10-21.16.01:361][862]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.04.10-21.16.01:472][862]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (119)
+[2016.04.10-21.16.02:448][862]LogModuleManager: Shutting down and abandoning module AutomationController (118)
+[2016.04.10-21.16.02:448][862]LogModuleManager: Shutting down and abandoning module AutomationWorker (117)
+[2016.04.10-21.16.02:448][862]LogModuleManager: Shutting down and abandoning module CharacterAI (116)
+[2016.04.10-21.16.02:448][862]LogModuleManager: Shutting down and abandoning module AITestSuite (115)
+[2016.04.10-21.16.02:448][862]LogModuleManager: Shutting down and abandoning module GameplayDebugger (114)
+[2016.04.10-21.16.02:448][862]LogModuleManager: Shutting down and abandoning module AIModule (113)
+[2016.04.10-21.16.02:448][862]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (112)
+[2016.04.10-21.16.02:448][862]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (111)
+[2016.04.10-21.16.02:448][862]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (110)
+[2016.04.10-21.16.02:448][862]LogModuleManager: Shutting down and abandoning module ProfilerService (109)
+[2016.04.10-21.16.02:520][862]LogModuleManager: Shutting down and abandoning module TaskGraph (108)
+[2016.04.10-21.16.02:534][862]LogModuleManager: Shutting down and abandoning module SlateRemote (107)
+[2016.04.10-21.16.02:534][862]LogModuleManager: Shutting down and abandoning module SteamVRController (106)
+[2016.04.10-21.16.02:534][862]LogModuleManager: Shutting down and abandoning module SteamVR (105)
+[2016.04.10-21.16.02:534][862]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (104)
+[2016.04.10-21.16.02:534][862]LogModuleManager: Shutting down and abandoning module OculusLibrary (103)
+[2016.04.10-21.16.02:534][862]LogModuleManager: Shutting down and abandoning module OculusInput (102)
+[2016.04.10-21.16.02:534][862]LogModuleManager: Shutting down and abandoning module LeapMotionController (101)
+[2016.04.10-21.16.02:547][862]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (100)
+[2016.04.10-21.16.02:547][862]LogModuleManager: Shutting down and abandoning module CableComponent (99)
+[2016.04.10-21.16.02:547][862]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (98)
+[2016.04.10-21.16.02:547][862]LogModuleManager: Shutting down and abandoning module HTML5Networking (97)
+[2016.04.10-21.16.02:547][862]LogModuleManager: Shutting down and abandoning module DesktopPlatform (96)
+[2016.04.10-21.16.02:559][862]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (95)
+[2016.04.10-21.16.02:559][862]LogModuleManager: Shutting down and abandoning module HotReload (94)
+[2016.04.10-21.16.02:559][862]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (93)
+[2016.04.10-21.16.02:559][862]LogModuleManager: Shutting down and abandoning module UObjectPlugin (92)
+[2016.04.10-21.16.02:559][862]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (91)
+[2016.04.10-21.16.02:559][862]LogModuleManager: Shutting down and abandoning module SourceControl (90)
+[2016.04.10-21.16.02:559][862]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (89)
+[2016.04.10-21.16.02:559][862]LogModuleManager: Shutting down and abandoning module Wizards (88)
+[2016.04.10-21.16.02:559][862]LogModuleManager: Shutting down and abandoning module UdpMessaging (87)
+[2016.04.10-21.16.02:559][862]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (86)
+[2016.04.10-21.16.02:559][862]LogModuleManager: Shutting down and abandoning module Paper2D (85)
+[2016.04.10-21.16.02:559][862]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (84)
+[2016.04.10-21.16.02:560][862]LogModuleManager: Shutting down and abandoning module Media (83)
+[2016.04.10-21.16.02:560][862]LogModuleManager: Shutting down and abandoning module WmfMedia (82)
+[2016.04.10-21.16.02:560][862]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (81)
+[2016.04.10-21.16.02:560][862]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (80)
+[2016.04.10-21.16.02:560][862]LogModuleManager: Shutting down and abandoning module PropertyEditor (79)
+[2016.04.10-21.16.02:560][862]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (78)
+[2016.04.10-21.16.02:568][862]LogModuleManager: Shutting down and abandoning module FunctionalTesting (77)
+[2016.04.10-21.16.02:568][862]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (76)
+[2016.04.10-21.16.02:568][862]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (75)
+[2016.04.10-21.16.02:568][862]LogModuleManager: Shutting down and abandoning module MessageLog (74)
+[2016.04.10-21.16.02:568][862]LogModuleManager: Shutting down and abandoning module Sequencer (73)
+[2016.04.10-21.16.02:568][862]LogModuleManager: Shutting down and abandoning module AssetTools (72)
+[2016.04.10-21.16.02:581][862]LogModuleManager: Shutting down and abandoning module UMGEditor (71)
+[2016.04.10-21.16.02:594][862]LogModuleManager: Shutting down and abandoning module UMG (70)
+[2016.04.10-21.16.02:594][862]LogModuleManager: Shutting down and abandoning module Slate (69)
+[2016.04.10-21.16.02:594][862]LogModuleManager: Shutting down and abandoning module EditorStyle (68)
+[2016.04.10-21.16.02:595][862]LogModuleManager: Shutting down and abandoning module SessionServices (67)
+[2016.04.10-21.16.02:595][862]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (66)
+[2016.04.10-21.16.02:595][862]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (65)
+[2016.04.10-21.16.02:595][862]LogModuleManager: Shutting down and abandoning module XAudio2 (64)
+[2016.04.10-21.16.02:595][862]LogModuleManager: Shutting down and abandoning module Networking (63)
+[2016.04.10-21.16.02:595][862]LogModuleManager: Shutting down and abandoning module Core (62)
+[2016.04.10-21.16.02:595][862]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.04.10-21.16.02:595][862]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.04.10-21.16.02:595][862]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.04.10-21.16.02:609][862]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2016.04.10-21.16.03:014][862]LogDerivedDataCache: Shutdown
+[2016.04.10-21.16.03:014][862]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (57)
+[2016.04.10-21.16.03:018][862]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (56)
+[2016.04.10-21.16.03:018][862]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (55)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (54)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (53)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (52)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (51)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module ImageWrapper (50)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (49)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (48)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (47)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (46)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (45)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (44)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (43)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (42)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module Messaging (41)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (40)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (39)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (38)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (37)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (36)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (35)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (34)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (33)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (32)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (31)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (30)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (29)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (28)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (27)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (26)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module TargetPlatform (25)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module InputCore (24)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module Settings (23)
+[2016.04.10-21.16.03:027][862]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.04.10-21.16.03:027][862]LogOnline:Display: STEAM: OnlineSubsystemSteam::Shutdown()
+[2016.04.10-21.16.03:072][862]LogOnline:Display: Unloading online subsystem: STEAM
+[2016.04.10-21.16.03:072][862]LogOnline:Display: STEAM: OnlineSubsystemSteam::Shutdown()
+[2016.04.10-21.16.03:072][862]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.04.10-21.16.03:072][862]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.04.10-21.16.03:096][862]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.04.10-21.16.03:107][862]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.04.10-21.16.03:107][862]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.04.10-21.16.03:107][862]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.04.10-21.16.03:107][862]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.04.10-21.16.03:107][862]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.04.10-21.16.03:119][862]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.04.10-21.16.03:124][862]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.04.10-21.16.03:124][862]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.04.10-21.16.03:124][862]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.04.10-21.16.03:124][862]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.04.10-21.16.03:124][862]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.04.10-21.16.03:124][862]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.04.10-21.16.03:128][862]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.04.10-21.16.03:128][862]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.04.10-21.16.03:128][862]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.04.10-21.16.03:129][862]LogExit: Exiting.
+[2016.04.10-21.16.03:130][862]Log file closed, 04/10/16 14:16:03

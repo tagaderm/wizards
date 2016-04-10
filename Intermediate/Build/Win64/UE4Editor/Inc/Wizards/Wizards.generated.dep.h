@@ -23,6 +23,9 @@
 #ifndef WIZARDS_WizardsBlast_generated_h
 	#include "Public/WizardsBlast.h"
 #endif
+#ifndef WIZARDS_WizardsCone_generated_h
+	#include "Public/WizardsCone.h"
+#endif
 #ifndef WIZARDS_WizardsGameMode_generated_h
 	#include "WizardsGameMode.h"
 #endif

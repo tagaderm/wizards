@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeWizards() {}
 	{
 		FNativeFunctionRegistrar::RegisterFunction(AWizardsCharacter::StaticClass(),"newCharactersSpells",(Native)&AWizardsCharacter::execnewCharactersSpells);
 	}
-	IMPLEMENT_CLASS(AWizardsCharacter, 2167732115);
+	IMPLEMENT_CLASS(AWizardsCharacter, 1189107710);
 	void UWizardsSaveGame::StaticRegisterNativesUWizardsSaveGame()
 	{
 	}
@@ -43,6 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeWizards() {}
 		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"getRange",(Native)&UWizardMenuWidget::execgetRange);
 		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"getSize",(Native)&UWizardMenuWidget::execgetSize);
 		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"getSpeed",(Native)&UWizardMenuWidget::execgetSpeed);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"getType",(Native)&UWizardMenuWidget::execgetType);
 		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setBounce",(Native)&UWizardMenuWidget::execsetBounce);
 		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setCost",(Native)&UWizardMenuWidget::execsetCost);
 		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setDamage",(Native)&UWizardMenuWidget::execsetDamage);
@@ -58,15 +59,20 @@ void EmptyLinkFunctionForGeneratedCodeWizards() {}
 		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setRange",(Native)&UWizardMenuWidget::execsetRange);
 		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setSize",(Native)&UWizardMenuWidget::execsetSize);
 		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setSpeed",(Native)&UWizardMenuWidget::execsetSpeed);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"setType",(Native)&UWizardMenuWidget::execsetType);
 		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"spellChange",(Native)&UWizardMenuWidget::execspellChange);
 		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"spellsInitialize",(Native)&UWizardMenuWidget::execspellsInitialize);
 		FNativeFunctionRegistrar::RegisterFunction(UWizardMenuWidget::StaticClass(),"spellsSave",(Native)&UWizardMenuWidget::execspellsSave);
 	}
-	IMPLEMENT_CLASS(UWizardMenuWidget, 3298688074);
+	IMPLEMENT_CLASS(UWizardMenuWidget, 336654150);
 	void AWizardsBlast::StaticRegisterNativesAWizardsBlast()
 	{
 	}
 	IMPLEMENT_CLASS(AWizardsBlast, 2272097975);
+	void AWizardsCone::StaticRegisterNativesAWizardsCone()
+	{
+	}
+	IMPLEMENT_CLASS(AWizardsCone, 2877530625);
 	void AWizardsGameMode::StaticRegisterNativesAWizardsGameMode()
 	{
 	}
@@ -125,6 +131,7 @@ void EmptyLinkFunctionForGeneratedCodeWizards() {}
 	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_getRange();
 	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_getSize();
 	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_getSpeed();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_getType();
 	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setBounce();
 	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setCost();
 	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setDamage();
@@ -140,6 +147,7 @@ void EmptyLinkFunctionForGeneratedCodeWizards() {}
 	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setRange();
 	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setSize();
 	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setSpeed();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_setType();
 	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_spellChange();
 	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_spellsInitialize();
 	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardMenuWidget_spellsSave();
@@ -147,6 +155,8 @@ void EmptyLinkFunctionForGeneratedCodeWizards() {}
 	WIZARDS_API class UClass* Z_Construct_UClass_UWizardMenuWidget();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsBlast_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsBlast();
+	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsCone_NoRegister();
+	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsCone();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsGameMode_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsGameMode();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsHUD_NoRegister();
@@ -256,6 +266,8 @@ void EmptyLinkFunctionForGeneratedCodeWizards() {}
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_FireAnimation = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FireAnimation"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(FireAnimation, AWizardsCharacter), 0x0000000000000005, Z_Construct_UClass_UAnimMontage_NoRegister());
 				UProperty* NewProp_FireSound = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FireSound"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(FireSound, AWizardsCharacter), 0x0000000000000005, Z_Construct_UClass_USoundBase_NoRegister());
+				UProperty* NewProp_ConeClass = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ConeClass"), RF_Public|RF_Transient|RF_Native) UClassProperty(CPP_PROPERTY_BASE(ConeClass, AWizardsCharacter), 0x0004000000000001, Z_Construct_UClass_AWizardsCone_NoRegister());
+				UProperty* NewProp_BlastClass = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("BlastClass"), RF_Public|RF_Transient|RF_Native) UClassProperty(CPP_PROPERTY_BASE(BlastClass, AWizardsCharacter), 0x0004000000000001, Z_Construct_UClass_AWizardsBlast_NoRegister());
 				UProperty* NewProp_ProjectileClass = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ProjectileClass"), RF_Public|RF_Transient|RF_Native) UClassProperty(CPP_PROPERTY_BASE(ProjectileClass, AWizardsCharacter), 0x0004000000000001, Z_Construct_UClass_AWizardsProjectile_NoRegister());
 				UProperty* NewProp_mySpellBook = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("mySpellBook"), RF_Public|RF_Transient|RF_Native) UArrayProperty(CPP_PROPERTY_BASE(mySpellBook, AWizardsCharacter), 0x0000000000000000);
 				UProperty* NewProp_mySpellBook_Inner = new(EC_InternalUseOnlyConstructor, NewProp_mySpellBook, TEXT("mySpellBook"), RF_Public|RF_Transient|RF_Native) UObjectProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UClass_UspellBook_NoRegister());
@@ -280,6 +292,10 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(NewProp_FireSound, TEXT("Category"), TEXT("Gameplay"));
 				MetaData->SetValue(NewProp_FireSound, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
 				MetaData->SetValue(NewProp_FireSound, TEXT("ToolTip"), TEXT("Sound to play each time we fire"));
+				MetaData->SetValue(NewProp_ConeClass, TEXT("Category"), TEXT("Projectile"));
+				MetaData->SetValue(NewProp_ConeClass, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+				MetaData->SetValue(NewProp_BlastClass, TEXT("Category"), TEXT("Projectile"));
+				MetaData->SetValue(NewProp_BlastClass, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
 				MetaData->SetValue(NewProp_ProjectileClass, TEXT("Category"), TEXT("Projectile"));
 				MetaData->SetValue(NewProp_ProjectileClass, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
 				MetaData->SetValue(NewProp_ProjectileClass, TEXT("ToolTip"), TEXT("Projectile class to spawn"));
@@ -678,6 +694,28 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		}
 		return ReturnFunction;
 	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_getType()
+	{
+		struct WizardMenuWidget_eventgetType_Parms
+		{
+			FName ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("getType"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(WizardMenuWidget_eventgetType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UNameProperty(CPP_PROPERTY_BASE(ReturnValue, WizardMenuWidget_eventgetType_Parms), 0x0000000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UFunction* Z_Construct_UFunction_UWizardMenuWidget_setBounce()
 	{
 		struct WizardMenuWidget_eventsetBounce_Parms
@@ -1014,6 +1052,28 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		}
 		return ReturnFunction;
 	}
+	UFunction* Z_Construct_UFunction_UWizardMenuWidget_setType()
+	{
+		struct WizardMenuWidget_eventsetType_Parms
+		{
+			int32 effectChange;
+		};
+		UObject* Outer=Z_Construct_UClass_UWizardMenuWidget();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("setType"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(WizardMenuWidget_eventsetType_Parms));
+			UProperty* NewProp_effectChange = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("effectChange"), RF_Public|RF_Transient|RF_Native) UIntProperty(CPP_PROPERTY_BASE(effectChange, WizardMenuWidget_eventsetType_Parms), 0x0000000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CustomSpells"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardMenuWidget.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UFunction* Z_Construct_UFunction_UWizardMenuWidget_spellChange()
 	{
 		struct WizardMenuWidget_eventspellChange_Parms
@@ -1105,6 +1165,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_getRange());
 				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_getSize());
 				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_getSpeed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_getType());
 				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setBounce());
 				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setCost());
 				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setDamage());
@@ -1120,6 +1181,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setRange());
 				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setSize());
 				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setSpeed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_setType());
 				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_spellChange());
 				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_spellsInitialize());
 				OuterClass->LinkChild(Z_Construct_UFunction_UWizardMenuWidget_spellsSave());
@@ -1139,6 +1201,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_getRange()); // 3025055025
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_getSize()); // 1192740477
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_getSpeed()); // 3894014591
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_getType()); // 4007220520
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setBounce()); // 3725905142
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setCost()); // 1916454237
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setDamage()); // 1720021534
@@ -1154,6 +1217,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setRange()); // 2982102770
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setSize()); // 4062196046
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setSpeed()); // 4263536406
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_setType()); // 2722821923
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_spellChange()); // 2434521059
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_spellsInitialize()); // 2939879979
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardMenuWidget_spellsSave()); // 2736011176
@@ -1208,6 +1272,44 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AWizardsBlast(Z_Construct_UClass_AWizardsBlast, TEXT("AWizardsBlast"));
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AWizardsBlast);
+	UClass* Z_Construct_UClass_AWizardsCone_NoRegister()
+	{
+		return AWizardsCone::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AWizardsCone()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage_Wizards();
+			OuterClass = AWizardsCone::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_CollisionComp = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CollisionComp"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(CollisionComp, AWizardsCone), 0x00000000000b0009, Z_Construct_UClass_USphereComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->ClassConfigName = FName(TEXT("Game"));
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("WizardsCone.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/WizardsCone.h"));
+				MetaData->SetValue(NewProp_CollisionComp, TEXT("Category"), TEXT("Projectile"));
+				MetaData->SetValue(NewProp_CollisionComp, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_CollisionComp, TEXT("ModuleRelativePath"), TEXT("Public/WizardsCone.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AWizardsCone(Z_Construct_UClass_AWizardsCone, TEXT("AWizardsCone"));
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AWizardsCone);
 	UClass* Z_Construct_UClass_AWizardsGameMode_NoRegister()
 	{
 		return AWizardsGameMode::StaticClass();
@@ -1367,8 +1469,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Wizards")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x0054C1AD;
-			Guid.B = 0x6222CFD8;
+			Guid.A = 0x41B1D5DB;
+			Guid.B = 0x8EB820DF;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
