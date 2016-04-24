@@ -1371,4 +1371,86 @@ Make sure 'w_ErrorDialog' has been compiled for  Show Main Menu
 [2016.04.23-00.30.26:668][559]LogSavePackage: Save=10.947459ms
 [2016.04.23-00.30.26:668][559]LogSavePackage: Moving '../../../../../../Users/Logical/Documents/Github/wizards/Saved/MP_GM_Auto5266B51F545400CC2BCB4A28B9B770713.tmp' to '../../../../../../Users/Logical/Documents/Github/wizards/Saved/Autosaves/Game/FirstPerson/Multiplayer/Blueprints/MP_GM_Auto5.uasset'
 [2016.04.23-00.30.26:669][559]LogSavePackage: Total save time: 36.554608ms
-[2016.04.23-00.30.26:669][559]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Log
+[2016.04.23-00.30.26:669][559]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Logical/Documents/Github/wizards/Saved/Autosaves/Game/FirstPerson/Multiplayer/Blueprints/MP_GM_Auto5.uasset
+[2016.04.23-00.30.26:677][559]LogSavePackage: Save=1.310643ms
+[2016.04.23-00.30.26:677][559]LogSavePackage: Moving '../../../../../../Users/Logical/Documents/Github/wizards/Saved/playerController_Auto5D80DCB2444FFE063C7FC059B5CDD5DBE.tmp' to '../../../../../../Users/Logical/Documents/Github/wizards/Saved/Autosaves/Game/FirstPerson/Multiplayer/Blueprints/playerController_Auto5.uasset'
+[2016.04.23-00.30.26:678][559]LogSavePackage: Total save time: 2.733495ms
+[2016.04.23-00.30.26:678][559]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Logical/Documents/Github/wizards/Saved/Autosaves/Game/FirstPerson/Multiplayer/Blueprints/playerController_Auto5.uasset
+[2016.04.23-00.30.26:678][559]LogFileHelpers: Auto-saving content packages took 0.116
+[2016.04.24-18.40.27:905][576]LogActor:Warning: GameNetworkManager /Engine/Transient.World_23:PersistentLevel.GameNetworkManager_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.04.24-18.40.36:257][535]LogActor:Warning: GameNetworkManager /Engine/Transient.World_24:PersistentLevel.GameNetworkManager_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.04.24-18.42.36:197][839]LogEditorTransaction: Undo Move Node
+[2016.04.24-18.48.27:082][950]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2016.04.24-18.49.57:195][211]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000FD0162A0
+[2016.04.24-18.49.57:195][211]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPerson/Multiplayer/Maps/MP_Level1' took 0.052
+[2016.04.24-18.49.57:201][211]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/FirstPerson/Multiplayer/Blueprints/MP_GM] ([1] browsable assets)...
+[2016.04.24-18.49.57:201][211]OBJ SavePackage: Finished generating thumbnails for package [/Game/FirstPerson/Multiplayer/Blueprints/MP_GM]
+[2016.04.24-18.49.57:266][211]LogSavePackage: Save=44.481773ms
+[2016.04.24-18.49.57:266][211]LogSavePackage: Moving '../../../../../../Users/Logical/Documents/Github/wizards/Saved/MP_GM_Auto6DACF71AA4973266BB70A2482AAD7D6E2.tmp' to '../../../../../../Users/Logical/Documents/Github/wizards/Saved/Autosaves/Game/FirstPerson/Multiplayer/Blueprints/MP_GM_Auto6.uasset'
+[2016.04.24-18.49.57:267][211]LogSavePackage: Total save time: 65.503564ms
+[2016.04.24-18.49.57:267][211]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Logical/Documents/Github/wizards/Saved/Autosaves/Game/FirstPerson/Multiplayer/Blueprints/MP_GM_Auto6.uasset
+[2016.04.24-18.49.57:267][211]LogFileHelpers: Auto-saving content packages took 0.072
+[2016.04.24-19.12.49:862][493]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPerson/Multiplayer/Maps/MP_Level1' took 0.052
+[2016.04.24-19.12.49:870][493]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/FirstPerson/Multiplayer/Blueprints/MP_GM] ([1] browsable assets)...
+[2016.04.24-19.12.49:870][493]OBJ SavePackage: Finished generating thumbnails for package [/Game/FirstPerson/Multiplayer/Blueprints/MP_GM]
+[2016.04.24-19.12.49:934][493]LogSavePackage: Save=52.906223ms
+[2016.04.24-19.12.49:934][493]LogSavePackage: Moving '../../../../../../Users/Logical/Documents/Github/wizards/Saved/MP_GM_Auto765FE83C845C1CC8FD04DD1B16D00A6B6.tmp' to '../../../../../../Users/Logical/Documents/Github/wizards/Saved/Autosaves/Game/FirstPerson/Multiplayer/Blueprints/MP_GM_Auto7.uasset'
+[2016.04.24-19.12.49:936][493]LogSavePackage: Total save time: 64.679097ms
+[2016.04.24-19.12.49:936][493]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Logical/Documents/Github/wizards/Saved/Autosaves/Game/FirstPerson/Multiplayer/Blueprints/MP_GM_Auto7.uasset
+[2016.04.24-19.12.49:936][493]LogFileHelpers: Auto-saving content packages took 0.073
+[2016.04.24-19.22.54:600][766]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPerson/Multiplayer/Maps/MP_Level1' took 0.046
+[2016.04.24-19.22.54:607][766]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/FirstPerson/Multiplayer/Blueprints/MP_GM] ([1] browsable assets)...
+[2016.04.24-19.22.54:607][766]OBJ SavePackage: Finished generating thumbnails for package [/Game/FirstPerson/Multiplayer/Blueprints/MP_GM]
+[2016.04.24-19.22.54:700][766]LogSavePackage: Save=71.499962ms
+[2016.04.24-19.22.54:700][766]LogSavePackage: Moving '../../../../../../Users/Logical/Documents/Github/wizards/Saved/MP_GM_Auto8652E4D0A460F370500E245BCC410B321.tmp' to '../../../../../../Users/Logical/Documents/Github/wizards/Saved/Autosaves/Game/FirstPerson/Multiplayer/Blueprints/MP_GM_Auto8.uasset'
+[2016.04.24-19.22.54:701][766]LogSavePackage: Total save time: 93.008876ms
+[2016.04.24-19.22.54:701][766]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Logical/Documents/Github/wizards/Saved/Autosaves/Game/FirstPerson/Multiplayer/Blueprints/MP_GM_Auto8.uasset
+[2016.04.24-19.22.54:701][766]LogFileHelpers: Auto-saving content packages took 0.100
+[2016.04.24-19.25.53:982][599]BlueprintLog: New page: Compile MP_GM
+[2016.04.24-19.25.54:005][599]LogBlueprint:Warning: [compiler MP_GM] Warning 'Gs PS' does not inherit from 'Player Controller' ( Cast To gsPS  would always fail).
+[2016.04.24-19.25.54:217][599]LogBlueprint:Warning: [compiler MP_GM] Warning [1946.70] Compile of MP_GM successful, but with 1 Warning(s) [in 235 ms]
+[2016.04.24-19.25.54:217][599]BlueprintEditorCompileResults:Warning: Warning 'Gs PS' does not inherit from 'Player Controller' ( Cast To gsPS  would always fail).
+[2016.04.24-19.25.54:217][599]BlueprintEditorCompileResults:Warning: Warning [1946.70] Compile of MP_GM successful, but with 1 Warning(s) [in 235 ms]
+[2016.04.24-19.25.54:786][653]LogSavePackage: Save=77.818832ms
+[2016.04.24-19.25.54:786][653]LogSavePackage: Moving '../../../../../../Users/Logical/Documents/Github/wizards/Saved/MP_GM5CEC23484544D92144E6DAB792955BF9.tmp' to '../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/MP_GM.uasset'
+[2016.04.24-19.25.54:788][653]LogSavePackage: Total save time: 86.336359ms
+[2016.04.24-19.25.54:788][653]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/MP_GM.uasset
+[2016.04.24-19.27.01:038][330]LogEditorTransaction: Undo Delete current selection
+[2016.04.24-19.27.43:102][635]LogSavePackage: Save=35.995907ms
+[2016.04.24-19.27.43:102][635]LogSavePackage: Moving '../../../../../../Users/Logical/Documents/Github/wizards/Saved/playerControllerCustom288460F2459453B22C12709188ECDD9D.tmp' to '../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/playerControllerCustom.uasset'
+[2016.04.24-19.27.43:104][635]LogSavePackage: Total save time: 46.354428ms
+[2016.04.24-19.27.43:104][635]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/playerControllerCustom.uasset
+[2016.04.24-19.27.43:206][635]LogSavePackage: Save=86.120201ms
+[2016.04.24-19.27.43:206][635]LogSavePackage: Moving '../../../../../../Users/Logical/Documents/Github/wizards/Saved/MP_GMD7BE8A5448BD8D1C02962183E76FF8EA.tmp' to '../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/MP_GM.uasset'
+[2016.04.24-19.27.43:208][635]LogSavePackage: Total save time: 94.895698ms
+[2016.04.24-19.27.43:208][635]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/MP_GM.uasset
+[2016.04.24-19.27.43:220][635]LogSavePackage: Save=1.083383ms
+[2016.04.24-19.27.43:220][635]LogSavePackage: Moving '../../../../../../Users/Logical/Documents/Github/wizards/Saved/playerControllerB32F883D478EB3B97FAED99C5CC2FF55.tmp' to '../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/playerController.uasset'
+[2016.04.24-19.27.43:221][635]LogSavePackage: Total save time: 2.757121ms
+[2016.04.24-19.27.43:221][635]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/playerController.uasset
+[2016.04.24-19.28.01:032][423]LogSavePackage: Save=82.128738ms
+[2016.04.24-19.28.01:032][423]LogSavePackage: Moving '../../../../../../Users/Logical/Documents/Github/wizards/Saved/MP_GM21B170804666721AFB82AEB6B05E9879.tmp' to '../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/MP_GM.uasset'
+[2016.04.24-19.28.01:035][423]LogSavePackage: Total save time: 92.487026ms
+[2016.04.24-19.28.01:035][423]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/MP_GM.uasset
+[2016.04.24-19.28.02:377][584]BlueprintLog: New page: Compile MP_GM
+[2016.04.24-19.28.02:508][584]BlueprintEditorCompileResults: Info [2075.01] Compile of MP_GM successful! [in 130 ms]
+[2016.04.24-19.28.03:149][646]LogSavePackage: Save=82.159454ms
+[2016.04.24-19.28.03:149][646]LogSavePackage: Moving '../../../../../../Users/Logical/Documents/Github/wizards/Saved/MP_GMA7B74A7C4D4E6734ECEC0A86367C2753.tmp' to '../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/MP_GM.uasset'
+[2016.04.24-19.28.03:151][646]LogSavePackage: Total save time: 90.534527ms
+[2016.04.24-19.28.03:151][646]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Logical/Documents/Github/wizards/Content/FirstPerson/Multiplayer/Blueprints/MP_GM.uasset
+[2016.04.24-19.28.56:388][891]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000D1E4B560
+[2016.04.24-19.28.56:431][891]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000D24C9080
+[2016.04.24-19.28.56:568][891]LogSavePackage: Save=88.917480ms
+[2016.04.24-19.28.56:568][891]LogSavePackage: Moving '../../../../../../Users/Logical/Documents/Github/wizards/Saved/UEDPCMP_Level10F8A2F0E41D352D120F006AB76BB9378.tmp' to '../../../../../../Users/Logical/Documents/Github/wizards/Saved/Autosaves/Game/FirstPerson/Multiplayer/Maps/UEDPCMP_Level1.umap'
+[2016.04.24-19.28.56:569][891]LogSavePackage: Total save time: 97.407840ms
+[2016.04.24-19.28.56:569][891]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Logical/Documents/Github/wizards/Saved/Autosaves/Game/FirstPerson/Multiplayer/Maps/UEDPCMP_Level1.umap
+[2016.04.24-19.30.00:276][ 58]LogSavePackage: Save=127.184097ms
+[2016.04.24-19.30.00:276][ 58]LogSavePackage: Moving '../../../../../../Users/Logical/Documents/Github/wizards/Saved/UEDPCMP_Level1BD5F40D64DC031D87FC8FDB3E62FB3BE.tmp' to '../../../../../../Users/Logical/Documents/Github/wizards/Saved/Autosaves/Game/FirstPerson/Multiplayer/Maps/UEDPCMP_Level1.umap'
+[2016.04.24-19.30.00:278][ 58]LogSavePackage: Total save time: 153.447751ms
+[2016.04.24-19.30.00:278][ 58]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Logical/Documents/Github/wizards/Saved/Autosaves/Game/FirstPerson/Multiplayer/Maps/UEDPCMP_Level1.umap
+[2016.04.24-19.31.25:466][331]LogSavePackage: Save=92.992104ms
+[2016.04.24-19.31.25:466][331]LogSavePackage: Moving '../../../../../../Users/Logical/Documents/Github/wizards/Saved/UEDPCMP_Level157C8CF5940E54A7551E792959409AAFA.tmp' to '../../../../../../Users/Logical/Documents/Github/wizards/Saved/Autosaves/Game/FirstPerson/Multiplayer/Maps/UEDPCMP_Level1.umap'
+[2016.04.24-19.31.25:467][331]LogSavePackage: Total save time: 114.955053ms
+[2016.04.24-19.31.25:467][331]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Logical/Documents/Github/wizards/Saved/Autosaves/Game/FirstPerson/Multiplayer/Maps/UEDPCMP_Level1.umap
+[2016.04.24-19.31.49:702][103]LogSavePackage: Save=105.393600ms
+[2016.04.24-19.31.49:702][103]LogSavePackage: Moving '../../../../../../Users/Lo
