@@ -31,7 +31,7 @@ public:
 	UFUNCTION()
 	void OnHit(AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 
-	void SpellCreation(UspellBook* theSpell, AWizardsCharacter* theWiz);
+	void SpellCreation(AWizardsCharacter::theSpell* theSpell, UParticleSystem* projPart, UParticleSystem* blastPart, AWizardsCharacter* theWiz);
 
 	/** Returns CollisionComp subobject **/
 	FORCEINLINE class USphereComponent* GetCollisionComp() const { return CollisionComp; }
