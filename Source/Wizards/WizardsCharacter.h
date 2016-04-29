@@ -221,8 +221,13 @@ public:
 
 	//In this chunk of whatever I shall store the server functions
 	UFUNCTION(reliable, server, WithValidation)
-		void ServerFireProjectile();//UspellBook *theSpell);
-	virtual void ServerFireProjectile_Implementation();//UspellBook *theSpell);
-	virtual bool ServerFireProjectile_Validate();//UspellBook *theSpell);
-
+		void ServerFireProjectile();
+	virtual void ServerFireProjectile_Implementation();
+	virtual bool ServerFireProjectile_Validate();
+	
+	//And here i Shall store the server->client functions
+	UFUNCTION(reliable, NetMulticast, WithValidation)
+		void ClientFireProjectile();
+	virtual void ClientFireProjectile_Implementation();
+	virtual bool ClientFireProjectile_Validate();
 };
