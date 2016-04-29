@@ -418,6 +418,7 @@ void AWizardsCharacter::ServerFireProjectile_Implementation() {
 	//UWorld* const World = GetWorld();
 	UE_LOG(LogTemp, Warning, TEXT("Server Side"));
 	OnFire();
+	ClientFireProjectile();
 	/*if (theSpell->spellType == 0) {
 		const FRotator SpawnRotation = GetControlRotation();
 		const FVector SpawnLocation = GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
@@ -445,4 +446,54 @@ void AWizardsCharacter::ServerFireProjectile_Implementation() {
 }
 bool AWizardsCharacter::ServerFireProjectile_Validate() {
 	return true;
+}
+
+void ClientFireProjectile_Implementation(){
+	if (mySpellBook[currSpell].spellType == 0)
+	{
+		const FRotator SpawnRotation = GetControlRotation();
+		const FVector SpawnLocation = GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
+		UWorld* const World = GetWorld();
+		if (World)
+		{
+			// spawn the projectile at the muzzle
+			UParticleSystem* projParticle = particleList[mySpellBook[currSpell].spellEffect + mySpellBook[currSpell].spellType * 5];
+			UParticleSystem* blastParticle = particleList[mySpellBook[currSpell].spellEffect + 5];
+			AWizardsProjectile* wizardsSpell = World->SpawnActor<AWizardsProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);// , myparams);
+			wizardsSpell->SpellCreation(&mySpellBook[currSpell], projParticle, blastParticle, this);
+		}
+	}
+	else if (mySpellBook[currSpell].spellType == 1) {
+		const FRotator SpawnRotation = FRotator(0.0);//GetControlRotation();
+													 // MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
+		const FVector SpawnLocation = FVector(0.0);//GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
+		UWorld* const World = GetWorld();
+		if (World)
+		{
+			// spawn the projectile at the muzzle
+			UParticleSystem* blastParticle = particleList[mySpellBook[currSpell].spellEffect + mySpellBook[currSpell].spellType * 5];
+			AWizardsBlast* wizardsSpell = World->SpawnActor<AWizardsBlast>(BlastClass, SpawnLocation, SpawnRotation);// , myparams);
+			wizardsSpell->SpellCreation(blastParticle, mySpellBook[currSpell].spellSize, mySpellBook[currSpell].spellDamage, this);
+			wizardsSpell->AttachRootComponentTo(GetCapsuleComponent());//Probably useful for Blasts, Rays, and Conical attacks
+		}
+	}
+	else if (mySpellBook[currSpell].spellType == 2) {
+		const FRotator SpawnRotation = FRotator(0.0);//GetControlRotation();
+													 // MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
+		const FVector SpawnLocation = FVector(0.0);//GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
+		UWorld* const World = GetWorld();
+		if (World)
+		{
+			// spawn the projectile at the muzzle
+			UParticleSystem* coneParticle = particleList[mySpellBook[currSpell].spellEffect + mySpellBook[currSpell].spellType * 5];
+			AWizardsCone* wizardsCone = World->SpawnActor<AWizardsCone>(ConeClass, SpawnLocation, SpawnRotation);// , myparams);
+			wizardsCone->SpellCreation(coneParticle, mySpellBook[currSpell].spellSize, mySpellBook[currSpell].spellDamage, this);
+			wizardsCone->AttachRootComponentTo(GetCapsuleComponent());//Probably useful for Blasts, Rays, and Conical attacks
+			activeAttack = Cast<AActor>(wizardsCone);
+		}
+	}
+}	
+bool ClientFireProjectile_Validate(){
+	return true;	
+}
 }
