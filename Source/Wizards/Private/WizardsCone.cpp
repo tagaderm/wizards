@@ -8,6 +8,7 @@
 // Sets default values
 AWizardsCone::AWizardsCone()
 {
+	bReplicates = true;
 	this->bCollideWhenPlacing = false;
 	//this->NotifyActorBeginOverlap;
 	this->SetActorEnableCollision(false);

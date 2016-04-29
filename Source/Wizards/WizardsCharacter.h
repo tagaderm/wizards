@@ -86,6 +86,7 @@ public:
 	float explosionDeathSize;
 	};*/
 	//TArray<spell> SList;
+	UPROPERTY( Replicated )
 	int8 currSpell;
 	//AWizardsCone* wizardsCone;
 	AActor* activeAttack;

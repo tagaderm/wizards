@@ -7,6 +7,7 @@
 // Sets default values
 AWizardsBlast::AWizardsBlast()
 {
+	bReplicates = true;
 	this->bCollideWhenPlacing = false;
 	//this->NotifyActorBeginOverlap;
 	this->SetActorEnableCollision(false);

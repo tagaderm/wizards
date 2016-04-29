@@ -28,7 +28,7 @@ void EmptyLinkFunctionForGeneratedCodeWizards() {}
 		FNativeFunctionRegistrar::RegisterFunction(AWizardsCharacter::StaticClass(),"newCharactersSpells",(Native)&AWizardsCharacter::execnewCharactersSpells);
 		FNativeFunctionRegistrar::RegisterFunction(AWizardsCharacter::StaticClass(),"ServerFireProjectile",(Native)&AWizardsCharacter::execServerFireProjectile);
 	}
-	IMPLEMENT_CLASS(AWizardsCharacter, 2201642033);
+	IMPLEMENT_CLASS(AWizardsCharacter, 3223446249);
 	void UWizardsSaveGame::StaticRegisterNativesUWizardsSaveGame()
 	{
 	}
@@ -297,6 +297,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_ConeClass = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ConeClass"), RF_Public|RF_Transient|RF_Native) UClassProperty(CPP_PROPERTY_BASE(ConeClass, AWizardsCharacter), 0x0004000000000021, Z_Construct_UClass_AWizardsCone_NoRegister());
 				UProperty* NewProp_BlastClass = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("BlastClass"), RF_Public|RF_Transient|RF_Native) UClassProperty(CPP_PROPERTY_BASE(BlastClass, AWizardsCharacter), 0x0004000000000021, Z_Construct_UClass_AWizardsBlast_NoRegister());
 				UProperty* NewProp_ProjectileClass = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ProjectileClass"), RF_Public|RF_Transient|RF_Native) UClassProperty(CPP_PROPERTY_BASE(ProjectileClass, AWizardsCharacter), 0x0004000000000021, Z_Construct_UClass_AWizardsProjectile_NoRegister());
+				UProperty* NewProp_currSpell = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("currSpell"), RF_Public|RF_Transient|RF_Native) UInt8Property(CPP_PROPERTY_BASE(currSpell, AWizardsCharacter), 0x0000000000000020);
 				UProperty* NewProp_mySpellBook = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("mySpellBook"), RF_Public|RF_Transient|RF_Native) UArrayProperty(CPP_PROPERTY_BASE(mySpellBook, AWizardsCharacter), 0x0000000000000020);
 				UProperty* NewProp_mySpellBook_Inner = new(EC_InternalUseOnlyConstructor, NewProp_mySpellBook, TEXT("mySpellBook"), RF_Public|RF_Transient|RF_Native) UObjectProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UClass_UspellBook_NoRegister());
 				UProperty* NewProp_thisSpell = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("thisSpell"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(thisSpell, AWizardsCharacter), 0x0000000000000020, Z_Construct_UClass_UspellBook_NoRegister());
@@ -329,6 +330,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(NewProp_ProjectileClass, TEXT("Category"), TEXT("Projectile"));
 				MetaData->SetValue(NewProp_ProjectileClass, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
 				MetaData->SetValue(NewProp_ProjectileClass, TEXT("ToolTip"), TEXT("Projectile class to spawn"));
+				MetaData->SetValue(NewProp_currSpell, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+				MetaData->SetValue(NewProp_currSpell, TEXT("ToolTip"), TEXT("struct spell {\n       UParticleSystem* myParticle;\n       int8 spellType;\n       float spellCost;\n       float spellSpeed;\n       float spellDamage;\n       float spellRange; //lifetime for projectiles, distance for rays and blasts\n       float spellSize;\n       bool canBounce;\n       bool hasGravity;\n       bool isHoming;\n       bool explodeOnCollision;\n       bool explodeOnDeath;\n       float explosionHitDamage;\n       float explosionHitSize;\n       float explosionDeathDamage;\n       float explosionDeathSize;\n       };//TArray<spell> SList;"));
 				MetaData->SetValue(NewProp_mySpellBook, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
 				MetaData->SetValue(NewProp_thisSpell, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
 				MetaData->SetValue(NewProp_thisSpell, TEXT("ToolTip"), TEXT("struct spell {\nFName* particleLocation;\nConstructorHelpers::FObjectFinder<UParticleSystem>* test;\nUParticleSystem* myParticle;\nfloat spellCost;\n};\nspell SList;"));
@@ -1502,7 +1505,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Wizards")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x0ABD8D97;
+			Guid.A = 0x7F38E8D9;
 			Guid.B = 0x44DFB0EC;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

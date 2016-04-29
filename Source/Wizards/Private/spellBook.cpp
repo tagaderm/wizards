@@ -5,7 +5,7 @@
 #include "UnrealNetwork.h"
 
 UspellBook::UspellBook() {
-
+	//bReplicates = true;
 }
 //this may be unneccessary and has no effect on the current bug
 void UspellBook::GetLifetimeReplicatedProps(TArray< FLifetimeProperty > & OutLifetimeProps) const
