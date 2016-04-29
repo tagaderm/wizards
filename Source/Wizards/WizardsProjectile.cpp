@@ -84,9 +84,9 @@ void AWizardsProjectile::OnHit(AActor* OtherActor, UPrimitiveComponent* OtherCom
   }
 }
 
-void AWizardsProjectile::SpellCreation(UspellBook* theSpell, AWizardsCharacter* theWiz) {
+void AWizardsProjectile::SpellCreation(AWizardsCharacter::theSpell* theSpell, UParticleSystem* projPart, UParticleSystem* blastPart, AWizardsCharacter* theWiz) {
 	if(theSpell != NULL){
-		MyParticleSystem->SetTemplate(theSpell->myParticle);
+		MyParticleSystem->SetTemplate(projPart);
 		MyParticleSystem->AttachTo(RootComponent);
 		MyParticleSystem->SetWorldScale3D( FVector( theSpell->spellSize ) );
 		shouldBounce = theSpell->canBounce;
@@ -99,7 +99,7 @@ void AWizardsProjectile::SpellCreation(UspellBook* theSpell, AWizardsCharacter* 
 		SetLifeSpan(theSpell->spellRange);
 		bBlastSize = theSpell->explosionHitSize;
 		bBlastDamage = theSpell->explosionHitDamage;
-		blastParticle = theSpell->explParticle;
+		blastParticle = blastPart;
 		explodeHit = theSpell->explodeOnCollision;
 		explodeDeath = theSpell->explodeOnDeath;
 
