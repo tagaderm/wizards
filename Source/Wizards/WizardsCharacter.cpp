@@ -117,7 +117,7 @@ void AWizardsCharacter::newCharactersSpells()
 	if (LoadGameInstance->LoadGameDataFromFile()) {
 
 		for (int i = 0; i < 5; i++) {
-			thisSpell = NewObject<UspellBook>(this);//From what I can tell, LoadGameInstance's spellBook gets destroyed after this function, so we need our own
+			thisSpell = NewObject<theSpell>(this);//From what I can tell, LoadGameInstance's spellBook gets destroyed after this function, so we need our own
 			mySpellBook.Add(thisSpell);
 			mySpellBook[i]->spellEffect = LoadGameInstance->spellBook[i]->spellEffect;
 			mySpellBook[i]->spellType = LoadGameInstance->spellBook[i]->spellType;
@@ -135,8 +135,8 @@ void AWizardsCharacter::newCharactersSpells()
 			mySpellBook[i]->explosionHitSize = LoadGameInstance->spellBook[i]->explosionHitSize*3.0 + 2.0;
 			mySpellBook[i]->explosionDeathDamage = LoadGameInstance->spellBook[i]->explosionDeathDamage;
 			mySpellBook[i]->explosionDeathSize = LoadGameInstance->spellBook[i]->explosionDeathSize*3.0 + 2.0;
-			mySpellBook[i]->myParticle = particleList[mySpellBook[i]->spellEffect + mySpellBook[i]->spellType * 5];
-			mySpellBook[i]->explParticle = particleList[mySpellBook[i]->spellEffect + 5];
+			//mySpellBook[i]->myParticle = particleList[mySpellBook[i]->spellEffect + mySpellBook[i]->spellType * 5];
+			//mySpellBook[i]->explParticle = particleList[mySpellBook[i]->spellEffect + 5];
 			UE_LOG(LogTemp, Warning, TEXT("Spell Gathering Succesful!"));
 		}
 	}
@@ -213,11 +213,13 @@ void AWizardsCharacter::OnFire()
 			if (World)
 			{
 				// spawn the projectile at the muzzle
+				UParticleSystem* projParticle = particleList[mySpellBook[currSpell]->spellEffect + mySpellBook[currSpell]->spellType * 5];
+				UParticleSystem* blastParticle = particleList[mySpellBook[currSpell]->spellEffect + 5];
 				AWizardsProjectile* wizardsSpell = World->SpawnActor<AWizardsProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);// , myparams);
-				wizardsSpell->SpellCreation(mySpellBook[currSpell], this);
+				wizardsSpell->SpellCreation(mySpellBook[currSpell], projParticle, blastParticle, this);
 				if (Role < ROLE_Authority)
 				{
-					ServerFireProjectile(mySpellBook[currSpell]);
+					ServerFireProjectile();//mySpellBook[currSpell]);
 				}
 			}
 		}
@@ -230,8 +232,9 @@ void AWizardsCharacter::OnFire()
 			if (World)
 			{
 				// spawn the projectile at the muzzle
+				UParticleSystem* blastParticle = particleList[mySpellBook[currSpell]->spellEffect + mySpellBook[currSpell]->spellType * 5];
 				AWizardsBlast* wizardsSpell = World->SpawnActor<AWizardsBlast>(BlastClass, SpawnLocation, SpawnRotation);// , myparams);
-				wizardsSpell->SpellCreation(mySpellBook[currSpell]->myParticle, mySpellBook[currSpell]->spellSize, mySpellBook[currSpell]->spellDamage, this);
+				wizardsSpell->SpellCreation(blastParticle, mySpellBook[currSpell]->spellSize, mySpellBook[currSpell]->spellDamage, this);
 				wizardsSpell->AttachRootComponentTo(GetCapsuleComponent());//Probably useful for Blasts, Rays, and Conical attacks
 				if (Role < ROLE_Authority)
 				{
@@ -248,8 +251,9 @@ void AWizardsCharacter::OnFire()
 			if (World)
 			{
 				// spawn the projectile at the muzzle
+				UParticleSystem* coneParticle = particleList[mySpellBook[currSpell]->spellEffect + mySpellBook[currSpell]->spellType * 5];
 				AWizardsCone* wizardsCone = World->SpawnActor<AWizardsCone>(ConeClass, SpawnLocation, SpawnRotation);// , myparams);
-				wizardsCone->SpellCreation(mySpellBook[currSpell]->myParticle, mySpellBook[currSpell]->spellSize, mySpellBook[currSpell]->spellDamage, this);
+				wizardsCone->SpellCreation(coneParticle, mySpellBook[currSpell]->spellSize, mySpellBook[currSpell]->spellDamage, this);
 				wizardsCone->AttachRootComponentTo(GetCapsuleComponent());//Probably useful for Blasts, Rays, and Conical attacks
 				activeAttack = Cast<AActor>(wizardsCone);
 				if (Role < ROLE_Authority)
@@ -410,7 +414,7 @@ void AWizardsCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty > &
 	DOREPLIFETIME(AWizardsCharacter, currSpell);
 }
 
-void AWizardsCharacter::ServerFireProjectile_Implementation(UspellBook *theSpell) {
+void AWizardsCharacter::ServerFireProjectile_Implementation() {
 	//UWorld* const World = GetWorld();
 	UE_LOG(LogTemp, Warning, TEXT("Server Side"));
 	OnFire();
@@ -439,6 +443,6 @@ void AWizardsCharacter::ServerFireProjectile_Implementation(UspellBook *theSpell
 		UE_LOG(LogTemp, Warning, TEXT("Svoosh!"));
 	}*/
 }
-bool AWizardsCharacter::ServerFireProjectile_Validate(UspellBook *theSpell) {
+bool AWizardsCharacter::ServerFireProjectile_Validate() {
 	return true;
 }
