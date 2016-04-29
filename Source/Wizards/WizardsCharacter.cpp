@@ -6,6 +6,7 @@
 #include "WizardsBlast.h"
 #include "WizardsCone.h"
 #include "WizardsSaveGame.h"
+#include "UnrealNetwork.h"
 #include "Animation/AnimInstance.h"
 #include "GameFramework/InputSettings.h"
 
@@ -15,7 +16,7 @@
 // AWizardsCharacter
 
 AWizardsCharacter::AWizardsCharacter()
-{ 
+{
 	//Tick for mana regen
 	PrimaryActorTick.bCanEverTick = true;
 	//Set Health and Mana
@@ -23,6 +24,12 @@ AWizardsCharacter::AWizardsCharacter()
 	maxHealth = 100.0;
 	Mana = 100.0;
 	maxMana = 100.0;
+	//Spell Stuff for Testing
+	//SList.spellCost = 10.0;
+
+	ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Sparks.P_Sparks'"));
+	//SList.myParticle = ArbitraryParticleName.Object;
+	//SList.test = &ArbitraryParticleName;
 	currSpell = 0;
 	//For the record, this probably isn't the best way to get particles for the spells but it works
 	//A better method, implemented at a later and unknown date, would be to hold this array in its own class
@@ -62,11 +69,11 @@ AWizardsCharacter::AWizardsCharacter()
 	particleList.Add(ArbitraryParticleName14.Object);
 
 
-	spell test;
-	SList.Add(test);
-	SList[currSpell].spellCost = 10.0;
+	//spell test;
+	//SList.Add(test);
+	//SList[currSpell].spellCost = 10.0;
 	//SList[currSpell].theWizard = this;
-    SList[currSpell].canBounce = true;
+	//SList[currSpell].canBounce = true;
 	//ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName8(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Sparks.P_Sparks'"));
 	//SList[currSpell].myParticle = ArbitraryParticleName8.Object;
 	//SList.test = &ArbitraryParticleName;
@@ -101,7 +108,7 @@ AWizardsCharacter::AWizardsCharacter()
 }
 
 
-void AWizardsCharacter::newCharactersSpells() 
+void AWizardsCharacter::newCharactersSpells()
 {
 	UWizardsSaveGame* LoadGameInstance = NewObject<UWizardsSaveGame>();
 	//	spellList = LoadGameInstance->spellList;
@@ -116,7 +123,7 @@ void AWizardsCharacter::newCharactersSpells()
 			mySpellBook[i]->spellCost = LoadGameInstance->spellBook[i]->spellCost;
 			mySpellBook[i]->spellSpeed = LoadGameInstance->spellBook[i]->spellSpeed*9000.0 + 1000.0;//range from 1000 to 10000
 			mySpellBook[i]->spellDamage = LoadGameInstance->spellBook[i]->spellDamage;//not in at the moment
-			mySpellBook[i]->spellRange = LoadGameInstance->spellBook[i]->spellRange*4.0 +1.0; //1 to 5 seconds
+			mySpellBook[i]->spellRange = LoadGameInstance->spellBook[i]->spellRange*4.0 + 1.0; //1 to 5 seconds
 			mySpellBook[i]->spellSize = LoadGameInstance->spellBook[i]->spellSize*4.0 + 1.0;//range 1 to 5
 			mySpellBook[i]->canBounce = LoadGameInstance->spellBook[i]->canBounce;//boolean, in
 			mySpellBook[i]->hasGravity = LoadGameInstance->spellBook[i]->hasGravity;//totally in
@@ -124,11 +131,11 @@ void AWizardsCharacter::newCharactersSpells()
 			mySpellBook[i]->explodeOnCollision = LoadGameInstance->spellBook[i]->explodeOnCollision; //none of this shit down here is implemented
 			mySpellBook[i]->explodeOnDeath = LoadGameInstance->spellBook[i]->explodeOnDeath;
 			mySpellBook[i]->explosionHitDamage = LoadGameInstance->spellBook[i]->explosionHitDamage;
-			mySpellBook[i]->explosionHitSize = LoadGameInstance->spellBook[i]->explosionHitSize*3.0+2.0;
+			mySpellBook[i]->explosionHitSize = LoadGameInstance->spellBook[i]->explosionHitSize*3.0 + 2.0;
 			mySpellBook[i]->explosionDeathDamage = LoadGameInstance->spellBook[i]->explosionDeathDamage;
-			mySpellBook[i]->explosionDeathSize = LoadGameInstance->spellBook[i]->explosionDeathSize*3.0+2.0;
-			mySpellBook[i]->myParticle = particleList[mySpellBook[i]->spellEffect + mySpellBook[i]->spellType*5];
-			mySpellBook[i]->explParticle = particleList[i+5];
+			mySpellBook[i]->explosionDeathSize = LoadGameInstance->spellBook[i]->explosionDeathSize*3.0 + 2.0;
+			mySpellBook[i]->myParticle = particleList[mySpellBook[i]->spellEffect + mySpellBook[i]->spellType * 5];
+			mySpellBook[i]->explParticle = particleList[mySpellBook[i]->spellEffect + 5];
 			UE_LOG(LogTemp, Warning, TEXT("Spell Gathering Succesful!"));
 		}
 	}
@@ -139,12 +146,12 @@ void AWizardsCharacter::newCharactersSpells()
 
 /////////////
 // On Tick
-void AWizardsCharacter::Tick(float DeltaTime)  
-{  
-    Super::Tick(DeltaTime);
-    if(Mana <= maxMana){
-	Mana += DeltaTime;
-    }
+void AWizardsCharacter::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	if (Mana <= maxMana) {
+		Mana += DeltaTime;
+	}
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -167,16 +174,16 @@ void AWizardsCharacter::SetupPlayerInputComponent(class UInputComponent* InputCo
 
 
 	//InputComponent->BindTouch(EInputEvent::IE_Pressed, this, &AWizardsCharacter::TouchStarted);
-	if( EnableTouchscreenMovement(InputComponent) == false )
+	if (EnableTouchscreenMovement(InputComponent) == false)
 	{
 		InputComponent->BindAction("Fire", IE_Pressed, this, &AWizardsCharacter::OnFire);
 		InputComponent->BindAction("Fire", IE_Released, this, &AWizardsCharacter::OffFire);
 
 	}
-	
+
 	InputComponent->BindAxis("MoveForward", this, &AWizardsCharacter::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &AWizardsCharacter::MoveRight);
-	
+
 	// We have 2 versions of the rotation bindings to handle different kinds of devices differently
 	// "turn" handles devices that provide an absolute delta, such as a mouse.
 	// "turnrate" is for devices that we choose to treat as a rate of change, such as an analog joystick
@@ -192,85 +199,94 @@ void AWizardsCharacter::OnFire()
 		UE_LOG(LogTemp, Warning, TEXT("Spell Gathering Needed!"));
 		newCharactersSpells();
 	}
-		if (Mana > mySpellBook[currSpell]->spellCost) {
-			Mana -= mySpellBook[currSpell]->spellCost;
-			// try and fire a projectile
-				
-			if (mySpellBook[currSpell]->spellType == 0)
+	if (Mana > mySpellBook[currSpell]->spellCost) {
+		Mana -= mySpellBook[currSpell]->spellCost;
+		// try and fire a projectile
+
+		if (mySpellBook[currSpell]->spellType == 0)
+		{
+			const FRotator SpawnRotation = GetControlRotation();
+			const FVector SpawnLocation = GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
+
+			UWorld* const World = GetWorld();
+			if (World)
 			{
-				const FRotator SpawnRotation = GetControlRotation();
-				// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
-				const FVector SpawnLocation = GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
-
-				UWorld* const World = GetWorld();
-				if (World)
+				// spawn the projectile at the muzzle
+				AWizardsProjectile* wizardsSpell = World->SpawnActor<AWizardsProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);// , myparams);
+				wizardsSpell->SpellCreation(mySpellBook[currSpell], this);
+				if (Role < ROLE_Authority)
 				{
-					// spawn the projectile at the muzzle
-					AWizardsProjectile* wizardsSpell = World->SpawnActor<AWizardsProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);// , myparams);
-					wizardsSpell->SpellCreation(mySpellBook[currSpell], this);
-
+					ServerFireProjectile(mySpellBook[currSpell]);
 				}
 			}
-			else if(mySpellBook[currSpell]->spellType == 1){
-				const FRotator SpawnRotation = FRotator(0.0);//GetControlRotation();
-				// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
-				const FVector SpawnLocation = FVector(0.0);//GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
+		}
+		else if (mySpellBook[currSpell]->spellType == 1) {
+			const FRotator SpawnRotation = FRotator(0.0);//GetControlRotation();
+														 // MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
+			const FVector SpawnLocation = FVector(0.0);//GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
 
-				UWorld* const World = GetWorld();
-				if (World)
-				{
-					// spawn the projectile at the muzzle
-					AWizardsBlast* wizardsSpell = World->SpawnActor<AWizardsBlast>(BlastClass, SpawnLocation, SpawnRotation);// , myparams);
-					wizardsSpell->SpellCreation(mySpellBook[currSpell]->myParticle, mySpellBook[currSpell]->spellSize, mySpellBook[currSpell]->spellDamage, this);
-					wizardsSpell->AttachRootComponentTo(GetCapsuleComponent());//Probably useful for Blasts, Rays, and Conical attacks
-				}
-			}
-			else if (mySpellBook[currSpell]->spellType == 2) {
-				const FRotator SpawnRotation = FRotator(0.0);//GetControlRotation();
-				// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
-				const FVector SpawnLocation = FVector(0.0);//GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
-
-				UWorld* const World = GetWorld();
-				if (World)
-				{
-					// spawn the projectile at the muzzle
-					AWizardsCone* wizardsCone = World->SpawnActor<AWizardsCone>(ConeClass, SpawnLocation, SpawnRotation);// , myparams);
-					wizardsCone->SpellCreation(mySpellBook[currSpell]->myParticle, mySpellBook[currSpell]->spellSize, mySpellBook[currSpell]->spellDamage, this);
-					wizardsCone->AttachRootComponentTo(GetCapsuleComponent());//Probably useful for Blasts, Rays, and Conical attacks
-					activeAttack = Cast<AActor>(wizardsCone);
-				}
-			}
-
-
-
-
-			// God this sound is so annoying
-			/*if (FireSound != NULL)
+			UWorld* const World = GetWorld();
+			if (World)
 			{
-				UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
-			}*/
-
-			// try and play a firing animation if specified
-			if (FireAnimation != NULL)
-			{
-				// Get the animation object for the arms mesh
-				UAnimInstance* AnimInstance = Mesh1P->GetAnimInstance();
-				if (AnimInstance != NULL)
+				// spawn the projectile at the muzzle
+				AWizardsBlast* wizardsSpell = World->SpawnActor<AWizardsBlast>(BlastClass, SpawnLocation, SpawnRotation);// , myparams);
+				wizardsSpell->SpellCreation(mySpellBook[currSpell]->myParticle, mySpellBook[currSpell]->spellSize, mySpellBook[currSpell]->spellDamage, this);
+				wizardsSpell->AttachRootComponentTo(GetCapsuleComponent());//Probably useful for Blasts, Rays, and Conical attacks
+				if (Role < ROLE_Authority)
 				{
-					AnimInstance->Montage_Play(FireAnimation, 1.f);
+					ServerFireProjectile(mySpellBook[currSpell]);
 				}
 			}
+		}
+		else if (mySpellBook[currSpell]->spellType == 2) {
+			const FRotator SpawnRotation = FRotator(0.0);//GetControlRotation();
+														 // MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
+			const FVector SpawnLocation = FVector(0.0);//GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
+
+			UWorld* const World = GetWorld();
+			if (World)
+			{
+				// spawn the projectile at the muzzle
+				AWizardsCone* wizardsCone = World->SpawnActor<AWizardsCone>(ConeClass, SpawnLocation, SpawnRotation);// , myparams);
+				wizardsCone->SpellCreation(mySpellBook[currSpell]->myParticle, mySpellBook[currSpell]->spellSize, mySpellBook[currSpell]->spellDamage, this);
+				wizardsCone->AttachRootComponentTo(GetCapsuleComponent());//Probably useful for Blasts, Rays, and Conical attacks
+				activeAttack = Cast<AActor>(wizardsCone);
+				if (Role < ROLE_Authority)
+				{
+					ServerFireProjectile(mySpellBook[currSpell]);
+				}
+			}
+		}
+		// God this sound is so annoying
+		/*if (FireSound != NULL)
+		{
+		UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
+		}*/
+
+		// try and play a firing animation if specified
+		if (FireAnimation != NULL)
+		{
+			// Get the animation object for the arms mesh
+			UAnimInstance* AnimInstance = Mesh1P->GetAnimInstance();
+			if (AnimInstance != NULL)
+			{
+				AnimInstance->Montage_Play(FireAnimation, 1.f);
+			}
+		}
+
 	}
 }
 
 void AWizardsCharacter::OffFire() {
-	activeAttack->Destroy();
+	if (activeAttack != NULL) {
+		activeAttack->Destroy();
+	}
 }
 
 
 void AWizardsCharacter::BeginTouch(const ETouchIndex::Type FingerIndex, const FVector Location)
 {
-	if( TouchItem.bIsPressed == true )
+	if (TouchItem.bIsPressed == true)
 	{
 		return;
 	}
@@ -286,7 +302,7 @@ void AWizardsCharacter::EndTouch(const ETouchIndex::Type FingerIndex, const FVec
 	{
 		return;
 	}
-	if( ( FingerIndex == TouchItem.FingerIndex ) && (TouchItem.bMoved == false) )
+	if ((FingerIndex == TouchItem.FingerIndex) && (TouchItem.bMoved == false))
 	{
 		OnFire();
 	}
@@ -295,7 +311,7 @@ void AWizardsCharacter::EndTouch(const ETouchIndex::Type FingerIndex, const FVec
 
 void AWizardsCharacter::TouchUpdate(const ETouchIndex::Type FingerIndex, const FVector Location)
 {
-	if ((TouchItem.bIsPressed == true) && ( TouchItem.FingerIndex==FingerIndex))
+	if ((TouchItem.bIsPressed == true) && (TouchItem.FingerIndex == FingerIndex))
 	{
 		if (TouchItem.bIsPressed)
 		{
@@ -307,7 +323,7 @@ void AWizardsCharacter::TouchUpdate(const ETouchIndex::Type FingerIndex, const F
 					FVector MoveDelta = Location - TouchItem.Location;
 					FVector2D ScreenSize;
 					ViewportClient->GetViewportSize(ScreenSize);
-					FVector2D ScaledDelta = FVector2D( MoveDelta.X, MoveDelta.Y) / ScreenSize;									
+					FVector2D ScaledDelta = FVector2D(MoveDelta.X, MoveDelta.Y) / ScreenSize;
 					if (ScaledDelta.X != 0.0f)
 					{
 						TouchItem.bMoved = true;
@@ -361,7 +377,7 @@ void AWizardsCharacter::LookUpAtRate(float Rate)
 bool AWizardsCharacter::EnableTouchscreenMovement(class UInputComponent* InputComponent)
 {
 	bool bResult = false;
-	if(FPlatformMisc::GetUseVirtualJoysticks() || GetDefault<UInputSettings>()->bUseMouseForTouch )
+	if (FPlatformMisc::GetUseVirtualJoysticks() || GetDefault<UInputSettings>()->bUseMouseForTouch)
 	{
 		bResult = true;
 		InputComponent->BindTouch(EInputEvent::IE_Pressed, this, &AWizardsCharacter::BeginTouch);
@@ -371,6 +387,7 @@ bool AWizardsCharacter::EnableTouchscreenMovement(class UInputComponent* InputCo
 	return bResult;
 }
 
+
 template<int newspell>
 void AWizardsCharacter::spellSwitch()
 {
@@ -378,9 +395,48 @@ void AWizardsCharacter::spellSwitch()
 }
 
 
-float AWizardsCharacter::GetHealth(){
+float AWizardsCharacter::GetHealth() {
 	return Health;
 }
-float AWizardsCharacter::GetMana(){
+float AWizardsCharacter::GetMana() {
 	return Mana;
+}
+
+void AWizardsCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty > & OutLifetimeProps) const {
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+	DOREPLIFETIME(AWizardsCharacter, mySpellBook);
+	DOREPLIFETIME(AWizardsCharacter, Mana);
+}
+
+void AWizardsCharacter::ServerFireProjectile_Implementation(UspellBook *theSpell) {
+	//UWorld* const World = GetWorld();
+	UE_LOG(LogTemp, Warning, TEXT("Server Side"));
+	OnFire();
+	/*if (theSpell->spellType == 0) {
+		const FRotator SpawnRotation = GetControlRotation();
+		const FVector SpawnLocation = GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
+		AWizardsProjectile* wizardsSpell = World->SpawnActor<AWizardsProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);// , myparams);
+		wizardsSpell->SpellCreation(theSpell, this);
+
+	}
+	else if (theSpell->spellType == 1) {
+		const FRotator SpawnRotation = FRotator(0.0);//GetControlRotation();
+		const FVector SpawnLocation = FVector(0.0);//GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
+		AWizardsBlast* wizardsSpell = World->SpawnActor<AWizardsBlast>(BlastClass, SpawnLocation, SpawnRotation);// , myparams);
+		wizardsSpell->SpellCreation(theSpell->myParticle, theSpell->spellSize, theSpell->spellDamage, this);
+		wizardsSpell->AttachRootComponentTo(GetCapsuleComponent());//Probably useful for Blasts, Rays, and Conical attacks
+		UE_LOG(LogTemp, Warning, TEXT("Boom!"));
+	}
+	else if (theSpell->spellType == 2) {
+		const FRotator SpawnRotation = FRotator(0.0);//GetControlRotation();
+		const FVector SpawnLocation = FVector(0.0);//GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
+		AWizardsCone* wizardsCone = World->SpawnActor<AWizardsCone>(ConeClass, SpawnLocation, SpawnRotation);// , myparams);
+		wizardsCone->SpellCreation(theSpell->myParticle, theSpell->spellSize, theSpell->spellDamage, this);
+		wizardsCone->AttachRootComponentTo(GetCapsuleComponent());//Probably useful for Blasts, Rays, and Conical attacks
+		activeAttack = Cast<AActor>(wizardsCone);
+		UE_LOG(LogTemp, Warning, TEXT("Svoosh!"));
+	}*/
+}
+bool AWizardsCharacter::ServerFireProjectile_Validate(UspellBook *theSpell) {
+	return true;
 }

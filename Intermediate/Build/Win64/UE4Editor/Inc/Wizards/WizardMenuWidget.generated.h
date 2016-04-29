@@ -99,6 +99,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		*(bool*)Z_Param__Result=this->getGravity(); \
 	} \
  \
+	DECLARE_FUNCTION(execgetType) \
+	{ \
+		P_FINISH; \
+		*(FName*)Z_Param__Result=this->getType(); \
+	} \
+ \
 	DECLARE_FUNCTION(execgetEffect) \
 	{ \
 		P_FINISH; \
@@ -208,6 +214,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_GET_PROPERTY(UIntProperty,Z_Param_spellSlot); \
 		P_FINISH; \
 		this->spellChange(Z_Param_spellSlot); \
+	} \
+ \
+	DECLARE_FUNCTION(execsetType) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_effectChange); \
+		P_FINISH; \
+		this->setType(Z_Param_effectChange); \
 	} \
  \
 	DECLARE_FUNCTION(execsetEffect) \
@@ -316,6 +329,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		*(bool*)Z_Param__Result=this->getGravity(); \
 	} \
  \
+	DECLARE_FUNCTION(execgetType) \
+	{ \
+		P_FINISH; \
+		*(FName*)Z_Param__Result=this->getType(); \
+	} \
+ \
 	DECLARE_FUNCTION(execgetEffect) \
 	{ \
 		P_FINISH; \
@@ -425,6 +444,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_GET_PROPERTY(UIntProperty,Z_Param_spellSlot); \
 		P_FINISH; \
 		this->spellChange(Z_Param_spellSlot); \
+	} \
+ \
+	DECLARE_FUNCTION(execsetType) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_effectChange); \
+		P_FINISH; \
+		this->setType(Z_Param_effectChange); \
 	} \
  \
 	DECLARE_FUNCTION(execsetEffect) \
