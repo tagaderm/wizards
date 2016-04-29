@@ -33,4 +33,13 @@ public:
 	float explosionHitSize;
 	float explosionDeathDamage;
 	float explosionDeathSize;
+
+	//bool IsNameStableForNetworking() const override;
+
+	bool IsSupportedForNetworking() const override
+	{
+		return true;
+	};
+
 };
+

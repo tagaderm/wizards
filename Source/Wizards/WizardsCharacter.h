@@ -8,13 +8,13 @@
 
 class UInputComponent;
 
-UCLASS(config=Game)
+UCLASS(config = Game)
 class AWizardsCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
-	/** Pawn mesh: 1st person view (arms; seen only by self) */
-	UPROPERTY(VisibleDefaultsOnly, Category=Mesh)
+		/** Pawn mesh: 1st person view (arms; seen only by self) */
+		UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
 	class USkeletalMeshComponent* Mesh1P;
 
 	/** First person camera */
@@ -23,22 +23,23 @@ class AWizardsCharacter : public ACharacter
 public:
 	AWizardsCharacter();
 
-	UFUNCTION(BlueprintCallable, Category = "CharacterFunctions")
-	void newCharactersSpells();
 
-	void Tick(float DeltaTime) override;	
+	UFUNCTION(BlueprintCallable, Category = "CharacterFunctions")
+		void newCharactersSpells();
+
+	void Tick(float DeltaTime) override;
 
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
-	float BaseTurnRate;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
+		float BaseTurnRate;
 
 	/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
-	float BaseLookUpRate;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
+		float BaseLookUpRate;
 
 	/** Gun muzzle's offset from the characters location */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
-	FVector GunOffset;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+		FVector GunOffset;
 
 	/** Health */
 	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
@@ -48,48 +49,59 @@ public:
 
 	/** Mana */
 	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
+	UPROPERTY(Replicated)
 	float Mana;
 	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
 	float maxMana;
-	UPROPERTY()
-	UspellBook* thisSpell;
-	UPROPERTY()
-	TArray<UspellBook*> mySpellBook;
-	TArray<UParticleSystem*> particleList;
+	/*
 	struct spell {
-		UParticleSystem* myParticle;
-		int8 spellType;
-		float spellCost;
-		float spellSpeed; 
-		float spellDamage;
-		float spellRange; //lifetime for projectiles, distance for rays and blasts
-		float spellSize;
-		bool canBounce;
-		bool hasGravity;
-		bool isHoming;
-		bool explodeOnCollision;
-		bool explodeOnDeath;
-		float explosionHitDamage;
-		float explosionHitSize;
-		float explosionDeathDamage;
-		float explosionDeathSize;
+	FName* particleLocation;
+	ConstructorHelpers::FObjectFinder<UParticleSystem>* test;
+	UParticleSystem* myParticle;
+	float spellCost;
 	};
-	TArray<spell> SList;
+	spell SList;*/
+
+	UPROPERTY(Replicated)
+		UspellBook* thisSpell;
+	UPROPERTY(Replicated)
+		TArray<UspellBook*> mySpellBook;
+	TArray<UParticleSystem*> particleList;
+	/*struct spell {
+	UParticleSystem* myParticle;
+	int8 spellType;
+	float spellCost;
+	float spellSpeed;
+	float spellDamage;
+	float spellRange; //lifetime for projectiles, distance for rays and blasts
+	float spellSize;
+	bool canBounce;
+	bool hasGravity;
+	bool isHoming;
+	bool explodeOnCollision;
+	bool explodeOnDeath;
+	float explosionHitDamage;
+	float explosionHitSize;
+	float explosionDeathDamage;
+	float explosionDeathSize;
+	};*/
+	//TArray<spell> SList;
 	int8 currSpell;
 	//AWizardsCone* wizardsCone;
 	AActor* activeAttack;
 
+
 	/** Projectile class to spawn */
-	UPROPERTY(EditAnywhere, Category=Projectile)
-	TSubclassOf<class AWizardsProjectile> ProjectileClass;
-	UPROPERTY(EditAnywhere, Category = Projectile)
-	TSubclassOf<class AWizardsBlast> BlastClass;
-	UPROPERTY(EditAnywhere, Category = Projectile)
-	TSubclassOf<class AWizardsCone> ConeClass;
+	UPROPERTY(Replicated, EditAnywhere, Category = Projectile)
+		TSubclassOf<class AWizardsProjectile> ProjectileClass;
+	UPROPERTY(Replicated, EditAnywhere, Category = Projectile)
+		TSubclassOf<class AWizardsBlast> BlastClass;
+	UPROPERTY(Replicated, EditAnywhere, Category = Projectile)
+		TSubclassOf<class AWizardsCone> ConeClass;
 
 
 	/** Sound to play each time we fire */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 	class USoundBase* FireSound;
 
 	/** AnimMontage to play each time we fire */
@@ -97,33 +109,33 @@ public:
 	class UAnimMontage* FireAnimation;
 
 protected:
-	
+
 	/** Fires a projectile. */
 	void OnFire();
 
 	void OffFire();//stops cones
 
-	/** Handles moving forward/backward */
+				   /** Handles moving forward/backward */
 	void MoveForward(float Val);
 
 	/** Handles stafing movement, left and right */
 	void MoveRight(float Val);
 
 	/**
-	 * Called via input to turn at a given rate.
-	 * @param Rate	This is a normalized rate, i.e. 1.0 means 100% of desired turn rate
-	 */
+	* Called via input to turn at a given rate.
+	* @param Rate	This is a normalized rate, i.e. 1.0 means 100% of desired turn rate
+	*/
 	void TurnAtRate(float Rate);
 
 	/**
-	 * Called via input to turn look up/down at a given rate.
-	 * @param Rate	This is a normalized rate, i.e. 1.0 means 100% of desired turn rate
-	 */
+	* Called via input to turn look up/down at a given rate.
+	* @param Rate	This is a normalized rate, i.e. 1.0 means 100% of desired turn rate
+	*/
 	void LookUpAtRate(float Rate);
 
 	struct TouchData
 	{
-		TouchData() { bIsPressed = false;Location=FVector::ZeroVector;}
+		TouchData() { bIsPressed = false; Location = FVector::ZeroVector; }
 		bool bIsPressed;
 		ETouchIndex::Type FingerIndex;
 		FVector Location;
@@ -133,7 +145,7 @@ protected:
 	void EndTouch(const ETouchIndex::Type FingerIndex, const FVector Location);
 	void TouchUpdate(const ETouchIndex::Type FingerIndex, const FVector Location);
 	TouchData	TouchItem;
-	
+
 	//Called when you switch a spell
 	template<int newspell>
 	void spellSwitch();
@@ -144,12 +156,12 @@ protected:
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 	// End of APawn interface
 
-	/* 
-	 * Configures input for touchscreen devices if there is a valid touch interface for doing so 
-	 *
-	 * @param	InputComponent	The input component pointer to bind controls to
-	 * @returns true if touch controls were enabled.
-	 */
+	/*
+	* Configures input for touchscreen devices if there is a valid touch interface for doing so
+	*
+	* @param	InputComponent	The input component pointer to bind controls to
+	* @returns true if touch controls were enabled.
+	*/
 	bool EnableTouchscreenMovement(UInputComponent* InputComponent);
 
 public:
@@ -160,5 +172,12 @@ public:
 	float GetHealth();
 	float GetMana();
 
-};
+	void GetLifetimeReplicatedProps(TArray< FLifetimeProperty > & OutLifetimeProps) const override;
 
+	//In this chunk of whatever I shall store the server functions
+	UFUNCTION(reliable, server, WithValidation)
+		void ServerFireProjectile(UspellBook *theSpell);
+	virtual void ServerFireProjectile_Implementation(UspellBook *theSpell);
+	virtual bool ServerFireProjectile_Validate(UspellBook *theSpell);
+
+};
