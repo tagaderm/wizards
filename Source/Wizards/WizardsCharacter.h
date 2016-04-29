@@ -8,6 +8,48 @@
 
 class UInputComponent;
 
+
+
+USTRUCT( Replicated)
+struct theSpell
+{
+	GENERATED_USTRUCT_BODY()
+	UPROPERTY()
+	uint8 spellEffect;
+	UPROPERTY()
+	uint8 spellType;
+	UPROPERTY()
+	float spellCost;
+	UPROPERTY()
+	float spellSpeed;
+	UPROPERTY()
+	float spellDamage;
+	UPROPERTY()
+	float spellRange; //lifetime for projectiles, distance for rays and blasts
+	UPROPERTY()
+	float spellSize;
+	UPROPERTY()
+	bool canBounce;
+	UPROPERTY()
+	bool hasGravity;
+	UPROPERTY()
+	bool isHoming;
+	UPROPERTY()
+	bool explodeOnCollision;
+	UPROPERTY()
+	bool explodeOnDeath;
+	UPROPERTY()
+	float explosionHitDamage;
+	UPROPERTY()
+	float explosionHitSize;
+	UPROPERTY()
+	float explosionDeathDamage;
+	UPROPERTY()
+	float explosionDeathSize;
+};
+
+
+
 UCLASS(config = Game)
 class AWizardsCharacter : public ACharacter
 {
@@ -62,10 +104,12 @@ public:
 	};
 	spell SList;*/
 
+	//UPROPERTY(Replicated)
+	//	UspellBook* thisSpell;
+	//UPROPERTY(Replicated)
+	//	TArray<UspellBook*> mySpellBook;
 	UPROPERTY(Replicated)
-		UspellBook* thisSpell;
-	UPROPERTY(Replicated)
-		TArray<UspellBook*> mySpellBook;
+	TArray<theSpell*> mySpellBook;
 	TArray<UParticleSystem*> particleList;
 	/*struct spell {
 	UParticleSystem* myParticle;
@@ -177,8 +221,8 @@ public:
 
 	//In this chunk of whatever I shall store the server functions
 	UFUNCTION(reliable, server, WithValidation)
-		void ServerFireProjectile(UspellBook *theSpell);
-	virtual void ServerFireProjectile_Implementation(UspellBook *theSpell);
-	virtual bool ServerFireProjectile_Validate(UspellBook *theSpell);
+		void ServerFireProjectile();//UspellBook *theSpell);
+	virtual void ServerFireProjectile_Implementation();//UspellBook *theSpell);
+	virtual bool ServerFireProjectile_Validate();//UspellBook *theSpell);
 
 };
