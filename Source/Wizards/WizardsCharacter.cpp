@@ -496,4 +496,3 @@ void AWizardsCharacter::ClientFireProjectile_Implementation(){
 bool AWizardsCharacter::ClientFireProjectile_Validate(){
 	return true;	
 }
-}
