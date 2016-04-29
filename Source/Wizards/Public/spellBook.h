@@ -35,6 +35,8 @@ public:
 	float explosionDeathSize;
 
 	//bool IsNameStableForNetworking() const override;
+	//Might not be necessary
+	void GetLifetimeReplicatedProps(TArray< FLifetimeProperty > & OutLifetimeProps) const override;
 
 	bool IsSupportedForNetworking() const override
 	{

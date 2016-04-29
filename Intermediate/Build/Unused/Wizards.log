@@ -1,20 +1,37 @@
-﻿Build started 4/28/2016 10:11:00 PM.
-     1>Project "I:\Projects\wizards\Intermediate\ProjectFiles\Wizards.vcxproj" on node 3 (Rebuild target(s)).
+﻿Build started 4/29/2016 12:24:40 AM.
+     1>Project "I:\Projects\wizards\Intermediate\ProjectFiles\Wizards.vcxproj" on node 2 (Rebuild target(s)).
      1>Rebuild:
          "I:\EPIC\Epic Games\4.10\Engine\Build\BatchFiles\Rebuild.bat" WizardsEditor Win64 Development "I:\Projects\wizards\Wizards.uproject" -rocket -waitmutex -2015
          Cleaning WizardsEditor Binaries...
          Compiling game modules for hot reload
-     1>EXEC : error : System.UnauthorizedAccessException: Access to the path 'I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-8700.dll' is denied.
-            at UnrealBuildTool.UEBuildTarget.CleanFile(String Filename)
-            at UnrealBuildTool.UEBuildTarget.CleanTarget(BuildManifest Manifest)
-            at UnrealBuildTool.UEBuildTarget.GenerateManifest()
-            at UnrealBuildTool.UEBuildTarget.Build(IUEToolChain TargetToolChain, List`1& OutputItems, List`1& UObjectModules, String& EULAViolationWarning)
-            at UnrealBuildTool.UnrealBuildTool.RunUBT(String[] Arguments)
+         Creating makefile for hot reloading WizardsEditor (no existing makefile)
          Compiling game modules for hot reload
-         Target is up to date.
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.MakeFile.Targets(42,5): error MSB3073: The command ""I:\EPIC\Epic Games\4.10\Engine\Build\BatchFiles\Rebuild.bat" WizardsEditor Win64 Development "I:\Projects\wizards\Wizards.uproject" -rocket -waitmutex -2015" exited with code 2.
-     1>Done Building Project "I:\Projects\wizards\Intermediate\ProjectFiles\Wizards.vcxproj" (Rebuild target(s)) -- FAILED.
+         Performing full C++ include scan (no include cache file)
+         Parsing headers for WizardsEditor
+           Running UnrealHeaderTool "I:\Projects\wizards\Wizards.uproject" "I:\Projects\wizards\Intermediate\Build\Win64\WizardsEditor\Development\UnrealHeaderTool.manifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -rocket -installed
+         Reflection code generated for WizardsEditor in 4.5608584 seconds
+         Performing 16 actions (4 in parallel)
+         [2/16] Resource PCLaunch.rc
+         [3/16] Resource ModuleVersionResource.rc.inl
+         PCH.Wizards.h.cpp
+         Wizards.cpp
+         WizardMenuWidget.cpp
+         WizardsGameMode.cpp
+         WizardsCharacter.cpp
+         WizardsProjectile.cpp
+         WizardsHUD.cpp
+         WizardsSaveGame.cpp
+         MyActor.cpp
+         spellBook.cpp
+         WizardsCone.cpp
+         Wizards.generated.cpp
+         WizardsBlast.cpp
+         [16/16] Link UE4Editor-Wizards-2264.dll
+            Creating library I:\Projects\wizards\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-Wizards-2264.lib and object I:\Projects\wizards\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-Wizards-2264.exp
+         -------- End Detailed Actions Stats -----------------------------------------------------------
+         Total build time: 43.01 seconds
+     1>Done Building Project "I:\Projects\wizards\Intermediate\ProjectFiles\Wizards.vcxproj" (Rebuild target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:20.93
+Time Elapsed 00:00:45.51
