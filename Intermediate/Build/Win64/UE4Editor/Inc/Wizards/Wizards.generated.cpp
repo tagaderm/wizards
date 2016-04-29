@@ -17,18 +17,36 @@ void EmptyLinkFunctionForGeneratedCodeWizards() {}
 	{
 	}
 	IMPLEMENT_CLASS(UspellBook, 1065143426);
-	void AWizardsCharacter::ServerFireProjectile(UspellBook* theSpell)
+class UScriptStruct* FtheSpell::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
 	{
-		WizardsCharacter_eventServerFireProjectile_Parms Parms;
-		Parms.theSpell=theSpell;
-		ProcessEvent(FindFunctionChecked(WIZARDS_ServerFireProjectile),&Parms);
+		extern WIZARDS_API class UScriptStruct* Z_Construct_UScriptStruct_FtheSpell();
+		extern WIZARDS_API uint32 Get_Z_Construct_UScriptStruct_FtheSpell_CRC();
+		extern WIZARDS_API class UPackage* Z_Construct_UPackage_Wizards();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FtheSpell, Z_Construct_UPackage_Wizards(), TEXT("theSpell"), sizeof(FtheSpell), Get_Z_Construct_UScriptStruct_FtheSpell_CRC());
+	}
+	return Singleton;
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FtheSpell(FtheSpell::StaticStruct, TEXT("/Script/Wizards"));
+static struct FScriptStruct_Wizards_StaticRegisterNativesFtheSpell
+{
+	FScriptStruct_Wizards_StaticRegisterNativesFtheSpell()
+	{
+		UScriptStruct::DeferCppStructOps(FName(TEXT("theSpell")),new UScriptStruct::TCppStructOps<FtheSpell>);
+	}
+} ScriptStruct_Wizards_StaticRegisterNativesFtheSpell;
+	void AWizardsCharacter::ServerFireProjectile()
+	{
+		ProcessEvent(FindFunctionChecked(WIZARDS_ServerFireProjectile),NULL);
 	}
 	void AWizardsCharacter::StaticRegisterNativesAWizardsCharacter()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(AWizardsCharacter::StaticClass(),"newCharactersSpells",(Native)&AWizardsCharacter::execnewCharactersSpells);
 		FNativeFunctionRegistrar::RegisterFunction(AWizardsCharacter::StaticClass(),"ServerFireProjectile",(Native)&AWizardsCharacter::execServerFireProjectile);
 	}
-	IMPLEMENT_CLASS(AWizardsCharacter, 3223446249);
+	IMPLEMENT_CLASS(AWizardsCharacter, 1407942884);
 	void UWizardsSaveGame::StaticRegisterNativesUWizardsSaveGame()
 	{
 	}
@@ -119,6 +137,7 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 	WIZARDS_API class UClass* Z_Construct_UClass_AMyActor();
 	WIZARDS_API class UClass* Z_Construct_UClass_UspellBook_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_UspellBook();
+	WIZARDS_API class UScriptStruct* Z_Construct_UScriptStruct_FtheSpell();
 	WIZARDS_API class UFunction* Z_Construct_UFunction_AWizardsCharacter_newCharactersSpells();
 	WIZARDS_API class UFunction* Z_Construct_UFunction_AWizardsCharacter_ServerFireProjectile();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsCharacter_NoRegister();
@@ -236,6 +255,61 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UspellBook(Z_Construct_UClass_UspellBook, TEXT("UspellBook"));
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UspellBook);
+	UScriptStruct* Z_Construct_UScriptStruct_FtheSpell()
+	{
+		UPackage* Outer=Z_Construct_UPackage_Wizards();
+		extern uint32 Get_Z_Construct_UScriptStruct_FtheSpell_CRC();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReload(Outer, TEXT("theSpell"), sizeof(FtheSpell), Get_Z_Construct_UScriptStruct_FtheSpell_CRC());
+		if (!ReturnStruct)
+		{
+			ReturnStruct = new(EC_InternalUseOnlyConstructor, Outer, TEXT("theSpell"), RF_Public|RF_Transient|RF_Native) UScriptStruct(FObjectInitializer(), NULL, new UScriptStruct::TCppStructOps<FtheSpell>, EStructFlags(0x00000001));
+			UProperty* NewProp_explosionDeathSize = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("explosionDeathSize"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(explosionDeathSize, FtheSpell), 0x0000000000000000);
+			UProperty* NewProp_explosionDeathDamage = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("explosionDeathDamage"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(explosionDeathDamage, FtheSpell), 0x0000000000000000);
+			UProperty* NewProp_explosionHitSize = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("explosionHitSize"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(explosionHitSize, FtheSpell), 0x0000000000000000);
+			UProperty* NewProp_explosionHitDamage = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("explosionHitDamage"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(explosionHitDamage, FtheSpell), 0x0000000000000000);
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(explodeOnDeath, FtheSpell, bool);
+			UProperty* NewProp_explodeOnDeath = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("explodeOnDeath"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(explodeOnDeath, FtheSpell), 0x0000000000000000, CPP_BOOL_PROPERTY_BITMASK(explodeOnDeath, FtheSpell), sizeof(bool), true);
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(explodeOnCollision, FtheSpell, bool);
+			UProperty* NewProp_explodeOnCollision = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("explodeOnCollision"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(explodeOnCollision, FtheSpell), 0x0000000000000000, CPP_BOOL_PROPERTY_BITMASK(explodeOnCollision, FtheSpell), sizeof(bool), true);
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(isHoming, FtheSpell, bool);
+			UProperty* NewProp_isHoming = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("isHoming"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(isHoming, FtheSpell), 0x0000000000000000, CPP_BOOL_PROPERTY_BITMASK(isHoming, FtheSpell), sizeof(bool), true);
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(hasGravity, FtheSpell, bool);
+			UProperty* NewProp_hasGravity = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("hasGravity"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(hasGravity, FtheSpell), 0x0000000000000000, CPP_BOOL_PROPERTY_BITMASK(hasGravity, FtheSpell), sizeof(bool), true);
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(canBounce, FtheSpell, bool);
+			UProperty* NewProp_canBounce = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("canBounce"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(canBounce, FtheSpell), 0x0000000000000000, CPP_BOOL_PROPERTY_BITMASK(canBounce, FtheSpell), sizeof(bool), true);
+			UProperty* NewProp_spellSize = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("spellSize"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(spellSize, FtheSpell), 0x0000000000000000);
+			UProperty* NewProp_spellRange = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("spellRange"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(spellRange, FtheSpell), 0x0000000000000000);
+			UProperty* NewProp_spellDamage = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("spellDamage"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(spellDamage, FtheSpell), 0x0000000000000000);
+			UProperty* NewProp_spellSpeed = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("spellSpeed"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(spellSpeed, FtheSpell), 0x0000000000000000);
+			UProperty* NewProp_spellCost = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("spellCost"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(spellCost, FtheSpell), 0x0000000000000000);
+			UProperty* NewProp_spellType = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("spellType"), RF_Public|RF_Transient|RF_Native) UByteProperty(CPP_PROPERTY_BASE(spellType, FtheSpell), 0x0000000000000000);
+			UProperty* NewProp_spellEffect = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("spellEffect"), RF_Public|RF_Transient|RF_Native) UByteProperty(CPP_PROPERTY_BASE(spellEffect, FtheSpell), 0x0000000000000000);
+			ReturnStruct->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnStruct->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnStruct, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+			MetaData->SetValue(NewProp_explosionDeathSize, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+			MetaData->SetValue(NewProp_explosionDeathDamage, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+			MetaData->SetValue(NewProp_explosionHitSize, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+			MetaData->SetValue(NewProp_explosionHitDamage, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+			MetaData->SetValue(NewProp_explodeOnDeath, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+			MetaData->SetValue(NewProp_explodeOnCollision, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+			MetaData->SetValue(NewProp_isHoming, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+			MetaData->SetValue(NewProp_hasGravity, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+			MetaData->SetValue(NewProp_canBounce, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+			MetaData->SetValue(NewProp_spellSize, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+			MetaData->SetValue(NewProp_spellSize, TEXT("ToolTip"), TEXT("lifetime for projectiles, distance for rays and blasts"));
+			MetaData->SetValue(NewProp_spellRange, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+			MetaData->SetValue(NewProp_spellDamage, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+			MetaData->SetValue(NewProp_spellSpeed, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+			MetaData->SetValue(NewProp_spellCost, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+			MetaData->SetValue(NewProp_spellType, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+			MetaData->SetValue(NewProp_spellEffect, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+#endif
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FtheSpell_CRC() { return 3140884897U; }
 	UFunction* Z_Construct_UFunction_AWizardsCharacter_newCharactersSpells()
 	{
 		UObject* Outer=Z_Construct_UClass_AWizardsCharacter();
@@ -259,8 +333,7 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 		static UFunction* ReturnFunction = NULL;
 		if (!ReturnFunction)
 		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ServerFireProjectile"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x80220CC0, 65535, sizeof(WizardsCharacter_eventServerFireProjectile_Parms));
-			UProperty* NewProp_theSpell = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("theSpell"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(theSpell, WizardsCharacter_eventServerFireProjectile_Parms), 0x0000000000000080, Z_Construct_UClass_UspellBook_NoRegister());
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ServerFireProjectile"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x80220CC0, 65535);
 			ReturnFunction->Bind();
 			ReturnFunction->StaticLink();
 #if WITH_METADATA
@@ -299,8 +372,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_ProjectileClass = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ProjectileClass"), RF_Public|RF_Transient|RF_Native) UClassProperty(CPP_PROPERTY_BASE(ProjectileClass, AWizardsCharacter), 0x0004000000000021, Z_Construct_UClass_AWizardsProjectile_NoRegister());
 				UProperty* NewProp_currSpell = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("currSpell"), RF_Public|RF_Transient|RF_Native) UInt8Property(CPP_PROPERTY_BASE(currSpell, AWizardsCharacter), 0x0000000000000020);
 				UProperty* NewProp_mySpellBook = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("mySpellBook"), RF_Public|RF_Transient|RF_Native) UArrayProperty(CPP_PROPERTY_BASE(mySpellBook, AWizardsCharacter), 0x0000000000000020);
-				UProperty* NewProp_mySpellBook_Inner = new(EC_InternalUseOnlyConstructor, NewProp_mySpellBook, TEXT("mySpellBook"), RF_Public|RF_Transient|RF_Native) UObjectProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UClass_UspellBook_NoRegister());
-				UProperty* NewProp_thisSpell = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("thisSpell"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(thisSpell, AWizardsCharacter), 0x0000000000000020, Z_Construct_UClass_UspellBook_NoRegister());
+				UProperty* NewProp_mySpellBook_Inner = new(EC_InternalUseOnlyConstructor, NewProp_mySpellBook, TEXT("mySpellBook"), RF_Public|RF_Transient|RF_Native) UStructProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UScriptStruct_FtheSpell());
 				UProperty* NewProp_Mana = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Mana"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(Mana, AWizardsCharacter), 0x0000000000000020);
 				UProperty* NewProp_GunOffset = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("GunOffset"), RF_Public|RF_Transient|RF_Native) UStructProperty(CPP_PROPERTY_BASE(GunOffset, AWizardsCharacter), 0x0000000000000005, Z_Construct_UScriptStruct_FVector());
 				UProperty* NewProp_BaseLookUpRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("BaseLookUpRate"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(BaseLookUpRate, AWizardsCharacter), 0x0000000000020015);
@@ -309,7 +381,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_Mesh1P = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Mesh1P"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(Mesh1P, AWizardsCharacter), 0x00000000000b0009, Z_Construct_UClass_USkeletalMeshComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCharacter_newCharactersSpells()); // 4159059134
-				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCharacter_ServerFireProjectile()); // 755081820
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCharacter_ServerFireProjectile()); // 3659878345
 				OuterClass->ClassConfigName = FName(TEXT("Game"));
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -333,8 +405,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(NewProp_currSpell, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
 				MetaData->SetValue(NewProp_currSpell, TEXT("ToolTip"), TEXT("struct spell {\n       UParticleSystem* myParticle;\n       int8 spellType;\n       float spellCost;\n       float spellSpeed;\n       float spellDamage;\n       float spellRange; //lifetime for projectiles, distance for rays and blasts\n       float spellSize;\n       bool canBounce;\n       bool hasGravity;\n       bool isHoming;\n       bool explodeOnCollision;\n       bool explodeOnDeath;\n       float explosionHitDamage;\n       float explosionHitSize;\n       float explosionDeathDamage;\n       float explosionDeathSize;\n       };//TArray<spell> SList;"));
 				MetaData->SetValue(NewProp_mySpellBook, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
-				MetaData->SetValue(NewProp_thisSpell, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
-				MetaData->SetValue(NewProp_thisSpell, TEXT("ToolTip"), TEXT("struct spell {\nFName* particleLocation;\nConstructorHelpers::FObjectFinder<UParticleSystem>* test;\nUParticleSystem* myParticle;\nfloat spellCost;\n};\nspell SList;"));
+				MetaData->SetValue(NewProp_mySpellBook, TEXT("ToolTip"), TEXT("struct spell {\nFName* particleLocation;\nConstructorHelpers::FObjectFinder<UParticleSystem>* test;\nUParticleSystem* myParticle;\nfloat spellCost;\n};\nspell SList;//UPROPERTY(Replicated)\n//     UspellBook* thisSpell;\n//UPROPERTY(Replicated)\n//     TArray<UspellBook*> mySpellBook;"));
 				MetaData->SetValue(NewProp_Mana, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
 				MetaData->SetValue(NewProp_Mana, TEXT("ToolTip"), TEXT("Mana //UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)"));
 				MetaData->SetValue(NewProp_GunOffset, TEXT("Category"), TEXT("Gameplay"));
@@ -1505,8 +1576,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Wizards")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x7F38E8D9;
-			Guid.B = 0x44DFB0EC;
+			Guid.A = 0xCEFD7A27;
+			Guid.B = 0x1B972305;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

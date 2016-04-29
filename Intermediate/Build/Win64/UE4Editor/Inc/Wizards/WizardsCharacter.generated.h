@@ -8,26 +8,29 @@
 #include "ObjectBase.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class UspellBook;
 #ifdef WIZARDS_WizardsCharacter_generated_h
 #error "WizardsCharacter.generated.h already included, missing '#pragma once' in WizardsCharacter.h"
 #endif
 #define WIZARDS_WizardsCharacter_generated_h
 
-#define wizards_Source_Wizards_WizardsCharacter_h_14_RPC_WRAPPERS \
-	virtual bool ServerFireProjectile_Validate(UspellBook* ); \
-	virtual void ServerFireProjectile_Implementation(UspellBook* theSpell); \
+#define wizards_Source_Wizards_WizardsCharacter_h_16_GENERATED_BODY \
+	friend WIZARDS_API class UScriptStruct* Z_Construct_UScriptStruct_FtheSpell(); \
+	WIZARDS_API static class UScriptStruct* StaticStruct();
+
+
+#define wizards_Source_Wizards_WizardsCharacter_h_56_RPC_WRAPPERS \
+	virtual bool ServerFireProjectile_Validate(); \
+	virtual void ServerFireProjectile_Implementation(); \
  \
 	DECLARE_FUNCTION(execServerFireProjectile) \
 	{ \
-		P_GET_OBJECT(UspellBook,Z_Param_theSpell); \
 		P_FINISH; \
-		if (!this->ServerFireProjectile_Validate(Z_Param_theSpell)) \
+		if (!this->ServerFireProjectile_Validate()) \
 		{ \
 			RPC_ValidateFailed(TEXT("ServerFireProjectile_Validate")); \
 			return; \
 		} \
-		this->ServerFireProjectile_Implementation(Z_Param_theSpell); \
+		this->ServerFireProjectile_Implementation(); \
 	} \
  \
 	DECLARE_FUNCTION(execnewCharactersSpells) \
@@ -37,18 +40,17 @@ class UspellBook;
 	}
 
 
-#define wizards_Source_Wizards_WizardsCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+#define wizards_Source_Wizards_WizardsCharacter_h_56_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execServerFireProjectile) \
 	{ \
-		P_GET_OBJECT(UspellBook,Z_Param_theSpell); \
 		P_FINISH; \
-		if (!this->ServerFireProjectile_Validate(Z_Param_theSpell)) \
+		if (!this->ServerFireProjectile_Validate()) \
 		{ \
 			RPC_ValidateFailed(TEXT("ServerFireProjectile_Validate")); \
 			return; \
 		} \
-		this->ServerFireProjectile_Implementation(Z_Param_theSpell); \
+		this->ServerFireProjectile_Implementation(); \
 	} \
  \
 	DECLARE_FUNCTION(execnewCharactersSpells) \
@@ -58,16 +60,10 @@ class UspellBook;
 	}
 
 
-#define wizards_Source_Wizards_WizardsCharacter_h_14_EVENT_PARMS \
-	struct WizardsCharacter_eventServerFireProjectile_Parms \
-	{ \
-		UspellBook* theSpell; \
-	};
-
-
+#define wizards_Source_Wizards_WizardsCharacter_h_56_EVENT_PARMS
 extern WIZARDS_API  FName WIZARDS_ServerFireProjectile;
-#define wizards_Source_Wizards_WizardsCharacter_h_14_CALLBACK_WRAPPERS
-#define wizards_Source_Wizards_WizardsCharacter_h_14_INCLASS_NO_PURE_DECLS \
+#define wizards_Source_Wizards_WizardsCharacter_h_56_CALLBACK_WRAPPERS
+#define wizards_Source_Wizards_WizardsCharacter_h_56_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesAWizardsCharacter(); \
 	friend WIZARDS_API class UClass* Z_Construct_UClass_AWizardsCharacter(); \
@@ -78,7 +74,7 @@ extern WIZARDS_API  FName WIZARDS_ServerFireProjectile;
 	virtual UObject* _getUObject() const override { return const_cast<AWizardsCharacter*>(this); }
 
 
-#define wizards_Source_Wizards_WizardsCharacter_h_14_INCLASS \
+#define wizards_Source_Wizards_WizardsCharacter_h_56_INCLASS \
 	private: \
 	static void StaticRegisterNativesAWizardsCharacter(); \
 	friend WIZARDS_API class UClass* Z_Construct_UClass_AWizardsCharacter(); \
@@ -89,7 +85,7 @@ extern WIZARDS_API  FName WIZARDS_ServerFireProjectile;
 	virtual UObject* _getUObject() const override { return const_cast<AWizardsCharacter*>(this); }
 
 
-#define wizards_Source_Wizards_WizardsCharacter_h_14_STANDARD_CONSTRUCTORS \
+#define wizards_Source_Wizards_WizardsCharacter_h_56_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AWizardsCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AWizardsCharacter) \
@@ -101,7 +97,7 @@ private: \
 public:
 
 
-#define wizards_Source_Wizards_WizardsCharacter_h_14_ENHANCED_CONSTRUCTORS \
+#define wizards_Source_Wizards_WizardsCharacter_h_56_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private copy-constructor, should never be used */ \
 	NO_API AWizardsCharacter(const AWizardsCharacter& InCopy); \
@@ -111,28 +107,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AWizardsCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AWizardsCharacter)
 
 
-#define wizards_Source_Wizards_WizardsCharacter_h_11_PROLOG \
-	wizards_Source_Wizards_WizardsCharacter_h_14_EVENT_PARMS
+#define wizards_Source_Wizards_WizardsCharacter_h_53_PROLOG \
+	wizards_Source_Wizards_WizardsCharacter_h_56_EVENT_PARMS
 
 
-#define wizards_Source_Wizards_WizardsCharacter_h_14_GENERATED_BODY_LEGACY \
+#define wizards_Source_Wizards_WizardsCharacter_h_56_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	wizards_Source_Wizards_WizardsCharacter_h_14_RPC_WRAPPERS \
-	wizards_Source_Wizards_WizardsCharacter_h_14_CALLBACK_WRAPPERS \
-	wizards_Source_Wizards_WizardsCharacter_h_14_INCLASS \
-	wizards_Source_Wizards_WizardsCharacter_h_14_STANDARD_CONSTRUCTORS \
+	wizards_Source_Wizards_WizardsCharacter_h_56_RPC_WRAPPERS \
+	wizards_Source_Wizards_WizardsCharacter_h_56_CALLBACK_WRAPPERS \
+	wizards_Source_Wizards_WizardsCharacter_h_56_INCLASS \
+	wizards_Source_Wizards_WizardsCharacter_h_56_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define wizards_Source_Wizards_WizardsCharacter_h_14_GENERATED_BODY \
+#define wizards_Source_Wizards_WizardsCharacter_h_56_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	wizards_Source_Wizards_WizardsCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	wizards_Source_Wizards_WizardsCharacter_h_14_CALLBACK_WRAPPERS \
-	wizards_Source_Wizards_WizardsCharacter_h_14_INCLASS_NO_PURE_DECLS \
-	wizards_Source_Wizards_WizardsCharacter_h_14_ENHANCED_CONSTRUCTORS \
+	wizards_Source_Wizards_WizardsCharacter_h_56_RPC_WRAPPERS_NO_PURE_DECLS \
+	wizards_Source_Wizards_WizardsCharacter_h_56_CALLBACK_WRAPPERS \
+	wizards_Source_Wizards_WizardsCharacter_h_56_INCLASS_NO_PURE_DECLS \
+	wizards_Source_Wizards_WizardsCharacter_h_56_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -84,7 +84,7 @@ void AWizardsProjectile::OnHit(AActor* OtherActor, UPrimitiveComponent* OtherCom
   }
 }
 
-void AWizardsProjectile::SpellCreation(AWizardsCharacter::theSpell* theSpell, UParticleSystem* projPart, UParticleSystem* blastPart, AWizardsCharacter* theWiz) {
+void AWizardsProjectile::SpellCreation(FtheSpell* theSpell, UParticleSystem* projPart, UParticleSystem* blastPart, AWizardsCharacter* theWiz) {
 	if(theSpell != NULL){
 		MyParticleSystem->SetTemplate(projPart);
 		MyParticleSystem->AttachTo(RootComponent);
