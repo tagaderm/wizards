@@ -10,8 +10,8 @@ class UInputComponent;
 
 
 
-USTRUCT( Replicated)
-struct theSpell
+USTRUCT()
+struct FtheSpell
 {
 	GENERATED_USTRUCT_BODY()
 	UPROPERTY()
@@ -109,7 +109,7 @@ public:
 	//UPROPERTY(Replicated)
 	//	TArray<UspellBook*> mySpellBook;
 	UPROPERTY(Replicated)
-	TArray<theSpell*> mySpellBook;
+	TArray<FtheSpell> mySpellBook;
 	TArray<UParticleSystem*> particleList;
 	/*struct spell {
 	UParticleSystem* myParticle;

@@ -117,24 +117,24 @@ void AWizardsCharacter::newCharactersSpells()
 	if (LoadGameInstance->LoadGameDataFromFile()) {
 
 		for (int i = 0; i < 5; i++) {
-			thisSpell = NewObject<theSpell>(this);//From what I can tell, LoadGameInstance's spellBook gets destroyed after this function, so we need our own
+			FtheSpell thisSpell;
 			mySpellBook.Add(thisSpell);
-			mySpellBook[i]->spellEffect = LoadGameInstance->spellBook[i]->spellEffect;
-			mySpellBook[i]->spellType = LoadGameInstance->spellBook[i]->spellType;
-			mySpellBook[i]->spellCost = LoadGameInstance->spellBook[i]->spellCost;
-			mySpellBook[i]->spellSpeed = LoadGameInstance->spellBook[i]->spellSpeed*9000.0 + 1000.0;//range from 1000 to 10000
-			mySpellBook[i]->spellDamage = LoadGameInstance->spellBook[i]->spellDamage;//not in at the moment
-			mySpellBook[i]->spellRange = LoadGameInstance->spellBook[i]->spellRange*4.0 + 1.0; //1 to 5 seconds
-			mySpellBook[i]->spellSize = LoadGameInstance->spellBook[i]->spellSize*4.0 + 1.0;//range 1 to 5
-			mySpellBook[i]->canBounce = LoadGameInstance->spellBook[i]->canBounce;//boolean, in
-			mySpellBook[i]->hasGravity = LoadGameInstance->spellBook[i]->hasGravity;//totally in
-			mySpellBook[i]->isHoming = LoadGameInstance->spellBook[i]->isHoming; //not currenttly implemented
-			mySpellBook[i]->explodeOnCollision = LoadGameInstance->spellBook[i]->explodeOnCollision; //none of this shit down here is implemented
-			mySpellBook[i]->explodeOnDeath = LoadGameInstance->spellBook[i]->explodeOnDeath;
-			mySpellBook[i]->explosionHitDamage = LoadGameInstance->spellBook[i]->explosionHitDamage;
-			mySpellBook[i]->explosionHitSize = LoadGameInstance->spellBook[i]->explosionHitSize*3.0 + 2.0;
-			mySpellBook[i]->explosionDeathDamage = LoadGameInstance->spellBook[i]->explosionDeathDamage;
-			mySpellBook[i]->explosionDeathSize = LoadGameInstance->spellBook[i]->explosionDeathSize*3.0 + 2.0;
+			mySpellBook[i].spellEffect = LoadGameInstance->spellBook[i]->spellEffect;
+			mySpellBook[i].spellType = LoadGameInstance->spellBook[i]->spellType;
+			mySpellBook[i].spellCost = LoadGameInstance->spellBook[i]->spellCost;
+			mySpellBook[i].spellSpeed = LoadGameInstance->spellBook[i]->spellSpeed*9000.0 + 1000.0;//range from 1000 to 10000
+			mySpellBook[i].spellDamage = LoadGameInstance->spellBook[i]->spellDamage;//not in at the moment
+			mySpellBook[i].spellRange = LoadGameInstance->spellBook[i]->spellRange*4.0 + 1.0; //1 to 5 seconds
+			mySpellBook[i].spellSize = LoadGameInstance->spellBook[i]->spellSize*4.0 + 1.0;//range 1 to 5
+			mySpellBook[i].canBounce = LoadGameInstance->spellBook[i]->canBounce;//boolean, in
+			mySpellBook[i].hasGravity = LoadGameInstance->spellBook[i]->hasGravity;//totally in
+			mySpellBook[i].isHoming = LoadGameInstance->spellBook[i]->isHoming; //not currenttly implemented
+			mySpellBook[i].explodeOnCollision = LoadGameInstance->spellBook[i]->explodeOnCollision; //none of this shit down here is implemented
+			mySpellBook[i].explodeOnDeath = LoadGameInstance->spellBook[i]->explodeOnDeath;
+			mySpellBook[i].explosionHitDamage = LoadGameInstance->spellBook[i]->explosionHitDamage;
+			mySpellBook[i].explosionHitSize = LoadGameInstance->spellBook[i]->explosionHitSize*3.0 + 2.0;
+			mySpellBook[i].explosionDeathDamage = LoadGameInstance->spellBook[i]->explosionDeathDamage;
+			mySpellBook[i].explosionDeathSize = LoadGameInstance->spellBook[i]->explosionDeathSize*3.0 + 2.0;
 			//mySpellBook[i]->myParticle = particleList[mySpellBook[i]->spellEffect + mySpellBook[i]->spellType * 5];
 			//mySpellBook[i]->explParticle = particleList[mySpellBook[i]->spellEffect + 5];
 			UE_LOG(LogTemp, Warning, TEXT("Spell Gathering Succesful!"));
@@ -200,11 +200,11 @@ void AWizardsCharacter::OnFire()
 		UE_LOG(LogTemp, Warning, TEXT("Spell Gathering Needed!"));
 		newCharactersSpells();
 	}
-	if (Mana > mySpellBook[currSpell]->spellCost) {
-		Mana -= mySpellBook[currSpell]->spellCost;
+	if (Mana > mySpellBook[currSpell].spellCost) {
+		Mana -= mySpellBook[currSpell].spellCost;
 		// try and fire a projectile
 
-		if (mySpellBook[currSpell]->spellType == 0)
+		if (mySpellBook[currSpell].spellType == 0)
 		{
 			const FRotator SpawnRotation = GetControlRotation();
 			const FVector SpawnLocation = GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
@@ -213,17 +213,17 @@ void AWizardsCharacter::OnFire()
 			if (World)
 			{
 				// spawn the projectile at the muzzle
-				UParticleSystem* projParticle = particleList[mySpellBook[currSpell]->spellEffect + mySpellBook[currSpell]->spellType * 5];
-				UParticleSystem* blastParticle = particleList[mySpellBook[currSpell]->spellEffect + 5];
+				UParticleSystem* projParticle = particleList[mySpellBook[currSpell].spellEffect + mySpellBook[currSpell].spellType * 5];
+				UParticleSystem* blastParticle = particleList[mySpellBook[currSpell].spellEffect + 5];
 				AWizardsProjectile* wizardsSpell = World->SpawnActor<AWizardsProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);// , myparams);
-				wizardsSpell->SpellCreation(mySpellBook[currSpell], projParticle, blastParticle, this);
+				wizardsSpell->SpellCreation(&mySpellBook[currSpell], projParticle, blastParticle, this);
 				if (Role < ROLE_Authority)
 				{
 					ServerFireProjectile();//mySpellBook[currSpell]);
 				}
 			}
 		}
-		else if (mySpellBook[currSpell]->spellType == 1) {
+		else if (mySpellBook[currSpell].spellType == 1) {
 			const FRotator SpawnRotation = FRotator(0.0);//GetControlRotation();
 														 // MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
 			const FVector SpawnLocation = FVector(0.0);//GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
@@ -232,17 +232,17 @@ void AWizardsCharacter::OnFire()
 			if (World)
 			{
 				// spawn the projectile at the muzzle
-				UParticleSystem* blastParticle = particleList[mySpellBook[currSpell]->spellEffect + mySpellBook[currSpell]->spellType * 5];
+				UParticleSystem* blastParticle = particleList[mySpellBook[currSpell].spellEffect + mySpellBook[currSpell].spellType * 5];
 				AWizardsBlast* wizardsSpell = World->SpawnActor<AWizardsBlast>(BlastClass, SpawnLocation, SpawnRotation);// , myparams);
-				wizardsSpell->SpellCreation(blastParticle, mySpellBook[currSpell]->spellSize, mySpellBook[currSpell]->spellDamage, this);
+				wizardsSpell->SpellCreation(blastParticle, mySpellBook[currSpell].spellSize, mySpellBook[currSpell].spellDamage, this);
 				wizardsSpell->AttachRootComponentTo(GetCapsuleComponent());//Probably useful for Blasts, Rays, and Conical attacks
 				if (Role < ROLE_Authority)
 				{
-					ServerFireProjectile(mySpellBook[currSpell]);
+					ServerFireProjectile();
 				}
 			}
 		}
-		else if (mySpellBook[currSpell]->spellType == 2) {
+		else if (mySpellBook[currSpell].spellType == 2) {
 			const FRotator SpawnRotation = FRotator(0.0);//GetControlRotation();
 														 // MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
 			const FVector SpawnLocation = FVector(0.0);//GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
@@ -251,14 +251,14 @@ void AWizardsCharacter::OnFire()
 			if (World)
 			{
 				// spawn the projectile at the muzzle
-				UParticleSystem* coneParticle = particleList[mySpellBook[currSpell]->spellEffect + mySpellBook[currSpell]->spellType * 5];
+				UParticleSystem* coneParticle = particleList[mySpellBook[currSpell].spellEffect + mySpellBook[currSpell].spellType * 5];
 				AWizardsCone* wizardsCone = World->SpawnActor<AWizardsCone>(ConeClass, SpawnLocation, SpawnRotation);// , myparams);
-				wizardsCone->SpellCreation(coneParticle, mySpellBook[currSpell]->spellSize, mySpellBook[currSpell]->spellDamage, this);
+				wizardsCone->SpellCreation(coneParticle, mySpellBook[currSpell].spellSize, mySpellBook[currSpell].spellDamage, this);
 				wizardsCone->AttachRootComponentTo(GetCapsuleComponent());//Probably useful for Blasts, Rays, and Conical attacks
 				activeAttack = Cast<AActor>(wizardsCone);
 				if (Role < ROLE_Authority)
 				{
-					ServerFireProjectile(mySpellBook[currSpell]);
+					ServerFireProjectile();
 				}
 			}
 		}
