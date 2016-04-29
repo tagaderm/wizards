@@ -17,6 +17,7 @@
 
 AWizardsCharacter::AWizardsCharacter()
 {
+	bReplicates = true;
 	//Tick for mana regen
 	PrimaryActorTick.bCanEverTick = true;
 	//Set Health and Mana
@@ -406,6 +407,7 @@ void AWizardsCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty > &
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 	DOREPLIFETIME(AWizardsCharacter, mySpellBook);
 	DOREPLIFETIME(AWizardsCharacter, Mana);
+	DOREPLIFETIME(AWizardsCharacter, currSpell);
 }
 
 void AWizardsCharacter::ServerFireProjectile_Implementation(UspellBook *theSpell) {
