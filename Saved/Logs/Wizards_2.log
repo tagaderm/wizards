@@ -1,0 +1,371 @@
+﻿[2016.04.28-15.43.49:448][  0]Log file open, 04/28/16 08:43:49
+[2016.04.28-15.43.49:448][  0]LogInit:Display: Running engine for game: Wizards
+[2016.04.28-15.43.49:448][  0]LogPlatformFile: Not using cached read wrapper
+[2016.04.28-15.43.49:448][  0]LogInit:Display: RandInit(2107250316) SRandInit(2107250322).
+[2016.04.28-15.43.49:448][  0]LogTaskGraph: Started task graph with 4 named threads and 5 total threads.
+[2016.04.28-15.43.49:448][  0]LogStats: Stats thread started at 0.066405
+[2016.04.28-15.43.49:448][  0]LogInit: Version: 4.10.2-0+++depot+UE4-Releases+4.10
+[2016.04.28-15.43.49:448][  0]LogInit: API Version: 0
+[2016.04.28-15.43.49:448][  0]LogInit: Compiled (64-bit): Feb  4 2016 10:59:05
+[2016.04.28-15.43.49:448][  0]LogInit: Compiled with Clang: 3.5.0 (tags/RELEASE_350/final)
+[2016.04.28-15.43.49:448][  0]LogInit: Build Configuration: Development
+[2016.04.28-15.43.49:448][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
+[2016.04.28-15.43.49:448][  0]LogInit: Command line:  /Temp/Autosaves/Game/FirstPerson/Maps/UEDPCmain_menu -game -PIEVIACONSOLE -ResX=1280 -ResY=720 -Multiprocess
+[2016.04.28-15.43.49:448][  0]LogInit: Base directory: /home/xolejh/Unreal/UnrealEngine/Engine/Binaries/Linux/
+[2016.04.28-15.43.49:448][  0]LogInit: Rocket: 0
+[2016.04.28-15.43.49:467][  0]LogInit: Using libcurl 7.38.0
+[2016.04.28-15.43.49:467][  0]LogInit:  - built for x86_64-unknown-linux-gnu
+[2016.04.28-15.43.49:467][  0]LogInit:  - supports SSL with OpenSSL/1.0.1i
+[2016.04.28-15.43.49:467][  0]LogInit:  - supports HTTP deflate (compression) using libz 1.2.5
+[2016.04.28-15.43.49:467][  0]LogInit:  - other features:
+[2016.04.28-15.43.49:467][  0]LogInit:      CURL_VERSION_SSL
+[2016.04.28-15.43.49:467][  0]LogInit:      CURL_VERSION_LIBZ
+[2016.04.28-15.43.49:467][  0]LogInit:      CURL_VERSION_IPV6
+[2016.04.28-15.43.49:468][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2016.04.28-15.43.49:468][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2016.04.28-15.43.49:468][  0]LogInit:      CURL_VERSION_TLSAUTH_SRP
+[2016.04.28-15.43.49:468][  0]LogInit:  Libcurl: checking if '/etc/pki/tls/certs/ca-bundle.crt' exists
+[2016.04.28-15.43.49:469][  0]LogInit:  Libcurl: checking if '/etc/ssl/certs/ca-certificates.crt' exists
+[2016.04.28-15.43.49:469][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2016.04.28-15.43.49:469][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2016.04.28-15.43.49:469][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2016.04.28-15.43.49:469][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2016.04.28-15.43.49:469][  0]LogInit:  - CertBundlePath = /etc/ssl/certs/ca-certificates.crt  - Libcurl will set CURLOPT_CAINFO to it
+[2016.04.28-15.43.49:480][  0]LogModuleManager:Warning: ModuleManager: Unable to load module 'OnlineSubsystemSteam' because the file '/home/xolejh/Unreal/UnrealEngine/Engine/Binaries/Linux/' was not found.
+[2016.04.28-15.43.50:192][  0]LogVoice:Warning: Failed to initialize voice interface
+[2016.04.28-15.43.50:918][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2016.04.28-15.43.50:935][  0]LogInit: Object subsystem initialized
+[2016.04.28-15.43.50:937][  0]LogLinux: Selected Device Profile: [Linux]
+[2016.04.28-15.43.50:937][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Linux]
+[2016.04.28-15.43.50:949][  0]LogInit: Linux hardware info:
+[2016.04.28-15.43.50:949][  0]LogInit:  - this process' id (pid) is 5842, parent process' id (ppid) is 5718
+[2016.04.28-15.43.50:949][  0]LogInit:  - we are not running under debugger
+[2016.04.28-15.43.50:949][  0]LogInit:  - machine network name is 'xolejh-HP-ENVY-Pro-4-b000-Ultrabook-PC'
+[2016.04.28-15.43.50:949][  0]LogInit:  - we're logged in locally
+[2016.04.28-15.43.50:949][  0]LogInit:  - Number of physical cores available for the process: 2
+[2016.04.28-15.43.50:949][  0]LogInit:  - Number of logical cores available for the process: 4
+[2016.04.28-15.43.50:949][  0]LogInit:  - Cache line size: 64
+[2016.04.28-15.43.50:949][  0]LogInit:  - Memory allocator used: binned
+[2016.04.28-15.43.50:949][  0]LogInit: Linux-specific commandline switches:
+[2016.04.28-15.43.50:949][  0]LogInit:  -nodwarf (currently OFF): suppress parsing of DWARF debug info (callstacks will be generated faster, but won't have line numbers)
+[2016.04.28-15.43.50:949][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2016.04.28-15.43.50:950][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2016.04.28-15.43.50:950][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2016.04.28-15.43.50:950][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2016.04.28-15.43.50:950][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2016.04.28-15.43.50:950][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2016.04.28-15.43.50:950][  0]LogInit: Setting LC_NUMERIC to en_US
+[2016.04.28-15.43.50:950][  0]LogInit: Initializing SDL.
+[2016.04.28-15.43.51:082][  0]LogInit: Initialized SDL 2.0.4 (compiled against 2.0.4)
+[2016.04.28-15.43.51:082][  0]LogInit: Display metrics:
+[2016.04.28-15.43.51:082][  0]LogInit:   PrimaryDisplayWidth: 1366
+[2016.04.28-15.43.51:082][  0]LogInit:   PrimaryDisplayHeight: 768
+[2016.04.28-15.43.51:082][  0]LogInit:   PrimaryDisplayWorkAreaRect:
+[2016.04.28-15.43.51:082][  0]LogInit:     Left=65, Top=24, Right=1366, Bottom=768
+[2016.04.28-15.43.51:082][  0]LogInit:   VirtualDisplayRect:
+[2016.04.28-15.43.51:082][  0]LogInit:     Left=65, Top=24, Right=1366, Bottom=768
+[2016.04.28-15.43.51:082][  0]LogInit:   TitleSafePaddingSize: X=0.000 Y=0.000
+[2016.04.28-15.43.51:082][  0]LogInit:   ActionSafePaddingSize: X=0.000 Y=0.000
+[2016.04.28-15.43.51:082][  0]LogInit:   Number of monitors: 1
+[2016.04.28-15.43.51:082][  0]LogInit:     Monitor 0
+[2016.04.28-15.43.51:082][  0]LogInit:       Name: 0
+[2016.04.28-15.43.51:082][  0]LogInit:       ID: display0
+[2016.04.28-15.43.51:082][  0]LogInit:       NativeWidth: 1366
+[2016.04.28-15.43.51:082][  0]LogInit:       NativeHeight: 768
+[2016.04.28-15.43.51:082][  0]LogInit:       bIsPrimary: true
+[2016.04.28-15.43.51:082][  0]LogInit:  - Physical RAM available (not considering process quota): 4 GB (3854 MB, 3947100 KB, 4041830400 bytes)
+[2016.04.28-15.43.51:092][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.04.28-15.43.52:281][  0]LogRHI: Initializing OpenGL RHI
+[2016.04.28-15.43.52:281][  0]LogRHI:   GL_VENDOR: Intel Open Source Technology Center
+[2016.04.28-15.43.52:281][  0]LogRHI:   GL_RENDERER: Mesa DRI Intel(R) Ivybridge Mobile 
+[2016.04.28-15.43.52:281][  0]LogRHI:   GL_VERSION: 3.3 (Core Profile) Mesa 10.5.9
+[2016.04.28-15.43.52:281][  0]LogRHI:   GL_SHADING_LANGUAGE_VERSION: 3.30
+[2016.04.28-15.43.52:281][  0]LogRHI: OpenGL Extensions:
+[2016.04.28-15.43.52:282][  0]LogRHI:   GL_ARB_ES2_compatibility
+[2016.04.28-15.43.52:282][  0]LogRHI:   GL_ARB_ES3_compatibility
+[2016.04.28-15.43.52:282][  0]LogRHI:   GL_ARB_base_instance
+[2016.04.28-15.43.52:282][  0]LogRHI:   GL_ARB_blend_func_extended
+[2016.04.28-15.43.52:283][  0]LogRHI:   GL_ARB_buffer_storage
+[2016.04.28-15.43.52:283][  0]LogRHI:   GL_ARB_clear_buffer_object
+[2016.04.28-15.43.52:283][  0]LogRHI:   GL_ARB_clear_texture
+[2016.04.28-15.43.52:283][  0]LogRHI:   GL_ARB_compressed_texture_pixel_storage
+[2016.04.28-15.43.52:283][  0]LogRHI:   GL_ARB_conditional_render_inverted
+[2016.04.28-15.43.52:283][  0]LogRHI:   GL_ARB_copy_buffer
+[2016.04.28-15.43.52:283][  0]LogRHI:   GL_ARB_copy_image
+[2016.04.28-15.43.52:283][  0]LogRHI:   GL_ARB_conservative_depth
+[2016.04.28-15.43.52:283][  0]LogRHI:   GL_ARB_debug_output
+[2016.04.28-15.43.52:283][  0]LogRHI:   GL_ARB_depth_buffer_float
+[2016.04.28-15.43.52:283][  0]LogRHI:   GL_ARB_depth_clamp
+[2016.04.28-15.43.52:283][  0]LogRHI:   GL_ARB_derivative_control
+[2016.04.28-15.43.52:283][  0]LogRHI:   GL_ARB_draw_buffers
+[2016.04.28-15.43.52:283][  0]LogRHI:   GL_ARB_draw_buffers_blend
+[2016.04.28-15.43.52:283][  0]LogRHI:   GL_ARB_draw_elements_base_vertex
+[2016.04.28-15.43.52:283][  0]LogRHI:   GL_ARB_draw_indirect
+[2016.04.28-15.43.52:283][  0]LogRHI:   GL_ARB_draw_instanced
+[2016.04.28-15.43.52:283][  0]LogRHI:   GL_ARB_explicit_attrib_location
+[2016.04.28-15.43.52:283][  0]LogRHI:   GL_ARB_explicit_uniform_location
+[2016.04.28-15.43.52:284][  0]LogRHI:   GL_ARB_fragment_coord_conventions
+[2016.04.28-15.43.52:284][  0]LogRHI:   GL_ARB_fragment_shader
+[2016.04.28-15.43.52:284][  0]LogRHI:   GL_ARB_framebuffer_object
+[2016.04.28-15.43.52:284][  0]LogRHI:   GL_ARB_framebuffer_sRGB
+[2016.04.28-15.43.52:284][  0]LogRHI:   GL_ARB_get_program_binary
+[2016.04.28-15.43.52:284][  0]LogRHI:   GL_ARB_gpu_shader5
+[2016.04.28-15.43.52:284][  0]LogRHI:   GL_ARB_half_float_pixel
+[2016.04.28-15.43.52:284][  0]LogRHI:   GL_ARB_half_float_vertex
+[2016.04.28-15.43.52:284][  0]LogRHI:   GL_ARB_instanced_arrays
+[2016.04.28-15.43.52:284][  0]LogRHI:   GL_ARB_internalformat_query
+[2016.04.28-15.43.52:284][  0]LogRHI:   GL_ARB_invalidate_subdata
+[2016.04.28-15.43.52:284][  0]LogRHI:   GL_ARB_map_buffer_alignment
+[2016.04.28-15.43.52:284][  0]LogRHI:   GL_ARB_map_buffer_range
+[2016.04.28-15.43.52:284][  0]LogRHI:   GL_ARB_multi_bind
+[2016.04.28-15.43.52:284][  0]LogRHI:   GL_ARB_multi_draw_indirect
+[2016.04.28-15.43.52:284][  0]LogRHI:   GL_ARB_occlusion_query2
+[2016.04.28-15.43.52:284][  0]LogRHI:   GL_ARB_pixel_buffer_object
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_point_sprite
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_provoking_vertex
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_robustness
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_sample_shading
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_sampler_objects
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_seamless_cube_map
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_seamless_cubemap_per_texture
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_separate_shader_objects
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_shader_atomic_counters
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_shader_bit_encoding
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_shader_objects
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_shader_texture_lod
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_shading_language_packing
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_shading_language_420pack
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_sync
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_texture_buffer_object
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_texture_buffer_object_rgb32
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_texture_buffer_range
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_texture_compression_bptc
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_texture_compression_rgtc
+[2016.04.28-15.43.52:285][  0]LogRHI:   GL_ARB_texture_cube_map_array
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_texture_float
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_texture_gather
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_texture_mirror_clamp_to_edge
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_texture_multisample
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_texture_non_power_of_two
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_texture_query_levels
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_texture_query_lod
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_texture_rectangle
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_texture_rgb10_a2ui
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_texture_rg
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_texture_storage
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_texture_storage_multisample
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_texture_view
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_texture_swizzle
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_timer_query
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_transform_feedback2
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_transform_feedback3
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_transform_feedback_instanced
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_uniform_buffer_object
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_vertex_array_bgra
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_vertex_array_object
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_vertex_attrib_binding
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_vertex_shader
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_vertex_type_10f_11f_11f_rev
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_vertex_type_2_10_10_10_rev
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_ARB_viewport_array
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_EXT_abgr
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_EXT_blend_equation_separate
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_EXT_draw_buffers2
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_EXT_draw_instanced
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_EXT_framebuffer_blit
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_EXT_framebuffer_multisample
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_EXT_framebuffer_multisample_blit_scaled
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_EXT_framebuffer_sRGB
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_EXT_packed_depth_stencil
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_EXT_packed_float
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_EXT_pixel_buffer_object
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_EXT_polygon_offset_clamp
+[2016.04.28-15.43.52:286][  0]LogRHI:   GL_EXT_provoking_vertex
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_EXT_shader_integer_mix
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_EXT_texture_array
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_EXT_texture_compression_dxt1
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_ANGLE_texture_compression_dxt3
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_ANGLE_texture_compression_dxt5
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_EXT_texture_compression_rgtc
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_EXT_texture_compression_s3tc
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_EXT_texture_filter_anisotropic
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_EXT_texture_integer
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_EXT_texture_shared_exponent
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_EXT_texture_snorm
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_EXT_texture_sRGB
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_EXT_texture_sRGB_decode
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_EXT_texture_swizzle
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_EXT_timer_query
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_EXT_transform_feedback
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_EXT_vertex_array_bgra
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_OES_EGL_image
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_OES_read_format
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_KHR_debug
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_KHR_context_flush_control
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_3DFX_texture_compression_FXT1
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_AMD_conservative_depth
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_AMD_draw_buffers_blend
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_AMD_performance_monitor
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_AMD_seamless_cubemap_per_texture
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_AMD_shader_trinary_minmax
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_AMD_vertex_shader_layer
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_AMD_vertex_shader_viewport_index
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_APPLE_object_purgeable
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_ATI_blend_equation_separate
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_ATI_texture_float
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_IBM_multimode_draw_arrays
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_INTEL_performance_query
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_MESA_pack_invert
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_MESA_texture_signed_rgba
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_NV_conditional_render
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_NV_depth_clamp
+[2016.04.28-15.43.52:287][  0]LogRHI:   GL_NV_packed_depth_stencil
+[2016.04.28-15.43.52:288][  0]LogRHI:   GL_S3_s3tc
+[2016.04.28-15.43.52:290][  0]LogRHI:   GL_MAX_TEXTURE_SIZE: 8192
+[2016.04.28-15.43.52:291][  0]LogRHI:   GL_MAX_CUBE_MAP_TEXTURE_SIZE: 8192
+[2016.04.28-15.43.52:291][  0]LogRHI:   GL_MAX_ARRAY_TEXTURE_LAYERS: 2048
+[2016.04.28-15.43.52:291][  0]LogRHI:   GL_MAX_3D_TEXTURE_SIZE: 2048
+[2016.04.28-15.43.52:291][  0]LogRHI:   GL_MAX_RENDERBUFFER_SIZE: 8192
+[2016.04.28-15.43.52:291][  0]LogRHI:   GL_MAX_TEXTURE_IMAGE_UNITS: 16
+[2016.04.28-15.43.52:291][  0]LogRHI:   GL_MAX_DRAW_BUFFERS: 8
+[2016.04.28-15.43.52:291][  0]LogRHI:   GL_MAX_COLOR_ATTACHMENTS: 8
+[2016.04.28-15.43.52:291][  0]LogRHI:   GL_MAX_SAMPLES: 8
+[2016.04.28-15.43.52:291][  0]LogRHI:   GL_MAX_COLOR_TEXTURE_SAMPLES: 8
+[2016.04.28-15.43.52:291][  0]LogRHI:   GL_MAX_DEPTH_TEXTURE_SAMPLES: 8
+[2016.04.28-15.43.52:291][  0]LogRHI:   GL_MAX_INTEGER_SAMPLES: 8
+[2016.04.28-15.43.52:291][  0]LogRHI:   GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS: 48
+[2016.04.28-15.43.52:291][  0]LogRHI:   GL_MAX_VERTEX_ATTRIBS: 16
+[2016.04.28-15.43.52:291][  0]LogRHI:   GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT: 16
+[2016.04.28-15.43.52:291][  0]LogRHI: OpenGL MajorVersion = 3, MinorVersion = 3, ShaderPlatform = GLSL_150, FeatureLevel = SM4
+[2016.04.28-15.43.52:320][  0]LogShaderCompilers: Guid format shader working directory is 15 characters bigger than the processId version (../../../../../Documents/Unreal Projects/wizards/Intermediate/Shaders/WorkingDirectory/5842/).
+[2016.04.28-15.43.52:321][  0]LogShaderCompilers: Cleaned the shader compiler working directory '../../../../../Documents/Unreal Projects/wizards/Intermediate/Shaders/tmp/0004EF073404081C002B01407E22A89B/'.
+[2016.04.28-15.43.52:322][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.04.28-15.43.57:526][  0]LogHAL: FLinuxPlatformProcess::CreateProc: '/usr/bin/mono "/home/xolejh/Unreal/UnrealEngine/Engine/Binaries/DotNET/UnrealBuildTool.exe" -validateplatform -allplatforms'
+[2016.04.28-15.43.57:538][  0]LogHAL: FLinuxPlatformProcess::CreateProc: spawned child 5865
+[2016.04.28-15.44.00:838][  0]LogHAL: Child 5865 is no more running (zombie), Wait()ing immediately.
+[2016.04.28-15.44.00:838][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.04.28-15.44.01:980][  0]LogTemp:Display: Failed to get target platform HTML5TargetPlatform
+[2016.04.28-15.44.02:912][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.04.28-15.44.03:922][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.04.28-15.44.04:903][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.04.28-15.44.04:904][  0]LogTargetPlatformManager:Display: Building Assets For Linux
+[2016.04.28-15.44.06:655][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.04.28-15.44.07:368][  0]LogDerivedDataCache: Loaded boot cache 0.71s 96MB ../../../../../Documents/Unreal Projects/wizards/DerivedDataCache/Boot.ddc.
+[2016.04.28-15.44.07:369][  0]LogDerivedDataCache:Display: Loaded Boot cache: ../../../../../Documents/Unreal Projects/wizards/DerivedDataCache/Boot.ddc
+[2016.04.28-15.44.07:369][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Documents/Unreal Projects/wizards/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.04.28-15.44.07:369][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.04.28-15.44.07:371][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnginePak pak cache file ../../../Engine/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.04.28-15.44.07:371][  0]LogDerivedDataCache: Unable to find inner node EnginePak for hierarchical cache Hierarchy.
+[2016.04.28-15.44.07:374][  0]LogDerivedDataCache: Using Local data cache path ../../../Engine/DerivedDataCache: Writable
+[2016.04.28-15.44.07:375][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2016.04.28-15.44.07:375][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2016.04.28-15.44.07:978][  0]LogHAL: Linux SourceCodeAccessSettings: NullSourceCodeAccessor
+[2016.04.28-15.44.08:036][  0]LogLinux: Selected Device Profile: [Linux]
+[2016.04.28-15.44.08:040][  0]LogContentStreaming: Texture pool size is 1000.000000MB
+[2016.04.28-15.44.09:397][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.04.28-15.44.09:397][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.04.28-15.44.25:392][  0]LogOutputDevice:Warning: === Handled error: ===
+
+Ensure condition failed: this->IsBound() [File:Runtime/Core/Public/Delegates/DelegateSignatureImpl_Variadics.inl] [Line: 930]
+Unable to bind delegate to '&AWizardsCone::OnOverlap' (function might not be marked as a UFUNCTION)
+Stack: 
+[Callstack]  03  0x00007fcfb103445e  FDebug::EnsureFailed(char const*, char const*, int, wchar_t const*)
+[Callstack]  04  0x00007fcfb102221a  FDebug::OptionallyLogFormattedEnsureMessageReturningFalse(bool, char const*, char const*, int, wchar_t const*, ...)
+[Callstack]  05  0x00007fcf619dd6a2  void TBaseDynamicDelegate<FWeakObjectPtr, void, AActor*, UPrimitiveComponent*, int, bool, FHitResult const&>::__Internal_BindDynamic<AWizardsCone>(AWizardsCone*, TBaseDynamicDelegate<FWeakObjectPtr, void, AActor*, UPrimitiveComponent*, int, bool, FHitResult const&>::TMethodPtrResolver<AWizardsCone>::FMethodPtr, wchar_t const*)
+[Callstack]  06  0x00007fcf619dd490  void TBaseDynamicMulticastDelegate<FWeakObjectPtr, void, AActor*, UPrimitiveComponent*, int, bool, FHitResult const&>::__Internal_AddDynamic<AWizardsCone>(AWizardsCone*, TBaseDynamicDelegate<FWeakObjectPtr, void, AActor*, UPrimitiveComponent*, int, bool, FHitResult const&>::TMethodPtrResolver<AWizardsCone>::FMethodPtr, wchar_t const*)
+[Callstack]  07  0x00007fcf619dd255  AWizardsCone::AWizardsCone()
+[Callstack]  08  0x00007fcfb089b7de  UClass::CreateDefaultObject()
+[Callstack]  09  0x00007fcfb0a0b117  ProcessNewlyLoadedUObjects()
+[Callstack]  10  0x0000000000439a84  TBaseStaticDelegateInstance<void ()>::ExecuteIfSafe() const [Runtime/Core/Public/Delegates/Tuple.h, line 78]
+[Callstack]  11  0x000000000043870d  TBaseMulticastDelegate<void>::Broadcast() const [Runtime/Core/Public/Delegates/DelegateSignatureImpl_Variadics.inl, line 809]
+[Callstack]  12  0x00007fcfb1092e72  FModuleManager::LoadModuleWithFailureReason(FName, EModuleLoadResult&, bool)
+[Callstack]  13  0x00007fcfabc00190  FModuleDescriptor::LoadModulesForPhase(ELoadingPhase::Type, TArray<FModuleDescriptor, FDefaultAllocator> const&, TMap<FName, EModuleLoadResult, FDefaultSetAllocator, TDefaultMapKeyFuncs<FName, EModuleLoadResult, false> >&)
+[Callstack]  14  0x00007fcfabc11c96  FProjectManager::LoadModulesForProject(ELoadingPhase::Type)
+[Callstack]  15  0x0000000000432739  FEngineLoop::LoadStartupModules() [/home/xolejh/Unreal/UnrealEngine/Engine/Source/Runtime/Launch/Private/LaunchEngineLoop.cpp, line 1989]
+[Callstack]  16  0x0000000000417133  FEngineLoop::PreInit(wchar_t const*) [/home/xolejh/Unreal/UnrealEngine/Engine/Source/Runtime/Launch/Private/LaunchEngineLoop.cpp, line 1495]
+[Callstack]  17  0x000000000042746f  GuardedMain(wchar_t const*) [/home/xolejh/Unreal/UnrealEngine/Engine/Source/Runtime/Launch/Private/Launch.cpp, line 31]
+[Callstack]  18  0x0000000000434e7f  /home/xolejh/Unreal/UnrealEngine/Engine/Binaries/Linux/UE4Editor(main+0x88f) [0x434e7f] [/home/xolejh/Unreal/UnrealEngine/Engine/Source/Runtime/Launch/Private/Linux/LaunchLinux.cpp, line 193]
+[Callstack]  19  0x00007fcfa5786ec5  /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf5) [0x7fcfa5786ec5]
+[Callstack]  20  0x0000000000411900  /home/xolejh/Unreal/UnrealEngine/Engine/Binaries/Linux/UE4Editor() [0x411900]
+
+[2016.04.28-15.44.27:500][  0]SourceControl: Info Source control is disabled
+[2016.04.28-15.44.27:501][  0]SourceControl: Info Source control is disabled
+[2016.04.28-15.44.28:318][  0]LogDesktopPlatform: DesktopPlatformLinux is not using LinuxNativeDialogs.
+[2016.04.28-15.44.29:979][  0]SourceControl: Info Source control is disabled
+[2016.04.28-15.44.33:236][  0]LogObj: 34477 objects as part of root set at end of initial load.
+[2016.04.28-15.44.33:236][  0]LogUObjectAllocator: 7433952 out of 0 bytes used by permanent object pool.
+[2016.04.28-15.44.33:236][  0]LogExit: Preparing to exit.
+[2016.04.28-15.44.34:523][  0]LogExit: Object subsystem successfully closed.
+[2016.04.28-15.44.34:539][  0]LogExit: Preparing to exit.
+[2016.04.28-15.44.34:572][  0]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (82)
+[2016.04.28-15.44.34:575][  0]LogModuleManager: Shutting down and abandoning module HotReload (81)
+[2016.04.28-15.44.34:575][  0]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (80)
+[2016.04.28-15.44.34:575][  0]LogModuleManager: Shutting down and abandoning module CableComponent (79)
+[2016.04.28-15.44.34:575][  0]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (78)
+[2016.04.28-15.44.34:575][  0]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (77)
+[2016.04.28-15.44.34:575][  0]LogModuleManager: Shutting down and abandoning module SlateRemote (76)
+[2016.04.28-15.44.34:575][  0]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (75)
+[2016.04.28-15.44.34:576][  0]LogModuleManager: Shutting down and abandoning module CodeLiteSourceCodeAccess (74)
+[2016.04.28-15.44.34:576][  0]LogModuleManager: Shutting down and abandoning module DesktopPlatform (73)
+[2016.04.28-15.44.34:576][  0]LogModuleManager: Shutting down and abandoning module KDevelopSourceCodeAccess (72)
+[2016.04.28-15.44.34:576][  0]LogModuleManager: Shutting down and abandoning module SourceControl (71)
+[2016.04.28-15.44.34:576][  0]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (70)
+[2016.04.28-15.44.34:577][  0]LogModuleManager: Shutting down and abandoning module UObjectPlugin (69)
+[2016.04.28-15.44.34:577][  0]LogModuleManager: Shutting down and abandoning module Wizards (68)
+[2016.04.28-15.44.34:577][  0]LogModuleManager: Shutting down and abandoning module UdpMessaging (67)
+[2016.04.28-15.44.34:577][  0]LogModuleManager: Shutting down and abandoning module NullSourceCodeAccess (66)
+[2016.04.28-15.44.34:577][  0]LogModuleManager: Shutting down and abandoning module Paper2D (65)
+[2016.04.28-15.44.34:577][  0]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (64)
+[2016.04.28-15.44.34:577][  0]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (63)
+[2016.04.28-15.44.34:577][  0]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (62)
+[2016.04.28-15.44.34:577][  0]LogModuleManager: Shutting down and abandoning module PropertyEditor (61)
+[2016.04.28-15.44.34:577][  0]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (60)
+[2016.04.28-15.44.34:578][  0]LogModuleManager: Shutting down and abandoning module FunctionalTesting (59)
+[2016.04.28-15.44.34:578][  0]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (58)
+[2016.04.28-15.44.34:578][  0]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (57)
+[2016.04.28-15.44.34:579][  0]LogModuleManager: Shutting down and abandoning module MessageLog (56)
+[2016.04.28-15.44.34:579][  0]LogModuleManager: Shutting down and abandoning module Sequencer (55)
+[2016.04.28-15.44.34:579][  0]LogModuleManager: Shutting down and abandoning module AssetTools (54)
+[2016.04.28-15.44.34:580][  0]LogModuleManager: Shutting down and abandoning module UMGEditor (53)
+[2016.04.28-15.44.34:580][  0]LogModuleManager: Shutting down and abandoning module UMG (52)
+[2016.04.28-15.44.34:580][  0]LogModuleManager: Shutting down and abandoning module Slate (51)
+[2016.04.28-15.44.34:581][  0]LogModuleManager: Shutting down and abandoning module EditorStyle (50)
+[2016.04.28-15.44.34:584][  0]LogModuleManager: Shutting down and abandoning module SessionServices (49)
+[2016.04.28-15.44.34:585][  0]LogModuleManager: Shutting down and abandoning module Messaging (48)
+[2016.04.28-15.44.34:585][  0]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (47)
+[2016.04.28-15.44.34:585][  0]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (46)
+[2016.04.28-15.44.34:585][  0]LogModuleManager: Shutting down and abandoning module ALAudio (45)
+[2016.04.28-15.44.34:585][  0]LogModuleManager: Shutting down and abandoning module Networking (44)
+[2016.04.28-15.44.34:585][  0]LogModuleManager: Shutting down and abandoning module Core (43)
+[2016.04.28-15.44.34:585][  0]LogModuleManager: Shutting down and abandoning module KismetCompiler (42)
+[2016.04.28-15.44.34:585][  0]LogModuleManager: Shutting down and abandoning module PhysXFormats (41)
+[2016.04.28-15.44.34:585][  0]LogModuleManager: Shutting down and abandoning module MeshUtilities (40)
+[2016.04.28-15.44.34:585][  0]LogModuleManager: Shutting down and abandoning module DerivedDataCache (39)
+[2016.04.28-15.44.34:884][  0]LogDerivedDataCache: Shutdown
+[2016.04.28-15.44.34:884][  0]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (38)
+[2016.04.28-15.44.34:884][  0]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (37)
+[2016.04.28-15.44.34:884][  0]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (36)
+[2016.04.28-15.44.34:884][  0]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (35)
+[2016.04.28-15.44.34:884][  0]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (34)
+[2016.04.28-15.44.34:884][  0]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (33)
+[2016.04.28-15.44.34:884][  0]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (32)
+[2016.04.28-15.44.34:884][  0]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (31)
+[2016.04.28-15.44.34:884][  0]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (30)
+[2016.04.28-15.44.34:884][  0]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (29)
+[2016.04.28-15.44.34:884][  0]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (28)
+[2016.04.28-15.44.34:884][  0]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (27)
+[2016.04.28-15.44.34:884][  0]LogModuleManager: Shutting down and abandoning module TargetPlatform (26)
+[2016.04.28-15.44.34:885][  0]LogModuleManager: Shutting down and abandoning module InputCore (25)
+[2016.04.28-15.44.34:885][  0]LogModuleManager: Shutting down and abandoning module Settings (24)
+[2016.04.28-15.44.34:885][  0]LogModuleManager: Shutting down and abandoning module ImageWrapper (23)
+[2016.04.28-15.44.34:885][  0]LogModuleManager: Shutting down and abandoning module Voice (21)
+[2016.04.28-15.44.34:885][  0]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (17)
+[2016.04.28-15.44.34:885][  0]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2016.04.28-15.44.34:938][  0]LogOnline:Display: Unloading online subsystem: Null
+[2016.04.28-15.44.34:938][  0]LogModuleManager: Shutting down and abandoning module HTTP (16)
+[2016.04.28-15.44.34:940][  0]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.04.28-15.44.34:940][  0]LogModuleManager: Shutting down and abandoning module LinuxDeviceProfileSelector (14)
+[2016.04.28-15.44.34:940][  0]LogModuleManager: Shutting down and abandoning module TextureCompressor (13)
+[2016.04.28-15.44.34:940][  0]LogModuleManager: Shutting down and abandoning module ShaderCore (12)
+[2016.04.28-15.44.34:940][  0]LogModuleManager: Shutting down and abandoning module Landscape (11)
+[2016

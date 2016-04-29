@@ -3,7 +3,8 @@
 #ifndef __WIZARDS_H__
 #define __WIZARDS_H__
 
-#include "EngineMinimal.h"
-
+#include "Engine.h"
+#include "WizardsSaveGame.h"
+#include "Kismet/GameplayStatics.h"
 
 #endif

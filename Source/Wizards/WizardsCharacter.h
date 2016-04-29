@@ -2,6 +2,8 @@
 #pragma once
 #include "GameFramework/Character.h"
 #include "ParticleDefinitions.h"
+//#include "WizardsCone.h"
+#include "spellBook.h"
 #include "WizardsCharacter.generated.h"
 
 class UInputComponent;
@@ -20,6 +22,10 @@ class AWizardsCharacter : public ACharacter
 	class UCameraComponent* FirstPersonCameraComponent;
 public:
 	AWizardsCharacter();
+
+
+	UFUNCTION(BlueprintCallable, Category = "CharacterFunctions")
+	void newCharactersSpells();
 
 	void Tick(float DeltaTime) override;	
 
@@ -46,17 +52,52 @@ public:
 	float Mana;
 	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
 	float maxMana;
+/*
 	struct spell {
 		FName* particleLocation;
 		ConstructorHelpers::FObjectFinder<UParticleSystem>* test;
 		UParticleSystem* myParticle;
 		float spellCost;
 	};
-	spell SList;
+	spell SList;*/
+
+	UPROPERTY(Replicated)
+	UspellBook* thisSpell;
+	UPROPERTY(Replicated)
+	TArray<UspellBook*> mySpellBook;
+	TArray<UParticleSystem*> particleList;
+	/*struct spell {
+		UParticleSystem* myParticle;
+		int8 spellType;
+		float spellCost;
+		float spellSpeed; 
+		float spellDamage;
+		float spellRange; //lifetime for projectiles, distance for rays and blasts
+		float spellSize;
+		bool canBounce;
+		bool hasGravity;
+		bool isHoming;
+		bool explodeOnCollision;
+		bool explodeOnDeath;
+		float explosionHitDamage;
+		float explosionHitSize;
+		float explosionDeathDamage;
+		float explosionDeathSize;
+	};*/
+	//TArray<spell> SList;
+	int8 currSpell;
+	//AWizardsCone* wizardsCone;
+	AActor* activeAttack;
+
 
 	/** Projectile class to spawn */
-	UPROPERTY(EditAnywhere, Category=Projectile)
+	UPROPERTY(Replicated, EditAnywhere, Category=Projectile)
 	TSubclassOf<class AWizardsProjectile> ProjectileClass;
+	UPROPERTY(Replicated, EditAnywhere, Category = Projectile)
+	TSubclassOf<class AWizardsBlast> BlastClass;
+	UPROPERTY(Replicated, EditAnywhere, Category = Projectile)
+	TSubclassOf<class AWizardsCone> ConeClass;
+
 
 	/** Sound to play each time we fire */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
@@ -70,6 +111,8 @@ protected:
 	
 	/** Fires a projectile. */
 	void OnFire();
+
+	void OffFire();//stops cones
 
 	/** Handles moving forward/backward */
 	void MoveForward(float Val);
@@ -102,6 +145,11 @@ protected:
 	void TouchUpdate(const ETouchIndex::Type FingerIndex, const FVector Location);
 	TouchData	TouchItem;
 	
+	//Called when you switch a spell
+	template<int newspell>
+	void spellSwitch();
+	bool shooting = false;
+
 protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
@@ -122,6 +170,14 @@ public:
 	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 	float GetHealth();
 	float GetMana();
+
+	void GetLifetimeReplicatedProps(TArray< FLifetimeProperty > & OutLifetimeProps) const override;
+
+	//In this chunk of whatever I shall store the server functions
+  UFUNCTION(reliable, server, WithValidation)
+  void ServerFireProjectile(bool bNewSomeBool);
+  virtual void ServerFireProjectile_Implementation(bool bNewSomeBool);
+  virtual bool ServerFireProjectile_Validate(bool bNewSomeBool);
 
 };
 

@@ -1,0 +1,740 @@
+﻿[2016.04.28-19.07.02:230][  0]Log file open, 04/28/16 12:07:02
+[2016.04.28-19.07.02:230][  0]LogInit:Display: Running engine for game: Wizards
+[2016.04.28-19.07.02:231][  0]LogPlatformFile: Not using cached read wrapper
+[2016.04.28-19.07.02:231][  0]LogInit:Display: RandInit(216631325) SRandInit(216631330).
+[2016.04.28-19.07.02:231][  0]LogTaskGraph: Started task graph with 4 named threads and 5 total threads.
+[2016.04.28-19.07.02:231][  0]LogStats: Stats thread started at 0.033034
+[2016.04.28-19.07.02:231][  0]LogInit: Version: 4.10.2-0+++depot+UE4-Releases+4.10
+[2016.04.28-19.07.02:231][  0]LogInit: API Version: 0
+[2016.04.28-19.07.02:231][  0]LogInit: Compiled (64-bit): Feb  4 2016 10:59:05
+[2016.04.28-19.07.02:231][  0]LogInit: Compiled with Clang: 3.5.0 (tags/RELEASE_350/final)
+[2016.04.28-19.07.02:231][  0]LogInit: Build Configuration: Development
+[2016.04.28-19.07.02:231][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
+[2016.04.28-19.07.02:231][  0]LogInit: Command line: 
+[2016.04.28-19.07.02:231][  0]LogInit: Base directory: /home/xolejh/Unreal/UnrealEngine/Engine/Binaries/Linux/
+[2016.04.28-19.07.02:231][  0]LogInit: Rocket: 0
+[2016.04.28-19.07.02:247][  0]LogInit: Using libcurl 7.38.0
+[2016.04.28-19.07.02:247][  0]LogInit:  - built for x86_64-unknown-linux-gnu
+[2016.04.28-19.07.02:247][  0]LogInit:  - supports SSL with OpenSSL/1.0.1i
+[2016.04.28-19.07.02:247][  0]LogInit:  - supports HTTP deflate (compression) using libz 1.2.5
+[2016.04.28-19.07.02:247][  0]LogInit:  - other features:
+[2016.04.28-19.07.02:247][  0]LogInit:      CURL_VERSION_SSL
+[2016.04.28-19.07.02:247][  0]LogInit:      CURL_VERSION_LIBZ
+[2016.04.28-19.07.02:247][  0]LogInit:      CURL_VERSION_IPV6
+[2016.04.28-19.07.02:247][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2016.04.28-19.07.02:247][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2016.04.28-19.07.02:247][  0]LogInit:      CURL_VERSION_TLSAUTH_SRP
+[2016.04.28-19.07.02:247][  0]LogInit:  Libcurl: checking if '/etc/pki/tls/certs/ca-bundle.crt' exists
+[2016.04.28-19.07.02:248][  0]LogInit:  Libcurl: checking if '/etc/ssl/certs/ca-certificates.crt' exists
+[2016.04.28-19.07.02:248][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2016.04.28-19.07.02:248][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2016.04.28-19.07.02:248][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2016.04.28-19.07.02:248][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2016.04.28-19.07.02:248][  0]LogInit:  - CertBundlePath = /etc/ssl/certs/ca-certificates.crt  - Libcurl will set CURLOPT_CAINFO to it
+[2016.04.28-19.07.02:259][  0]LogModuleManager:Warning: ModuleManager: Unable to load module 'OnlineSubsystemSteam' because the file '/home/xolejh/Unreal/UnrealEngine/Engine/Binaries/Linux/' was not found.
+[2016.04.28-19.07.02:799][  0]LogVoice:Warning: Failed to initialize voice interface
+[2016.04.28-19.07.03:277][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2016.04.28-19.07.03:288][  0]LogInit: Object subsystem initialized
+[2016.04.28-19.07.03:290][  0]LogLinux: Selected Device Profile: [Linux]
+[2016.04.28-19.07.03:290][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Linux]
+[2016.04.28-19.07.03:315][  0]LogInit: Linux hardware info:
+[2016.04.28-19.07.03:315][  0]LogInit:  - this process' id (pid) is 3551, parent process' id (ppid) is 1183
+[2016.04.28-19.07.03:315][  0]LogInit:  - we are not running under debugger
+[2016.04.28-19.07.03:315][  0]LogInit:  - machine network name is 'xolejh-HP-ENVY-Pro-4-b000-Ultrabook-PC'
+[2016.04.28-19.07.03:315][  0]LogInit:  - we're logged in locally
+[2016.04.28-19.07.03:315][  0]LogInit:  - Number of physical cores available for the process: 2
+[2016.04.28-19.07.03:315][  0]LogInit:  - Number of logical cores available for the process: 4
+[2016.04.28-19.07.03:315][  0]LogInit:  - Cache line size: 64
+[2016.04.28-19.07.03:315][  0]LogInit:  - Memory allocator used: binned
+[2016.04.28-19.07.03:315][  0]LogInit: Linux-specific commandline switches:
+[2016.04.28-19.07.03:315][  0]LogInit:  -nodwarf (currently OFF): suppress parsing of DWARF debug info (callstacks will be generated faster, but won't have line numbers)
+[2016.04.28-19.07.03:315][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2016.04.28-19.07.03:315][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2016.04.28-19.07.03:315][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2016.04.28-19.07.03:315][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2016.04.28-19.07.03:315][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2016.04.28-19.07.03:315][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2016.04.28-19.07.03:316][  0]LogInit: Setting LC_NUMERIC to en_US
+[2016.04.28-19.07.03:316][  0]LogInit: Initializing SDL.
+[2016.04.28-19.07.03:410][  0]LogInit: Initialized SDL 2.0.4 (compiled against 2.0.4)
+[2016.04.28-19.07.03:410][  0]LogInit: Display metrics:
+[2016.04.28-19.07.03:410][  0]LogInit:   PrimaryDisplayWidth: 1366
+[2016.04.28-19.07.03:411][  0]LogInit:   PrimaryDisplayHeight: 768
+[2016.04.28-19.07.03:411][  0]LogInit:   PrimaryDisplayWorkAreaRect:
+[2016.04.28-19.07.03:411][  0]LogInit:     Left=65, Top=24, Right=1366, Bottom=768
+[2016.04.28-19.07.03:411][  0]LogInit:   VirtualDisplayRect:
+[2016.04.28-19.07.03:411][  0]LogInit:     Left=65, Top=24, Right=1366, Bottom=768
+[2016.04.28-19.07.03:411][  0]LogInit:   TitleSafePaddingSize: X=0.000 Y=0.000
+[2016.04.28-19.07.03:411][  0]LogInit:   ActionSafePaddingSize: X=0.000 Y=0.000
+[2016.04.28-19.07.03:411][  0]LogInit:   Number of monitors: 1
+[2016.04.28-19.07.03:411][  0]LogInit:     Monitor 0
+[2016.04.28-19.07.03:411][  0]LogInit:       Name: 0
+[2016.04.28-19.07.03:411][  0]LogInit:       ID: display0
+[2016.04.28-19.07.03:411][  0]LogInit:       NativeWidth: 1366
+[2016.04.28-19.07.03:411][  0]LogInit:       NativeHeight: 768
+[2016.04.28-19.07.03:411][  0]LogInit:       bIsPrimary: true
+[2016.04.28-19.07.03:411][  0]LogInit:  - Physical RAM available (not considering process quota): 4 GB (3854 MB, 3947100 KB, 4041830400 bytes)
+[2016.04.28-19.07.03:418][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.04.28-19.07.03:943][  0]LogRHI: Initializing OpenGL RHI
+[2016.04.28-19.07.03:943][  0]LogRHI:   GL_VENDOR: Intel Open Source Technology Center
+[2016.04.28-19.07.03:943][  0]LogRHI:   GL_RENDERER: Mesa DRI Intel(R) Ivybridge Mobile 
+[2016.04.28-19.07.03:943][  0]LogRHI:   GL_VERSION: 3.3 (Core Profile) Mesa 10.5.9
+[2016.04.28-19.07.03:943][  0]LogRHI:   GL_SHADING_LANGUAGE_VERSION: 3.30
+[2016.04.28-19.07.03:943][  0]LogRHI: OpenGL Extensions:
+[2016.04.28-19.07.03:943][  0]LogRHI:   GL_ARB_ES2_compatibility
+[2016.04.28-19.07.03:943][  0]LogRHI:   GL_ARB_ES3_compatibility
+[2016.04.28-19.07.03:943][  0]LogRHI:   GL_ARB_base_instance
+[2016.04.28-19.07.03:943][  0]LogRHI:   GL_ARB_blend_func_extended
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_buffer_storage
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_clear_buffer_object
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_clear_texture
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_compressed_texture_pixel_storage
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_conditional_render_inverted
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_copy_buffer
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_copy_image
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_conservative_depth
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_debug_output
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_depth_buffer_float
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_depth_clamp
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_derivative_control
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_draw_buffers
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_draw_buffers_blend
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_draw_elements_base_vertex
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_draw_indirect
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_draw_instanced
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_explicit_attrib_location
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_explicit_uniform_location
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_fragment_coord_conventions
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_fragment_shader
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_framebuffer_object
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_framebuffer_sRGB
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_get_program_binary
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_gpu_shader5
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_half_float_pixel
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_half_float_vertex
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_instanced_arrays
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_internalformat_query
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_invalidate_subdata
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_map_buffer_alignment
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_map_buffer_range
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_multi_bind
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_multi_draw_indirect
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_occlusion_query2
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_pixel_buffer_object
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_point_sprite
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_provoking_vertex
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_robustness
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_sample_shading
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_sampler_objects
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_seamless_cube_map
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_seamless_cubemap_per_texture
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_separate_shader_objects
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_shader_atomic_counters
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_shader_bit_encoding
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_shader_objects
+[2016.04.28-19.07.03:944][  0]LogRHI:   GL_ARB_shader_texture_lod
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_shading_language_packing
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_shading_language_420pack
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_sync
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_texture_buffer_object
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_texture_buffer_object_rgb32
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_texture_buffer_range
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_texture_compression_bptc
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_texture_compression_rgtc
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_texture_cube_map_array
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_texture_float
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_texture_gather
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_texture_mirror_clamp_to_edge
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_texture_multisample
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_texture_non_power_of_two
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_texture_query_levels
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_texture_query_lod
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_texture_rectangle
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_texture_rgb10_a2ui
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_texture_rg
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_texture_storage
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_texture_storage_multisample
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_texture_view
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_texture_swizzle
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_timer_query
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_transform_feedback2
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_transform_feedback3
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_transform_feedback_instanced
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_uniform_buffer_object
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_vertex_array_bgra
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_vertex_array_object
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_vertex_attrib_binding
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_vertex_shader
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_vertex_type_10f_11f_11f_rev
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_vertex_type_2_10_10_10_rev
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_ARB_viewport_array
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_EXT_abgr
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_EXT_blend_equation_separate
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_EXT_draw_buffers2
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_EXT_draw_instanced
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_EXT_framebuffer_blit
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_EXT_framebuffer_multisample
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_EXT_framebuffer_multisample_blit_scaled
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_EXT_framebuffer_sRGB
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_EXT_packed_depth_stencil
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_EXT_packed_float
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_EXT_pixel_buffer_object
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_EXT_polygon_offset_clamp
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_EXT_provoking_vertex
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_EXT_shader_integer_mix
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_EXT_texture_array
+[2016.04.28-19.07.03:945][  0]LogRHI:   GL_EXT_texture_compression_dxt1
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_ANGLE_texture_compression_dxt3
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_ANGLE_texture_compression_dxt5
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_EXT_texture_compression_rgtc
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_EXT_texture_compression_s3tc
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_EXT_texture_filter_anisotropic
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_EXT_texture_integer
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_EXT_texture_shared_exponent
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_EXT_texture_snorm
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_EXT_texture_sRGB
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_EXT_texture_sRGB_decode
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_EXT_texture_swizzle
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_EXT_timer_query
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_EXT_transform_feedback
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_EXT_vertex_array_bgra
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_OES_EGL_image
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_OES_read_format
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_KHR_debug
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_KHR_context_flush_control
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_3DFX_texture_compression_FXT1
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_AMD_conservative_depth
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_AMD_draw_buffers_blend
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_AMD_performance_monitor
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_AMD_seamless_cubemap_per_texture
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_AMD_shader_trinary_minmax
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_AMD_vertex_shader_layer
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_AMD_vertex_shader_viewport_index
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_APPLE_object_purgeable
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_ATI_blend_equation_separate
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_ATI_texture_float
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_IBM_multimode_draw_arrays
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_INTEL_performance_query
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_MESA_pack_invert
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_MESA_texture_signed_rgba
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_NV_conditional_render
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_NV_depth_clamp
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_NV_packed_depth_stencil
+[2016.04.28-19.07.03:946][  0]LogRHI:   GL_S3_s3tc
+[2016.04.28-19.07.03:948][  0]LogRHI:   GL_MAX_TEXTURE_SIZE: 8192
+[2016.04.28-19.07.03:948][  0]LogRHI:   GL_MAX_CUBE_MAP_TEXTURE_SIZE: 8192
+[2016.04.28-19.07.03:948][  0]LogRHI:   GL_MAX_ARRAY_TEXTURE_LAYERS: 2048
+[2016.04.28-19.07.03:948][  0]LogRHI:   GL_MAX_3D_TEXTURE_SIZE: 2048
+[2016.04.28-19.07.03:948][  0]LogRHI:   GL_MAX_RENDERBUFFER_SIZE: 8192
+[2016.04.28-19.07.03:948][  0]LogRHI:   GL_MAX_TEXTURE_IMAGE_UNITS: 16
+[2016.04.28-19.07.03:948][  0]LogRHI:   GL_MAX_DRAW_BUFFERS: 8
+[2016.04.28-19.07.03:948][  0]LogRHI:   GL_MAX_COLOR_ATTACHMENTS: 8
+[2016.04.28-19.07.03:948][  0]LogRHI:   GL_MAX_SAMPLES: 8
+[2016.04.28-19.07.03:948][  0]LogRHI:   GL_MAX_COLOR_TEXTURE_SAMPLES: 8
+[2016.04.28-19.07.03:948][  0]LogRHI:   GL_MAX_DEPTH_TEXTURE_SAMPLES: 8
+[2016.04.28-19.07.03:948][  0]LogRHI:   GL_MAX_INTEGER_SAMPLES: 8
+[2016.04.28-19.07.03:948][  0]LogRHI:   GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS: 48
+[2016.04.28-19.07.03:948][  0]LogRHI:   GL_MAX_VERTEX_ATTRIBS: 16
+[2016.04.28-19.07.03:948][  0]LogRHI:   GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT: 16
+[2016.04.28-19.07.03:948][  0]LogRHI: OpenGL MajorVersion = 3, MinorVersion = 3, ShaderPlatform = GLSL_150, FeatureLevel = SM4
+[2016.04.28-19.07.03:957][  0]LogShaderCompilers: Guid format shader working directory is 15 characters bigger than the processId version (../../../../../Documents/Unreal Projects/wizards/Intermediate/Shaders/WorkingDirectory/3551/).
+[2016.04.28-19.07.03:958][  0]LogShaderCompilers: Cleaned the shader compiler working directory '../../../../../Documents/Unreal Projects/wizards/Intermediate/Shaders/tmp/0004C7DF03040C1C000703BD0D47784E/'.
+[2016.04.28-19.07.03:958][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.04.28-19.07.05:791][  0]LogHAL: FLinuxPlatformProcess::CreateProc: '/usr/bin/mono "/home/xolejh/Unreal/UnrealEngine/Engine/Binaries/DotNET/UnrealBuildTool.exe" -validateplatform -allplatforms'
+[2016.04.28-19.07.05:795][  0]LogHAL: FLinuxPlatformProcess::CreateProc: spawned child 3565
+[2016.04.28-19.07.07:189][  0]LogHAL: Child 3565 is no more running (zombie), Wait()ing immediately.
+[2016.04.28-19.07.07:189][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.04.28-19.07.07:735][  0]LogTemp:Display: Failed to get target platform HTML5TargetPlatform
+[2016.04.28-19.07.08:287][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.04.28-19.07.08:838][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.04.28-19.07.09:392][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.04.28-19.07.09:392][  0]LogTargetPlatformManager:Display: Building Assets For Linux
+[2016.04.28-19.07.10:483][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.04.28-19.07.10:908][  0]LogDerivedDataCache: Loaded boot cache 0.42s 96MB ../../../../../Documents/Unreal Projects/wizards/DerivedDataCache/Boot.ddc.
+[2016.04.28-19.07.10:909][  0]LogDerivedDataCache:Display: Loaded Boot cache: ../../../../../Documents/Unreal Projects/wizards/DerivedDataCache/Boot.ddc
+[2016.04.28-19.07.10:910][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Documents/Unreal Projects/wizards/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.04.28-19.07.10:910][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.04.28-19.07.10:910][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnginePak pak cache file ../../../Engine/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.04.28-19.07.10:910][  0]LogDerivedDataCache: Unable to find inner node EnginePak for hierarchical cache Hierarchy.
+[2016.04.28-19.07.10:912][  0]LogDerivedDataCache: Using Local data cache path ../../../Engine/DerivedDataCache: Writable
+[2016.04.28-19.07.10:912][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2016.04.28-19.07.10:912][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2016.04.28-19.07.11:148][  0]LogLinux: Selected Device Profile: [Linux]
+[2016.04.28-19.07.11:149][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2016.04.28-19.07.11:152][  0]LogHAL: Linux SourceCodeAccessSettings: NullSourceCodeAccessor
+[2016.04.28-19.07.11:923][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.04.28-19.07.11:923][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.04.28-19.07.18:258][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.04.28-19.07.18:258][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.04.28-19.07.21:901][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.04.28-19.07.22:784][  0]LogOutputDevice:Warning: === Handled error: ===
+
+Ensure condition failed: this->IsBound() [File:Runtime/Core/Public/Delegates/DelegateSignatureImpl_Variadics.inl] [Line: 930]
+Unable to bind delegate to '&AWizardsCone::OnOverlap' (function might not be marked as a UFUNCTION)
+Stack: 
+[Callstack]  03  0x00007fa39a14745e  FDebug::EnsureFailed(char const*, char const*, int, wchar_t const*)
+[Callstack]  04  0x00007fa39a13521a  FDebug::OptionallyLogFormattedEnsureMessageReturningFalse(bool, char const*, char const*, int, wchar_t const*, ...)
+[Callstack]  05  0x00007fa34a18c762  void TBaseDynamicDelegate<FWeakObjectPtr, void, AActor*, UPrimitiveComponent*, int, bool, FHitResult const&>::__Internal_BindDynamic<AWizardsCone>(AWizardsCone*, TBaseDynamicDelegate<FWeakObjectPtr, void, AActor*, UPrimitiveComponent*, int, bool, FHitResult const&>::TMethodPtrResolver<AWizardsCone>::FMethodPtr, wchar_t const*)
+[Callstack]  06  0x00007fa34a18c550  void TBaseDynamicMulticastDelegate<FWeakObjectPtr, void, AActor*, UPrimitiveComponent*, int, bool, FHitResult const&>::__Internal_AddDynamic<AWizardsCone>(AWizardsCone*, TBaseDynamicDelegate<FWeakObjectPtr, void, AActor*, UPrimitiveComponent*, int, bool, FHitResult const&>::TMethodPtrResolver<AWizardsCone>::FMethodPtr, wchar_t const*)
+[Callstack]  07  0x00007fa34a18c315  AWizardsCone::AWizardsCone()
+[Callstack]  08  0x00007fa3999ae7de  UClass::CreateDefaultObject()
+[Callstack]  09  0x00007fa399b1e117  ProcessNewlyLoadedUObjects()
+[Callstack]  10  0x0000000000439a84  TBaseStaticDelegateInstance<void ()>::ExecuteIfSafe() const [Runtime/Core/Public/Delegates/Tuple.h, line 78]
+[Callstack]  11  0x000000000043870d  TBaseMulticastDelegate<void>::Broadcast() const [Runtime/Core/Public/Delegates/DelegateSignatureImpl_Variadics.inl, line 809]
+[Callstack]  12  0x00007fa39a1a5e72  FModuleManager::LoadModuleWithFailureReason(FName, EModuleLoadResult&, bool)
+[Callstack]  13  0x00007fa394d13190  FModuleDescriptor::LoadModulesForPhase(ELoadingPhase::Type, TArray<FModuleDescriptor, FDefaultAllocator> const&, TMap<FName, EModuleLoadResult, FDefaultSetAllocator, TDefaultMapKeyFuncs<FName, EModuleLoadResult, false> >&)
+[Callstack]  14  0x00007fa394d24c96  FProjectManager::LoadModulesForProject(ELoadingPhase::Type)
+[Callstack]  15  0x0000000000432739  FEngineLoop::LoadStartupModules() [/home/xolejh/Unreal/UnrealEngine/Engine/Source/Runtime/Launch/Private/LaunchEngineLoop.cpp, line 1989]
+[Callstack]  16  0x0000000000417133  FEngineLoop::PreInit(wchar_t const*) [/home/xolejh/Unreal/UnrealEngine/Engine/Source/Runtime/Launch/Private/LaunchEngineLoop.cpp, line 1495]
+[Callstack]  17  0x000000000042746f  GuardedMain(wchar_t const*) [/home/xolejh/Unreal/UnrealEngine/Engine/Source/Runtime/Launch/Private/Launch.cpp, line 31]
+[Callstack]  18  0x0000000000434e7f  /home/xolejh/Unreal/UnrealEngine/Engine/Binaries/Linux/UE4Editor(main+0x88f) [0x434e7f] [/home/xolejh/Unreal/UnrealEngine/Engine/Source/Runtime/Launch/Private/Linux/LaunchLinux.cpp, line 193]
+[Callstack]  19  0x00007fa38e899ec5  /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf5) [0x7fa38e899ec5]
+[Callstack]  20  0x0000000000411900  /home/xolejh/Unreal/UnrealEngine/Engine/Binaries/Linux/UE4Editor() [0x411900]
+
+[2016.04.28-19.07.22:956][  0]LogTemp:Warning: The constructor is being called!
+[2016.04.28-19.07.22:956][  0]LogTemp:Warning: The constructor is being called!
+[2016.04.28-19.07.22:958][  0]LogTemp:Warning: The constructor is being called!
+[2016.04.28-19.07.22:959][  0]LogTemp:Warning: The constructor is being called!
+[2016.04.28-19.07.22:959][  0]LogTemp:Warning: The constructor is being called!
+[2016.04.28-19.07.22:960][  0]LogTemp:Warning: The constructor is being called!
+[2016.04.28-19.07.22:961][  0]LogTemp:Warning: The constructor is being called!
+[2016.04.28-19.07.24:721][  0]LogAssetRegistry: FAssetRegistry took 0.0004 seconds to start up
+[2016.04.28-19.07.31:805][  0]SourceControl: Info Source control is disabled
+[2016.04.28-19.07.31:805][  0]SourceControl: Info Source control is disabled
+[2016.04.28-19.07.32:312][  0]LogDesktopPlatform: DesktopPlatformLinux is not using LinuxNativeDialogs.
+[2016.04.28-19.07.32:821][  0]LogHAL: FLinuxPlatformProcess::CreateProc: '/usr/bin/git version'
+[2016.04.28-19.07.32:829][  0]LogHAL: FLinuxPlatformProcess::CreateProc: spawned child 3591
+[2016.04.28-19.07.32:841][  0]LogHAL: Child 3591 is no more running (zombie), Wait()ing immediately.
+[2016.04.28-19.07.33:342][  0]SourceControl: Info Source control is disabled
+[2016.04.28-19.07.34:355][  0]SourceControl: Info Source control is disabled
+[2016.04.28-19.07.36:368][  0]LogObj: 35149 objects as part of root set at end of initial load.
+[2016.04.28-19.07.36:368][  0]LogUObjectAllocator: 7705200 out of 0 bytes used by permanent object pool.
+[2016.04.28-19.07.37:542][  0]LogEngine: Initializing Engine...
+[2016.04.28-19.07.39:236][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.04.28-19.07.39:274][  0]LogALAudio: ALAudio device opened : OpenAL Soft
+[2016.04.28-19.07.39:275][  0]LogALAudio: AL_VENDOR      : OpenAL Community
+[2016.04.28-19.07.39:276][  0]LogALAudio: AL_RENDERER    : OpenAL Soft
+[2016.04.28-19.07.39:276][  0]LogALAudio: AL_VERSION     : 1.1 ALSOFT 1.15.1
+[2016.04.28-19.07.39:276][  0]LogALAudio: AL_EXTENSIONS  : AL_EXT_ALAW AL_EXT_DOUBLE AL_EXT_EXPONENT_DISTANCE AL_EXT_FLOAT32 AL_EXT_IMA4 AL_EXT_LINEAR_DISTANCE AL_EXT_MCFORMATS AL_EXT_MULAW AL_EXT_MULAW_MCFORMATS AL_EXT_OFFSET AL_EXT_source_distance_model AL_LOKI_quadriphonic AL_SOFT_buffer_samples AL_SOFT_buffer_sub_data AL_SOFTX_deferred_updates AL_SOFT_direct_channels AL_SOFT_loop_points AL_SOFT_source_latency
+[2016.04.28-19.07.39:276][  0]LogInit: FAudioDevice initialized.
+[2016.04.28-19.07.39:362][  0]LogDerivedDataCache: Saved boot cache 0.09s 96MB ../../../../../Documents/Unreal Projects/wizards/DerivedDataCache/Boot.ddc.
+[2016.04.28-19.07.39:375][  0]LogInit: Texture streaming: Enabled
+[2016.04.28-19.07.40:102][  0]LogInit: Transaction tracking system initialized
+[2016.04.28-19.07.44:363][  0]BlueprintLog: New page: Editor Load
+[2016.04.28-19.07.53:975][  0]LocalizationService: Info Localization service is disabled
+[2016.04.28-19.07.59:067][  0]LogConsoleResponse:Display: 
+[2016.04.28-19.07.59:686][  0]LogFileCache: Scanning file cache for directory '/home/xolejh/Documents/Unreal Projects/wizards/Content/' took 0.02s
+[2016.04.28-19.07.59:686][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.04.28-19.08.04:958][  0]SourceControl: Info Source control is disabled
+[2016.04.28-19.08.04:958][  0]Cmd: MAP LOAD FILE="../../../../../Documents/Unreal Projects/wizards/Content/FirstPerson/Maps/main_menu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
+[2016.04.28-19.08.04:959][  0]LightingResults: New page: Lighting Build
+[2016.04.28-19.08.05:480][  0]MapCheck: New page: Map Check
+[2016.04.28-19.08.05:480][  0]LightingResults: New page: Lighting Build
+[2016.04.28-19.08.05:534][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0x16c59aa0
+[2016.04.28-19.08.05:706][  0]LogAIModule: Creating AISystem for world main_menu
+[2016.04.28-19.08.05:708][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.04.28-19.08.05:708][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.04.28-19.08.05:742][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 33.501ms to complete.
+[2016.04.28-19.08.05:742][  0]LogFileHelpers: Loading map 'main_menu' took 0.784
+[2016.04.28-19.08.06:457][  0]LogCollectionManager: Loaded 0 collections in 0.005329 seconds
+[2016.04.28-19.08.06:475][  0]LogFileCache: Scanning file cache for directory '/home/xolejh/Documents/Unreal Projects/wizards/Saved/Collections/' took 0.00s
+[2016.04.28-19.08.06:475][  0]LogFileCache: Scanning file cache for directory '/home/xolejh/Documents/Unreal Projects/wizards/Content/Developers/GenericUser/Collections/' took 0.00s
+[2016.04.28-19.08.06:475][  0]LogFileCache: Scanning file cache for directory '/home/xolejh/Documents/Unreal Projects/wizards/Content/Collections/' took 0.00s
+[2016.04.28-19.08.06:475][  0]LogContentBrowser: Native class hierarchy populated in 0.0143 seconds. Added 1956 classes and 335 folders.
+[2016.04.28-19.08.06:477][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2016.04.28-19.08.07:399][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0018 seconds. Added 0 classes and 0 folders.
+[2016.04.28-19.08.08:021][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0018 seconds. Added 0 classes and 0 folders.
+[2016.04.28-19.08.08:459][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0018 seconds. Added 1 classes and 0 folders.
+[2016.04.28-19.08.08:980][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.04.28-19.08.08:995][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.04.28-19.08.08:997][  0]LogLoad: Full Startup: 71.23 seconds (BP compile: 0.14 seconds)
+[2016.04.28-19.08.09:475][  0]LogRenderer: Reallocating scene render targets to support 816x416 (Frame:2).
+[2016.04.28-19.08.10:083][  0]LogContentStreaming: Texture pool size now 400 MB
+[2016.04.28-19.08.10:710][ 11]LogAssetRegistry: Asset discovery search completed in 45.9899 seconds
+[2016.04.28-19.08.10:710][ 11]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2016.04.28-19.08.10:710][ 11]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000104 seconds (updated 0 objects)
+[2016.04.28-19.08.11:731][105]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu' with GeneratedClass '/Game/FirstPerson/Maps/main_menu.main_menu_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu'
+[2016.04.28-19.08.11:731][105]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.04.28-19.08.11:731][105]PIE: New page: PIE session: main_menu (Apr 28, 2016, 5:08:11 AM)
+[2016.04.28-19.08.11:873][105]LogEnum:Warning: Enum name collision: 'E_gameState::NewEnumerator0' is in both '/Game/FirstPerson/Multiplayer/Blueprints/E_gameState.E_gameState' and '/Game/FirstPerson/Maps/Multiplayer/Blueprints/E_gameState.E_gameState'
+[2016.04.28-19.08.11:873][105]LogEnum:Warning: Enum name collision: 'E_gameState::NewEnumerator1' is in both '/Game/FirstPerson/Multiplayer/Blueprints/E_gameState.E_gameState' and '/Game/FirstPerson/Maps/Multiplayer/Blueprints/E_gameState.E_gameState'
+[2016.04.28-19.08.11:873][105]LogEnum:Warning: Enum name collision: 'E_gameState::NewEnumerator2' is in both '/Game/FirstPerson/Multiplayer/Blueprints/E_gameState.E_gameState' and '/Game/FirstPerson/Maps/Multiplayer/Blueprints/E_gameState.E_gameState'
+[2016.04.28-19.08.11:873][105]LogEnum:Warning: Enum name collision: 'E_gameState::NewEnumerator3' is in both '/Game/FirstPerson/Multiplayer/Blueprints/E_gameState.E_gameState' and '/Game/FirstPerson/Maps/Multiplayer/Blueprints/E_gameState.E_gameState'
+[2016.04.28-19.08.11:873][105]LogEnum:Warning: Enum name collision: 'E_gameState::NewEnumerator4' is in both '/Game/FirstPerson/Multiplayer/Blueprints/E_gameState.E_gameState' and '/Game/FirstPerson/Maps/Multiplayer/Blueprints/E_gameState.E_gameState'
+[2016.04.28-19.08.11:873][105]LogEnum:Warning: Enum name collision: 'E_gameState::NewEnumerator5' is in both '/Game/FirstPerson/Multiplayer/Blueprints/E_gameState.E_gameState' and '/Game/FirstPerson/Maps/Multiplayer/Blueprints/E_gameState.E_gameState'
+[2016.04.28-19.08.11:873][105]LogEnum:Warning: Enum name collision: 'E_gameState::NewEnumerator6' is in both '/Game/FirstPerson/Multiplayer/Blueprints/E_gameState.E_gameState' and '/Game/FirstPerson/Maps/Multiplayer/Blueprints/E_gameState.E_gameState'
+[2016.04.28-19.08.11:873][105]LogEnum:Warning: Enum name collision: 'E_gameState::E_MAX' is in both '/Game/FirstPerson/Multiplayer/Blueprints/E_gameState.E_gameState' and '/Game/FirstPerson/Maps/Multiplayer/Blueprints/E_gameState.E_gameState'
+[2016.04.28-19.08.12:941][105]LogEnum:Warning: Enum name collision: 'E_gameState::NewEnumerator0' is in both '/Game/FirstPerson/Multiplayer/Blueprints/E_gameState.E_gameState' and '/Game/FirstPerson/Maps/Multiplayer/Blueprints/E_gameState.E_gameState'
+[2016.04.28-19.08.12:941][105]LogEnum:Warning: Enum name collision: 'E_gameState::NewEnumerator1' is in both '/Game/FirstPerson/Multiplayer/Blueprints/E_gameState.E_gameState' and '/Game/FirstPerson/Maps/Multiplayer/Blueprints/E_gameState.E_gameState'
+[2016.04.28-19.08.12:941][105]LogEnum:Warning: Enum name collision: 'E_gameState::NewEnumerator2' is in both '/Game/FirstPerson/Multiplayer/Blueprints/E_gameState.E_gameState' and '/Game/FirstPerson/Maps/Multiplayer/Blueprints/E_gameState.E_gameState'
+[2016.04.28-19.08.12:941][105]LogEnum:Warning: Enum name collision: 'E_gameState::NewEnumerator3' is in both '/Game/FirstPerson/Multiplayer/Blueprints/E_gameState.E_gameState' and '/Game/FirstPerson/Maps/Multiplayer/Blueprints/E_gameState.E_gameState'
+[2016.04.28-19.08.12:941][105]LogEnum:Warning: Enum name collision: 'E_gameState::NewEnumerator4' is in both '/Game/FirstPerson/Multiplayer/Blueprints/E_gameState.E_gameState' and '/Game/FirstPerson/Maps/Multiplayer/Blueprints/E_gameState.E_gameState'
+[2016.04.28-19.08.12:941][105]LogEnum:Warning: Enum name collision: 'E_gameState::NewEnumerator5' is in both '/Game/FirstPerson/Multiplayer/Blueprints/E_gameState.E_gameState' and '/Game/FirstPerson/Maps/Multiplayer/Blueprints/E_gameState.E_gameState'
+[2016.04.28-19.08.12:941][105]LogEnum:Warning: Enum name collision: 'E_gameState::NewEnumerator6' is in both '/Game/FirstPerson/Multiplayer/Blueprints/E_gameState.E_gameState' and '/Game/FirstPerson/Maps/Multiplayer/Blueprints/E_gameState.E_gameState'
+[2016.04.28-19.08.13:073][105]LogPlayLevel: Creating play world package: /Game/FirstPerson/Maps/UEDPIE_1_main_menu
+[2016.04.28-19.08.13:079][105]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005457s)
+[2016.04.28-19.08.13:080][105]LogAIModule: Creating AISystem for world main_menu
+[2016.04.28-19.08.13:080][105]LogPlayLevel: PIE: World Init took: (0.000703s)
+[2016.04.28-19.08.13:080][105]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPerson/Maps/main_menu.main_menu to /Game/FirstPerson/Maps/UEDPIE_1_main_menu.main_menu (0.006605s)
+[2016.04.28-19.08.13:145][105]LogALAudio: ALAudio device opened : OpenAL Soft
+[2016.04.28-19.08.13:146][105]LogALAudio: AL_VENDOR      : OpenAL Community
+[2016.04.28-19.08.13:146][105]LogALAudio: AL_RENDERER    : OpenAL Soft
+[2016.04.28-19.08.13:146][105]LogALAudio: AL_VERSION     : 1.1 ALSOFT 1.15.1
+[2016.04.28-19.08.13:146][105]LogALAudio: AL_EXTENSIONS  : AL_EXT_ALAW AL_EXT_DOUBLE AL_EXT_EXPONENT_DISTANCE AL_EXT_FLOAT32 AL_EXT_IMA4 AL_EXT_LINEAR_DISTANCE AL_EXT_MCFORMATS AL_EXT_MULAW AL_EXT_MULAW_MCFORMATS AL_EXT_OFFSET AL_EXT_source_distance_model AL_LOKI_quadriphonic AL_SOFT_buffer_samples AL_SOFT_buffer_sub_data AL_SOFTX_deferred_updates AL_SOFT_direct_channels AL_SOFT_loop_points AL_SOFT_source_latency
+[2016.04.28-19.08.13:147][105]LogInit: FAudioDevice initialized.
+[2016.04.28-19.08.13:175][105]LogWorld: Game class is 'WizardsGameMode'
+[2016.04.28-19.08.13:179][105]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_1_main_menu.main_menu up for play (max tick rate 0) at 2016.04.28-12.08.13
+[2016.04.28-19.08.13:179][105]LogActor:Warning: GameSession /Game/FirstPerson/Maps/UEDPIE_1_main_menu.main_menu:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.04.28-19.08.13:180][105]LogActor:Warning: GameNetworkManager /Game/FirstPerson/Maps/UEDPIE_1_main_menu.main_menu:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.04.28-19.08.13:181][105]LogWorld: Bringing up level for play took: 0.003599
+[2016.04.28-19.08.13:181][105]LogVoice:Warning: Failed to initialize voice interface
+[2016.04.28-19.08.13:184][105]LogInit: BSD: Socket queue 262144 / 262144
+[2016.04.28-19.08.13:184][105]LogInit: BSD: I am xolejh-HP-ENVY-Pro-4-b000-Ultrabook-PC (127.0.1.1:0)
+[2016.04.28-19.08.13:184][105]LogNet: GameNetDriver IpNetDriver_0 IpNetDriver listening on port 7777
+[2016.04.28-19.08.13:184][105]LogOnline:Warning: NULL: Can't start an online game for session (Game) that hasn't been created
+[2016.04.28-19.08.13:213][105]PIE: Info Play in editor start time for /Game/FirstPerson/Maps/UEDPIE_1_main_menu 1.482
+[2016.04.28-19.08.13:214][105]PIE: New page: PIE session: main_menu (Apr 28, 2016, 5:08:13 AM)
+[2016.04.28-19.08.13:245][105]LogNet: Browse: 127.0.0.1//Game/FirstPerson/Maps/main_menu
+[2016.04.28-19.08.13:245][105]LogInit: BSD: Socket queue 65536 / 65536
+[2016.04.28-19.08.13:245][105]LogNet: Game client on port 7777, rate 10000
+[2016.04.28-19.08.13:245][105]LogNet: GetLocalNetworkVersion: GEngineNetVersion: 0, ProjectName: wizards, ProjectVersion: 1.0.0.0, InternalProtocolVersion: 9, LocalNetworkVersion: 967020885
+[2016.04.28-19.08.13:269][105]PIE: Info Play in editor start time for /Game/FirstPerson/Maps/main_menu 1.537
+[2016.04.28-19.08.13:271][105]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu' with GeneratedClass '/Game/FirstPerson/Maps/main_menu.main_menu_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu'
+[2016.04.28-19.08.13:272][105]LogNet: NotifyAcceptingConnection: Server main_menu accept
+[2016.04.28-19.08.13:272][105]LogNet: Open main_menu 04/28/16 12:08:13 127.0.0.1
+[2016.04.28-19.08.13:272][105]LogNet: Added client connection.  Remote address = 127.0.0.1:39917
+[2016.04.28-19.08.13:273][105]LogNet: NotifyAcceptingChannel Control 0 server World /Game/FirstPerson/Maps/UEDPIE_1_main_menu.main_menu: Accepted
+[2016.04.28-19.08.13:273][105]LogNet: Remote platform little endian=1
+[2016.04.28-19.08.13:273][105]LogNet: This platform little endian=1
+[2016.04.28-19.08.13:273][105]LogNet: GetLocalNetworkVersion: GEngineNetVersion: 0, ProjectName: wizards, ProjectVersion: 1.0.0.0, InternalProtocolVersion: 9, LocalNetworkVersion: 967020885
+[2016.04.28-19.08.13:276][105]LogVoice:Warning: Failed to initialize voice interface
+[2016.04.28-19.08.13:434][106]LogNet: Login request: /Game/FirstPerson/Maps/main_menu?Name=xolejh-HP-ENVY-Pro-4-b000-Ultrabook-PC-0C4353EA0D040C1C0008011411693129 userId: xolejh-HP-ENVY-Pro-4-b000-Ultrabook-PC-0C4353EA0D040C1C0008011411693129
+[2016.04.28-19.08.13:436][106]LogNet: Welcomed by server (Level: /Game/FirstPerson/Maps/UEDPIE_1_main_menu, Game: /Script/Wizards.WizardsGameMode)
+[2016.04.28-19.08.13:437][106]LogLoad: LoadMap: 127.0.0.1//Game/FirstPerson/Maps/UEDPIE_1_main_menu?game=/Script/Wizards.WizardsGameMode
+[2016.04.28-19.08.13:473][106]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0x7fa33c3da440
+[2016.04.28-19.08.13:475][106]Cmd: MEM
+[2016.04.28-19.08.13:510][106]LogMemory: Platform Memory Stats for Linux
+[2016.04.28-19.08.13:511][106]LogMemory: Process Physical Memory: 818.84 MB used, 818.84 MB peak
+[2016.04.28-19.08.13:511][106]LogMemory: Process Virtual Memory: 2716.54 MB used, 2780.30 MB peak
+[2016.04.28-19.08.13:511][106]LogMemory: Physical Memory: 1986.80 MB used, 3854.59 MB total
+[2016.04.28-19.08.13:511][106]LogMemory: Virtual Memory: 127.64 MB used, 3997.00 MB total
+[2016.04.28-19.08.13:511][106]LogMemory: 
+[2016.04.28-19.08.13:513][106]LogMemory: Allocator Stats for binned:
+[2016.04.28-19.08.13:514][106]LogMemory: Current Memory 344.23 MB used, plus 12.89 MB waste
+[2016.04.28-19.08.13:514][106]LogMemory: Peak Memory 408.18 MB used, plus 0.46 MB waste
+[2016.04.28-19.08.13:514][106]LogMemory: Current OS Memory 357.12 MB, peak 408.64 MB
+[2016.04.28-19.08.13:514][106]LogMemory: Current Waste 3.91 MB, peak 3.95 MB
+[2016.04.28-19.08.13:514][106]LogMemory: Current Used 344.23 MB, peak 408.18 MB
+[2016.04.28-19.08.13:514][106]LogMemory: Current Slack 8.98 MB
+[2016.04.28-19.08.13:514][106]LogMemory: Allocs       921479 Current /  12798599 Total
+[2016.04.28-19.08.13:514][106]LogMemory: 
+[2016.04.28-19.08.13:514][106]LogMemory: Block Size Num Pools Max Pools Cur Allocs Total Allocs Min Req Max Req Mem Used Mem Slack Mem Waste Efficiency
+[2016.04.28-19.08.13:514][106]LogMemory: ---------- --------- --------- ---------- ------------ ------- ------- -------- --------- --------- ----------
+[2016.04.28-19.08.13:514][106]LogMemory:          8         0         0          0            0       8       0       0K        0K        0K    100.00%
+[2016.04.28-19.08.13:515][106]LogMemory:         16        29        29     108727      1922254      16      16    1698K      158K        0K    100.00%
+[2016.04.28-19.08.13:515][106]LogMemory:         32        98        98     182771      1048173      17      32    5711K      561K      870K     86.13%
+[2016.04.28-19.08.13:515][106]LogMemory:         48        33        33      41215       320788      33      48    1931K      181K      249K     88.21%
+[2016.04.28-19.08.13:515][106]LogMemory:         64        98        98      93104       479978      49      64    5819K      453K      272K     95.66%
+[2016.04.28-19.08.13:515][106]LogMemory:         80        79        79      61302       322127      65      80    4789K      266K      203K     95.98%
+[2016.04.28-19.08.13:515][106]LogMemory:         96        52        52      32224       792473      81      96    3021K      304K      146K     95.61%
+[2016.04.28-19.08.13:515][106]LogMemory:        112        71        71      40939      1078393      97     112    4477K       66K      254K     94.41%
+[2016.04.28-19.08.13:515][106]LogMemory:        128        61        61      30408       761187     115     128    3801K      103K      178K     95.44%
+[2016.04.28-19.08.13:515][106]LogMemory:        160       237       249      94081      1703524     129     160   14700K      446K     1212K     92.01%
+[2016.04.28-19.08.13:515][106]LogMemory:        192        90        90      29537       761040     161     192    5538K      217K      426K     92.60%
+[2016.04.28-19.08.13:515][106]LogMemory:        224        87        88      24183       786582     193     224    5290K      268K      382K     93.14%
+[2016.04.28-19.08.13:515][106]LogMemory:        256        70        71      17712       606131     225     256    4428K       52K      300K     93.30%
+[2016.04.28-19.08.13:515][106]LogMemory:        288        56        64      12365       397936     257     288    3477K       99K      127K     96.46%
+[2016.04.28-19.08.13:515][106]LogMemory:        320        57        63      10930       164507     289     320    3415K      219K      173K     95.26%
+[2016.04.28-19.08.13:515][106]LogMemory:        384       400       496      59193       503999     321     384   22197K     3303K     1723K     93.27%
+[2016.04.28-19.08.13:515][106]LogMemory:        448       242       311      35055       452650     385     448   15336K      122K     1306K     91.57%
+[2016.04.28-19.08.13:515][106]LogMemory:        512        66        66       8348       161370     449     512    4174K       50K      258K     93.89%
+[2016.04.28-19.08.13:515][106]LogMemory:        576        49        57       5424       143212     513     576    3051K       64K      174K     94.45%
+[2016.04.28-19.08.13:515][106]LogMemory:        640        68        68       6850        83150     577     640    4281K       54K      208K     95.22%
+[2016.04.28-19.08.13:515][106]LogMemory:        704        37        37       3370        40655     642     704    2316K       50K      109K     95.40%
+[2016.04.28-19.08.13:516][106]LogMemory:        768        39        39       3306        45596     705     768    2479K        8K      115K     95.39%
+[2016.04.28-19.08.13:516][106]LogMemory:        896        74        81       5315        47379     769     896    4650K       77K      373K     92.12%
+[2016.04.28-19.08.13:516][106]LogMemory:       1024        27        32       1666        16427     898    1024    1666K       62K       94K     94.56%
+[2016.04.28-19.08.13:516][106]LogMemory:       1168        25        27       1259        13956    1025    1168    1436K      161K       58K     96.38%
+[2016.04.28-19.08.13:516][106]LogMemory:       1360        45        47       2111        15056    1169    1360    2803K       66K      228K     92.08%
+[2016.04.28-19.08.13:516][106]LogMemory:       1632        48        49       1896        10264    1363    1632    3021K       39K      231K     92.48%
+[2016.04.28-19.08.13:516][106]LogMemory:       2048        47        52       1468         9030    1635    2048    2936K       72K      311K     89.66%
+[2016.04.28-19.08.13:516][106]LogMemory:       2336        27        36        687         5645    2049    2336    1567K      158K      119K     93.11%
+[2016.04.28-19.08.13:516][106]LogMemory:       2720        34        46        718         7374    2340    2720    1907K      261K      108K     95.04%
+[2016.04.28-19.08.13:516][106]LogMemory:       3264        31        48        589        14634    2724    3264    1877K      100K      130K     93.45%
+[2016.04.28-19.08.13:516][106]LogMemory:       4096        47        69        694         8227    3265    4096    2776K      232K      364K     87.90%
+[2016.04.28-19.08.13:516][106]LogMemory:       4672        24        31        305         6059    4097    4672    1391K      142K      124K     91.93%
+[2016.04.28-19.08.13:516][106]LogMemory:       5456        18        24        197         2299    4674    5456    1049K      102K       76K     93.40%
+[2016.04.28-19.08.13:516][106]LogMemory:       6544        23        48        217         3546    5461    6544    1386K       84K       81K     94.50%
+[2016.04.28-19.08.13:516][106]LogMemory:       8192       131       133       1041        12205    6550    8192    8328K       56K      660K     92.13%
+[2016.04.28-19.08.13:516][106]LogMemory:       9360        16        17        112         2825    8196    9360    1023K        1K       50K     95.12%
+[2016.04.28-19.08.13:516][106]LogMemory:      10912        19        19        113         1065    9383   10912    1204K       11K       67K     94.49%
+[2016.04.28-19.08.13:516][106]LogMemory:      13104        38        51        169         9906   10920   13104    2162K      270K      179K     92.64%
+[2016.04.28-19.08.13:516][106]LogMemory:      16384       163       164        641         6098   13107   16384   10256K      176K      849K     91.86%
+[2016.04.28-19.08.13:516][106]LogMemory:      21840       184       185        546         6949   16388   21832   11645K      129K     2160K     81.66%
+[2016.04.28-19.08.13:516][106]LogMemory:      32768        64        66        127         5822   21848   32758    4064K       32K      829K     79.76%
+[2016.04.28-19.08.13:516][106]LogMemory: 
+[2016.04.28-19.08.13:516][106]LogMemory: 198656K allocated in pools (with 9275K slack and 15776K waste). Efficiency 92.06%
+[2016.04.28-19.08.13:517][106]LogMemory: Allocations 920916 Current / 12780492 Total (in 3104 pools)
+[2016.04.28-19.08.13:517][106]LogMemory: 
+[2016.04.28-19.08.13:523][106]LogWorld: PIE: Copying PIE streaming level from /Game/FirstPerson/Maps/main_menu.main_menu to /Game/FirstPerson/Maps/UEDPIE_2_main_menu.main_menu. OwningWorld: None
+[2016.04.28-19.08.13:523][106]LogAIModule: Creating AISystem for world main_menu
+[2016.04.28-19.08.13:526][106]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_2_main_menu.main_menu up for play (max tick rate 0) at 2016.04.28-12.08.13
+[2016.04.28-19.08.13:526][106]LogWorld: Bringing up level for play took: 0.002111
+[2016.04.28-19.08.13:569][107]LogNet: Client netspeed is 10000
+[2016.04.28-19.08.13:570][107]LogNet: Join request: /Game/FirstPerson/Maps/main_menu?Name=xolejh-HP-ENVY-Pro-4-b000-Ultrabook-PC-0C4353EA0D040C1C0008011411693129?SplitscreenCount=1
+[2016.04.28-19.08.13:574][107]LogOnline:Warning: NULL: No game present to join for session (Game)
+[2016.04.28-19.08.13:586][107]LogNet: Join succeeded: xolejh-HP-ENVY-Pro-4
+[2016.04.28-19.08.13:637][108]LogOnline:Warning: NULL: No game present to join for session (Game)
+[2016.04.28-19.08.13:641][108]LogOnline:Warning: NULL: No game present to join for session (Game)
+[2016.04.28-19.08.17:452][279]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu' with GeneratedClass '/Game/FirstPerson/Maps/main_menu.main_menu_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu'
+[2016.04.28-19.08.17:472][279]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2016.04.28-19.08.17:476][279]LogOnline:Warning: NULL: No game present to leave for session (Game)
+[2016.04.28-19.08.17:476][279]LogSpawn:Warning: SpawnActor failed because we are in the process of tearing down the world
+[2016.04.28-19.08.17:511][279]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2016.04.28-19.08.17:512][279]LogPlayLevel:Display: Shutting down PIE online subsystems
+[2016.04.28-19.08.17:513][279]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu' with GeneratedClass '/Game/FirstPerson/Maps/main_menu.main_menu_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/main_menu.main_menu:PersistentLevel.main_menu'
+[2016.04.28-19.08.17:547][279]LogNet: UChannel::CleanUp: [GameNetDriver] [None] [None]. ChIndex == 0. Closing connection.
+[2016.04.28-19.08.17:547][279]LogNet: UNetConnection::Close: Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, PC: None, Owner: None, Channels: 2, RemoteAddr: 127.0.0.1:39917, Time: 2016.04.28-19.08.17
+[2016.04.28-19.08.17:547][279]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: ControlChannel_1
+[2016.04.28-19.08.17:547][279]LogNet: UChannel::CleanUp: [GameNetDriver] [None] [None]. ChIndex == 0. Closing connection.
+[2016.04.28-19.08.17:547][279]LogNet: UNetConnection::Close: Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_1, PC: None, Owner: None, Channels: 2, RemoteAddr: 127.0.0.1:7777, Time: 2016.04.28-19.08.17
+[2016.04.28-19.08.17:548][279]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: ControlChannel_0
+[2016.04.28-19.08.17:549][279]LogALAudio: Closing ALAudio device : OpenAL Soft
+[2016.04.28-19.08.17:552][279]LogExit: GameNetDriver None shut down
+[2016.04.28-19.08.17:552][279]LogExit: GameNetDriver None shut down
+[2016.04.28-19.08.17:552][279]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0x7fa33c3db3e0
+[2016.04.28-19.08.17:553][279]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0x7fa33c24f180
+[2016.04.28-19.08.17:587][280]LogPlayLevel:Display: Destroying online subsystem :Context_3
+[2016.04.28-19.08.17:587][280]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2016.04.28-19.08.17:587][280]LogPlayLevel:Display: Destroying online subsystem :Context_2
+[2016.04.28-19.08.17:587][280]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2016.04.28-19.08.22:147][644]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.04.28-19.08.22:151][644]LogParticles:Warning: InitializeSystem called on an unregistered component. Template=/Game/StarterContent/Particles/P_Evil_Sparks.P_Evil_Sparks Component=/Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.P_Evil_Sparks_8.ParticleSystemComponent0
+[2016.04.28-19.08.24:579][810]Cmd: MAP LOAD FILE="../../../../../Documents/Unreal Projects/wizards/Content/FirstPerson/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
+[2016.04.28-19.08.24:579][810]LightingResults: New page: Lighting Build
+[2016.04.28-19.08.24:601][810]LoadErrors: New page: Loading map: FirstPersonExampleMap.umap
+[2016.04.28-19.08.24:603][810]MapCheck: New page: Map Check
+[2016.04.28-19.08.24:603][810]LightingResults: New page: Lighting Build
+[2016.04.28-19.08.24:636][810]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0x3df41e0
+[2016.04.28-19.08.24:658][810]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.04.28-19.08.24:699][810]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.04.28-19.08.24:736][810]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 36.805ms to complete.
+[2016.04.28-19.08.24:741][810]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.164
+[2016.04.28-19.08.32:526][381]LogEditorViewport: Clicking on Actor (LMB): FirstPersonCharacter_C (FirstPersonCharacter)
+[2016.04.28-19.09.44:289][553]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.04.28-19.09.44:289][553]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.04.28-19.09.44:290][553]PIE: New page: PIE session: FirstPersonExampleMap (Apr 28, 2016, 5:09:44 AM)
+[2016.04.28-19.09.44:290][553]LogPlayLevel: Creating play world package: /Game/FirstPerson/Maps/UEDPIE_1_FirstPersonExampleMap
+[2016.04.28-19.09.44:349][553]LogPlayLevel: PIE: StaticDuplicateObject took: (0.059245s)
+[2016.04.28-19.09.44:350][553]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.04.28-19.09.44:351][553]LogPlayLevel: PIE: World Init took: (0.001096s)
+[2016.04.28-19.09.44:351][553]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPerson/Maps/UEDPIE_1_FirstPersonExampleMap.FirstPersonExampleMap (0.060927s)
+[2016.04.28-19.09.44:400][553]LogALAudio: ALAudio device opened : OpenAL Soft
+[2016.04.28-19.09.44:401][553]LogALAudio: AL_VENDOR      : OpenAL Community
+[2016.04.28-19.09.44:401][553]LogALAudio: AL_RENDERER    : OpenAL Soft
+[2016.04.28-19.09.44:402][553]LogALAudio: AL_VERSION     : 1.1 ALSOFT 1.15.1
+[2016.04.28-19.09.44:402][553]LogALAudio: AL_EXTENSIONS  : AL_EXT_ALAW AL_EXT_DOUBLE AL_EXT_EXPONENT_DISTANCE AL_EXT_FLOAT32 AL_EXT_IMA4 AL_EXT_LINEAR_DISTANCE AL_EXT_MCFORMATS AL_EXT_MULAW AL_EXT_MULAW_MCFORMATS AL_EXT_OFFSET AL_EXT_source_distance_model AL_LOKI_quadriphonic AL_SOFT_buffer_samples AL_SOFT_buffer_sub_data AL_SOFTX_deferred_updates AL_SOFT_direct_channels AL_SOFT_loop_points AL_SOFT_source_latency
+[2016.04.28-19.09.44:402][553]LogInit: FAudioDevice initialized.
+[2016.04.28-19.09.44:426][553]LogWorld: Game class is 'WizardsGameMode'
+[2016.04.28-19.09.44:496][553]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_1_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2016.04.28-12.09.44
+[2016.04.28-19.09.44:497][553]LogActor:Warning: GameSession /Game/FirstPerson/Maps/UEDPIE_1_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.GameSession_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.04.28-19.09.44:497][553]LogActor:Warning: GameNetworkManager /Game/FirstPerson/Maps/UEDPIE_1_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.GameNetworkManager_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.04.28-19.09.44:499][553]LogWorld: Bringing up level for play took: 0.070235
+[2016.04.28-19.09.44:499][553]LogVoice:Warning: Failed to initialize voice interface
+[2016.04.28-19.09.44:503][553]LogInit: BSD: Socket queue 262144 / 262144
+[2016.04.28-19.09.44:503][553]LogNet: GameNetDriver IpNetDriver_2 IpNetDriver listening on port 7777
+[2016.04.28-19.09.44:503][553]LogOnline:Warning: NULL: Can't start an online game for session (Game) that hasn't been created
+[2016.04.28-19.09.44:527][553]PIE: Info Play in editor start time for /Game/FirstPerson/Maps/UEDPIE_1_FirstPersonExampleMap 0.237
+[2016.04.28-19.09.44:527][553]PIE: New page: PIE session: FirstPersonExampleMap (Apr 28, 2016, 5:09:44 AM)
+[2016.04.28-19.09.44:550][553]LogNet: Browse: 127.0.0.1//Game/FirstPerson/Maps/main_menu
+[2016.04.28-19.09.44:550][553]LogInit: BSD: Socket queue 65536 / 65536
+[2016.04.28-19.09.44:550][553]LogNet: Game client on port 7777, rate 10000
+[2016.04.28-19.09.44:550][553]LogNet: GetLocalNetworkVersion: GEngineNetVersion: 0, ProjectName: wizards, ProjectVersion: 1.0.0.0, InternalProtocolVersion: 9, LocalNetworkVersion: 967020885
+[2016.04.28-19.09.44:579][553]PIE: Info Play in editor start time for /Game/FirstPerson/Maps/main_menu 0.29
+[2016.04.28-19.09.44:580][553]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.04.28-19.09.44:580][553]LogNet: NotifyAcceptingConnection: Server FirstPersonExampleMap accept
+[2016.04.28-19.09.44:580][553]LogNet: Open FirstPersonExampleMap 04/28/16 12:09:44 127.0.0.1
+[2016.04.28-19.09.44:580][553]LogNet: Added client connection.  Remote address = 127.0.0.1:33626
+[2016.04.28-19.09.44:580][553]LogNet: NotifyAcceptingChannel Control 0 server World /Game/FirstPerson/Maps/UEDPIE_1_FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2016.04.28-19.09.44:580][553]LogNet: Remote platform little endian=1
+[2016.04.28-19.09.44:580][553]LogNet: This platform little endian=1
+[2016.04.28-19.09.44:580][553]LogNet: GetLocalNetworkVersion: GEngineNetVersion: 0, ProjectName: wizards, ProjectVersion: 1.0.0.0, InternalProtocolVersion: 9, LocalNetworkVersion: 967020885
+[2016.04.28-19.09.44:582][553]LogVoice:Warning: Failed to initialize voice interface
+[2016.04.28-19.09.44:832][554]LogNet: Login request: /Game/FirstPerson/Maps/main_menu?Name=xolejh-HP-ENVY-Pro-4-b000-Ultrabook-PC-0F742AC12C040C1C0009024616DA77D8 userId: xolejh-HP-ENVY-Pro-4-b000-Ultrabook-PC-0F742AC12C040C1C0009024616DA77D8
+[2016.04.28-19.09.44:835][554]LogNet: Welcomed by server (Level: /Game/FirstPerson/Maps/UEDPIE_1_FirstPersonExampleMap, Game: /Script/Wizards.WizardsGameMode)
+[2016.04.28-19.09.44:835][554]LogLoad: LoadMap: 127.0.0.1//Game/FirstPerson/Maps/UEDPIE_1_FirstPersonExampleMap?game=/Script/Wizards.WizardsGameMode
+[2016.04.28-19.09.44:876][554]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0x7fa33c5a4840
+[2016.04.28-19.09.44:876][554]Cmd: MEM
+[2016.04.28-19.09.44:912][554]LogMemory: Platform Memory Stats for Linux
+[2016.04.28-19.09.44:913][554]LogMemory: Process Physical Memory: 856.90 MB used, 858.30 MB peak
+[2016.04.28-19.09.44:913][554]LogMemory: Process Virtual Memory: 2830.96 MB used, 2830.96 MB peak
+[2016.04.28-19.09.44:913][554]LogMemory: Physical Memory: 2193.41 MB used, 3854.59 MB total
+[2016.04.28-19.09.44:913][554]LogMemory: Virtual Memory: 127.64 MB used, 3997.00 MB total
+[2016.04.28-19.09.44:913][554]LogMemory: 
+[2016.04.28-19.09.44:914][554]LogMemory: Allocator Stats for binned:
+[2016.04.28-19.09.44:914][554]LogMemory: Current Memory 385.80 MB used, plus 9.21 MB waste
+[2016.04.28-19.09.44:914][554]LogMemory: Peak Memory 408.18 MB used, plus 4.05 MB waste
+[2016.04.28-19.09.44:914][554]LogMemory: Current OS Memory 395.01 MB, peak 412.22 MB
+[2016.04.28-19.09.44:914][554]LogMemory: Current Waste 4.45 MB, peak 4.79 MB
+[2016.04.28-19.09.44:914][554]LogMemory: Current Used 385.80 MB, peak 408.18 MB
+[2016.04.28-19.09.44:914][554]LogMemory: Current Slack 4.76 MB
+[2016.04.28-19.09.44:914][554]LogMemory: Allocs       1021987 Current /  35121688 Total
+[2016.04.28-19.09.44:914][554]LogMemory: 
+[2016.04.28-19.09.44:914][554]LogMemory: Block Size Num Pools Max Pools Cur Allocs Total Allocs Min Req Max Req Mem Used Mem Slack Mem Waste Efficiency
+[2016.04.28-19.09.44:914][554]LogMemory: ---------- --------- --------- ---------- ------------ ------- ------- -------- --------- --------- ----------
+[2016.04.28-19.09.44:914][554]LogMemory:          8         0         0          0            0       8       0       0K        0K        0K    100.00%
+[2016.04.28-19.09.44:914][554]LogMemory:         16        30        30     121434      9936449      16      16    1897K       23K        0K    100.00%
+[2016.04.28-19.09.44:914][554]LogMemory:         32       111       111     224846      3755606      17      32    7026K       78K     1237K     82.59%
+[2016.04.28-19.09.44:914][554]LogMemory:         48        33        33      43874      1262627      33      48    2056K       56K      251K     88.12%
+[2016.04.28-19.09.44:914][554]LogMemory:         64       103       103     104968      1864098      49      64    6560K       32K      219K     96.68%
+[2016.04.28-19.09.44:914][554]LogMemory:         80        79        79      63908       615015      65      80    4992K       63K      239K     95.27%
+[2016.04.28-19.09.44:914][554]LogMemory:         96        52        52      34484      2266469      81      96    3232K       93K      119K     96.42%
+[2016.04.28-19.09.44:915][554]LogMemory:        112        78        78      45055      1902373      97     112    4927K       64K      262K     94.75%
+[2016.04.28-19.09.44:915][554]LogMemory:        128        62        62      31544      1387687     113     128    3943K       25K      155K     96.09%
+[2016.04.28-19.09.44:915][554]LogMemory:        160       239       249      97548      2948367     129     160   15241K       33K     1185K     92.25%
+[2016.04.28-19.09.44:915][554]LogMemory:        192        96        96      32700      1220106     161     192    6131K        7K      454K     92.61%
+[2016.04.28-19.09.44:915][554]LogMemory:        224        87        88      25181      1227772     193     224    5508K       50K      361K     93.52%
+[2016.04.28-19.09.44:915][554]LogMemory:        256        72        72      18263       924057     225     256    4565K       43K      298K     93.53%
+[2016.04.28-19.09.44:915][554]LogMemory:        288        60        64      13564       548481     257     288    3814K       17K      121K     96.85%
+[2016.04.28-19.09.44:915][554]LogMemory:        320        60        63      12061       289882     289     320    3769K       56K      171K     95.55%
+[2016.04.28-19.09.44:915][554]LogMemory:        384       400       496      61706       889665     321     384   23139K     2361K     1864K     92.72%
+[2016.04.28-19.09.44:915][554]LogMemory:        448       250       311      36371       541262     385     448   15912K       57K     1310K     91.81%
+[2016.04.28-19.09.44:915][554]LogMemory:        512        78        78       9796       271941     449     512    4898K       94K      300K     93.99%
+[2016.04.28-19.09.44:915][554]LogMemory:        576        53        57       5837       421881     513     576    3283K       86K      244K     92.81%
+[2016.04.28-19.09.44:915][554]LogMemory:        640        76        76       7620       390099     577     640    4762K       83K      250K     94.86%
+[2016.04.28-19.09.44:915][554]LogMemory:        704        39        39       3604        64567     641     704    2477K       17K      102K     95.91%
+[2016.04.28-19.09.44:915][554]LogMemory:        768        53        53       4369        99821     705     768    3276K      103K      140K     95.87%
+[2016.04.28-19.09.44:915][554]LogMemory:        896        78        81       5654       375476     769     896    4947K       36K      500K     89.98%
+[2016.04.28-19.09.44:915][554]LogMemory:       1024        32        32       2011        93919     898    1024    2011K       37K      129K     93.70%
+[2016.04.28-19.09.44:915][554]LogMemory:       1168        32        32       1779       102328    1025    1168    2029K       15K       38K     98.14%
+[2016.04.28-19.09.44:915][554]LogMemory:       1360        46        47       2184       104735    1169    1360    2900K       33K      301K     89.78%
+[2016.04.28-19.09.44:915][554]LogMemory:       1632        63        63       2469       106218    1363    1632    3934K       83K      398K     90.13%
+[2016.04.28-19.09.44:915][554]LogMemory:       2048        52        52       1608       283055    1635    2048    3216K      112K      406K     87.80%
+[2016.04.28-19.09.44:916][554]LogMemory:       2336        28        36        778        36995    2049    2336    1774K       15K      102K     94.31%
+[2016.04.28-19.09.44:916][554]LogMemory:       2720        35        46        833        97467    2340    2720    2212K       20K      210K     90.62%
+[2016.04.28-19.09.44:916][554]LogMemory:       3264        35        48        688       144347    2724    3264    2193K       39K      234K     89.55%
+[2016.04.28-19.09.44:916][554]LogMemory:       4096        58        69        919        86356    3265    4096    3676K       36K      444K     88.04%
+[2016.04.28-19.09.44:916][554]LogMemory:       4672        24        31        324        68146    4097    4672    1478K       55K      128K     91.67%
+[2016.04.28-19.09.44:916][554]LogMemory:       5456        18        24        206        25589    4674    5456    1097K       54K      126K     89.06%
+[2016.04.28-19.09.44:916][554]LogMemory:       6544        25        48        233        29884    5461    6544    1489K      109K      131K     91.81%
+[2016.04.28-19.09.44:916][554]LogMemory:       8192       142       142       1114        51681    6550    8192    8912K      176K     1095K     87.95%
+[2016.04.28-19.09.44:916][554]LogMemory:       9360        18        19        123        31874    8196    9360    1124K       28K       45K     96.09%
+[2016.04.28-19.09.44:916][554]LogMemory:      10912        20        22        119         8949    9383   10912    1268K       11K      106K     91.72%
+[2016.04.28-19.09.44:916][554]LogMemory:      13104        41        60        175       411090   10920   13104    2239K      385K      188K     92.84%
+[2016.04.28-19.09.44:916][554]LogMemory:      16384       168       170        664        31840   13107   16384   10624K      128K     1211K     88.74%
+[2016.04.28-19.09.44:916][554]LogMemory:      21840       207       209        616        70670   16388   21840   13138K      107K     2426K     81.69%
+[2016.04.28-19.09.44:916][554]LogMemory:      32768        69        73        137        50829   21848   32758    4384K       32K      965K     78.15%
+[2016.04.28-19.09.44:916][554]LogMemory: 
+[2016.04.28-19.09.44:916][554]LogMemory: 211328K allocated in pools (with 4952K slack and 18465K waste). Efficiency 91.26%
+[2016.04.28-19.09.44:916][554]LogMemory: Allocations 1021368 Current / 35039674 Total (in 3302 pools)
+[2016.04.28-19.09.44:916][554]LogMemory: 
+[2016.04.28-19.09.44:974][554]LogWorld: PIE: Copying PIE streaming level from /Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPerson/Maps/UEDPIE_2_FirstPersonExampleMap.FirstPersonExampleMap. OwningWorld: None
+[2016.04.28-19.09.44:975][554]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.04.28-19.09.45:040][554]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_2_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2016.04.28-12.09.45
+[2016.04.28-19.09.45:041][554]LogWorld: Bringing up level for play took: 0.065115
+[2016.04.28-19.09.45:063][555]LogNet: Client netspeed is 10000
+[2016.04.28-19.09.45:064][555]LogNet: Join request: /Game/FirstPerson/Maps/main_menu?Name=xolejh-HP-ENVY-Pro-4-b000-Ultrabook-PC-0F742AC12C040C1C0009024616DA77D8?SplitscreenCount=1
+[2016.04.28-19.09.45:068][555]LogOnline:Warning: NULL: No game present to join for session (Game)
+[2016.04.28-19.09.45:079][555]LogNet: Join succeeded: xolejh-HP-ENVY-Pro-4
+[2016.04.28-19.09.45:131][556]LogOnline:Warning: NULL: No game present to join for session (Game)
+[2016.04.28-19.09.45:134][556]LogOnline:Warning: NULL: No game present to join for session (Game)
+[2016.04.28-19.09.51:008][739]LogLinuxWindowEvent:Warning: Suppressing too large relative mouse movement due to an apparent bug (79, 184 is larger than treshold 100)
+[2016.04.28-19.09.53:139][808]LogTemp:Warning: Spell Gathering Needed!
+[2016.04.28-19.09.53:140][808]LogTemp:Warning: 0.000000 , 0.000000, 0.000000, 0.000000, 0.000000
+[2016.04.28-19.09.53:140][808]LogTemp:Warning: 0.000000 , 0.000000, 0.000000, 0.000000, 0.000000
+[2016.04.28-19.09.53:140][808]LogTemp:Warning: 0.000000 , 0.000000, 0.000000, 0.000000, 0.000000
+[2016.04.28-19.09.53:141][808]LogTemp:Warning: 0.000000 , 0.000000, 0.000000, 0.000000, 0.000000
+[2016.04.28-19.09.53:141][808]LogTemp:Warning: 0.000000 , 0.000000, 0.000000, 0.000000, 0.000000
+[2016.04.28-19.09.53:141][808]LogTemp:Warning: Spell Gathering Succesful!
+[2016.04.28-19.09.53:141][808]LogTemp:Warning: Spell Gathering Succesful!
+[2016.04.28-19.09.53:141][808]LogTemp:Warning: Spell Gathering Succesful!
+[2016.04.28-19.09.53:141][808]LogTemp:Warning: Spell Gathering Succesful!
+[2016.04.28-19.09.53:141][808]LogTemp:Warning: Spell Gathering Succesful!
+[2016.04.28-19.09.53:141][808]LogTemp:Warning: The constructor is being called!
+[2016.04.28-19.09.53:147][808]LogTemp:Warning: I can't believe it's not null!
+[2016.04.28-19.09.53:147][808]LogTemp:Warning: Server Side
+[2016.04.28-19.09.53:147][808]LogTemp:Warning: The constructor is being called!
+[2016.04.28-19.09.53:154][808]LogTemp:Warning: I can't believe it's not null!
+[2016.04.28-19.09.53:159][808]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: spellBook /Game/FirstPerson/Maps/UEDPIE_1_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonCharacter_C_0.spellBook_10 NOT Supported.
+[2016.04.28-19.09.53:159][808]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: spellBook /Game/FirstPerson/Maps/UEDPIE_1_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonCharacter_C_0.spellBook_11 NOT Supported.
+[2016.04.28-19.09.53:159][808]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: spellBook /Game/FirstPerson/Maps/UEDPIE_1_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonCharacter_C_0.spellBook_12 NOT Supported.
+[2016.04.28-19.09.53:160][808]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: spellBook /Game/FirstPerson/Maps/UEDPIE_1_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonCharacter_C_0.spellBook_13 NOT Supported.
+[2016.04.28-19.09.53:160][808]LogNetPackageMap:Warning: FNetGUIDCache::SupportsObject: spellBook /Game/FirstPerson/Maps/UEDPIE_1_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonCharacter_C_0.spellBook_14 NOT Supported.
+[2016.04.28-19.09.53:160][808]LogTemp:Warning: The constructor is being called!
+[2016.04.28-19.09.53:164][808]LogTemp:Warning: The constructor is being called!
+[2016.04.28-19.09.54:273][815]LogLinuxWindowEvent:Warning: Suppressing too large relative mouse movement due to an apparent bug (-503, -196 is larger than treshold 100)
+[2016.04.28-19.09.54:275][815]LogLinuxWindowEvent:Warning: Suppressing too large relative mouse movement due to an apparent bug (-247, -383 is larger than treshold 100)
+[2016.04.28-19.09.56:775][896]LogTemp:Warning: The constructor is being called!
+[2016.04.28-19.09.56:780][896]LogTemp:Warning: I can't believe it's not null!
+[2016.04.28-19.09.56:780][896]LogTemp:Warning: Server Side
+[2016.04.28-19.09.56:781][896]LogTemp:Warning: The constructor is being called!
+[2016.04.28-19.09.56:786][896]LogTemp:Warning: I can't believe it's not null!
+[2016.04.28-19.09.56:789][896]LogTemp:Warning: The constructor is being called!
+[2016.04.28-19.09.56:793][896]LogTemp:Warning: The constructor is being called!
+[2016.04.28-19.10.03:289][106]LogTemp:Warning: The constructor is being called!
+[2016.04.28-19.10.03:292][106]LogTemp:Warning: I can't believe it's not null!
+[2016.04.28-19.10.03:292][106]LogTemp:Warning: Server Side
+[2016.04.28-19.10.03:292][106]LogTemp:Warning: The constructor is being called!
+[2016.04.28-19.10.03:296][106]LogTemp:Warning: I can't believe it's not null!
+[2016.04.28-19.10.03:299][106]LogTemp:Warning: The constructor is being called!
+[2016.04.28-19.10.03:305][106]LogTemp:Warning: The constructor is being called!
+[2016.04.28-19.10.04:267][137]LogOnline:Warning: NULL: No game present to leave for session (Game)
+[2016.04.28-19.10.04:269][137]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.04.28-19.10.04:357][137]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2016.04.28-19.10.04:392][137]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2016.04.28-19.10.04:393][137]LogPlayLevel:Display: Shutting down PIE online subsystems
+[2016.04.28-19.10.04:465][137]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPerson/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.04.28-19.10.04:500][137]LogNet: UChannel::CleanUp: [GameNetDriver] [None] [None]. ChIndex == 0. Closing connection.
+[2016.04.28-19.10.04:500][137]LogNet: UNetConnection::Close: Name: IpConnection_3, Driver: GameNetDriver IpNetDriver_2, PC: None, Owner: None, Channels: 2, RemoteAddr: 127.0.0.1:33626, Time: 2016.04.28-19.10.04
+[2016.04.28-19.10.04:500][137]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: ControlChannel_3
+[2016.04.28-19.10.04:500][137]LogNet: UChannel::CleanUp: [GameNetDriver] [None] [None]. ChIndex == 0. Closing connection.
+[2016.04.28-19.10.04:500][137]LogNet: UNetConnection::Close: Name: IpConnection_2, Driver: GameNetDriver IpNetDriver_3, PC: None, Owner: None, Channels: 2, RemoteAddr: 127.0.0.1:7777, Time: 2016.04.28-19.10.04
+[2016.04.28-19.10.04:500][137]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: ControlChannel_2
+[2016.04.28-19.10.04:502][137]LogALAudio: Closing ALAudio device : OpenAL Soft
+[2016.04.28-19.10.04:505][137]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0x18351b60
+[2016.04.28-19.10.04:506][137]LogExit: GameNetDriver None shut down
+[2016.04.28-19.10.04:507][137]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0x1834fa40
+[2016.04.28-19.10.04:507][137]LogExit: GameNetDriver None shut down
+[2016.04.28-19.10.04:580][138]LogPlayLevel:Display: Destroying online subsystem :Context_7
+[2016.04.28-19.10.04:580][138]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2016.04.28-19.10.04:580][138]LogPlayLevel:Display: Destroying online subsystem :Context_6
+[2016.04.28-19.10.04:580][138]LogOnline:Display: NULL: FOnlineSubsystemNull::Shutdown()
+[2016.04.28-19.12.44:053][714]LogLinux:Error: appError called: Assertion failed: Assertion failed: IsInRenderingThread() [File:/home/xolejh/Unreal/UnrealEngine/Engine/Source/Runtime/RenderCore/Private/RenderResource.cpp] [Line: 40] 
+
+
+[2016.04.28-19.12.44:160][714]LogCrashTracker: 
+
+
+[2016.04.28-19.12.44:161][714]LogLinux: === Critical error: ===
+Unhandled Exception: SIGSEGV: invalid attempt to access memory at address 0x00000003
+
+[2016.04.28-19.12.44:161][714]LogLinux: Assertion failed: Assertion failed: IsInRenderingThread() [File:/home/xolejh/Unreal/UnrealEngine/Engine/Source/Runtime/RenderCore/Private/RenderResource.cpp] [Line: 40] 
+
+
+
+[Callstack]  03  0x000000000043459b  EngineCrashHandler(FGenericCrashContext const&) [/home/xolejh/Unreal/UnrealEngine/Engine/Source/Runtime/Launch/Private/Linux/LaunchLinux.cpp, line 31]
+[Callstack]  04  0x00007fa39a05e411  PlatformCrashHandler(int, siginfo_t*, void*)
+[Callstack]  05  0x00007fa39ab97340  /lib/x86_64-linux-gnu/libpthread.so.0(+0x10340) [0x7fa39ab97340]
+[Callstack]  06  0x00007fa399f90ac2  FGenericPlatformMisc::RaiseException(unsigned int)
+[Callstack]  07  0x00007fa39a06b78a  FOutputDeviceLinuxError::Serialize(wchar_t const*, ELogVerbosity::Type, FName const&)
+[Callstack]  08  0x00007fa39a146f54  FOutputDevice::Logf(wchar_t const*, ...)
+[Callstack]  09  0x00007fa39a125bb0  FDebug::AssertFailed(char const*, char const*, int, wchar_t const*, ...)
+[Callstack]  10  0x00007fa394ac6e3c  FRenderResource::ReleaseResource()
+[Callstack]  11  0x00007fa394ad6f6b  FDynamicVertexBufferPool::~FDynamicVertexBufferPool()
+[Callstack]  12  0x00007fa394aca2c7  FGlobalDynamicVertexBuffer::~FGlobalDynamicVertexBuffer()
+[Callstack]  13  0x00007fa38e8b4259  /lib/x86_64-linux-gnu/libc.so.6(+0x3c259) [0x7fa38e8b4259]
+[Callstack]  14  0x00007fa38e8b42a5  /lib/x86_64-linux-gnu/libc.so.6(+0x3c2a5) [0x7fa38e8b42a5]
+[Callstack]  15  0x00007fa3742e23b5  /usr/lib/x86_64-linux-gnu/libX11.so.6(_XDefaultIOError+0x85) [0x7fa3742e23b5]
+[Callstack]  16  0x00007fa3742e25ee  /usr/lib/x86_64-linux-gnu/libX11.so.6(_XIOError+0x4e) [0x7fa3742e25ee]
+[Callstack]  17  0x00007fa3742dffed  /usr/lib/x86_64-linux-gnu/libX11.so.6(_XEventsQueued+0x7d) [0x7fa3742dffed]
+[Callstack]  18  0x00007fa3742c2b4a  /usr/lib/x86_64-linux-gnu/libX11.so.6(XFlush+0x1a) [0x7fa3742c2b4a]
+[Callstack]  19  0x00007fa39a3ad523  /home/xolejh/Unreal/UnrealEngine/Engine/Binaries/Linux/libUE4Editor-Core.so(+0x561523) [0x7fa39a3ad523]
+[Callstack]  20  0x00007fa39a372497  /home/xolejh/Unreal/UnrealEngine/Engine/Binaries/Linux/libUE4Editor-Core.so(+0x526497) [0x7fa39a372497]
+[Callstack]  21  0x00007fa39a372aed  /home/xolejh/Unreal/UnrealEngine/Engine/Binaries/Linux/libUE4Editor-Core.so(+0x526aed) [0x7fa39a372aed]
+[Callstack]  22  0x00007fa39a049eb1  FLinuxPlatformMisc::PumpMessages(bool)
+[Callstack]  23  0x00000000004203d2  FEngineLoop::Tick() [Runtime/Core/Public/UObject/NameTypes.h, line 590]
+[Callstack]  24  0x0000000000427db3  GuardedMain(wchar_t const*) [/home/xolejh/Unreal/UnrealEngine/Engine/Source/Runtime/Launch/Private/Launch.cpp, line 51]
+[Callstack]  25  0x0000000000434e7f  /home/xolejh/Unreal/UnrealEngine/Engine/Binaries/Linux/UE4Editor(main+0x88f) [0x434e7f] [/home/xolejh/Unreal/UnrealEngine/Engine/Source/Runtime/Launch/Private/Linux/LaunchLinux.cpp, line 193]
+[Callstack]  26  0x00007fa38e899ec5  /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf5) [0x7fa38e899ec5]
+[Callstack]  27  0x0000000000411900  /home/xolejh/Unreal/UnrealEngine/Engine/Binaries/Linux/UE4Editor() [0x411900]
+
