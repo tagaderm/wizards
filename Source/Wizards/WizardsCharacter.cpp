@@ -448,7 +448,7 @@ bool AWizardsCharacter::ServerFireProjectile_Validate() {
 	return true;
 }
 
-void ClientFireProjectile_Implementation(){
+void AWizardsCharacter::ClientFireProjectile_Implementation(){
 	if (mySpellBook[currSpell].spellType == 0)
 	{
 		const FRotator SpawnRotation = GetControlRotation();
@@ -493,7 +493,7 @@ void ClientFireProjectile_Implementation(){
 		}
 	}
 }	
-bool ClientFireProjectile_Validate(){
+bool AWizardsCharacter::ClientFireProjectile_Validate(){
 	return true;	
 }
 }
