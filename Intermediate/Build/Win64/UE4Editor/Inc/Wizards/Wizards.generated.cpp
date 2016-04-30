@@ -37,13 +37,21 @@ static struct FScriptStruct_Wizards_StaticRegisterNativesFtheSpell
 		UScriptStruct::DeferCppStructOps(FName(TEXT("theSpell")),new UScriptStruct::TCppStructOps<FtheSpell>);
 	}
 } ScriptStruct_Wizards_StaticRegisterNativesFtheSpell;
-	void AWizardsCharacter::ClientFireProjectile()
+	void AWizardsCharacter::ClientFireProjectile(FtheSpell castSpell, FRotator rotation, FVector location)
 	{
-		ProcessEvent(FindFunctionChecked(WIZARDS_ClientFireProjectile),NULL);
+		WizardsCharacter_eventClientFireProjectile_Parms Parms;
+		Parms.castSpell=castSpell;
+		Parms.rotation=rotation;
+		Parms.location=location;
+		ProcessEvent(FindFunctionChecked(WIZARDS_ClientFireProjectile),&Parms);
 	}
-	void AWizardsCharacter::ServerFireProjectile()
+	void AWizardsCharacter::ServerFireProjectile(FtheSpell castSpell, FRotator rotation, FVector location)
 	{
-		ProcessEvent(FindFunctionChecked(WIZARDS_ServerFireProjectile),NULL);
+		WizardsCharacter_eventServerFireProjectile_Parms Parms;
+		Parms.castSpell=castSpell;
+		Parms.rotation=rotation;
+		Parms.location=location;
+		ProcessEvent(FindFunctionChecked(WIZARDS_ServerFireProjectile),&Parms);
 	}
 	void AWizardsCharacter::StaticRegisterNativesAWizardsCharacter()
 	{
@@ -51,7 +59,7 @@ static struct FScriptStruct_Wizards_StaticRegisterNativesFtheSpell
 		FNativeFunctionRegistrar::RegisterFunction(AWizardsCharacter::StaticClass(),"newCharactersSpells",(Native)&AWizardsCharacter::execnewCharactersSpells);
 		FNativeFunctionRegistrar::RegisterFunction(AWizardsCharacter::StaticClass(),"ServerFireProjectile",(Native)&AWizardsCharacter::execServerFireProjectile);
 	}
-	IMPLEMENT_CLASS(AWizardsCharacter, 1014237308);
+	IMPLEMENT_CLASS(AWizardsCharacter, 1320255193);
 	void UWizardsSaveGame::StaticRegisterNativesUWizardsSaveGame()
 	{
 	}
@@ -122,10 +130,11 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	COREUOBJECT_API class UClass* Z_Construct_UClass_UObject();
+	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FRotator();
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API class UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USoundBase_NoRegister();
-	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USaveGame();
@@ -323,7 +332,10 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 		static UFunction* ReturnFunction = NULL;
 		if (!ReturnFunction)
 		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ClientFireProjectile"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x80024CC0, 65535);
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ClientFireProjectile"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x80824CC0, 65535, sizeof(WizardsCharacter_eventClientFireProjectile_Parms));
+			UProperty* NewProp_location = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("location"), RF_Public|RF_Transient|RF_Native) UStructProperty(CPP_PROPERTY_BASE(location, WizardsCharacter_eventClientFireProjectile_Parms), 0x0000000000000080, Z_Construct_UScriptStruct_FVector());
+			UProperty* NewProp_rotation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("rotation"), RF_Public|RF_Transient|RF_Native) UStructProperty(CPP_PROPERTY_BASE(rotation, WizardsCharacter_eventClientFireProjectile_Parms), 0x0000000000000080, Z_Construct_UScriptStruct_FRotator());
+			UProperty* NewProp_castSpell = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("castSpell"), RF_Public|RF_Transient|RF_Native) UStructProperty(CPP_PROPERTY_BASE(castSpell, WizardsCharacter_eventClientFireProjectile_Parms), 0x0000000000000080, Z_Construct_UScriptStruct_FtheSpell());
 			ReturnFunction->Bind();
 			ReturnFunction->StaticLink();
 #if WITH_METADATA
@@ -357,7 +369,10 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 		static UFunction* ReturnFunction = NULL;
 		if (!ReturnFunction)
 		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ServerFireProjectile"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x80220CC0, 65535);
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ServerFireProjectile"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x80A20CC0, 65535, sizeof(WizardsCharacter_eventServerFireProjectile_Parms));
+			UProperty* NewProp_location = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("location"), RF_Public|RF_Transient|RF_Native) UStructProperty(CPP_PROPERTY_BASE(location, WizardsCharacter_eventServerFireProjectile_Parms), 0x0000000000000080, Z_Construct_UScriptStruct_FVector());
+			UProperty* NewProp_rotation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("rotation"), RF_Public|RF_Transient|RF_Native) UStructProperty(CPP_PROPERTY_BASE(rotation, WizardsCharacter_eventServerFireProjectile_Parms), 0x0000000000000080, Z_Construct_UScriptStruct_FRotator());
+			UProperty* NewProp_castSpell = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("castSpell"), RF_Public|RF_Transient|RF_Native) UStructProperty(CPP_PROPERTY_BASE(castSpell, WizardsCharacter_eventServerFireProjectile_Parms), 0x0000000000000080, Z_Construct_UScriptStruct_FtheSpell());
 			ReturnFunction->Bind();
 			ReturnFunction->StaticLink();
 #if WITH_METADATA
@@ -405,9 +420,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_FirstPersonCameraComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FirstPersonCameraComponent"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(FirstPersonCameraComponent, AWizardsCharacter), 0x00000000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
 				UProperty* NewProp_Mesh1P = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Mesh1P"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(Mesh1P, AWizardsCharacter), 0x00000000000b0009, Z_Construct_UClass_USkeletalMeshComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
-				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCharacter_ClientFireProjectile()); // 3748960522
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCharacter_ClientFireProjectile()); // 2217702728
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCharacter_newCharactersSpells()); // 4159059134
-				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCharacter_ServerFireProjectile()); // 3659878345
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCharacter_ServerFireProjectile()); // 4265334676
 				OuterClass->ClassConfigName = FName(TEXT("Game"));
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -1602,7 +1617,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Wizards")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xBA227F75;
+			Guid.A = 0xF1EFFB59;
 			Guid.B = 0x91473A27;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

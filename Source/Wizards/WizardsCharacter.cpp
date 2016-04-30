@@ -219,10 +219,10 @@ void AWizardsCharacter::OnFire()
 				wizardsSpell->SpellCreation(&mySpellBook[currSpell], projParticle, blastParticle, this);*/
 				if (Role < ROLE_Authority)
 				{
-					ServerFireProjectile();//mySpellBook[currSpell]);
+					ServerFireProjectile(mySpellBook[currSpell], SpawnRotation, SpawnLocation);//mySpellBook[currSpell]);
 				}
 				else {
-					ClientFireProjectile();
+					ClientFireProjectile(mySpellBook[currSpell], SpawnRotation, SpawnLocation);
 				}
 			}
 		}
@@ -241,10 +241,10 @@ void AWizardsCharacter::OnFire()
 				wizardsSpell->AttachRootComponentTo(GetCapsuleComponent());//Probably useful for Blasts, Rays, and Conical attacks*/
 				if (Role < ROLE_Authority)
 				{
-					ServerFireProjectile();
+					ServerFireProjectile(mySpellBook[currSpell], SpawnRotation, SpawnLocation);
 				}
 				else {
-					ClientFireProjectile();
+					ClientFireProjectile(mySpellBook[currSpell], SpawnRotation, SpawnLocation);
 				}
 			}
 		}
@@ -264,10 +264,10 @@ void AWizardsCharacter::OnFire()
 				activeAttack = Cast<AActor>(wizardsCone);*/
 				if (Role < ROLE_Authority)
 				{
-					ServerFireProjectile();
+					ServerFireProjectile(mySpellBook[currSpell], SpawnRotation, SpawnLocation);
 				}
 				else {
-					ClientFireProjectile();
+					ClientFireProjectile(mySpellBook[currSpell], SpawnRotation, SpawnLocation);
 				}
 			}
 		}
@@ -423,11 +423,11 @@ void AWizardsCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty > &
 	DOREPLIFETIME(AWizardsCharacter, currSpell);
 }
 
-void AWizardsCharacter::ServerFireProjectile_Implementation() {
+void AWizardsCharacter::ServerFireProjectile_Implementation(FtheSpell castSpell, FRotator rotation, FVector location) {
 	//UWorld* const World = GetWorld();
 	UE_LOG(LogTemp, Warning, TEXT("Server Side"));
 	//OnFire();
-	ClientFireProjectile();
+	ClientFireProjectile(castSpell, rotation, location);
 	/*if (theSpell->spellType == 0) {
 		const FRotator SpawnRotation = GetControlRotation();
 		const FVector SpawnLocation = GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
@@ -453,62 +453,54 @@ void AWizardsCharacter::ServerFireProjectile_Implementation() {
 		UE_LOG(LogTemp, Warning, TEXT("Svoosh!"));
 	}*/
 }
-bool AWizardsCharacter::ServerFireProjectile_Validate() {
+bool AWizardsCharacter::ServerFireProjectile_Validate(FtheSpell castSpell, FRotator rotation, FVector location) {
 	return true;
 }
 
-void AWizardsCharacter::ClientFireProjectile_Implementation(){
-	if (!mySpellBook.IsValidIndex(0)) {
+void AWizardsCharacter::ClientFireProjectile_Implementation(FtheSpell castSpell, FRotator rotation, FVector location){
+	/*if (!mySpellBook.IsValidIndex(0)) {
 		UE_LOG(LogTemp, Warning, TEXT("Spell Gathering Needed!"));
 		newCharactersSpells();
-	}
+	}*/
 	
-	//FString* x = Cast<FString>(Role);
-	//UE_LOG(LogTemp, Warning, TEXT(x + " " + " "));
-	if (mySpellBook[currSpell].spellType == 0)
+	//UE_LOG(LogTemp, Warning, TEXT("Role %d has currSpell %d and SpawnRotation "), Role, currSpell);
+
+	if (castSpell.spellType == 0)
 	{
-		const FRotator SpawnRotation = GetControlRotation();
-		const FVector SpawnLocation = GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
 		UWorld* const World = GetWorld();
 		if (World)
 		{
 			// spawn the projectile at the muzzle
-			UParticleSystem* projParticle = particleList[mySpellBook[currSpell].spellEffect + mySpellBook[currSpell].spellType * 5];
-			UParticleSystem* blastParticle = particleList[mySpellBook[currSpell].spellEffect + 5];
-			AWizardsProjectile* wizardsSpell = World->SpawnActor<AWizardsProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);// , myparams);
-			wizardsSpell->SpellCreation(&mySpellBook[currSpell], projParticle, blastParticle, this);
+			UParticleSystem* projParticle = particleList[castSpell.spellEffect + castSpell.spellType * 5];
+			UParticleSystem* blastParticle = particleList[castSpell.spellEffect + 5];
+			AWizardsProjectile* wizardsSpell = World->SpawnActor<AWizardsProjectile>(ProjectileClass, location, rotation);// , myparams);
+			wizardsSpell->SpellCreation(&castSpell, projParticle, blastParticle, this);
 		}
 	}
-	else if (mySpellBook[currSpell].spellType == 1) {
-		const FRotator SpawnRotation = FRotator(0.0);//GetControlRotation();
-													 // MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
-		const FVector SpawnLocation = FVector(0.0);//GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
+	else if (castSpell.spellType == 1) {
 		UWorld* const World = GetWorld();
 		if (World)
 		{
 			// spawn the projectile at the muzzle
-			UParticleSystem* blastParticle = particleList[mySpellBook[currSpell].spellEffect + mySpellBook[currSpell].spellType * 5];
-			AWizardsBlast* wizardsSpell = World->SpawnActor<AWizardsBlast>(BlastClass, SpawnLocation, SpawnRotation);// , myparams);
-			wizardsSpell->SpellCreation(blastParticle, mySpellBook[currSpell].spellSize, mySpellBook[currSpell].spellDamage, this);
+			UParticleSystem* blastParticle = particleList[castSpell.spellEffect + castSpell.spellType * 5];
+			AWizardsBlast* wizardsSpell = World->SpawnActor<AWizardsBlast>(BlastClass, location, rotation);// , myparams);
+			wizardsSpell->SpellCreation(blastParticle, castSpell.spellSize, castSpell.spellDamage, this);
 			wizardsSpell->AttachRootComponentTo(GetCapsuleComponent());//Probably useful for Blasts, Rays, and Conical attacks
 		}
 	}
-	else if (mySpellBook[currSpell].spellType == 2) {
-		const FRotator SpawnRotation = FRotator(0.0);//GetControlRotation();
-													 // MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
-		const FVector SpawnLocation = FVector(0.0);//GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
+	else if (castSpell.spellType == 2) {
 		UWorld* const World = GetWorld();
 		if (World)
 		{
 			// spawn the projectile at the muzzle
-			UParticleSystem* coneParticle = particleList[mySpellBook[currSpell].spellEffect + mySpellBook[currSpell].spellType * 5];
-			AWizardsCone* wizardsCone = World->SpawnActor<AWizardsCone>(ConeClass, SpawnLocation, SpawnRotation);// , myparams);
-			wizardsCone->SpellCreation(coneParticle, mySpellBook[currSpell].spellSize, mySpellBook[currSpell].spellDamage, this);
+			UParticleSystem* coneParticle = particleList[castSpell.spellEffect + castSpell.spellType * 5];
+			AWizardsCone* wizardsCone = World->SpawnActor<AWizardsCone>(ConeClass, location, rotation);// , myparams);
+			wizardsCone->SpellCreation(coneParticle, castSpell.spellSize, castSpell.spellDamage, this);
 			wizardsCone->AttachRootComponentTo(GetCapsuleComponent());//Probably useful for Blasts, Rays, and Conical attacks
 			activeAttack = Cast<AActor>(wizardsCone);
 		}
 	}
 }	
-bool AWizardsCharacter::ClientFireProjectile_Validate(){
+bool AWizardsCharacter::ClientFireProjectile_Validate(FtheSpell castSpell, FRotator rotation, FVector location){
 	return true;	
 }
