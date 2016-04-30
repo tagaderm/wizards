@@ -8,6 +8,9 @@
 #include "ObjectBase.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FtheSpell;
+struct FRotator;
+struct FVector;
 #ifdef WIZARDS_WizardsCharacter_generated_h
 #error "WizardsCharacter.generated.h already included, missing '#pragma once' in WizardsCharacter.h"
 #endif
@@ -19,31 +22,37 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define wizards_Source_Wizards_WizardsCharacter_h_56_RPC_WRAPPERS \
-	virtual bool ClientFireProjectile_Validate(); \
-	virtual void ClientFireProjectile_Implementation(); \
-	virtual bool ServerFireProjectile_Validate(); \
-	virtual void ServerFireProjectile_Implementation(); \
+	virtual bool ClientFireProjectile_Validate(FtheSpell , FRotator , FVector ); \
+	virtual void ClientFireProjectile_Implementation(FtheSpell castSpell, FRotator rotation, FVector location); \
+	virtual bool ServerFireProjectile_Validate(FtheSpell , FRotator , FVector ); \
+	virtual void ServerFireProjectile_Implementation(FtheSpell castSpell, FRotator rotation, FVector location); \
  \
 	DECLARE_FUNCTION(execClientFireProjectile) \
 	{ \
+		P_GET_STRUCT(FtheSpell,Z_Param_castSpell); \
+		P_GET_STRUCT(FRotator,Z_Param_rotation); \
+		P_GET_STRUCT(FVector,Z_Param_location); \
 		P_FINISH; \
-		if (!this->ClientFireProjectile_Validate()) \
+		if (!this->ClientFireProjectile_Validate(Z_Param_castSpell,Z_Param_rotation,Z_Param_location)) \
 		{ \
 			RPC_ValidateFailed(TEXT("ClientFireProjectile_Validate")); \
 			return; \
 		} \
-		this->ClientFireProjectile_Implementation(); \
+		this->ClientFireProjectile_Implementation(Z_Param_castSpell,Z_Param_rotation,Z_Param_location); \
 	} \
  \
 	DECLARE_FUNCTION(execServerFireProjectile) \
 	{ \
+		P_GET_STRUCT(FtheSpell,Z_Param_castSpell); \
+		P_GET_STRUCT(FRotator,Z_Param_rotation); \
+		P_GET_STRUCT(FVector,Z_Param_location); \
 		P_FINISH; \
-		if (!this->ServerFireProjectile_Validate()) \
+		if (!this->ServerFireProjectile_Validate(Z_Param_castSpell,Z_Param_rotation,Z_Param_location)) \
 		{ \
 			RPC_ValidateFailed(TEXT("ServerFireProjectile_Validate")); \
 			return; \
 		} \
-		this->ServerFireProjectile_Implementation(); \
+		this->ServerFireProjectile_Implementation(Z_Param_castSpell,Z_Param_rotation,Z_Param_location); \
 	} \
  \
 	DECLARE_FUNCTION(execnewCharactersSpells) \
@@ -57,24 +66,30 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
  \
 	DECLARE_FUNCTION(execClientFireProjectile) \
 	{ \
+		P_GET_STRUCT(FtheSpell,Z_Param_castSpell); \
+		P_GET_STRUCT(FRotator,Z_Param_rotation); \
+		P_GET_STRUCT(FVector,Z_Param_location); \
 		P_FINISH; \
-		if (!this->ClientFireProjectile_Validate()) \
+		if (!this->ClientFireProjectile_Validate(Z_Param_castSpell,Z_Param_rotation,Z_Param_location)) \
 		{ \
 			RPC_ValidateFailed(TEXT("ClientFireProjectile_Validate")); \
 			return; \
 		} \
-		this->ClientFireProjectile_Implementation(); \
+		this->ClientFireProjectile_Implementation(Z_Param_castSpell,Z_Param_rotation,Z_Param_location); \
 	} \
  \
 	DECLARE_FUNCTION(execServerFireProjectile) \
 	{ \
+		P_GET_STRUCT(FtheSpell,Z_Param_castSpell); \
+		P_GET_STRUCT(FRotator,Z_Param_rotation); \
+		P_GET_STRUCT(FVector,Z_Param_location); \
 		P_FINISH; \
-		if (!this->ServerFireProjectile_Validate()) \
+		if (!this->ServerFireProjectile_Validate(Z_Param_castSpell,Z_Param_rotation,Z_Param_location)) \
 		{ \
 			RPC_ValidateFailed(TEXT("ServerFireProjectile_Validate")); \
 			return; \
 		} \
-		this->ServerFireProjectile_Implementation(); \
+		this->ServerFireProjectile_Implementation(Z_Param_castSpell,Z_Param_rotation,Z_Param_location); \
 	} \
  \
 	DECLARE_FUNCTION(execnewCharactersSpells) \
@@ -84,7 +99,21 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define wizards_Source_Wizards_WizardsCharacter_h_56_EVENT_PARMS
+#define wizards_Source_Wizards_WizardsCharacter_h_56_EVENT_PARMS \
+	struct WizardsCharacter_eventClientFireProjectile_Parms \
+	{ \
+		FtheSpell castSpell; \
+		FRotator rotation; \
+		FVector location; \
+	}; \
+	struct WizardsCharacter_eventServerFireProjectile_Parms \
+	{ \
+		FtheSpell castSpell; \
+		FRotator rotation; \
+		FVector location; \
+	};
+
+
 extern WIZARDS_API  FName WIZARDS_ClientFireProjectile;
 extern WIZARDS_API  FName WIZARDS_ServerFireProjectile;
 #define wizards_Source_Wizards_WizardsCharacter_h_56_CALLBACK_WRAPPERS

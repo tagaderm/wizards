@@ -221,13 +221,13 @@ public:
 
 	//In this chunk of whatever I shall store the server functions
 	UFUNCTION(reliable, server, WithValidation)
-	void ServerFireProjectile();
-	virtual void ServerFireProjectile_Implementation();
-	virtual bool ServerFireProjectile_Validate();
+	void ServerFireProjectile(FtheSpell castSpell, FRotator rotation, FVector location);
+	virtual void ServerFireProjectile_Implementation(FtheSpell castSpell, FRotator rotation, FVector location);
+	virtual bool ServerFireProjectile_Validate(FtheSpell castSpell, FRotator rotation, FVector location);
 	
 	//And here i Shall store the server->client functions
 	UFUNCTION(reliable, NetMulticast, WithValidation)
-	void ClientFireProjectile();
-	virtual void ClientFireProjectile_Implementation();
-	virtual bool ClientFireProjectile_Validate();
+	void ClientFireProjectile(FtheSpell castSpell, FRotator rotation, FVector location);
+	virtual void ClientFireProjectile_Implementation(FtheSpell castSpell, FRotator rotation, FVector location);
+	virtual bool ClientFireProjectile_Validate(FtheSpell castSpell, FRotator rotation, FVector location);
 };
