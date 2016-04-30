@@ -213,13 +213,16 @@ void AWizardsCharacter::OnFire()
 			if (World)
 			{
 				// spawn the projectile at the muzzle
-				UParticleSystem* projParticle = particleList[mySpellBook[currSpell].spellEffect + mySpellBook[currSpell].spellType * 5];
+				/*UParticleSystem* projParticle = particleList[mySpellBook[currSpell].spellEffect + mySpellBook[currSpell].spellType * 5];
 				UParticleSystem* blastParticle = particleList[mySpellBook[currSpell].spellEffect + 5];
 				AWizardsProjectile* wizardsSpell = World->SpawnActor<AWizardsProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);// , myparams);
-				wizardsSpell->SpellCreation(&mySpellBook[currSpell], projParticle, blastParticle, this);
+				wizardsSpell->SpellCreation(&mySpellBook[currSpell], projParticle, blastParticle, this);*/
 				if (Role < ROLE_Authority)
 				{
 					ServerFireProjectile();//mySpellBook[currSpell]);
+				}
+				else {
+					ClientFireProjectile();
 				}
 			}
 		}
@@ -232,13 +235,16 @@ void AWizardsCharacter::OnFire()
 			if (World)
 			{
 				// spawn the projectile at the muzzle
-				UParticleSystem* blastParticle = particleList[mySpellBook[currSpell].spellEffect + mySpellBook[currSpell].spellType * 5];
+				/*UParticleSystem* blastParticle = particleList[mySpellBook[currSpell].spellEffect + mySpellBook[currSpell].spellType * 5];
 				AWizardsBlast* wizardsSpell = World->SpawnActor<AWizardsBlast>(BlastClass, SpawnLocation, SpawnRotation);// , myparams);
 				wizardsSpell->SpellCreation(blastParticle, mySpellBook[currSpell].spellSize, mySpellBook[currSpell].spellDamage, this);
-				wizardsSpell->AttachRootComponentTo(GetCapsuleComponent());//Probably useful for Blasts, Rays, and Conical attacks
+				wizardsSpell->AttachRootComponentTo(GetCapsuleComponent());//Probably useful for Blasts, Rays, and Conical attacks*/
 				if (Role < ROLE_Authority)
 				{
 					ServerFireProjectile();
+				}
+				else {
+					ClientFireProjectile();
 				}
 			}
 		}
@@ -251,14 +257,17 @@ void AWizardsCharacter::OnFire()
 			if (World)
 			{
 				// spawn the projectile at the muzzle
-				UParticleSystem* coneParticle = particleList[mySpellBook[currSpell].spellEffect + mySpellBook[currSpell].spellType * 5];
+				/*UParticleSystem* coneParticle = particleList[mySpellBook[currSpell].spellEffect + mySpellBook[currSpell].spellType * 5];
 				AWizardsCone* wizardsCone = World->SpawnActor<AWizardsCone>(ConeClass, SpawnLocation, SpawnRotation);// , myparams);
 				wizardsCone->SpellCreation(coneParticle, mySpellBook[currSpell].spellSize, mySpellBook[currSpell].spellDamage, this);
 				wizardsCone->AttachRootComponentTo(GetCapsuleComponent());//Probably useful for Blasts, Rays, and Conical attacks
-				activeAttack = Cast<AActor>(wizardsCone);
+				activeAttack = Cast<AActor>(wizardsCone);*/
 				if (Role < ROLE_Authority)
 				{
 					ServerFireProjectile();
+				}
+				else {
+					ClientFireProjectile();
 				}
 			}
 		}
@@ -417,7 +426,7 @@ void AWizardsCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty > &
 void AWizardsCharacter::ServerFireProjectile_Implementation() {
 	//UWorld* const World = GetWorld();
 	UE_LOG(LogTemp, Warning, TEXT("Server Side"));
-	OnFire();
+	//OnFire();
 	ClientFireProjectile();
 	/*if (theSpell->spellType == 0) {
 		const FRotator SpawnRotation = GetControlRotation();
