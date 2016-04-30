@@ -462,6 +462,9 @@ void AWizardsCharacter::ClientFireProjectile_Implementation(){
 		UE_LOG(LogTemp, Warning, TEXT("Spell Gathering Needed!"));
 		newCharactersSpells();
 	}
+	
+	//FString* x = Cast<FString>(Role);
+	//UE_LOG(LogTemp, Warning, TEXT(x + " " + " "));
 	if (mySpellBook[currSpell].spellType == 0)
 	{
 		const FRotator SpawnRotation = GetControlRotation();
