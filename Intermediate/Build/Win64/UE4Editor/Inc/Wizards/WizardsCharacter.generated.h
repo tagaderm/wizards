@@ -19,8 +19,21 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define wizards_Source_Wizards_WizardsCharacter_h_56_RPC_WRAPPERS \
+	virtual bool ClientFireProjectile_Validate(); \
+	virtual void ClientFireProjectile_Implementation(); \
 	virtual bool ServerFireProjectile_Validate(); \
 	virtual void ServerFireProjectile_Implementation(); \
+ \
+	DECLARE_FUNCTION(execClientFireProjectile) \
+	{ \
+		P_FINISH; \
+		if (!this->ClientFireProjectile_Validate()) \
+		{ \
+			RPC_ValidateFailed(TEXT("ClientFireProjectile_Validate")); \
+			return; \
+		} \
+		this->ClientFireProjectile_Implementation(); \
+	} \
  \
 	DECLARE_FUNCTION(execServerFireProjectile) \
 	{ \
@@ -42,6 +55,17 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define wizards_Source_Wizards_WizardsCharacter_h_56_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execClientFireProjectile) \
+	{ \
+		P_FINISH; \
+		if (!this->ClientFireProjectile_Validate()) \
+		{ \
+			RPC_ValidateFailed(TEXT("ClientFireProjectile_Validate")); \
+			return; \
+		} \
+		this->ClientFireProjectile_Implementation(); \
+	} \
+ \
 	DECLARE_FUNCTION(execServerFireProjectile) \
 	{ \
 		P_FINISH; \
@@ -61,6 +85,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define wizards_Source_Wizards_WizardsCharacter_h_56_EVENT_PARMS
+extern WIZARDS_API  FName WIZARDS_ClientFireProjectile;
 extern WIZARDS_API  FName WIZARDS_ServerFireProjectile;
 #define wizards_Source_Wizards_WizardsCharacter_h_56_CALLBACK_WRAPPERS
 #define wizards_Source_Wizards_WizardsCharacter_h_56_INCLASS_NO_PURE_DECLS \

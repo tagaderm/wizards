@@ -1,4 +1,4 @@
-﻿Build started 4/29/2016 12:24:40 AM.
+﻿Build started 4/29/2016 4:55:16 PM.
      1>Project "I:\Projects\wizards\Intermediate\ProjectFiles\Wizards.vcxproj" on node 2 (Rebuild target(s)).
      1>Rebuild:
          "I:\EPIC\Epic Games\4.10\Engine\Build\BatchFiles\Rebuild.bat" WizardsEditor Win64 Development "I:\Projects\wizards\Wizards.uproject" -rocket -waitmutex -2015
@@ -9,29 +9,29 @@
          Performing full C++ include scan (no include cache file)
          Parsing headers for WizardsEditor
            Running UnrealHeaderTool "I:\Projects\wizards\Wizards.uproject" "I:\Projects\wizards\Intermediate\Build\Win64\WizardsEditor\Development\UnrealHeaderTool.manifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -rocket -installed
-         Reflection code generated for WizardsEditor in 4.5608584 seconds
+         Reflection code generated for WizardsEditor in 4.4628081 seconds
          Performing 16 actions (4 in parallel)
-         [2/16] Resource PCLaunch.rc
          [3/16] Resource ModuleVersionResource.rc.inl
+         [2/16] Resource PCLaunch.rc
          PCH.Wizards.h.cpp
          Wizards.cpp
          WizardMenuWidget.cpp
          WizardsGameMode.cpp
          WizardsCharacter.cpp
-         WizardsProjectile.cpp
          WizardsHUD.cpp
+         WizardsProjectile.cpp
          WizardsSaveGame.cpp
          MyActor.cpp
          spellBook.cpp
+         WizardsBlast.cpp
          WizardsCone.cpp
          Wizards.generated.cpp
-         WizardsBlast.cpp
-         [16/16] Link UE4Editor-Wizards-2264.dll
-            Creating library I:\Projects\wizards\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-Wizards-2264.lib and object I:\Projects\wizards\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-Wizards-2264.exp
+         [16/16] Link UE4Editor-Wizards-2613.dll
+            Creating library I:\Projects\wizards\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-Wizards-2613.lib and object I:\Projects\wizards\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-Wizards-2613.exp
          -------- End Detailed Actions Stats -----------------------------------------------------------
-         Total build time: 43.01 seconds
+         Total build time: 63.64 seconds
      1>Done Building Project "I:\Projects\wizards\Intermediate\ProjectFiles\Wizards.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:45.51
+Time Elapsed 00:01:05.44

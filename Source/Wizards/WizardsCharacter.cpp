@@ -449,6 +449,10 @@ bool AWizardsCharacter::ServerFireProjectile_Validate() {
 }
 
 void AWizardsCharacter::ClientFireProjectile_Implementation(){
+	if (!mySpellBook.IsValidIndex(0)) {
+		UE_LOG(LogTemp, Warning, TEXT("Spell Gathering Needed!"));
+		newCharactersSpells();
+	}
 	if (mySpellBook[currSpell].spellType == 0)
 	{
 		const FRotator SpawnRotation = GetControlRotation();
