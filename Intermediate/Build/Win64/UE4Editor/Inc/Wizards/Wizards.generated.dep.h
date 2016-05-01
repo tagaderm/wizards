@@ -32,6 +32,9 @@
 #ifndef WIZARDS_WizardsGameMode_generated_h
 	#include "WizardsGameMode.h"
 #endif
+#ifndef WIZARDS_WizardsGameSession_generated_h
+	#include "Public/WizardsGameSession.h"
+#endif
 #ifndef WIZARDS_WizardsHUD_generated_h
 	#include "WizardsHUD.h"
 #endif

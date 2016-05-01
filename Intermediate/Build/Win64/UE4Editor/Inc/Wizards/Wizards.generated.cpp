@@ -119,6 +119,10 @@ static struct FScriptStruct_Wizards_StaticRegisterNativesFtheSpell
 	{
 	}
 	IMPLEMENT_CLASS(AWizardsGameMode, 3938538792);
+	void AWizardsGameSession::StaticRegisterNativesAWizardsGameSession()
+	{
+	}
+	IMPLEMENT_CLASS(AWizardsGameSession, 3946490429);
 	void AWizardsHUD::StaticRegisterNativesAWizardsHUD()
 	{
 	}
@@ -146,6 +150,7 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UGameInstance();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
+	ENGINE_API class UClass* Z_Construct_UClass_AGameSession();
 	ENGINE_API class UClass* Z_Construct_UClass_AHUD();
 	ENGINE_API class UClass* Z_Construct_UClass_UFont_NoRegister();
 	ENGINE_API class UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
@@ -210,6 +215,8 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 	WIZARDS_API class UClass* Z_Construct_UClass_UWizardsGameInstance();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsGameMode_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsGameMode();
+	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsGameSession_NoRegister();
+	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsGameSession();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsHUD_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsHUD();
 	WIZARDS_API class UFunction* Z_Construct_UFunction_AWizardsProjectile_OnHit();
@@ -1528,6 +1535,40 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AWizardsGameMode(Z_Construct_UClass_AWizardsGameMode, TEXT("AWizardsGameMode"));
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AWizardsGameMode);
+	UClass* Z_Construct_UClass_AWizardsGameSession_NoRegister()
+	{
+		return AWizardsGameSession::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AWizardsGameSession()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AGameSession();
+			Z_Construct_UPackage_Wizards();
+			OuterClass = AWizardsGameSession::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900284;
+
+
+				OuterClass->ClassConfigName = FName(TEXT("Game"));
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Input Movement Collision Rendering Utilities|Transformation"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("WizardsGameSession.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/WizardsGameSession.h"));
+				MetaData->SetValue(OuterClass, TEXT("ShowCategories"), TEXT("Input|MouseInput Input|TouchInput"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AWizardsGameSession(Z_Construct_UClass_AWizardsGameSession, TEXT("AWizardsGameSession"));
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AWizardsGameSession);
 	UClass* Z_Construct_UClass_AWizardsHUD_NoRegister()
 	{
 		return AWizardsHUD::StaticClass();
@@ -1653,8 +1694,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Wizards")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x15AF9116;
-			Guid.B = 0xA2959784;
+			Guid.A = 0xDA4A040D;
+			Guid.B = 0x6FC700E6;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
