@@ -59,11 +59,7 @@ static struct FScriptStruct_Wizards_StaticRegisterNativesFtheSpell
 		FNativeFunctionRegistrar::RegisterFunction(AWizardsCharacter::StaticClass(),"newCharactersSpells",(Native)&AWizardsCharacter::execnewCharactersSpells);
 		FNativeFunctionRegistrar::RegisterFunction(AWizardsCharacter::StaticClass(),"ServerFireProjectile",(Native)&AWizardsCharacter::execServerFireProjectile);
 	}
-<<<<<<< HEAD
-	IMPLEMENT_CLASS(AWizardsCharacter, 2015429672);
-=======
-	IMPLEMENT_CLASS(AWizardsCharacter, 1320255193);
->>>>>>> origin/spellsCole
+	IMPLEMENT_CLASS(AWizardsCharacter, 1657129139);
 	void UWizardsSaveGame::StaticRegisterNativesUWizardsSaveGame()
 	{
 	}
@@ -115,6 +111,10 @@ static struct FScriptStruct_Wizards_StaticRegisterNativesFtheSpell
 	{
 	}
 	IMPLEMENT_CLASS(AWizardsCone, 2877530625);
+	void UWizardsGameInstance::StaticRegisterNativesUWizardsGameInstance()
+	{
+	}
+	IMPLEMENT_CLASS(UWizardsGameInstance, 346670466);
 	void AWizardsGameMode::StaticRegisterNativesAWizardsGameMode()
 	{
 	}
@@ -144,6 +144,7 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 	ENGINE_API class UClass* Z_Construct_UClass_USaveGame();
 	UMG_API class UClass* Z_Construct_UClass_UUserWidget();
 	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_UGameInstance();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 	ENGINE_API class UClass* Z_Construct_UClass_AHUD();
 	ENGINE_API class UClass* Z_Construct_UClass_UFont_NoRegister();
@@ -205,6 +206,8 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsBlast();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsCone_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsCone();
+	WIZARDS_API class UClass* Z_Construct_UClass_UWizardsGameInstance_NoRegister();
+	WIZARDS_API class UClass* Z_Construct_UClass_UWizardsGameInstance();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsGameMode_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsGameMode();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsHUD_NoRegister();
@@ -345,10 +348,6 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 #if WITH_METADATA
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
-<<<<<<< HEAD
-=======
-			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("And here i Shall store the server->client functions"));
->>>>>>> origin/spellsCole
 #endif
 		}
 		return ReturnFunction;
@@ -385,11 +384,6 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 #if WITH_METADATA
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
-<<<<<<< HEAD
-			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("This is the chunk for firing projectiles/blasts/cones"));
-=======
-			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("In this chunk of whatever I shall store the server functions"));
->>>>>>> origin/spellsCole
 #endif
 		}
 		return ReturnFunction;
@@ -431,15 +425,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_FirstPersonCameraComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FirstPersonCameraComponent"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(FirstPersonCameraComponent, AWizardsCharacter), 0x00000000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
 				UProperty* NewProp_Mesh1P = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Mesh1P"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(Mesh1P, AWizardsCharacter), 0x00000000000b0009, Z_Construct_UClass_USkeletalMeshComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
-<<<<<<< HEAD
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCharacter_ClientFireProjectile()); // 894460941
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCharacter_newCharactersSpells()); // 4159059134
-				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCharacter_ServerFireProjectile()); // 1831374532
-=======
-				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCharacter_ClientFireProjectile()); // 2217702728
-				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCharacter_newCharactersSpells()); // 4159059134
-				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCharacter_ServerFireProjectile()); // 4265334676
->>>>>>> origin/spellsCole
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCharacter_ServerFireProjectile()); // 1629666080
 				OuterClass->ClassConfigName = FName(TEXT("Game"));
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -1475,6 +1463,37 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AWizardsCone(Z_Construct_UClass_AWizardsCone, TEXT("AWizardsCone"));
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AWizardsCone);
+	UClass* Z_Construct_UClass_UWizardsGameInstance_NoRegister()
+	{
+		return UWizardsGameInstance::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UWizardsGameInstance()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UGameInstance();
+			Z_Construct_UPackage_Wizards();
+			OuterClass = UWizardsGameInstance::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20100088;
+
+
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("WizardsGameInstance.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/WizardsGameInstance.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UWizardsGameInstance(Z_Construct_UClass_UWizardsGameInstance, TEXT("UWizardsGameInstance"));
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UWizardsGameInstance);
 	UClass* Z_Construct_UClass_AWizardsGameMode_NoRegister()
 	{
 		return AWizardsGameMode::StaticClass();
@@ -1634,12 +1653,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Wizards")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-<<<<<<< HEAD
-			Guid.A = 0xE65D9680;
-=======
-			Guid.A = 0xF1EFFB59;
->>>>>>> origin/spellsCole
-			Guid.B = 0x91473A27;
+			Guid.A = 0x15AF9116;
+			Guid.B = 0xA2959784;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

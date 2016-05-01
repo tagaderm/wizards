@@ -8,13 +8,15 @@ public class WizardsEditorTarget : TargetRules
 	public WizardsEditorTarget(TargetInfo Target)
 	{
 		Type = TargetType.Editor;
-	}
+        bUsesSteam = true;
 
-	//
-	// TargetRules interface.
-	//
+    }
 
-	public override void SetupBinaries(
+    //
+    // TargetRules interface.
+    //
+
+    public override void SetupBinaries(
 		TargetInfo Target,
 		ref List<UEBuildBinaryConfiguration> OutBuildBinaryConfigurations,
 		ref List<string> OutExtraModuleNames
