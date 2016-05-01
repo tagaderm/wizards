@@ -18,7 +18,7 @@ void UWizardsGameInstance::Init()
 	FOnlineSessionSettings thisSettings = FOnlineSessionSettings::FOnlineSessionSettings();
 	thisSettings.bAllowInvites = true;
 	FName sessionName = "theSession";
-	thisSession->CreateSession(0, sessionName, thisSettings);
+	thisSession->UpdateSession(sessionName, thisSettings);
 	if (OnlineSub)
 	{
 		IOnlineSessionPtr SessionInt = OnlineSub->GetSessionInterface();
