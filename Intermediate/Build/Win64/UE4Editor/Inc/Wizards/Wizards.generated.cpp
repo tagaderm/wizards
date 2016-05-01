@@ -59,7 +59,7 @@ static struct FScriptStruct_Wizards_StaticRegisterNativesFtheSpell
 		FNativeFunctionRegistrar::RegisterFunction(AWizardsCharacter::StaticClass(),"newCharactersSpells",(Native)&AWizardsCharacter::execnewCharactersSpells);
 		FNativeFunctionRegistrar::RegisterFunction(AWizardsCharacter::StaticClass(),"ServerFireProjectile",(Native)&AWizardsCharacter::execServerFireProjectile);
 	}
-	IMPLEMENT_CLASS(AWizardsCharacter, 1320255193);
+	IMPLEMENT_CLASS(AWizardsCharacter, 2015429672);
 	void UWizardsSaveGame::StaticRegisterNativesUWizardsSaveGame()
 	{
 	}
@@ -341,7 +341,6 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 #if WITH_METADATA
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
-			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("And here i Shall store the server->client functions"));
 #endif
 		}
 		return ReturnFunction;
@@ -378,7 +377,7 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 #if WITH_METADATA
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
-			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("In this chunk of whatever I shall store the server functions"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("This is the chunk for firing projectiles/blasts/cones"));
 #endif
 		}
 		return ReturnFunction;
@@ -420,9 +419,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_FirstPersonCameraComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FirstPersonCameraComponent"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(FirstPersonCameraComponent, AWizardsCharacter), 0x00000000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
 				UProperty* NewProp_Mesh1P = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Mesh1P"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(Mesh1P, AWizardsCharacter), 0x00000000000b0009, Z_Construct_UClass_USkeletalMeshComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
-				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCharacter_ClientFireProjectile()); // 2217702728
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCharacter_ClientFireProjectile()); // 894460941
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCharacter_newCharactersSpells()); // 4159059134
-				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCharacter_ServerFireProjectile()); // 4265334676
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCharacter_ServerFireProjectile()); // 1831374532
 				OuterClass->ClassConfigName = FName(TEXT("Game"));
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -1617,7 +1616,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Wizards")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xF1EFFB59;
+			Guid.A = 0xE65D9680;
 			Guid.B = 0x91473A27;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

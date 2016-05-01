@@ -219,13 +219,11 @@ public:
 
 	void GetLifetimeReplicatedProps(TArray< FLifetimeProperty > & OutLifetimeProps) const override;
 
-	//In this chunk of whatever I shall store the server functions
+	//This is the chunk for firing projectiles/blasts/cones
 	UFUNCTION(reliable, server, WithValidation)
 	void ServerFireProjectile(FtheSpell castSpell, FRotator rotation, FVector location);
 	virtual void ServerFireProjectile_Implementation(FtheSpell castSpell, FRotator rotation, FVector location);
 	virtual bool ServerFireProjectile_Validate(FtheSpell castSpell, FRotator rotation, FVector location);
-	
-	//And here i Shall store the server->client functions
 	UFUNCTION(reliable, NetMulticast, WithValidation)
 	void ClientFireProjectile(FtheSpell castSpell, FRotator rotation, FVector location);
 	virtual void ClientFireProjectile_Implementation(FtheSpell castSpell, FRotator rotation, FVector location);
