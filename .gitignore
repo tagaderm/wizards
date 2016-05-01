@@ -11,7 +11,7 @@
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
+# *.dll
 
 # Fortran module files
 *.mod
@@ -56,3 +56,5 @@ Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+*.pdb
+*.dll
