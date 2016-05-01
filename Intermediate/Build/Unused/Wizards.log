@@ -1,37 +1,25 @@
-﻿Build started 4/29/2016 4:55:16 PM.
+﻿Build started 4/30/2016 8:09:03 PM.
      1>Project "I:\Projects\wizards\Intermediate\ProjectFiles\Wizards.vcxproj" on node 2 (Rebuild target(s)).
      1>Rebuild:
          "I:\EPIC\Epic Games\4.10\Engine\Build\BatchFiles\Rebuild.bat" WizardsEditor Win64 Development "I:\Projects\wizards\Wizards.uproject" -rocket -waitmutex -2015
          Cleaning WizardsEditor Binaries...
          Compiling game modules for hot reload
-         Creating makefile for hot reloading WizardsEditor (no existing makefile)
+     1>EXEC : error : System.UnauthorizedAccessException: Access to the path 'I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-9470.dll' is denied.
+            at UnrealBuildTool.UEBuildTarget.CleanFile(String Filename)
+            at UnrealBuildTool.UEBuildTarget.CleanTarget(BuildManifest Manifest)
+            at UnrealBuildTool.UEBuildTarget.GenerateManifest()
+            at UnrealBuildTool.UEBuildTarget.Build(IUEToolChain TargetToolChain, List`1& OutputItems, List`1& UObjectModules, String& EULAViolationWarning)
+            at UnrealBuildTool.UnrealBuildTool.RunUBT(String[] Arguments)
          Compiling game modules for hot reload
-         Performing full C++ include scan (no include cache file)
-         Parsing headers for WizardsEditor
-           Running UnrealHeaderTool "I:\Projects\wizards\Wizards.uproject" "I:\Projects\wizards\Intermediate\Build\Win64\WizardsEditor\Development\UnrealHeaderTool.manifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -rocket -installed
-         Reflection code generated for WizardsEditor in 4.4628081 seconds
-         Performing 16 actions (4 in parallel)
-         [3/16] Resource ModuleVersionResource.rc.inl
-         [2/16] Resource PCLaunch.rc
-         PCH.Wizards.h.cpp
-         Wizards.cpp
-         WizardMenuWidget.cpp
-         WizardsGameMode.cpp
-         WizardsCharacter.cpp
-         WizardsHUD.cpp
-         WizardsProjectile.cpp
-         WizardsSaveGame.cpp
-         MyActor.cpp
-         spellBook.cpp
-         WizardsBlast.cpp
-         WizardsCone.cpp
-         Wizards.generated.cpp
-         [16/16] Link UE4Editor-Wizards-2613.dll
-            Creating library I:\Projects\wizards\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-Wizards-2613.lib and object I:\Projects\wizards\Intermediate/Build/Win64\UE4Editor\Development\UE4Editor-Wizards-2613.exp
+         Performing 2 actions (4 in parallel)
+         WizardsGameInstance.cpp
+     1>I:\Projects\wizards\Source\Wizards\Private\WizardsGameInstance.cpp(6): fatal error C1083: Cannot open include file: 'Networking.h': No such file or directory
          -------- End Detailed Actions Stats -----------------------------------------------------------
-         Total build time: 63.64 seconds
-     1>Done Building Project "I:\Projects\wizards\Intermediate\ProjectFiles\Wizards.vcxproj" (Rebuild target(s)).
+     1>ERROR : UBT error : Failed to produce item: I:\Projects\wizards\Binaries\Win64\UE4Editor-Wizards-9772.dll
+         Total build time: 2.50 seconds
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.MakeFile.Targets(42,5): error MSB3075: The command ""I:\EPIC\Epic Games\4.10\Engine\Build\BatchFiles\Rebuild.bat" WizardsEditor Win64 Development "I:\Projects\wizards\Wizards.uproject" -rocket -waitmutex -2015" exited with code 5. Please verify that you have sufficient rights to run this command.
+     1>Done Building Project "I:\Projects\wizards\Intermediate\ProjectFiles\Wizards.vcxproj" (Rebuild target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:01:05.44
+Time Elapsed 00:00:22.85
