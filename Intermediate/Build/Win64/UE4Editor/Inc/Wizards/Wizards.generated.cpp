@@ -111,10 +111,6 @@ static struct FScriptStruct_Wizards_StaticRegisterNativesFtheSpell
 	{
 	}
 	IMPLEMENT_CLASS(AWizardsCone, 2877530625);
-	void UWizardsGameInstance::StaticRegisterNativesUWizardsGameInstance()
-	{
-	}
-	IMPLEMENT_CLASS(UWizardsGameInstance, 346670466);
 	void AWizardsGameMode::StaticRegisterNativesAWizardsGameMode()
 	{
 	}
@@ -144,7 +140,6 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 	ENGINE_API class UClass* Z_Construct_UClass_USaveGame();
 	UMG_API class UClass* Z_Construct_UClass_UUserWidget();
 	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
-	ENGINE_API class UClass* Z_Construct_UClass_UGameInstance();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 	ENGINE_API class UClass* Z_Construct_UClass_AHUD();
 	ENGINE_API class UClass* Z_Construct_UClass_UFont_NoRegister();
@@ -206,8 +201,6 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsBlast();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsCone_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsCone();
-	WIZARDS_API class UClass* Z_Construct_UClass_UWizardsGameInstance_NoRegister();
-	WIZARDS_API class UClass* Z_Construct_UClass_UWizardsGameInstance();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsGameMode_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsGameMode();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsHUD_NoRegister();
@@ -1464,37 +1457,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AWizardsCone(Z_Construct_UClass_AWizardsCone, TEXT("AWizardsCone"));
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AWizardsCone);
-	UClass* Z_Construct_UClass_UWizardsGameInstance_NoRegister()
-	{
-		return UWizardsGameInstance::StaticClass();
-	}
-	UClass* Z_Construct_UClass_UWizardsGameInstance()
-	{
-		static UClass* OuterClass = NULL;
-		if (!OuterClass)
-		{
-			Z_Construct_UClass_UGameInstance();
-			Z_Construct_UPackage_Wizards();
-			OuterClass = UWizardsGameInstance::StaticClass();
-			if (!(OuterClass->ClassFlags & CLASS_Constructed))
-			{
-				UObjectForceRegistration(OuterClass);
-				OuterClass->ClassFlags |= 0x20100088;
-
-
-				OuterClass->StaticLink();
-#if WITH_METADATA
-				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
-				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("WizardsGameInstance.h"));
-				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/WizardsGameInstance.h"));
-#endif
-			}
-		}
-		check(OuterClass->GetClass());
-		return OuterClass;
-	}
-	static FCompiledInDefer Z_CompiledInDefer_UClass_UWizardsGameInstance(Z_Construct_UClass_UWizardsGameInstance, TEXT("UWizardsGameInstance"));
-	DEFINE_VTABLE_PTR_HELPER_CTOR(UWizardsGameInstance);
 	UClass* Z_Construct_UClass_AWizardsGameMode_NoRegister()
 	{
 		return AWizardsGameMode::StaticClass();
@@ -1654,8 +1616,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Wizards")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x871A405F;
-			Guid.B = 0xA2959784;
+			Guid.A = 0xE65D9680;
+			Guid.B = 0x91473A27;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

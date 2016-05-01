@@ -8,8 +8,7 @@ public class WizardsTarget : TargetRules
 	public WizardsTarget(TargetInfo Target)
 	{
 		Type = TargetType.Game;
-        bUsesSteam = true;
-    }
+	}
 
 	//
 	// TargetRules interface.
