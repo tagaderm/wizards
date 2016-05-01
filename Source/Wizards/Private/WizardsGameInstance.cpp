@@ -11,19 +11,24 @@
 
 void UWizardsGameInstance::Init()
 {
-
+	Super::Init();
 	UE_LOG(LogTemp, Warning, TEXT("WizardsGameInstance::Init happened!"));
 	IOnlineSubsystem* OnlineSub = IOnlineSubsystem::Get();
-	IOnlineSessionPtr thisSession = OnlineSub->GetSessionInterface();
+	//IOnlineSessionPtr thisSession = OnlineSub->GetSessionInterface();
 	FOnlineSessionSettings thisSettings = FOnlineSessionSettings::FOnlineSessionSettings();
 	thisSettings.bAllowInvites = true;
+	thisSettings.bAllowJoinInProgress = true;
+	thisSettings.NumPublicConnections = 5;
+	thisSettings.bUsesPresence = true;
+	thisSettings.bAllowJoinViaPresence = true;
 	FName sessionName = "theSession";
-	thisSession->UpdateSession(sessionName, thisSettings);
+	//thisSession->UpdateSession(sessionName, thisSettings);
 	if (OnlineSub)
 	{
 		IOnlineSessionPtr SessionInt = OnlineSub->GetSessionInterface();
 		if (SessionInt.IsValid())
 		{
+			SessionInt->CreateSession(0, sessionName, thisSettings);
 			int32 ControllerId = 0;
 			if (ControllerId != 255)
 			{
