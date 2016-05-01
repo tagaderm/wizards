@@ -11,6 +11,8 @@
 
 void UWizardsGameInstance::Init()
 {
+
+	UE_LOG(LogTemp, Warning, TEXT("WizardsGameInstance::Init happened!"));
 	IOnlineSubsystem* OnlineSub = IOnlineSubsystem::Get();
 	IOnlineSessionPtr thisSession = OnlineSub->GetSessionInterface();
 	FOnlineSessionSettings thisSettings = FOnlineSessionSettings::FOnlineSessionSettings();
@@ -37,6 +39,7 @@ void UWizardsGameInstance::Init()
 
 void UWizardsGameInstance::OnSessionUserInviteAccepted(bool bWasSuccessful, int32 LocalUserNum, TSharedPtr<const FUniqueNetId>, const FOnlineSessionSearchResult& SearchResult)
 {
+	UE_LOG(LogTemp, Warning, TEXT("WizardsGameInstance::OnSessionInviteAccepted happened!"));
 	//UE_LOG(DSS_STEAM, Verbose, TEXT("OnSessionInviteAccepted LocalUserNum: %d bSuccess: %d"), LocalUserNum, bWasSuccessful);
 
 	if (bWasSuccessful)
@@ -55,6 +58,7 @@ void UWizardsGameInstance::OnSessionUserInviteAccepted(bool bWasSuccessful, int3
 
 void UWizardsGameInstance::OnJoinSessionCompleted(FName SessionName, EOnJoinSessionCompleteResult::Type Result)
 {
+	UE_LOG(LogTemp, Warning, TEXT("WizardsGameInstance::OnJoinSessionCompleted happened!"));
 	//UE_LOG(DSS_STEAM, Verbose, TEXT("JoinSessionCompleted"));
 	IOnlineSessionPtr Sessions = IOnlineSubsystem::Get()->GetSessionInterface();
 	if (Sessions.IsValid())
