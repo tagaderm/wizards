@@ -113,8 +113,11 @@ static struct FScriptStruct_Wizards_StaticRegisterNativesFtheSpell
 	IMPLEMENT_CLASS(AWizardsCone, 2877530625);
 	void UWizardsGameInstance::StaticRegisterNativesUWizardsGameInstance()
 	{
+		FNativeFunctionRegistrar::RegisterFunction(UWizardsGameInstance::StaticClass(),"FindOnlineGames",(Native)&UWizardsGameInstance::execFindOnlineGames);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardsGameInstance::StaticClass(),"JoinOnlineGame",(Native)&UWizardsGameInstance::execJoinOnlineGame);
+		FNativeFunctionRegistrar::RegisterFunction(UWizardsGameInstance::StaticClass(),"StartOnlineGame",(Native)&UWizardsGameInstance::execStartOnlineGame);
 	}
-	IMPLEMENT_CLASS(UWizardsGameInstance, 346670466);
+	IMPLEMENT_CLASS(UWizardsGameInstance, 2151724687);
 	void AWizardsGameMode::StaticRegisterNativesAWizardsGameMode()
 	{
 	}
@@ -211,6 +214,9 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsBlast();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsCone_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsCone();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardsGameInstance_FindOnlineGames();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardsGameInstance_JoinOnlineGame();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardsGameInstance_StartOnlineGame();
 	WIZARDS_API class UClass* Z_Construct_UClass_UWizardsGameInstance_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_UWizardsGameInstance();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsGameMode_NoRegister();
@@ -1470,6 +1476,57 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AWizardsCone(Z_Construct_UClass_AWizardsCone, TEXT("AWizardsCone"));
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AWizardsCone);
+	UFunction* Z_Construct_UFunction_UWizardsGameInstance_FindOnlineGames()
+	{
+		UObject* Outer=Z_Construct_UClass_UWizardsGameInstance();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("FindOnlineGames"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Network|Test"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/WizardsGameInstance.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardsGameInstance_JoinOnlineGame()
+	{
+		UObject* Outer=Z_Construct_UClass_UWizardsGameInstance();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("JoinOnlineGame"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Network|Test"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/WizardsGameInstance.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UWizardsGameInstance_StartOnlineGame()
+	{
+		UObject* Outer=Z_Construct_UClass_UWizardsGameInstance();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("StartOnlineGame"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Network|Test"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/WizardsGameInstance.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_UWizardsGameInstance_NoRegister()
 	{
 		return UWizardsGameInstance::StaticClass();
@@ -1487,7 +1544,13 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20100088;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardsGameInstance_FindOnlineGames());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardsGameInstance_JoinOnlineGame());
+				OuterClass->LinkChild(Z_Construct_UFunction_UWizardsGameInstance_StartOnlineGame());
 
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardsGameInstance_FindOnlineGames()); // 4134304986
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardsGameInstance_JoinOnlineGame()); // 2671738916
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_UWizardsGameInstance_StartOnlineGame()); // 3554916057
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -1694,8 +1757,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Wizards")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xDA4A040D;
-			Guid.B = 0x6FC700E6;
+			Guid.A = 0x0E7B8839;
+			Guid.B = 0x5A7641BC;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

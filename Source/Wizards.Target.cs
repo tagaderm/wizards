@@ -9,6 +9,7 @@ public class WizardsTarget : TargetRules
 	{
 		Type = TargetType.Game;
         bUsesSteam = true;
+        UEBuildConfiguration.bCompileSteamOSS = true;
     }
 
 	//

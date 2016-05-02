@@ -6,5 +6,7 @@
 #include "Engine.h"
 #include "WizardsSaveGame.h"
 #include "Kismet/GameplayStatics.h"
+#include "UnrealNetwork.h"
+#include "Online.h"
 
 #endif

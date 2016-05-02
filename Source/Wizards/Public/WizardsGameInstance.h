@@ -18,10 +18,61 @@ class WIZARDS_API UWizardsGameInstance : public UGameInstance
 
 	virtual void Init() override;
 
+	UWizardsGameInstance(const FObjectInitializer& ObjectInitializer);
+
+	bool HostSession(TSharedPtr<const FUniqueNetId> UserId, FName SessionName, bool bIsLAN, bool bIsPresence, int32 MaxNumPlayers);
+
 	void OnSessionUserInviteAccepted(bool bWasSuccessful, int32 LocalUserNum, TSharedPtr<const FUniqueNetId>, const FOnlineSessionSearchResult& SearchResult);
 
 	void OnJoinSessionCompleted(FName SessionName, EOnJoinSessionCompleteResult::Type Result);
 
-	
-	
+	virtual void OnCreateSessionComplete(FName SessionName, bool bWasSuccessful);
+
+	void OnStartOnlineGameComplete(FName SessionName, bool bWasSuccessful);
+
+
+
+	/* Delegate called when session created */
+	FOnCreateSessionCompleteDelegate OnCreateSessionCompleteDelegate;
+	/* Delegate called when session started */
+	FOnStartSessionCompleteDelegate OnStartSessionCompleteDelegate;
+
+	/** Handles to registered delegates for creating/starting a session */
+	FDelegateHandle OnCreateSessionCompleteDelegateHandle;
+	FDelegateHandle OnStartSessionCompleteDelegateHandle;
+
+	TSharedPtr<class FOnlineSessionSettings> SessionSettings;
+
+	void FindSessions(TSharedPtr<const FUniqueNetId> UserId, FName SessionName, bool bIsLAN, bool bIsPresence);
+
+	/** Delegate for searching for sessions */
+	FOnFindSessionsCompleteDelegate OnFindSessionsCompleteDelegate;
+
+	void OnFindSessionsComplete(bool bWasSuccessful);
+
+	/** Handle to registered delegate for searching a session */
+	FDelegateHandle OnFindSessionsCompleteDelegateHandle;
+
+	TSharedPtr<class FOnlineSessionSearch> SessionSearch;
+
+	bool JoinSession(TSharedPtr<const FUniqueNetId> UserId, FName SessionName, const FOnlineSessionSearchResult& SearchResult);
+
+	/** Delegate for joining a session */
+	FOnJoinSessionCompleteDelegate OnJoinSessionCompleteDelegate;
+
+	/** Handle to registered delegate for joining a session */
+	FDelegateHandle OnJoinSessionCompleteDelegateHandle;
+
+	void OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result);
+public:
+
+	UFUNCTION(BlueprintCallable, Category = "Network|Test")
+	void StartOnlineGame();
+
+	UFUNCTION(BlueprintCallable, Category = "Network|Test")
+	void FindOnlineGames();
+
+	UFUNCTION(BlueprintCallable, Category = "Network|Test")
+	void JoinOnlineGame();
+
 };
