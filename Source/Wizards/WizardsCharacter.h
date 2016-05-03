@@ -48,9 +48,9 @@ public:
 	float maxMana;
 
 	/** Experience */
-	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
-	int level;
-	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Experience)
+	int32 level;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Experience)
 	float currentExp;
 
 	struct spell {
@@ -131,6 +131,11 @@ public:
 	float GetMana();
 
 	void AddExperience(float newExperience);
+	float ExperienceNeededForNextLevel();
+	float ExperienceOfNextLevel();
+
+	UFUNCTION(BlueprintCallable, Category=Experience)
+	void LeveledUp();
 
 };
 

@@ -5,6 +5,7 @@
 #include "WizardsProjectile.h"
 #include "Animation/AnimInstance.h"
 #include "GameFramework/InputSettings.h"
+#include <cmath>
 
 //DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
@@ -20,6 +21,7 @@ AWizardsCharacter::AWizardsCharacter()
 	maxHealth = 100.0;
 	Mana = 100.0;
 	maxMana = 100.0;
+	level = 1;
 	//Spell Stuff for Testing
 	SList.spellCost = 10.0;
 
@@ -67,7 +69,7 @@ void AWizardsCharacter::Tick(float DeltaTime)
 	else {
 		Mana = maxMana;
 	}
-	AddExperience(DeltaTime);
+	AddExperience(DeltaTime * 4);
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -259,10 +261,22 @@ float AWizardsCharacter::GetMana(){
 
 void AWizardsCharacter::AddExperience(float newExperience) {
 	currentExp += newExperience;
-	float experience_to_next_level = 50 * (level ^ 1.5);
-	while (currentExp > experience_to_next_level) {
+	while (currentExp > ExperienceOfNextLevel()) {
 		++level;
-		experience_to_next_level = 50 * (level ^ 1.5);
+		LeveledUp();
 	}
 	return;
+}
+
+float AWizardsCharacter::ExperienceNeededForNextLevel() {
+	float exp = 50 * (pow(level, 1.5)) - currentExp;
+	return floor(exp * 100 + 0.5) / 100;
+}
+
+float AWizardsCharacter::ExperienceOfNextLevel() {
+	return 50.0 * (pow(level, 1.5));
+}
+
+void AWizardsCharacter::LeveledUp() {
+	// Do something!
 }

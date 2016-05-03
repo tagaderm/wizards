@@ -6,6 +6,7 @@
 #include "TextureResource.h"
 #include "CanvasItem.h"
 #include "WizardsCharacter.h"
+#include "text.h"
 
 AWizardsHUD::AWizardsHUD()
 {
@@ -28,6 +29,14 @@ void AWizardsHUD::DrawHUD()
 	if(TheWizard != NULL){
 	float gottenHealth = TheWizard->GetHealth();
 	float gottenMana = TheWizard->GetMana();
+	int level = TheWizard->level;
+	float exp = TheWizard->ExperienceNeededForNextLevel();
+	FNumberFormattingOptions NumberFormat;
+	NumberFormat.MinimumIntegralDigits = 1;
+	NumberFormat.MaximumIntegralDigits = 10000;
+	NumberFormat.MinimumFractionalDigits = 0;
+	NumberFormat.MaximumFractionalDigits = 0;
+    FString exp_formatted = FText::AsNumber(exp, &NumberFormat).ToString();
 	// find center of the Canvas
 	const FVector2D Center(Canvas->ClipX * 0.5f, Canvas->ClipY * 0.5f);
 	// offset by half the texture's dimensions so that the center of the texture aligns with the center of the Canvas
@@ -42,6 +51,11 @@ void AWizardsHUD::DrawHUD()
 	DrawText(HealthString, FColor::White, 50, 50, HUDFont);
 	FString ManaString = FString::SanitizeFloat(gottenMana);
 	DrawText(ManaString, FColor::White, 50, 100, HUDFont);
+	FString LevelString = FString::FromInt(level);
+	DrawText(LevelString, FColor::White, 50, 150, HUDFont);
+	FString ExpString("Exp. needed for next level: ");
+	ExpString.Append(exp_formatted);
+	DrawText(ExpString, FColor::White, 50, 200, HUDFont);
 
 }
 else{
