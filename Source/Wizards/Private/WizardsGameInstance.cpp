@@ -2,11 +2,11 @@
 
 #include "Wizards.h"
 #include "WizardsGameInstance.h"
-#include "Online.h"
+//#include "Online.h"
 //#include "Networking.h"
-#include "OnlineSubsystem.h"
-#include "OnlineSubsystemUtils.h"
-#include "OnlineSessionSettings.h"
+//#include "OnlineSubsystem.h"
+//#include "OnlineSubsystemUtils.h"
+//#include "OnlineSessionSettings.h"
 
 UWizardsGameInstance::UWizardsGameInstance(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
@@ -302,7 +302,7 @@ void UWizardsGameInstance::OnJoinSessionCompleted(FName SessionName, EOnJoinSess
 	}
 }
 
-bool UWizardsGameInstance::JoinSession(TSharedPtr<const FUniqueNetId> UserId, FName SessionName, const FOnlineSessionSearchResult& SearchResult)
+bool UWizardsGameInstance::ThisJoinSession(TSharedPtr<const FUniqueNetId> UserId, FName SessionName, const FOnlineSessionSearchResult& SearchResult)
 {
 	// Return bool
 	bool bSuccessful = false;
@@ -331,11 +331,13 @@ bool UWizardsGameInstance::JoinSession(TSharedPtr<const FUniqueNetId> UserId, FN
 
 void UWizardsGameInstance::StartOnlineGame()
 {
+	UE_LOG(LogTemp, Warning, TEXT("WizardsGameInstance::OnSessionInviteAccepted happened!"));
+
 	// Creating a local player where we can get the UserID from
 	ULocalPlayer* const Player = GetFirstGamePlayer();
 
 	// Call our custom HostSession function. GameSessionName is a GameInstance variable
-	HostSession(Player->GetPreferredUniqueNetId(), GameSessionName, true, true, 4);
+	HostSession(Player->GetPreferredUniqueNetId(), GameSessionName, false, true, 4);
 }
 
 void UWizardsGameInstance::FindOnlineGames()
@@ -365,7 +367,10 @@ void UWizardsGameInstance::JoinOnlineGame()
 				// Once we found sounce a Session that is not ours, just join it. Instead of using a for loop, you could
 				// use a widget where you click on and have a reference for the GameSession it represents which you can use
 				// here
-				JoinSession(Player->GetPreferredUniqueNetId(), GameSessionName, SearchResult);
+				//FUniqueNetId thisId = Player->GetCachedUniqueNetId;
+
+				//this->JoinSession(Player->GetPreferredUniqueNetId(), SearchResult);
+				ThisJoinSession(Player->GetPreferredUniqueNetId(), GameSessionName, SearchResult);
 				break;
 			}
 		}

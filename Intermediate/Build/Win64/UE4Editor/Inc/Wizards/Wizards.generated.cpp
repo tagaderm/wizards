@@ -109,8 +109,9 @@ static struct FScriptStruct_Wizards_StaticRegisterNativesFtheSpell
 	IMPLEMENT_CLASS(AWizardsBlast, 2272097975);
 	void AWizardsCone::StaticRegisterNativesAWizardsCone()
 	{
+		FNativeFunctionRegistrar::RegisterFunction(AWizardsCone::StaticClass(),"OnOverlap",(Native)&AWizardsCone::execOnOverlap);
 	}
-	IMPLEMENT_CLASS(AWizardsCone, 2877530625);
+	IMPLEMENT_CLASS(AWizardsCone, 1152004204);
 	void UWizardsGameInstance::StaticRegisterNativesUWizardsGameInstance()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(UWizardsGameInstance::StaticClass(),"FindOnlineGames",(Native)&UWizardsGameInstance::execFindOnlineGames);
@@ -151,14 +152,14 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 	ENGINE_API class UClass* Z_Construct_UClass_USaveGame();
 	UMG_API class UClass* Z_Construct_UClass_UUserWidget();
 	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
+	ENGINE_API class UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
+	ENGINE_API class UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UGameInstance();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameSession();
 	ENGINE_API class UClass* Z_Construct_UClass_AHUD();
 	ENGINE_API class UClass* Z_Construct_UClass_UFont_NoRegister();
-	ENGINE_API class UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
-	ENGINE_API class UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
-	ENGINE_API class UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
 
 	WIZARDS_API class UClass* Z_Construct_UClass_AMyActor_NoRegister();
@@ -212,6 +213,7 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 	WIZARDS_API class UClass* Z_Construct_UClass_UWizardMenuWidget();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsBlast_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsBlast();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_AWizardsCone_OnOverlap();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsCone_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsCone();
 	WIZARDS_API class UFunction* Z_Construct_UFunction_UWizardsGameInstance_FindOnlineGames();
@@ -1438,6 +1440,37 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AWizardsBlast(Z_Construct_UClass_AWizardsBlast, TEXT("AWizardsBlast"));
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AWizardsBlast);
+	UFunction* Z_Construct_UFunction_AWizardsCone_OnOverlap()
+	{
+		struct WizardsCone_eventOnOverlap_Parms
+		{
+			AActor* OtherActor;
+			UPrimitiveComponent* OtherComp;
+			int32 OtherBodyIndex;
+			bool bFromSweep;
+			FHitResult SweepResult;
+		};
+		UObject* Outer=Z_Construct_UClass_AWizardsCone();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnOverlap"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x00420401, 65535, sizeof(WizardsCone_eventOnOverlap_Parms));
+			UProperty* NewProp_SweepResult = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SweepResult"), RF_Public|RF_Transient|RF_Native) UStructProperty(CPP_PROPERTY_BASE(SweepResult, WizardsCone_eventOnOverlap_Parms), 0x0000008008000182, Z_Construct_UScriptStruct_FHitResult());
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bFromSweep, WizardsCone_eventOnOverlap_Parms, bool);
+			UProperty* NewProp_bFromSweep = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bFromSweep"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bFromSweep, WizardsCone_eventOnOverlap_Parms), 0x0000000000000080, CPP_BOOL_PROPERTY_BITMASK(bFromSweep, WizardsCone_eventOnOverlap_Parms), sizeof(bool), true);
+			UProperty* NewProp_OtherBodyIndex = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OtherBodyIndex"), RF_Public|RF_Transient|RF_Native) UIntProperty(CPP_PROPERTY_BASE(OtherBodyIndex, WizardsCone_eventOnOverlap_Parms), 0x0000000000000080);
+			UProperty* NewProp_OtherComp = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OtherComp"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(OtherComp, WizardsCone_eventOnOverlap_Parms), 0x0000000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			UProperty* NewProp_OtherActor = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OtherActor"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(OtherActor, WizardsCone_eventOnOverlap_Parms), 0x0000000000000080, Z_Construct_UClass_AActor_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/WizardsCone.h"));
+			MetaData->SetValue(NewProp_OtherComp, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AWizardsCone_NoRegister()
 	{
 		return AWizardsCone::StaticClass();
@@ -1455,10 +1488,12 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20900080;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_AWizardsCone_OnOverlap());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_CollisionComp = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CollisionComp"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(CollisionComp, AWizardsCone), 0x00000000000b0009, Z_Construct_UClass_USphereComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AWizardsCone_OnOverlap()); // 4031740787
 				OuterClass->ClassConfigName = FName(TEXT("Game"));
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -1757,8 +1792,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Wizards")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x0E7B8839;
-			Guid.B = 0x5A7641BC;
+			Guid.A = 0xD4E647A2;
+			Guid.B = 0xDB5433C0;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

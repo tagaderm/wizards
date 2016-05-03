@@ -3,7 +3,7 @@
 #pragma once
 
 #include "Engine/GameInstance.h"
-#include "OnlineSessionInterface.h"
+//#include "OnlineSessionInterface.h"
 //#include "OnlineSubsystemPackage.h"
 #include "WizardsGameInstance.generated.h"
 
@@ -54,7 +54,7 @@ class WIZARDS_API UWizardsGameInstance : public UGameInstance
 
 	TSharedPtr<class FOnlineSessionSearch> SessionSearch;
 
-	bool JoinSession(TSharedPtr<const FUniqueNetId> UserId, FName SessionName, const FOnlineSessionSearchResult& SearchResult);
+	bool ThisJoinSession(TSharedPtr<const FUniqueNetId> UserId, FName SessionName, const FOnlineSessionSearchResult& SearchResult);
 
 	/** Delegate for joining a session */
 	FOnJoinSessionCompleteDelegate OnJoinSessionCompleteDelegate;
