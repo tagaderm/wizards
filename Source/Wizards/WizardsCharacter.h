@@ -46,6 +46,13 @@ public:
 	float Mana;
 	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
 	float maxMana;
+
+	/** Experience */
+	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
+	int level;
+	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Gameplay)
+	float currentExp;
+
 	struct spell {
 		FName* particleLocation;
 		ConstructorHelpers::FObjectFinder<UParticleSystem>* test;
