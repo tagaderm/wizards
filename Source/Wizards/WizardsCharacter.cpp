@@ -14,6 +14,20 @@
 
 AWizardsCharacter::AWizardsCharacter()
 { 
+	UWizardSaveGame* LoadGameInstance = Cast<UWizardSaveGame>(UGameplayStatics::CreateSaveGameObject(UWizardSaveGame::StaticClass()));
+	LoadGameInstance = Cast<UWizardSaveGame>(UGameplayStatics::LoadGameFromSlot(LoadGameInstance->SaveSlotName, LoadGameInstance->UserIndex));
+	if (LoadGameInstance != NULL) {
+		UE_LOG(LogTemp, Warning, TEXT("Save file found!"));
+		UE_LOG(LogTemp, Warning, TEXT("%d"), LoadGameInstance->level);
+		level = LoadGameInstance->level;
+		currentExp = LoadGameInstance->currentExp;
+	}
+	else {
+		UE_LOG(LogTemp, Warning, TEXT("No save file found!"));
+		level = 1;
+		currentExp = 0;
+	}
+
 	//Tick for mana regen
 	PrimaryActorTick.bCanEverTick = true;
 	//Set Health and Mana
@@ -21,7 +35,6 @@ AWizardsCharacter::AWizardsCharacter()
 	maxHealth = 100.0;
 	Mana = 100.0;
 	maxMana = 100.0;
-	level = 1;
 	//Spell Stuff for Testing
 	SList.spellCost = 10.0;
 
@@ -56,6 +69,14 @@ AWizardsCharacter::AWizardsCharacter()
 
 	// Note: The ProjectileClass and the skeletal mesh/anim blueprints for Mesh1P are set in the
 	// derived blueprint asset named MyCharacter (to avoid direct content references in C++)
+}
+
+AWizardsCharacter::~AWizardsCharacter() {
+	UE_LOG(LogTemp, Warning, TEXT("Running destructor!"));
+	UWizardSaveGame* SaveGameInstance = Cast<UWizardSaveGame>(UGameplayStatics::CreateSaveGameObject(UWizardSaveGame::StaticClass()));
+	SaveGameInstance->level = level;
+	SaveGameInstance->currentExp = currentExp;
+	UGameplayStatics::SaveGameToSlot(SaveGameInstance, SaveGameInstance->SaveSlotName, SaveGameInstance->UserIndex);
 }
 
 /////////////

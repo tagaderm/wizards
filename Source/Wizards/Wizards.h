@@ -4,6 +4,7 @@
 #define __WIZARDS_H__
 
 #include "EngineMinimal.h"
+#include "WizardSaveGame.h"
 
 
 #endif

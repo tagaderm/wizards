@@ -20,6 +20,7 @@ class AWizardsCharacter : public ACharacter
 	class UCameraComponent* FirstPersonCameraComponent;
 public:
 	AWizardsCharacter();
+	~AWizardsCharacter();
 
 	void Tick(float DeltaTime) override;	
 
