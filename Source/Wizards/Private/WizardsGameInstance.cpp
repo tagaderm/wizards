@@ -16,6 +16,7 @@ UWizardsGameInstance::UWizardsGameInstance(const FObjectInitializer& ObjectIniti
 	OnStartSessionCompleteDelegate = FOnStartSessionCompleteDelegate::CreateUObject(this, &UWizardsGameInstance::OnStartOnlineGameComplete);
 	OnFindSessionsCompleteDelegate = FOnFindSessionsCompleteDelegate::CreateUObject(this, &UWizardsGameInstance::OnFindSessionsComplete);
 	OnJoinSessionCompleteDelegate = FOnJoinSessionCompleteDelegate::CreateUObject(this, &UWizardsGameInstance::OnJoinSessionComplete);
+	OnSessionUserInviteAcceptedDelegate = FOnSessionUserInviteAcceptedDelegate::CreateUObject(this, &UWizardsGameInstance::OnSessionUserInviteAccepted);
 }
 
 bool UWizardsGameInstance::HostSession(TSharedPtr<const FUniqueNetId> UserId, FName SessionName, bool bIsLAN, bool bIsPresence, int32 MaxNumPlayers)

@@ -30,8 +30,7 @@ class WIZARDS_API UWizardsGameInstance : public UGameInstance
 
 	void OnStartOnlineGameComplete(FName SessionName, bool bWasSuccessful);
 
-
-
+	FOnSessionUserInviteAcceptedDelegate OnSessionUserInviteAcceptedDelegate;
 	/* Delegate called when session created */
 	FOnCreateSessionCompleteDelegate OnCreateSessionCompleteDelegate;
 	/* Delegate called when session started */
@@ -64,6 +63,10 @@ class WIZARDS_API UWizardsGameInstance : public UGameInstance
 	FDelegateHandle OnJoinSessionCompleteDelegateHandle;
 
 	void OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result);
+
+
+
+
 public:
 
 	UFUNCTION(BlueprintCallable, Category = "Network|Test")
