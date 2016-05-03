@@ -130,5 +130,7 @@ public:
 	float GetHealth();
 	float GetMana();
 
+	void AddExperience(float newExperience);
+
 };
 

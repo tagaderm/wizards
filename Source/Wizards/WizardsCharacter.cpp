@@ -61,9 +61,13 @@ AWizardsCharacter::AWizardsCharacter()
 void AWizardsCharacter::Tick(float DeltaTime)  
 {  
     Super::Tick(DeltaTime);
-    if(Mana <= maxMana){
-	Mana += DeltaTime;
-    }
+    if(Mana < maxMana){
+		Mana += DeltaTime;
+	}
+	else {
+		Mana = maxMana;
+	}
+	AddExperience(DeltaTime);
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -251,4 +255,14 @@ float AWizardsCharacter::GetHealth(){
 }
 float AWizardsCharacter::GetMana(){
 	return Mana;
+}
+
+void AWizardsCharacter::AddExperience(float newExperience) {
+	currentExp += newExperience;
+	float experience_to_next_level = 50 * (level ^ 1.5);
+	while (currentExp > experience_to_next_level) {
+		++level;
+		experience_to_next_level = 50 * (level ^ 1.5);
+	}
+	return;
 }
