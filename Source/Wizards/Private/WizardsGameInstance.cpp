@@ -28,7 +28,7 @@ bool UWizardsGameInstance::HostSession(TSharedPtr<const FUniqueNetId> UserId, FN
 	{
 		// Get the Session Interface, so we can call the "CreateSession" function on it
 		IOnlineSessionPtr Sessions = OnlineSub->GetSessionInterface();
-
+		Sessions->DestroySession(GameSessionName);
 		if (Sessions.IsValid() && UserId.IsValid())
 		{
 			/*
@@ -54,7 +54,9 @@ bool UWizardsGameInstance::HostSession(TSharedPtr<const FUniqueNetId> UserId, FN
 			OnCreateSessionCompleteDelegateHandle = Sessions->AddOnCreateSessionCompleteDelegate_Handle(OnCreateSessionCompleteDelegate);
 
 			// Our delegate should get called when this is complete (doesn't need to be successful!)
-			return Sessions->CreateSession(*UserId, SessionName, *SessionSettings);
+			bool result;
+			result = Sessions->CreateSession(*UserId, SessionName, *SessionSettings);
+			return result;
 		}
 	}
 	else
@@ -86,7 +88,9 @@ void UWizardsGameInstance::OnCreateSessionComplete(FName SessionName, bool bWasS
 				OnStartSessionCompleteDelegateHandle = Sessions->AddOnStartSessionCompleteDelegate_Handle(OnStartSessionCompleteDelegate);
 
 				// Our StartSessionComplete delegate should get called after this
-				Sessions->StartSession(SessionName);
+				bool success = Sessions->StartSession(SessionName);
+				GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("OnCreateSessionCompleteStart %s, %d"), *SessionName.ToString(), success));
+
 			}
 		}
 
@@ -113,7 +117,7 @@ void UWizardsGameInstance::OnStartOnlineGameComplete(FName SessionName, bool bWa
 	// If the start was successful, we can open a NewMap if we want. Make sure to use "listen" as a parameter!
 	if (bWasSuccessful)
 	{
-		UGameplayStatics::OpenLevel(GetWorld(), "FirstPersonExampleMap", true, "listen");
+		UGameplayStatics::OpenLevel(GetWorld(), "FirstPersonExampleMap", false, "listen");
 	}
 }
 
@@ -231,8 +235,8 @@ void UWizardsGameInstance::OnJoinSessionComplete(FName SessionName, EOnJoinSessi
 
 void UWizardsGameInstance::Init()
 {
-	/*Super::Init();
-	UE_LOG(LogTemp, Warning, TEXT("WizardsGameInstance::Init happened!"));
+	Super::Init();
+	/*UE_LOG(LogTemp, Warning, TEXT("WizardsGameInstance::Init happened!"));
 	IOnlineSubsystem* OnlineSub = IOnlineSubsystem::Get();
 	//IOnlineSessionPtr thisSession = OnlineSub->GetSessionInterface();
 	FOnlineSessionSettings thisSettings = FOnlineSessionSettings::FOnlineSessionSettings();
@@ -325,13 +329,13 @@ bool UWizardsGameInstance::ThisJoinSession(TSharedPtr<const FUniqueNetId> UserId
 			bSuccessful = Sessions->JoinSession(*UserId, SessionName, SearchResult);
 		}
 	}
-
+	GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("JoinSessionFunc %s, %d"), *SessionName.ToString(), bSuccessful));
 	return bSuccessful;
 }
 
 void UWizardsGameInstance::StartOnlineGame()
 {
-	UE_LOG(LogTemp, Warning, TEXT("WizardsGameInstance::OnSessionInviteAccepted happened!"));
+	UE_LOG(LogTemp, Warning, TEXT("WizardsGameInstance::StartOnlineGame happened!"));
 
 	// Creating a local player where we can get the UserID from
 	ULocalPlayer* const Player = GetFirstGamePlayer();
@@ -344,7 +348,7 @@ void UWizardsGameInstance::FindOnlineGames()
 {
 	ULocalPlayer* const Player = GetFirstGamePlayer();
 
-	FindSessions(Player->GetPreferredUniqueNetId(), GameSessionName, true, true);
+	FindSessions(Player->GetPreferredUniqueNetId(), GameSessionName, false, true);
 }
 
 void UWizardsGameInstance::JoinOnlineGame()
