@@ -37,6 +37,12 @@ static struct FScriptStruct_Wizards_StaticRegisterNativesFtheSpell
 		UScriptStruct::DeferCppStructOps(FName(TEXT("theSpell")),new UScriptStruct::TCppStructOps<FtheSpell>);
 	}
 } ScriptStruct_Wizards_StaticRegisterNativesFtheSpell;
+	void AWizardsCharacter::ClientDestroyCone(AActor* theActor)
+	{
+		WizardsCharacter_eventClientDestroyCone_Parms Parms;
+		Parms.theActor=theActor;
+		ProcessEvent(FindFunctionChecked(WIZARDS_ClientDestroyCone),&Parms);
+	}
 	void AWizardsCharacter::ClientFireProjectile(FtheSpell castSpell, FRotator rotation, FVector location)
 	{
 		WizardsCharacter_eventClientFireProjectile_Parms Parms;
@@ -44,6 +50,12 @@ static struct FScriptStruct_Wizards_StaticRegisterNativesFtheSpell
 		Parms.rotation=rotation;
 		Parms.location=location;
 		ProcessEvent(FindFunctionChecked(WIZARDS_ClientFireProjectile),&Parms);
+	}
+	void AWizardsCharacter::ServerDestroyCone(AActor* theActor)
+	{
+		WizardsCharacter_eventServerDestroyCone_Parms Parms;
+		Parms.theActor=theActor;
+		ProcessEvent(FindFunctionChecked(WIZARDS_ServerDestroyCone),&Parms);
 	}
 	void AWizardsCharacter::ServerFireProjectile(FtheSpell castSpell, FRotator rotation, FVector location)
 	{
@@ -55,11 +67,13 @@ static struct FScriptStruct_Wizards_StaticRegisterNativesFtheSpell
 	}
 	void AWizardsCharacter::StaticRegisterNativesAWizardsCharacter()
 	{
+		FNativeFunctionRegistrar::RegisterFunction(AWizardsCharacter::StaticClass(), "ClientDestroyCone",(Native)&AWizardsCharacter::execClientDestroyCone);
 		FNativeFunctionRegistrar::RegisterFunction(AWizardsCharacter::StaticClass(), "ClientFireProjectile",(Native)&AWizardsCharacter::execClientFireProjectile);
 		FNativeFunctionRegistrar::RegisterFunction(AWizardsCharacter::StaticClass(), "newCharactersSpells",(Native)&AWizardsCharacter::execnewCharactersSpells);
+		FNativeFunctionRegistrar::RegisterFunction(AWizardsCharacter::StaticClass(), "ServerDestroyCone",(Native)&AWizardsCharacter::execServerDestroyCone);
 		FNativeFunctionRegistrar::RegisterFunction(AWizardsCharacter::StaticClass(), "ServerFireProjectile",(Native)&AWizardsCharacter::execServerFireProjectile);
 	}
-	IMPLEMENT_CLASS(AWizardsCharacter, 3761012096);
+	IMPLEMENT_CLASS(AWizardsCharacter, 2816063418);
 	void UWizardsSaveGame::StaticRegisterNativesUWizardsSaveGame()
 	{
 	}
@@ -136,12 +150,15 @@ static struct FScriptStruct_Wizards_StaticRegisterNativesFtheSpell
 		FNativeFunctionRegistrar::RegisterFunction(AWizardsProjectile::StaticClass(), "OnHit",(Native)&AWizardsProjectile::execOnHit);
 	}
 	IMPLEMENT_CLASS(AWizardsProjectile, 2530398219);
+FName WIZARDS_ClientDestroyCone = FName(TEXT("ClientDestroyCone"));
 FName WIZARDS_ClientFireProjectile = FName(TEXT("ClientFireProjectile"));
+FName WIZARDS_ServerDestroyCone = FName(TEXT("ServerDestroyCone"));
 FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	COREUOBJECT_API class UClass* Z_Construct_UClass_UObject();
+	ENGINE_API class UClass* Z_Construct_UClass_AActor_NoRegister();
 	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FRotator();
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
@@ -154,7 +171,6 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 	ENGINE_API class UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API class UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
-	ENGINE_API class UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UGameInstance();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameSession();
@@ -167,8 +183,10 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 	WIZARDS_API class UClass* Z_Construct_UClass_UspellBook_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_UspellBook();
 	WIZARDS_API class UScriptStruct* Z_Construct_UScriptStruct_FtheSpell();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_AWizardsCharacter_ClientDestroyCone();
 	WIZARDS_API class UFunction* Z_Construct_UFunction_AWizardsCharacter_ClientFireProjectile();
 	WIZARDS_API class UFunction* Z_Construct_UFunction_AWizardsCharacter_newCharactersSpells();
+	WIZARDS_API class UFunction* Z_Construct_UFunction_AWizardsCharacter_ServerDestroyCone();
 	WIZARDS_API class UFunction* Z_Construct_UFunction_AWizardsCharacter_ServerFireProjectile();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsCharacter_NoRegister();
 	WIZARDS_API class UClass* Z_Construct_UClass_AWizardsCharacter();
@@ -350,6 +368,23 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 		return ReturnStruct;
 	}
 	uint32 Get_Z_Construct_UScriptStruct_FtheSpell_CRC() { return 2210604425U; }
+	UFunction* Z_Construct_UFunction_AWizardsCharacter_ClientDestroyCone()
+	{
+		UObject* Outer=Z_Construct_UClass_AWizardsCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ClientDestroyCone"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x80024CC0, 65535, sizeof(WizardsCharacter_eventClientDestroyCone_Parms));
+			UProperty* NewProp_theActor = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("theActor"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(theActor, WizardsCharacter_eventClientDestroyCone_Parms), 0x0010000000000080, Z_Construct_UClass_AActor_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UFunction* Z_Construct_UFunction_AWizardsCharacter_ClientFireProjectile()
 	{
 		UObject* Outer=Z_Construct_UClass_AWizardsCharacter();
@@ -381,6 +416,23 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 #if WITH_METADATA
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CharacterFunctions"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AWizardsCharacter_ServerDestroyCone()
+	{
+		UObject* Outer=Z_Construct_UClass_AWizardsCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ServerDestroyCone"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x80220CC0, 65535, sizeof(WizardsCharacter_eventServerDestroyCone_Parms));
+			UProperty* NewProp_theActor = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("theActor"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(theActor, WizardsCharacter_eventServerDestroyCone_Parms), 0x0010000000000080, Z_Construct_UClass_AActor_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WizardsCharacter.h"));
 #endif
 		}
@@ -422,8 +474,10 @@ FName WIZARDS_ServerFireProjectile = FName(TEXT("ServerFireProjectile"));
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20800080;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_AWizardsCharacter_ClientDestroyCone());
 				OuterClass->LinkChild(Z_Construct_UFunction_AWizardsCharacter_ClientFireProjectile());
 				OuterClass->LinkChild(Z_Construct_UFunction_AWizardsCharacter_newCharactersSpells());
+				OuterClass->LinkChild(Z_Construct_UFunction_AWizardsCharacter_ServerDestroyCone());
 				OuterClass->LinkChild(Z_Construct_UFunction_AWizardsCharacter_ServerFireProjectile());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
@@ -442,8 +496,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_FirstPersonCameraComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FirstPersonCameraComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(FirstPersonCameraComponent, AWizardsCharacter), 0x00400000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
 				UProperty* NewProp_Mesh1P = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Mesh1P"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(Mesh1P, AWizardsCharacter), 0x00400000000b0009, Z_Construct_UClass_USkeletalMeshComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AWizardsCharacter_ClientDestroyCone(), "ClientDestroyCone"); // 4239352091
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AWizardsCharacter_ClientFireProjectile(), "ClientFireProjectile"); // 1067197020
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AWizardsCharacter_newCharactersSpells(), "newCharactersSpells"); // 3290077353
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AWizardsCharacter_ServerDestroyCone(), "ServerDestroyCone"); // 2512276568
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AWizardsCharacter_ServerFireProjectile(), "ServerFireProjectile"); // 1788865859
 				OuterClass->ClassConfigName = FName(TEXT("Game"));
 				OuterClass->StaticLink();
@@ -1806,8 +1862,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Wizards")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x95DDBF7E;
-			Guid.B = 0xB2D6714C;
+			Guid.A = 0x10D7D573;
+			Guid.B = 0x46BE2B55;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

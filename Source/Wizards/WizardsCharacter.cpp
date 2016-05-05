@@ -294,6 +294,7 @@ void AWizardsCharacter::OnFire()
 void AWizardsCharacter::OffFire() {
 	if (activeAttack != NULL) {
 		activeAttack->Destroy();
+		ServerDestroyCone(activeAttack);
 	}
 }
 
@@ -504,3 +505,26 @@ void AWizardsCharacter::ClientFireProjectile_Implementation(FtheSpell castSpell,
 bool AWizardsCharacter::ClientFireProjectile_Validate(FtheSpell castSpell, FRotator rotation, FVector location){
 	return true;	
 }
+
+void AWizardsCharacter::ServerDestroyCone_Implementation(AActor* theActor) {
+
+	ClientDestroyCone(theActor);
+
+}
+bool AWizardsCharacter::ServerDestroyCone_Validate(AActor* theActor) {
+	return true;
+}
+
+void AWizardsCharacter::ClientDestroyCone_Implementation(AActor* theActor) {
+	if (theActor != NULL) {
+		theActor->Destroy();
+	}
+	if (activeAttack != NULL) {
+		activeAttack->Destroy();
+	}
+}
+bool AWizardsCharacter::ClientDestroyCone_Validate(AActor* theActor) {
+	return true;
+}
+
+

@@ -229,4 +229,15 @@ public:
 	void ClientFireProjectile(FtheSpell castSpell, FRotator rotation, FVector location);
 	virtual void ClientFireProjectile_Implementation(FtheSpell castSpell, FRotator rotation, FVector location);
 	virtual bool ClientFireProjectile_Validate(FtheSpell castSpell, FRotator rotation, FVector location);
+
+	UFUNCTION(reliable, server, WithValidation)
+		void ServerDestroyCone(AActor* theActor);
+	virtual void ServerDestroyCone_Implementation(AActor* theActor);
+	virtual bool ServerDestroyCone_Validate(AActor* theActor);
+
+	UFUNCTION(reliable, NetMulticast, WithValidation)
+		void ClientDestroyCone(AActor* theActor);
+	virtual void ClientDestroyCone_Implementation(AActor* theActor);
+	virtual bool ClientDestroyCone_Validate(AActor* theActor);
+
 };

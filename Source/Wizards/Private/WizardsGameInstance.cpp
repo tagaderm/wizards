@@ -352,6 +352,7 @@ void UWizardsGameInstance::FindOnlineGames()
 	ULocalPlayer* const Player = GetFirstGamePlayer();
 
 	FindSessions(Player->GetPreferredUniqueNetId(), GameSessionName, false, true);
+	JoinOnlineGame();
 }
 
 void UWizardsGameInstance::JoinOnlineGame()

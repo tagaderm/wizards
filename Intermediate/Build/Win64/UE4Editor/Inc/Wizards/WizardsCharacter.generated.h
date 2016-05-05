@@ -8,6 +8,7 @@
 #include "ObjectBase.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 struct FtheSpell;
 struct FRotator;
 struct FVector;
@@ -22,10 +23,38 @@ struct FVector;
 
 
 #define wizards_Source_Wizards_WizardsCharacter_h_56_RPC_WRAPPERS \
+	virtual bool ClientDestroyCone_Validate(AActor* ); \
+	virtual void ClientDestroyCone_Implementation(AActor* theActor); \
+	virtual bool ServerDestroyCone_Validate(AActor* ); \
+	virtual void ServerDestroyCone_Implementation(AActor* theActor); \
 	virtual bool ClientFireProjectile_Validate(FtheSpell , FRotator , FVector ); \
 	virtual void ClientFireProjectile_Implementation(FtheSpell castSpell, FRotator rotation, FVector location); \
 	virtual bool ServerFireProjectile_Validate(FtheSpell , FRotator , FVector ); \
 	virtual void ServerFireProjectile_Implementation(FtheSpell castSpell, FRotator rotation, FVector location); \
+ \
+	DECLARE_FUNCTION(execClientDestroyCone) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_theActor); \
+		P_FINISH; \
+		if (!this->ClientDestroyCone_Validate(Z_Param_theActor)) \
+		{ \
+			RPC_ValidateFailed(TEXT("ClientDestroyCone_Validate")); \
+			return; \
+		} \
+		this->ClientDestroyCone_Implementation(Z_Param_theActor); \
+	} \
+ \
+	DECLARE_FUNCTION(execServerDestroyCone) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_theActor); \
+		P_FINISH; \
+		if (!this->ServerDestroyCone_Validate(Z_Param_theActor)) \
+		{ \
+			RPC_ValidateFailed(TEXT("ServerDestroyCone_Validate")); \
+			return; \
+		} \
+		this->ServerDestroyCone_Implementation(Z_Param_theActor); \
+	} \
  \
 	DECLARE_FUNCTION(execClientFireProjectile) \
 	{ \
@@ -64,6 +93,30 @@ struct FVector;
 
 #define wizards_Source_Wizards_WizardsCharacter_h_56_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execClientDestroyCone) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_theActor); \
+		P_FINISH; \
+		if (!this->ClientDestroyCone_Validate(Z_Param_theActor)) \
+		{ \
+			RPC_ValidateFailed(TEXT("ClientDestroyCone_Validate")); \
+			return; \
+		} \
+		this->ClientDestroyCone_Implementation(Z_Param_theActor); \
+	} \
+ \
+	DECLARE_FUNCTION(execServerDestroyCone) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_theActor); \
+		P_FINISH; \
+		if (!this->ServerDestroyCone_Validate(Z_Param_theActor)) \
+		{ \
+			RPC_ValidateFailed(TEXT("ServerDestroyCone_Validate")); \
+			return; \
+		} \
+		this->ServerDestroyCone_Implementation(Z_Param_theActor); \
+	} \
+ \
 	DECLARE_FUNCTION(execClientFireProjectile) \
 	{ \
 		P_GET_STRUCT(FtheSpell,Z_Param_castSpell); \
@@ -100,11 +153,19 @@ struct FVector;
 
 
 #define wizards_Source_Wizards_WizardsCharacter_h_56_EVENT_PARMS \
+	struct WizardsCharacter_eventClientDestroyCone_Parms \
+	{ \
+		AActor* theActor; \
+	}; \
 	struct WizardsCharacter_eventClientFireProjectile_Parms \
 	{ \
 		FtheSpell castSpell; \
 		FRotator rotation; \
 		FVector location; \
+	}; \
+	struct WizardsCharacter_eventServerDestroyCone_Parms \
+	{ \
+		AActor* theActor; \
 	}; \
 	struct WizardsCharacter_eventServerFireProjectile_Parms \
 	{ \
@@ -114,7 +175,9 @@ struct FVector;
 	};
 
 
+extern WIZARDS_API  FName WIZARDS_ClientDestroyCone;
 extern WIZARDS_API  FName WIZARDS_ClientFireProjectile;
+extern WIZARDS_API  FName WIZARDS_ServerDestroyCone;
 extern WIZARDS_API  FName WIZARDS_ServerFireProjectile;
 #define wizards_Source_Wizards_WizardsCharacter_h_56_CALLBACK_WRAPPERS
 #define wizards_Source_Wizards_WizardsCharacter_h_56_INCLASS_NO_PURE_DECLS \
