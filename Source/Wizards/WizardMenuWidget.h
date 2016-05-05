@@ -136,6 +136,7 @@ public:
 
 	//The Spell Array that gets Loaded/Saved and is called by character
 	int32 currSpell = 0;
+	UPROPERTY()
 	TArray<UspellBook*> spellList;
 	UParticleSystem* theParticle;
 

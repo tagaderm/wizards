@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\Wizards.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{81520454-6618-41AC-947F-A7E18C7BAC26}</UniqueIdentifier>
+			<UniqueIdentifier>{EC750797-2643-4FB9-B3B5-35BBDEFAE3C1}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\Wizards.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{FCEAD412-15E0-4249-BCA0-297F7F8BCAD7}</UniqueIdentifier>
+			<UniqueIdentifier>{3724BDF2-A131-4097-AAF8-1EFBB03DFCB8}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,7 +31,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\Wizards">
-			<UniqueIdentifier>{B56F80E2-39BB-431B-A04A-5B26EF1B327D}</UniqueIdentifier>
+			<UniqueIdentifier>{CA3A9FC6-87CE-40BA-9064-B88189EBC264}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\Wizards\WizardMenuWidget.cpp">
 			<Filter>Source\Wizards</Filter>
@@ -97,7 +97,7 @@
 			<Filter>Source\Wizards</Filter>
 		</ClInclude >
 		<Filter Include="Source\Wizards\Private">
-			<UniqueIdentifier>{A489B1EA-4666-4EED-A332-BA258A36A3BB}</UniqueIdentifier>
+			<UniqueIdentifier>{281B67AB-C482-4590-8888-85C1F19AE6D8}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\Wizards\Private\MyActor.cpp">
 			<Filter>Source\Wizards\Private</Filter>
@@ -118,7 +118,7 @@
 			<Filter>Source\Wizards\Private</Filter>
 		</ClCompile >
 		<Filter Include="Source\Wizards\Public">
-			<UniqueIdentifier>{D2B4DB93-07D2-47A3-9409-5FFDF26D91A4}</UniqueIdentifier>
+			<UniqueIdentifier>{5B24647A-6233-4564-A5A9-299F266AB8AF}</UniqueIdentifier>
 		</Filter>
 		<ClInclude Include="..\..\Source\Wizards\Public\MyActor.h">
 			<Filter>Source\Wizards\Public</Filter>

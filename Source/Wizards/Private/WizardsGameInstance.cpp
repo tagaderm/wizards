@@ -44,6 +44,7 @@ bool UWizardsGameInstance::HostSession(TSharedPtr<const FUniqueNetId> UserId, FN
 			SessionSettings->NumPublicConnections = MaxNumPlayers;
 			SessionSettings->NumPrivateConnections = 0;
 			SessionSettings->bAllowInvites = true;
+			SessionSettings->BuildUniqueId = GetBuildUniqueId();
 			SessionSettings->bAllowJoinInProgress = true;
 			SessionSettings->bShouldAdvertise = true;
 			SessionSettings->bAllowJoinViaPresence = true;
@@ -276,6 +277,7 @@ void UWizardsGameInstance::OnSessionUserInviteAccepted(bool bWasSuccessful, int3
 		if (SearchResult.IsValid())
 		{
 			IOnlineSessionPtr SessionInt = IOnlineSubsystem::Get()->GetSessionInterface();
+			UE_LOG(LogTemp, Warning, TEXT("Session Join attempted!"));
 			SessionInt->JoinSession(LocalUserNum, GameSessionName, SearchResult);
 		}
 		else
