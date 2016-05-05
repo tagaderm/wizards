@@ -328,6 +328,7 @@ bool UWizardsGameInstance::ThisJoinSession(TSharedPtr<const FUniqueNetId> UserId
 
 			// Call the "JoinSession" Function with the passed "SearchResult". The "SessionSearch->SearchResults" can be used to get such a
 			// "FOnlineSessionSearchResult" and pass it. Pretty straight forward!
+
 			bSuccessful = Sessions->JoinSession(*UserId, SessionName, SearchResult);
 		}
 	}
@@ -374,6 +375,7 @@ void UWizardsGameInstance::JoinOnlineGame()
 				// use a widget where you click on and have a reference for the GameSession it represents which you can use
 				// here
 				//FUniqueNetId thisId = Player->GetCachedUniqueNetId;
+				GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("Sessions were not found for the joining of games")));
 
 				//this->JoinSession(Player->GetPreferredUniqueNetId(), SearchResult);
 				ThisJoinSession(Player->GetPreferredUniqueNetId(), GameSessionName, SearchResult);
