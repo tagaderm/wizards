@@ -364,6 +364,8 @@ void UWizardsGameInstance::JoinOnlineGame()
 	// If the Array is not empty, we can go through it
 	if (SessionSearch->SearchResults.Num() > 0)
 	{
+		GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("Sessions were not 0")));
+
 		for (int32 i = 0; i < SessionSearch->SearchResults.Num(); i++)
 		{
 			// To avoid something crazy, we filter sessions from ourself
