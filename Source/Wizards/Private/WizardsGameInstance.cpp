@@ -255,6 +255,9 @@ void UWizardsGameInstance::OnJoinSessionComplete(FName SessionName, EOnJoinSessi
 			{
 				// Finally call the ClienTravel. If you want, you could print the TravelURL to see
 				// how it really looks like
+				FInputModeGameOnly theMode;
+				FInputModeDataBase & InData = theMode;
+				PlayerController->SetInputMode(InData);
 				PlayerController->ClientTravel(TravelURL, ETravelType::TRAVEL_Absolute);
 			}
 		}
