@@ -16,15 +16,11 @@ class WIZARDS_API UWizardsGameInstance : public UGameInstance
 {
 	GENERATED_BODY()
 
-	virtual void Init() override;
-
 	UWizardsGameInstance(const FObjectInitializer& ObjectInitializer);
 
 	bool HostSession(TSharedPtr<const FUniqueNetId> UserId, FName SessionName, bool bIsLAN, bool bIsPresence, int32 MaxNumPlayers);
 
 	void OnSessionUserInviteAccepted(bool bWasSuccessful, int32 LocalUserNum, TSharedPtr<const FUniqueNetId>, const FOnlineSessionSearchResult& SearchResult);
-
-	void OnJoinSessionCompleted(FName SessionName, EOnJoinSessionCompleteResult::Type Result);
 
 	virtual void OnCreateSessionComplete(FName SessionName, bool bWasSuccessful);
 
@@ -64,6 +60,7 @@ class WIZARDS_API UWizardsGameInstance : public UGameInstance
 
 	void OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result);
 
+	bool JoinSession(TSharedPtr<const FUniqueNetId> UserId, FName SessionName, const FOnlineSessionSearchResult& SearchResult);
 
 
 

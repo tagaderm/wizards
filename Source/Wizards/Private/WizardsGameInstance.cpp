@@ -199,6 +199,33 @@ void UWizardsGameInstance::OnFindSessionsComplete(bool bWasSuccessful)
 	}
 }
 
+bool UWizardsGameInstance::JoinSession(TSharedPtr<const FUniqueNetId> UserId, FName SessionName, const FOnlineSessionSearchResult& SearchResult)
+{
+	// Return bool
+	bool bSuccessful = false;
+
+	// Get OnlineSubsystem we want to work with
+	IOnlineSubsystem* OnlineSub = IOnlineSubsystem::Get();
+
+	if (OnlineSub)
+	{
+		// Get SessionInterface from the OnlineSubsystem
+		IOnlineSessionPtr Sessions = OnlineSub->GetSessionInterface();
+
+		if (Sessions.IsValid() && UserId.IsValid())
+		{
+			// Set the Handle again
+			OnJoinSessionCompleteDelegateHandle = Sessions->AddOnJoinSessionCompleteDelegate_Handle(OnJoinSessionCompleteDelegate);
+
+			// Call the "JoinSession" Function with the passed "SearchResult". The "SessionSearch->SearchResults" can be used to get such a
+			// "FOnlineSessionSearchResult" and pass it. Pretty straight forward!
+			bSuccessful = Sessions->JoinSession(*UserId, SessionName, SearchResult);
+		}
+	}
+	GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("JoinSessionFunc %s, %d"), *SessionName.ToString(), bSuccessful));
+	return bSuccessful;
+}
+
 void UWizardsGameInstance::OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result)
 {
 	GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("OnJoinSessionComplete %s, %d"), *SessionName.ToString(), static_cast<int32>(Result)));
@@ -234,38 +261,8 @@ void UWizardsGameInstance::OnJoinSessionComplete(FName SessionName, EOnJoinSessi
 	}
 }
 
-void UWizardsGameInstance::Init()
-{
-	Super::Init();
-	/*UE_LOG(LogTemp, Warning, TEXT("WizardsGameInstance::Init happened!"));
-	IOnlineSubsystem* OnlineSub = IOnlineSubsystem::Get();
-	//IOnlineSessionPtr thisSession = OnlineSub->GetSessionInterface();
-	FOnlineSessionSettings thisSettings = FOnlineSessionSettings::FOnlineSessionSettings();
-	thisSettings.bAllowInvites = true;
-	thisSettings.bAllowJoinInProgress = true;
-	thisSettings.NumPublicConnections = 5;
-	thisSettings.bUsesPresence = true;
-	thisSettings.bAllowJoinViaPresence = true;
-	FName sessionName = "theSession";
-	//thisSession->UpdateSession(sessionName, thisSettings);
-	if (OnlineSub)
-	{
-		IOnlineSessionPtr SessionInt = OnlineSub->GetSessionInterface();
-		if (SessionInt.IsValid())
-		{
-			SessionInt->CreateSession(0, sessionName, thisSettings);
-			int32 ControllerId = 0;
-			if (ControllerId != 255)
-			{
-				FOnSessionUserInviteAcceptedDelegate inviteDelegate = FOnSessionUserInviteAcceptedDelegate::CreateUObject(this, &UWizardsGameInstance::OnSessionUserInviteAccepted);
-				SessionInt->AddOnSessionUserInviteAcceptedDelegate_Handle(inviteDelegate);
 
-				FOnJoinSessionCompleteDelegate joinDelegate = FOnJoinSessionCompleteDelegate::CreateUObject(this, &UWizardsGameInstance::OnJoinSessionCompleted);
-				SessionInt->AddOnJoinSessionCompleteDelegate_Handle(joinDelegate);
-			}
-		}
-	}*/
-}
+
 
 void UWizardsGameInstance::OnSessionUserInviteAccepted(bool bWasSuccessful, int32 LocalUserNum, TSharedPtr<const FUniqueNetId>, const FOnlineSessionSearchResult& SearchResult)
 {
@@ -278,62 +275,17 @@ void UWizardsGameInstance::OnSessionUserInviteAccepted(bool bWasSuccessful, int3
 		{
 			IOnlineSessionPtr SessionInt = IOnlineSubsystem::Get()->GetSessionInterface();
 			UE_LOG(LogTemp, Warning, TEXT("Session Join attempted!"));
+			OnJoinSessionCompleteDelegateHandle = SessionInt->AddOnJoinSessionCompleteDelegate_Handle(OnJoinSessionCompleteDelegate);
 			SessionInt->JoinSession(LocalUserNum, GameSessionName, SearchResult);
 		}
 		else
 		{
-			//UE_LOG(DSS_STEAM, Warning, TEXT("Invite accept returned no search result."));
+			UE_LOG(LogTemp, Warning, TEXT("Invite accept returned no search result."));
 		}
 	}
-}
-
-void UWizardsGameInstance::OnJoinSessionCompleted(FName SessionName, EOnJoinSessionCompleteResult::Type Result)
-{
-	UE_LOG(LogTemp, Warning, TEXT("WizardsGameInstance::OnJoinSessionCompleted happened!"));
-	//UE_LOG(DSS_STEAM, Verbose, TEXT("JoinSessionCompleted"));
-	IOnlineSessionPtr Sessions = IOnlineSubsystem::Get()->GetSessionInterface();
-	if (Sessions.IsValid())
-	{
-		//UE_LOG(DSS_STEAM, Verbose, TEXT("Sessions Valid"));
-		if (Result == EOnJoinSessionCompleteResult::Success)
-		{
-			// Client travel to the server
-			FString ConnectString;
-			if (Sessions->GetResolvedConnectString(GameSessionName, ConnectString))
-			{
-				//UE_LOG(DSS_STEAM, Log, TEXT("Join session: traveling to %s"), *ConnectString);
-				GetFirstLocalPlayerController()->ClientTravel(ConnectString, TRAVEL_Absolute);
-			}
-		}
+	else { 
+		UE_LOG(LogTemp, Warning, TEXT("b was unsuccessful"));
 	}
-}
-
-bool UWizardsGameInstance::ThisJoinSession(TSharedPtr<const FUniqueNetId> UserId, FName SessionName, const FOnlineSessionSearchResult& SearchResult)
-{
-	// Return bool
-	bool bSuccessful = false;
-
-	// Get OnlineSubsystem we want to work with
-	IOnlineSubsystem* OnlineSub = IOnlineSubsystem::Get();
-
-	if (OnlineSub)
-	{
-		// Get SessionInterface from the OnlineSubsystem
-		IOnlineSessionPtr Sessions = OnlineSub->GetSessionInterface();
-
-		if (Sessions.IsValid() && UserId.IsValid())
-		{
-			// Set the Handle again
-			OnJoinSessionCompleteDelegateHandle = Sessions->AddOnJoinSessionCompleteDelegate_Handle(OnJoinSessionCompleteDelegate);
-
-			// Call the "JoinSession" Function with the passed "SearchResult". The "SessionSearch->SearchResults" can be used to get such a
-			// "FOnlineSessionSearchResult" and pass it. Pretty straight forward!
-
-			bSuccessful = Sessions->JoinSession(*UserId, SessionName, SearchResult);
-		}
-	}
-	GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("JoinSessionFunc %s, %d"), *SessionName.ToString(), bSuccessful));
-	return bSuccessful;
 }
 
 void UWizardsGameInstance::StartOnlineGame()
@@ -378,10 +330,10 @@ void UWizardsGameInstance::JoinOnlineGame()
 				// use a widget where you click on and have a reference for the GameSession it represents which you can use
 				// here
 				//FUniqueNetId thisId = Player->GetCachedUniqueNetId;
-				GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("Sessions were not found for the joining of games")));
+				GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("Sessions were found for the joining of games")));
 
 				//this->JoinSession(Player->GetPreferredUniqueNetId(), SearchResult);
-				ThisJoinSession(Player->GetPreferredUniqueNetId(), GameSessionName, SearchResult);
+				JoinSession(Player->GetPreferredUniqueNetId(), GameSessionName, SearchResult);
 				break;
 			}
 		}
