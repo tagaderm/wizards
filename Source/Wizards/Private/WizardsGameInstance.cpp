@@ -264,7 +264,7 @@ void UWizardsGameInstance::OnJoinSessionComplete(FName SessionName, EOnJoinSessi
 
 
 
-void UWizardsGameInstance::OnSessionUserInviteAccepted(bool bWasSuccessful, int32 LocalUserNum, TSharedPtr<const FUniqueNetId>, const FOnlineSessionSearchResult& SearchResult)
+void UWizardsGameInstance::OnSessionUserInviteAccepted(bool bWasSuccessful, int32 LocalUserNum, TSharedPtr<const FUniqueNetId> UserId, const FOnlineSessionSearchResult& SearchResult)
 {
 	UE_LOG(LogTemp, Warning, TEXT("WizardsGameInstance::OnSessionInviteAccepted happened!"));
 	//UE_LOG(DSS_STEAM, Verbose, TEXT("OnSessionInviteAccepted LocalUserNum: %d bSuccess: %d"), LocalUserNum, bWasSuccessful);
@@ -276,7 +276,7 @@ void UWizardsGameInstance::OnSessionUserInviteAccepted(bool bWasSuccessful, int3
 			IOnlineSessionPtr SessionInt = IOnlineSubsystem::Get()->GetSessionInterface();
 			UE_LOG(LogTemp, Warning, TEXT("Session Join attempted!"));
 			OnJoinSessionCompleteDelegateHandle = SessionInt->AddOnJoinSessionCompleteDelegate_Handle(OnJoinSessionCompleteDelegate);
-			SessionInt->JoinSession(LocalUserNum, GameSessionName, SearchResult);
+			SessionInt->JoinSession(*UserId, GameSessionName, SearchResult);
 		}
 		else
 		{
