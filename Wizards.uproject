@@ -1,13 +1,18 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.10",
+	"EngineAssociation": "4.11",
 	"Category": "",
 	"Description": "",
 	"Modules": [
 		{
 			"Name": "Wizards",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"UMG",
+				"CoreUObject"
+			]
 		}
 	]
 }

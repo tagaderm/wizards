@@ -6,7 +6,7 @@
 
 AWizardsProjectile::AWizardsProjectile()
 {
-	UE_LOG(LogTemp, Warning, TEXT("The constructor is being called!"));
+	bReplicates = true;
 	// Use a sphere as a simple collision representation
 	CollisionComp = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComp"));
 	CollisionComp->InitSphereRadius(5.0f);
@@ -23,16 +23,17 @@ AWizardsProjectile::AWizardsProjectile()
 	// Use a ProjectileMovementComponent to govern this projectile's movement
 	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileComp"));
 	ProjectileMovement->UpdatedComponent = CollisionComp;
-	ProjectileMovement->InitialSpeed = 7000.f;
-	ProjectileMovement->MaxSpeed = 7000.f;
+	ProjectileMovement->InitialSpeed = 10000.f;
+	ProjectileMovement->MaxSpeed = 10000.f;
 	ProjectileMovement->bRotationFollowsVelocity = true;
 	ProjectileMovement->bShouldBounce = true;
+	ProjectileMovement->ProjectileGravityScale = 0.0f;
 
 	// Die after 3 seconds by default
 	InitialLifeSpan = 3.0f;
 
   MyParticleSystem = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("Madness"));
-
+  //SetLifeSpan(30.f);
 }
 
 void AWizardsProjectile::OnHit(AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
@@ -44,21 +45,86 @@ void AWizardsProjectile::OnHit(AActor* OtherActor, UPrimitiveComponent* OtherCom
 
 		Destroy();
 	}
+  else if(shouldBounce == false && (OtherActor != this) && (OtherActor != owningWizard) && explodeDeath){
+  	//UE_LOG(LogTemp, Warning, TEXT("Bounce!"));
+    //ProjectileMovement->InitialSpeed = 0.f;
+	ProjectileMovement->MaxSpeed = 0.01f;//need to look up how to just set speed to 0
+  	ProjectileMovement->ProjectileGravityScale = 0.f;
+	}
+  else if ((OtherActor != this) && (OtherActor != owningWizard) && explodeHit && maxBlasts > 0) {
+	  //const FRotator SpawnRotation = GetControlRotation();
+	  // MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
+	  const FVector SpawnLocation = GetActorLocation();
+	  const FRotator spawnRotation(0.0, 0.0, 0.0);
+	  UWorld* const World = GetWorld();
+	  if (World)
+	  {
+		  //BlastClass = NewObject<AWizardsBlast>();
+		  AWizardsBlast* wizardsSpell = World->SpawnActor<AWizardsBlast>(BlastClass, SpawnLocation, spawnRotation);//, SpawnRotation);// , myparams);
+		  wizardsSpell->SpellCreation(blastParticle, bBlastSize, bBlastDamage, owningWizard);
+		  maxBlasts -= 1;
+
+	  }
+  }
+  else if (maxBlasts == 0) {
+	  if (explodeDeath) {
+		  const FVector SpawnLocation = GetActorLocation();
+		  const FRotator spawnRotation(0.0, 0.0, 0.0);
+		  UWorld* const World = GetWorld();
+		  if (World)
+		  {
+			  //BlastClass = NewObject<AWizardsBlast>();
+			  AWizardsBlast* wizardsSpell = World->SpawnActor<AWizardsBlast>(BlastClass, SpawnLocation, spawnRotation);//, SpawnRotation);// , myparams);
+			  wizardsSpell->SpellCreation(blastParticle, bBlastSize, bBlastDamage, owningWizard);
+			  maxBlasts -= 1;
+
+		  }
+	  }
+	  Destroy();
+  }
 }
 
-void AWizardsProjectile::SpellCreation(AWizardsCharacter::spell* theSpell) {
+void AWizardsProjectile::SpellCreation(FtheSpell* theSpell, UParticleSystem* projPart, UParticleSystem* blastPart, AWizardsCharacter* theWiz) {
 	if(theSpell != NULL){
-		MyParticleSystem->SetTemplate(theSpell->myParticle);
+		MyParticleSystem->SetTemplate(projPart);
 		MyParticleSystem->AttachTo(RootComponent);
-		MyParticleSystem->SetWorldScale3D( FVector( 20 ) );
+		MyParticleSystem->SetWorldScale3D( FVector( theSpell->spellSize ) );
+		shouldBounce = theSpell->canBounce;
+		ProjectileMovement->bShouldBounce = theSpell->canBounce;
+		owningWizard = theWiz;
+		if (theSpell->hasGravity) {
+			ProjectileMovement->ProjectileGravityScale = 1.0f;
+		}
+		ProjectileMovement->MaxSpeed = theSpell->spellSpeed;
+		SetLifeSpan(theSpell->spellRange);
+		bBlastSize = theSpell->explosionHitSize;
+		bBlastDamage = theSpell->explosionHitDamage;
+		blastParticle = blastPart;
+		explodeHit = theSpell->explodeOnCollision;
+		explodeDeath = theSpell->explodeOnDeath;
+
 		//UE_LOG(LogTemp, Warning, TEXT("I can't believe it's not null!"));
-		//MyParticleSystem->BuildEmitters();
-		//MyParticleSystem = CreateDefaultSubobject<UParticleSystem>(this, MyParticleSystem);
 		//CollisionComp->SetSphereRadius(20.f);
 		//MyParticleSystem->Template = ArbitraryParticleName.Object;
 		//MyParticleSystem->bAutoActivate = true;
 		//MyParticleSystem->SetHiddenInGame(false);
 	}
-	//FString spellName = theSpell->particleLocation.ToString;
-	//ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName(spellName.);
+}
+
+void AWizardsProjectile::LifeSpanExpired() {
+	if (explodeDeath) {
+		const FVector SpawnLocation = GetActorLocation();
+		const FRotator spawnRotation(0.0, 0.0, 0.0);
+		UWorld* const World = GetWorld();
+		if (World)
+		{
+			//BlastClass = NewObject<AWizardsBlast>();
+			AWizardsBlast* wizardsSpell = World->SpawnActor<AWizardsBlast>(BlastClass, SpawnLocation, spawnRotation);//, SpawnRotation);// , myparams);
+			wizardsSpell->SpellCreation(blastParticle, bBlastSize, bBlastDamage, owningWizard);
+			maxBlasts -= 1;
+
+		}
+
+	}
+		Super::LifeSpanExpired();
 }
